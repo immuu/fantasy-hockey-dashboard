@@ -3,148 +3,324 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ESPN Fantasy Hockey Dashboard</title>
+  <title>ESPN Fantasy Hockey Analytics</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0f172a;
-      --card: #1e293b;
-      --text: #f8fafc;
+      --bg: #0b0f19;
+      --card-bg: rgba(22, 30, 49, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text: #f1f5f9;
       --text-muted: #94a3b8;
-      --accent: #38bdf8;
-      --border: #334155;
+      --primary: #38bdf8;
+      --primary-glow: rgba(56, 189, 248, 0.25);
+      --accent: #818cf8;
+      --success: #34d399;
+      --warning: #fbbf24;
+      --danger: #f87171;
     }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
+
+    * {
+      box-sizing: border-box;
       margin: 0;
-      padding: 24px;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
+
+    body {
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.08) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(129, 140, 248, 0.08) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: var(--text);
+      padding: 2rem 1.5rem;
+      min-height: 100vh;
+    }
+
     .container {
-      max-width: 1200px;
+      max-width: 1280px;
       margin: 0 auto;
     }
+
+    /* Header */
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 24px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 16px;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 1rem;
     }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: #fff;
+      box-shadow: 0 0 20px var(--primary-glow);
+    }
+
     h1 {
-      margin: 0;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
     }
-    .meta-info {
+
+    .meta-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
       color: var(--text-muted);
-      font-size: 0.9rem;
     }
-    .grid {
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--success);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--success);
+    }
+
+    /* Stats Banner */
+    .stats-banner {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 24px;
-      margin-bottom: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2rem;
     }
+
+    .stat-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.25rem;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .stat-sub {
+      font-size: 0.8rem;
+      color: var(--primary);
+      margin-top: 0.25rem;
+    }
+
+    /* Grid Layout */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 960px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .card {
-      background-color: var(--card);
-      border-radius: 12px;
-      padding: 20px;
-      border: 1px solid var(--border);
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     }
+
     .card-title {
       font-size: 1.1rem;
       font-weight: 600;
-      margin-bottom: 16px;
-      color: var(--accent);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
+
+    /* Table styling */
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
-    th, td {
-      padding: 10px 12px;
-      text-align: left;
-      border-bottom: 1px solid var(--border);
-    }
+
     th {
+      text-align: left;
+      padding: 10px 12px;
       color: var(--text-muted);
       font-weight: 500;
-      font-size: 0.85rem;
+      border-bottom: 1px solid var(--card-border);
+      font-size: 0.8rem;
+      text-transform: uppercase;
     }
+
+    td {
+      padding: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
     tr:last-child td {
       border-bottom: none;
     }
-    .badge {
-      background-color: #334155;
-      padding: 2px 8px;
-      border-radius: 4px;
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .rank-badge {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 24px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      font-weight: 600;
       font-size: 0.8rem;
+    }
+
+    .rank-1 { background: rgba(251, 191, 36, 0.2); color: var(--warning); }
+    .rank-2 { background: rgba(226, 232, 240, 0.2); color: #cbd5e1; }
+    .rank-3 { background: rgba(217, 119, 6, 0.2); color: #f59e0b; }
+
+    .tag {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--primary);
+      border: 1px solid rgba(56, 189, 248, 0.2);
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div>
-        <h1 id="league-title">ESPN Fantasy Hockey</h1>
-        <div class="meta-info" id="update-time">Päivitetään...</div>
+      <div class="brand">
+        <div class="brand-icon">F</div>
+        <div>
+          <h1 id="league-title">ESPN Fantasy Hockey</h1>
+          <div style="font-size: 0.85rem; color: var(--text-muted);" id="update-time">Päivitetään...</div>
+        </div>
       </div>
-      <div id="week-badge" class="badge">Viikko -</div>
+      <div class="meta-badge">
+        <span class="pulse-dot"></span>
+        <span id="week-badge">Kausi 2026-2027</span>
+      </div>
     </header>
 
-    <div class="grid">
+    <!-- Tilastobanneri -->
+    <div class="stats-banner">
+      <div class="stat-card">
+        <div class="stat-label">Kärjessä</div>
+        <div class="stat-value" id="stat-leader">-</div>
+        <div class="stat-sub" id="stat-leader-pts">0 PF</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Keskipisteet / Joukkue</div>
+        <div class="stat-value" id="stat-avg-pts">0</div>
+        <div class="stat-sub">Liigan keskiarvo</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Tiukin Kamppailu</div>
+        <div class="stat-value" id="stat-gap">0 pts</div>
+        <div class="stat-sub">1. ja 2. sijan ero</div>
+      </div>
+    </div>
+
+    <div class="dashboard-grid">
       <!-- Sarjataulukko -->
       <div class="card">
-        <div class="card-title">🏆 Sarjataulukko & Pisteet</div>
+        <div class="card-title">
+          <span>🏆 Sarjataulukko</span>
+        </div>
         <table id="standings-table">
           <thead>
             <tr>
               <th>#</th>
               <th>Joukkue</th>
               <th>Pisteet (PF)</th>
-              <th>V-H-T</th>
+              <th>V - H - T</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td colspan="4">Ladataan tietoja...</td></tr>
+            <tr><td colspan="4" style="text-align:center; color: var(--text-muted);">Ladataan liigan tietoja...</td></tr>
           </tbody>
         </table>
       </div>
 
-      <!-- Vertailukaavio -->
+      <!-- Piste-erot Kaavio -->
       <div class="card">
-        <div class="card-title">📊 Joukkueiden Piste-erot</div>
-        <canvas id="pointsChart" height="220"></canvas>
+        <div class="card-title">📊 Piste-erot</div>
+        <div style="position: relative; height: 300px;">
+          <canvas id="pointsChart"></canvas>
+        </div>
       </div>
     </div>
 
-    <!-- Vapaat agentit -->
+    <!-- Free Agents -->
     <div class="card">
-      <div class="card-title">🔥 Kuumimmat Vapaat Agentit (Free Agents)</div>
+      <div class="card-title">🔥 Parhaat Vapaat Agentit (Free Agents)</div>
       <table id="fa-table">
         <thead>
           <tr>
             <th>Pelaaja</th>
             <th>Pelipaikka</th>
-            <th>Joukkue</th>
+            <th>NHL-joukkue</th>
             <th>Pisteet yhteensä</th>
-            <th>Pistekeskiarvo (P/G)</th>
+            <th>Keskiarvo (P/G)</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td colspan="5">Ladataan tietoja...</td></tr>
+          <tr><td colspan="5" style="text-align:center; color: var(--text-muted);">Ladataan vapaiden agenttien tietoja...</td></tr>
         </tbody>
       </table>
     </div>
   </div>
 
   <script>
+    let pointsChart = null;
+
     async function loadDashboardData() {
       try {
-        // Estetään selaimen välimuisti lisäämällä aikaleima URL-osoitteeseen
+        // Estetään selaimen välimuisti lataamalla tuore data
         const cacheBuster = new Date().getTime();
         const response = await fetch(`data.json?t=${cacheBuster}`);
         
@@ -161,34 +337,56 @@
     }
 
     function renderDashboard(data) {
-      // 1. Otsikko & Meta-tiedot
+      // 1. Otsikko ja Meta
       document.getElementById("league-title").innerText = data.league_name || "ESPN Fantasy Hockey";
       document.getElementById("week-badge").innerText = `Viikko ${data.current_week || 1}`;
       document.getElementById("update-time").innerText = `Päivitetty: ${new Date().toLocaleString('fi-FI')}`;
 
-      // 2. Sarjataulukko
+      // 2. Joukkueet ja Sarjataulukko
       const teams = data.teams || [];
-      // Järjestetään pisteiden mukaan laskevasti
       teams.sort((a, b) => b.points_for - a.points_for);
 
       const standingsBody = document.querySelector("#standings-table tbody");
       standingsBody.innerHTML = "";
 
+      let totalPoints = 0;
+
       teams.forEach((team, index) => {
+        totalPoints += team.points_for;
+
+        let rankClass = "";
+        if (index === 0) rankClass = "rank-1";
+        else if (index === 1) rankClass = "rank-2";
+        else if (index === 2) rankClass = "rank-3";
+
         const row = document.createElement("tr");
         row.innerHTML = `
-          <td><strong>${index + 1}</strong></td>
-          <td>${team.name} (${team.abbrev})</td>
-          <td><strong>${team.points_for}</strong></td>
-          <td>${team.wins}-${team.losses}-${team.ties}</td>
+          <td><span class="rank-badge ${rankClass}">${index + 1}</span></td>
+          <td><strong>${team.name}</strong> <span style="color: var(--text-muted); font-size: 0.8rem;">(${team.abbrev})</span></td>
+          <td><strong style="color: var(--primary);">${team.points_for}</strong></td>
+          <td>${team.wins} - ${team.losses} - ${team.ties}</td>
         `;
         standingsBody.appendChild(row);
       });
 
-      // 3. Kaavio
+      // 3. Banneritilastot
+      if (teams.length > 0) {
+        document.getElementById("stat-leader").innerText = teams[0].name;
+        document.getElementById("stat-leader-pts").innerText = `${teams[0].points_for} PF`;
+
+        const avg = (totalPoints / teams.length).toFixed(1);
+        document.getElementById("stat-avg-pts").innerText = avg;
+
+        if (teams.length > 1) {
+          const gap = (teams[0].points_for - teams[1].points_for).toFixed(1);
+          document.getElementById("stat-gap").innerText = `${gap} pts`;
+        }
+      }
+
+      // 4. Kaavio
       renderChart(teams);
 
-      // 4. Vapaat agentit
+      // 5. Free Agents
       const faBody = document.querySelector("#fa-table tbody");
       faBody.innerHTML = "";
 
@@ -197,9 +395,9 @@
         const row = document.createElement("tr");
         row.innerHTML = `
           <td><strong>${player.name}</strong></td>
-          <td><span class="badge">${player.position}</span></td>
+          <td><span class="tag">${player.position}</span></td>
           <td>${player.proTeam}</td>
-          <td>${player.total_points}</td>
+          <td><strong>${player.total_points}</strong></td>
           <td>${player.avg_points}</td>
         `;
         faBody.appendChild(row);
@@ -212,26 +410,33 @@
       const labels = teams.map(t => t.abbrev || t.name);
       const points = teams.map(t => t.points_for);
 
-      new Chart(ctx, {
+      if (pointsChart) {
+        pointsChart.destroy();
+      }
+
+      pointsChart = new Chart(ctx, {
         type: 'bar',
         data: {
           labels: labels,
           datasets: [{
             label: 'Pisteet (PF)',
             data: points,
-            backgroundColor: '#38bdf8',
-            borderRadius: 6
+            backgroundColor: 'rgba(56, 189, 248, 0.85)',
+            borderColor: '#38bdf8',
+            borderWidth: 1,
+            borderRadius: 8
           }]
         },
         options: {
           responsive: true,
+          maintainAspectRatio: false,
           plugins: {
             legend: { display: false }
           },
           scales: {
             y: {
               beginAtZero: true,
-              grid: { color: '#334155' },
+              grid: { color: 'rgba(255, 255, 255, 0.05)' },
               ticks: { color: '#94a3b8' }
             },
             x: {
@@ -243,7 +448,6 @@
       });
     }
 
-    // Käynnistetään lataus
     loadDashboardData();
   </script>
 </body>
