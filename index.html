@@ -3,21 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ESPN Fantasy Hockey Analytics</title>
+  <title>ESPN Fantasy Hockey - Analytics & Power Rankings</title>
+  <!-- Chart.js & Google Fonts -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
   <style>
     :root {
-      --bg: #0b0f19;
-      --card-bg: rgba(22, 30, 49, 0.7);
+      --bg-dark: #0b0f19;
+      --card-bg: rgba(22, 30, 49, 0.75);
       --card-border: rgba(255, 255, 255, 0.08);
-      --text: #f1f5f9;
+      --text-main: #f8fafc;
       --text-muted: #94a3b8;
-      --primary: #38bdf8;
-      --primary-glow: rgba(56, 189, 248, 0.25);
-      --accent: #818cf8;
+      --accent-cyan: #38bdf8;
+      --accent-indigo: #818cf8;
+      --accent-glow: rgba(56, 189, 248, 0.15);
       --success: #34d399;
       --warning: #fbbf24;
       --danger: #f87171;
@@ -31,18 +33,18 @@
     }
 
     body {
-      background-color: var(--bg);
+      background-color: var(--bg-dark);
       background-image: 
-        radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.08) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, rgba(129, 140, 248, 0.08) 0px, transparent 50%);
+        radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.1) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(129, 140, 248, 0.1) 0px, transparent 50%);
       background-attachment: fixed;
-      color: var(--text);
+      color: var(--text-main);
       padding: 2rem 1.5rem;
       min-height: 100vh;
     }
 
     .container {
-      max-width: 1280px;
+      max-width: 1350px;
       margin: 0 auto;
     }
 
@@ -61,36 +63,39 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
     }
 
-    .brand-icon {
-      width: 42px;
-      height: 42px;
-      background: linear-gradient(135deg, var(--primary), var(--accent));
-      border-radius: 10px;
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-indigo));
+      border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 800;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       color: #fff;
-      box-shadow: 0 0 20px var(--primary-glow);
+      box-shadow: 0 0 25px var(--accent-glow);
     }
 
     h1 {
-      font-size: 1.6rem;
-      font-weight: 700;
+      font-size: 1.75rem;
+      font-weight: 800;
       letter-spacing: -0.02em;
+      background: linear-gradient(to right, #fff, var(--text-muted));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    .meta-badge {
+    .live-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.04);
       border: 1px solid var(--card-border);
-      padding: 6px 14px;
+      padding: 6px 16px;
       border-radius: 20px;
       font-size: 0.85rem;
       color: var(--text-muted);
@@ -101,55 +106,109 @@
       height: 8px;
       background-color: var(--success);
       border-radius: 50%;
-      box-shadow: 0 0 8px var(--success);
+      box-shadow: 0 0 10px var(--success);
     }
 
-    /* Stats Banner */
-    .stats-banner {
+    /* Stats Grid Banner */
+    .banner-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 1.25rem;
       margin-bottom: 2rem;
     }
 
-    .stat-card {
+    .banner-card {
       background: var(--card-bg);
       backdrop-filter: blur(12px);
       border: 1px solid var(--card-border);
       border-radius: 16px;
-      padding: 1.25rem;
+      padding: 1.25rem 1.5rem;
+      position: relative;
+      overflow: hidden;
     }
 
-    .stat-label {
-      font-size: 0.8rem;
+    .banner-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--accent-cyan);
+    }
+
+    .banner-label {
+      font-size: 0.75rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.08em;
       color: var(--text-muted);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
     }
 
-    .stat-value {
+    .banner-value {
       font-size: 1.6rem;
-      font-weight: 700;
-      color: var(--text);
+      font-weight: 800;
+      color: var(--text-main);
     }
 
-    .stat-sub {
+    .banner-sub {
       font-size: 0.8rem;
-      color: var(--primary);
+      color: var(--accent-cyan);
       margin-top: 0.25rem;
+      font-weight: 500;
     }
 
-    /* Grid Layout */
-    .dashboard-grid {
+    /* Tabs Navigation */
+    .tabs-nav {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 10px;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 10px 18px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .tab-btn.active {
+      color: var(--text-main);
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* Layout Grids */
+    .grid-2col {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1.8fr 1.2fr;
       gap: 1.5rem;
       margin-bottom: 2rem;
     }
 
-    @media (max-width: 960px) {
-      .dashboard-grid {
+    @media (max-width: 1024px) {
+      .grid-2col {
         grid-template-columns: 1fr;
       }
     }
@@ -158,35 +217,36 @@
       background: var(--card-bg);
       backdrop-filter: blur(12px);
       border: 1px solid var(--card-border);
-      border-radius: 16px;
+      border-radius: 18px;
       padding: 1.5rem;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     }
 
     .card-title {
-      font-size: 1.1rem;
-      font-weight: 600;
+      font-size: 1.15rem;
+      font-weight: 700;
       margin-bottom: 1.25rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
-    /* Table styling */
+    /* Tables */
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.9rem;
+      font-size: 0.92rem;
     }
 
     th {
       text-align: left;
-      padding: 10px 12px;
+      padding: 12px;
       color: var(--text-muted);
-      font-weight: 500;
+      font-weight: 600;
       border-bottom: 1px solid var(--card-border);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
 
     td {
@@ -202,125 +262,157 @@
       background: rgba(255, 255, 255, 0.02);
     }
 
-    .rank-badge {
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      text-align: center;
-      line-height: 24px;
-      border-radius: 6px;
-      background: rgba(255, 255, 255, 0.05);
-      font-weight: 600;
-      font-size: 0.8rem;
+    .rank-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.82rem;
+      background: rgba(255, 255, 255, 0.06);
     }
 
-    .rank-1 { background: rgba(251, 191, 36, 0.2); color: var(--warning); }
-    .rank-2 { background: rgba(226, 232, 240, 0.2); color: #cbd5e1; }
-    .rank-3 { background: rgba(217, 119, 6, 0.2); color: #f59e0b; }
+    .rank-1 { background: rgba(251, 191, 36, 0.25); color: var(--warning); border: 1px solid rgba(251, 191, 36, 0.4); }
+    .rank-2 { background: rgba(226, 232, 240, 0.2); color: #cbd5e1; border: 1px solid rgba(226, 232, 240, 0.3); }
+    .rank-3 { background: rgba(217, 119, 6, 0.25); color: #f59e0b; border: 1px solid rgba(217, 119, 6, 0.4); }
 
-    .tag {
-      display: inline-block;
+    .tag-pos {
       padding: 3px 8px;
       border-radius: 6px;
       font-size: 0.75rem;
-      font-weight: 600;
-      background: rgba(56, 189, 248, 0.1);
-      color: var(--primary);
-      border: 1px solid rgba(56, 189, 248, 0.2);
+      font-weight: 700;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent-cyan);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+
+    .chart-container {
+      position: relative;
+      height: 320px;
+      width: 100%;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- Header -->
     <header>
       <div class="brand">
-        <div class="brand-icon">F</div>
+        <div class="brand-logo">🏒</div>
         <div>
-          <h1 id="league-title">ESPN Fantasy Hockey</h1>
-          <div style="font-size: 0.85rem; color: var(--text-muted);" id="update-time">Päivitetään...</div>
+          <h1 id="league-title">ESPN Fantasy Hockey Analytics</h1>
+          <div style="font-size: 0.85rem; color: var(--text-muted);" id="update-time">Ladataan tietoja...</div>
         </div>
       </div>
-      <div class="meta-badge">
+      <div class="live-badge">
         <span class="pulse-dot"></span>
-        <span id="week-badge">Kausi 2026-2027</span>
+        <span id="week-badge">Viikko -</span>
       </div>
     </header>
 
-    <!-- Tilastobanneri -->
-    <div class="stats-banner">
-      <div class="stat-card">
-        <div class="stat-label">Kärjessä</div>
-        <div class="stat-value" id="stat-leader">-</div>
-        <div class="stat-sub" id="stat-leader-pts">0 PF</div>
+    <!-- Top Banner Stats -->
+    <div class="banner-grid">
+      <div class="banner-card">
+        <div class="banner-label">Sarjakärki</div>
+        <div class="banner-value" id="stat-leader">-</div>
+        <div class="banner-sub" id="stat-leader-pts">0 PF</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">Keskipisteet / Joukkue</div>
-        <div class="stat-value" id="stat-avg-pts">0</div>
-        <div class="stat-sub">Liigan keskiarvo</div>
+      <div class="banner-card">
+        <div class="banner-label">Keskiarvo / Joukkue</div>
+        <div class="banner-value" id="stat-avg-pts">0</div>
+        <div class="banner-sub">Liigan keskiarvo</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">Tiukin Kamppailu</div>
-        <div class="stat-value" id="stat-gap">0 pts</div>
-        <div class="stat-sub">1. ja 2. sijan ero</div>
+      <div class="banner-card">
+        <div class="banner-label">Tiukin Kamppailu</div>
+        <div class="banner-value" id="stat-gap">0 pts</div>
+        <div class="banner-sub">1. ja 2. sijan ero</div>
+      </div>
+      <div class="banner-card">
+        <div class="banner-label">Aktiivisia Joukkueita</div>
+        <div class="banner-value" id="stat-teams-count">0</div>
+        <div class="banner-sub">Liigassa mukana</div>
       </div>
     </div>
 
-    <div class="dashboard-grid">
-      <!-- Sarjataulukko -->
-      <div class="card">
-        <div class="card-title">
-          <span>🏆 Sarjataulukko</span>
+    <!-- Navigation Tabs -->
+    <div class="tabs-nav">
+      <button class="tab-btn active" onclick="switchTab('standings-tab', this)">🏆 Sarjataulukko & Analyysi</button>
+      <button class="tab-btn" onclick="switchTab('free-agents-tab', this)">🔥 Vapaat Agentit (Free Agents)</button>
+    </div>
+
+    <!-- TAB 1: Sarjataulukko & Kaavio -->
+    <div id="standings-tab" class="tab-content active">
+      <div class="grid-2col">
+        <!-- Standings Table -->
+        <div class="card">
+          <div class="card-title">
+            <span>🏆 Sarjataulukko</span>
+          </div>
+          <table id="standings-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Joukkue</th>
+                <th>Pisteet (PF)</th>
+                <th>Ero Kärkeen</th>
+                <th>V - H - T</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td colspan="5" style="text-align:center; color: var(--text-muted);">Ladataan tietoja...</td></tr>
+            </tbody>
+          </table>
         </div>
-        <table id="standings-table">
+
+        <!-- Points Comparison Chart -->
+        <div class="card">
+          <div class="card-title">📊 Joukkueiden Piste-erot</div>
+          <div class="chart-container">
+            <canvas id="pointsChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: Vapaat Agentit -->
+    <div id="free-agents-tab" class="tab-content">
+      <div class="card">
+        <div class="card-title">🔥 Kuumimmat Vapaat Agentit (Free Agents)</div>
+        <table id="fa-table">
           <thead>
             <tr>
-              <th>#</th>
-              <th>Joukkue</th>
-              <th>Pisteet (PF)</th>
-              <th>V - H - T</th>
+              <th>Pelaaja</th>
+              <th>Pelipaikka</th>
+              <th>NHL-joukkue</th>
+              <th>Pisteet yhteensä</th>
+              <th>Pistekeskiarvo (P/G)</th>
+              <th>Tila</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td colspan="4" style="text-align:center; color: var(--text-muted);">Ladataan liigan tietoja...</td></tr>
+            <tr><td colspan="6" style="text-align:center; color: var(--text-muted);">Ladataan vapaiden agenttien tietoja...</td></tr>
           </tbody>
         </table>
       </div>
-
-      <!-- Piste-erot Kaavio -->
-      <div class="card">
-        <div class="card-title">📊 Piste-erot</div>
-        <div style="position: relative; height: 300px;">
-          <canvas id="pointsChart"></canvas>
-        </div>
-      </div>
-    </div>
-
-    <!-- Free Agents -->
-    <div class="card">
-      <div class="card-title">🔥 Parhaat Vapaat Agentit (Free Agents)</div>
-      <table id="fa-table">
-        <thead>
-          <tr>
-            <th>Pelaaja</th>
-            <th>Pelipaikka</th>
-            <th>NHL-joukkue</th>
-            <th>Pisteet yhteensä</th>
-            <th>Keskiarvo (P/G)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td colspan="5" style="text-align:center; color: var(--text-muted);">Ladataan vapaiden agenttien tietoja...</td></tr>
-        </tbody>
-      </table>
     </div>
   </div>
 
   <script>
     let pointsChart = null;
 
+    function switchTab(tabId, btn) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      
+      document.getElementById(tabId).classList.add('active');
+      btn.classList.add('active');
+    }
+
     async function loadDashboardData() {
       try {
-        // Estetään selaimen välimuisti lataamalla tuore data
+        // Estetään selaimen välimuisti (cache buster)
         const cacheBuster = new Date().getTime();
         const response = await fetch(`data.json?t=${cacheBuster}`);
         
@@ -332,12 +424,12 @@
         renderDashboard(data);
       } catch (error) {
         console.error("Virhe ladattaessa dataa:", error);
-        document.getElementById("update-time").innerText = "Virhe ladattaessa tiedostoa data.json";
+        document.getElementById("update-time").innerText = "Virhe ladattaessa data.json-tiedostoa.";
       }
     }
 
     function renderDashboard(data) {
-      // 1. Otsikko ja Meta
+      // 1. Otsikot & Metadata
       document.getElementById("league-title").innerText = data.league_name || "ESPN Fantasy Hockey";
       document.getElementById("week-badge").innerText = `Viikko ${data.current_week || 1}`;
       document.getElementById("update-time").innerText = `Päivitetty: ${new Date().toLocaleString('fi-FI')}`;
@@ -350,9 +442,11 @@
       standingsBody.innerHTML = "";
 
       let totalPoints = 0;
+      const topPoints = teams.length > 0 ? teams[0].points_for : 0;
 
       teams.forEach((team, index) => {
         totalPoints += team.points_for;
+        const gapToTop = (topPoints - team.points_for).toFixed(1);
 
         let rankClass = "";
         if (index === 0) rankClass = "rank-1";
@@ -361,15 +455,17 @@
 
         const row = document.createElement("tr");
         row.innerHTML = `
-          <td><span class="rank-badge ${rankClass}">${index + 1}</span></td>
+          <td><span class="rank-pill ${rankClass}">${index + 1}</span></td>
           <td><strong>${team.name}</strong> <span style="color: var(--text-muted); font-size: 0.8rem;">(${team.abbrev})</span></td>
-          <td><strong style="color: var(--primary);">${team.points_for}</strong></td>
+          <td><strong style="color: var(--accent-cyan); font-size: 1rem;">${team.points_for}</strong></td>
+          <td style="color: ${gapToTop == 0 ? 'var(--success)' : 'var(--text-muted)'};">${gapToTop == 0 ? 'Kärjessä' : '-' + gapToTop + ' pts'}</td>
           <td>${team.wins} - ${team.losses} - ${team.ties}</td>
         `;
         standingsBody.appendChild(row);
       });
 
       // 3. Banneritilastot
+      document.getElementById("stat-teams-count").innerText = teams.length;
       if (teams.length > 0) {
         document.getElementById("stat-leader").innerText = teams[0].name;
         document.getElementById("stat-leader-pts").innerText = `${teams[0].points_for} PF`;
@@ -383,7 +479,7 @@
         }
       }
 
-      // 4. Kaavio
+      // 4. Kaavion piirto
       renderChart(teams);
 
       // 5. Free Agents
@@ -395,10 +491,11 @@
         const row = document.createElement("tr");
         row.innerHTML = `
           <td><strong>${player.name}</strong></td>
-          <td><span class="tag">${player.position}</span></td>
+          <td><span class="tag-pos">${player.position}</span></td>
           <td>${player.proTeam}</td>
           <td><strong>${player.total_points}</strong></td>
           <td>${player.avg_points}</td>
+          <td><span style="color: ${player.injuryStatus === 'NORMAL' ? 'var(--success)' : 'var(--warning)'}; font-size: 0.85rem;">${player.injuryStatus}</span></td>
         `;
         faBody.appendChild(row);
       });
@@ -448,6 +545,7 @@
       });
     }
 
+    // Käynnistetään lataus
     loadDashboardData();
   </script>
 </body>
