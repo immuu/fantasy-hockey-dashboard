@@ -1,838 +1,250 @@
 <!DOCTYPE html>
-<html lang="fi" class="dark">
+<html lang="fi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESPN Fantasy Hockey Analytics Dashboard</title>
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        ice: {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            400: '#38bdf8',
-                            500: '#0ea5e9',
-                            600: '#0284c7',
-                            900: '#0c4a6e',
-                            950: '#082f49',
-                        },
-                        darkBg: '#0b0f17',
-                        cardBg: '#131b2e',
-                        cardBorder: '#1e293b'
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- Chart.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <style>
-        body {
-            background-color: #0b0f17;
-            color: #f1f5f9;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0b0f17;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #1e293b;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #334155;
-        }
-
-        .gradient-text {
-            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .glass-card {
-            background: rgba(19, 27, 46, 0.75);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESPN Fantasy Hockey Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 24px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    .meta-info {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .card {
+      background-color: var(--card);
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid var(--border);
+    }
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--accent);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      color: var(--text-muted);
+      font-weight: 500;
+      font-size: 0.85rem;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .badge {
+      background-color: #334155;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+  </style>
 </head>
-<body class="min-h-screen flex flex-col antialiased selection:bg-ice-500 selection:text-white">
-
-    <!-- TOP NAVIGATION / HEADER -->
-    <header class="sticky top-0 z-40 border-b border-slate-800/80 bg-darkBg/90 backdrop-blur-md px-4 lg:px-8 py-3">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
-            
-            <!-- Logo & Status -->
-            <div class="flex items-center space-x-3">
-                <div class="p-2.5 bg-gradient-to-tr from-ice-600 to-indigo-600 rounded-xl shadow-lg shadow-ice-500/20 text-white">
-                    <i data-lucide="activity" class="w-6 h-6"></i>
-                </div>
-                <div>
-                    <div class="flex items-center space-x-2">
-                        <h1 class="font-extrabold text-xl tracking-tight text-white">FANTASY<span class="text-ice-400">PULSE</span></h1>
-                        <span class="px-2 py-0.5 text-xs font-semibold bg-ice-500/10 text-ice-400 border border-ice-500/30 rounded-full">ESPN NHL</span>
-                    </div>
-                    <p class="text-xs text-slate-400" id="leagueNameSubtitle">Pohjoisen Liiga 2025–2026</p>
-                </div>
-            </div>
-
-            <!-- Controls: Range, Search & Actions -->
-            <div class="flex flex-wrap items-center gap-3">
-                
-                <!-- Time Range Filter -->
-                <div class="bg-slate-900/90 p-1 rounded-lg border border-slate-800 flex items-center text-xs font-medium">
-                    <button onclick="setTimeRange('all')" id="btn-range-all" class="px-3 py-1.5 rounded-md bg-ice-500 text-white shadow-sm transition">Koko kausi</button>
-                    <button onclick="setTimeRange('4w')" id="btn-range-4w" class="px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition">Viim. 4 viikkoa</button>
-                    <button onclick="setTimeRange('7d')" id="btn-range-7d" class="px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition">Viim. 2 viikkoa</button>
-                </div>
-
-                <!-- Search Input -->
-                <div class="relative">
-                    <i data-lucide="search" class="w-4 h-4 absolute left-3 top-2.5 text-slate-400"></i>
-                    <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Etsi joukkuetta tai pelaajaa..." 
-                        class="bg-slate-900 border border-slate-800 text-slate-200 text-xs rounded-lg pl-9 pr-3 py-2 w-48 focus:outline-none focus:ring-2 focus:ring-ice-500 focus:border-transparent">
-                </div>
-
-                <!-- Config Modal Button -->
-                <button onclick="toggleModal(true)" title="ESPN Asetukset / Tuonti" class="flex items-center space-x-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs px-3 py-2 rounded-lg transition">
-                    <i data-lucide="settings" class="w-4 h-4 text-slate-300"></i>
-                    <span class="hidden sm:inline">Liigan tiedot</span>
-                </button>
-            </div>
-        </div>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1 id="league-title">ESPN Fantasy Hockey</h1>
+        <div class="meta-info" id="update-time">Päivitetään...</div>
+      </div>
+      <div id="week-badge" class="badge">Viikko -</div>
     </header>
 
-    <!-- MAIN CONTAINER -->
-    <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 space-y-6">
+    <div class="grid">
+      <!-- Sarjataulukko -->
+      <div class="card">
+        <div class="card-title">🏆 Sarjataulukko & Pisteet</div>
+        <table id="standings-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Joukkue</th>
+              <th>Pisteet (PF)</th>
+              <th>V-H-T</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="4">Ladataan tietoja...</td></tr>
+          </tbody>
+        </table>
+      </div>
 
-        <!-- STATS HIGHLIGHT OVERVIEW -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            
-            <!-- Card 1: Leader -->
-            <div class="glass-card rounded-2xl p-4 border border-slate-800 flex items-center justify-between">
-                <div>
-                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Kärjessä (Liigajohtaja)</p>
-                    <h3 class="text-lg font-bold text-white mt-1" id="statLeaderName">Pohjoisen Pyssyt</h3>
-                    <p class="text-xs text-emerald-400 font-semibold mt-0.5" id="statLeaderPts">1,420.5 pts (+42.0 kaula)</p>
-                </div>
-                <div class="p-3 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-xl">
-                    <i data-lucide="crown" class="w-6 h-6"></i>
-                </div>
-            </div>
-
-            <!-- Card 2: Hot Streak (Kuumin joukkue) -->
-            <div class="glass-card rounded-2xl p-4 border border-slate-800 flex items-center justify-between">
-                <div>
-                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Kuumin Joukkue (Viim. 3 vk)</p>
-                    <h3 class="text-lg font-bold text-white mt-1" id="statHotTeam">Oulu Ice Kings</h3>
-                    <p class="text-xs text-emerald-400 font-semibold mt-0.5" id="statHotTeamGain">+185.0 pts (3. voitto putkeen)</p>
-                </div>
-                <div class="p-3 bg-rose-500/10 text-rose-400 border border-rose-500/20 rounded-xl">
-                    <i data-lucide="flame" class="w-6 h-6"></i>
-                </div>
-            </div>
-
-            <!-- Card 3: Pursuit Alert -->
-            <div class="glass-card rounded-2xl p-4 border border-slate-800 flex items-center justify-between">
-                <div>
-                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Suurin Takaa-aja</p>
-                    <h3 class="text-lg font-bold text-white mt-1" id="statChaserName">Nordic Avalanche</h3>
-                    <p class="text-xs text-ice-400 font-semibold mt-0.5" id="statChaserPace">Kuroo 14.5 pt/vk kärkeä</p>
-                </div>
-                <div class="p-3 bg-ice-500/10 text-ice-400 border border-ice-500/20 rounded-xl">
-                    <i data-lucide="trending-up" class="w-6 h-6"></i>
-                </div>
-            </div>
-
-            <!-- Card 4: Matchup Week Info -->
-            <div class="glass-card rounded-2xl p-4 border border-slate-800 flex items-center justify-between">
-                <div>
-                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Meneillään Oleva Viikko</p>
-                    <h3 class="text-lg font-bold text-white mt-1">Matchup Week 18</h3>
-                    <p class="text-xs text-slate-400 mt-0.5">Kausi päättyy: Viikko 22</p>
-                </div>
-                <div class="p-3 bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded-xl">
-                    <i data-lucide="calendar" class="w-6 h-6"></i>
-                </div>
-            </div>
-        </div>
-
-        <!-- MAIN CHART SECTION -->
-        <div class="glass-card rounded-2xl p-5 border border-slate-800">
-            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-4">
-                <div>
-                    <div class="flex items-center space-x-2">
-                        <h2 class="text-lg font-bold text-white">Pistemäärien Kehitys & Takaa-ajo</h2>
-                        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-medium border border-slate-700">Kertymägraafi</span>
-                    </div>
-                    <p class="text-xs text-slate-400 mt-0.5">Klikkaa joukkueen nimeä alta kytkeäksesi viivan näkyviin tai pois. Vie hiiri pisteen päälle nähdäksesi eron.</p>
-                </div>
-
-                <!-- Controls for Chart -->
-                <div class="flex items-center space-x-3">
-                    <label class="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" id="toggleProjection" onchange="updateChartProjections()" class="sr-only peer">
-                        <div class="w-9 h-5 bg-slate-800 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-ice-500 relative"></div>
-                        <span class="ml-2 text-xs font-medium text-slate-300">Näytä ennustelinjat (Loppukausi)</span>
-                    </label>
-
-                    <button onclick="resetChartZoom()" class="text-xs px-2.5 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-md border border-slate-700 transition">
-                        Nollaa valinnat
-                    </button>
-                </div>
-            </div>
-
-            <!-- Custom Interactive Team Toggles / Legend -->
-            <div id="teamLegendContainer" class="flex flex-wrap gap-2 mb-4 p-3 bg-slate-900/60 rounded-xl border border-slate-800/80">
-                <!-- Dynamically generated clickable legend buttons -->
-            </div>
-
-            <!-- Chart Canvas Container -->
-            <div class="relative w-full h-[380px] sm:h-[420px]">
-                <canvas id="pointsChart"></canvas>
-            </div>
-        </div>
-
-        <!-- TWO COLUMN LAYOUT: Standings & Pursuit Radar -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            
-            <!-- STANDINGS TABLE (2 Cols) -->
-            <div class="lg:col-span-2 glass-card rounded-2xl p-5 border border-slate-800 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-4">
-                        <div>
-                            <h2 class="text-lg font-bold text-white">Liigan Sarjataulukko & Ero Seuraavaan</h2>
-                            <p class="text-xs text-slate-400">Reaaliaikainen tilanne ja viikoittainen kuntopuntari</p>
-                        </div>
-                        <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2.5 py-1 rounded-lg font-semibold">Päivitetty tänään</span>
-                    </div>
-
-                    <!-- Table -->
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-left text-xs text-slate-300">
-                            <thead class="bg-slate-900/80 text-slate-400 uppercase tracking-wider text-[10px] border-b border-slate-800">
-                                <tr>
-                                    <th class="py-3 px-2">Sija</th>
-                                    <th class="py-3 px-3">Joukkue & Manageri</th>
-                                    <th class="py-3 px-2 text-right">Pisteet</th>
-                                    <th class="py-3 px-2 text-right">Ero Kärkeen</th>
-                                    <th class="py-3 px-2 text-right">Ero Seuraavaan</th>
-                                    <th class="py-3 px-2 text-center">Formi (3vk)</th>
-                                </tr>
-                            </thead>
-                            <tbody id="standingsTableBody" class="divide-y divide-slate-800/60">
-                                <!-- Generated Dynamically -->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PURSUIT RADAR & FREE AGENT ADVANTAGE (1 Col) -->
-            <div class="space-y-6">
-                
-                <!-- Pursuit / "Kuka ottaa kiinni?" Box -->
-                <div class="glass-card rounded-2xl p-5 border border-slate-800">
-                    <div class="flex items-center space-x-2 mb-3">
-                        <div class="p-2 bg-amber-500/10 text-amber-400 rounded-lg">
-                            <i data-lucide="crosshair" class="w-5 h-5"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-sm font-bold text-white">Takaa-ajo Analyysi</h3>
-                            <p class="text-[11px] text-slate-400">Kuka uhkaa kärkeä eniten?</p>
-                        </div>
-                    </div>
-
-                    <div id="pursuitCardContent" class="space-y-3">
-                        <!-- Dynamic Pursuit content -->
-                    </div>
-                </div>
-
-                <!-- Free Agent Hot List & Schedule Advantage -->
-                <div class="glass-card rounded-2xl p-5 border border-slate-800">
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="flex items-center space-x-2">
-                            <div class="p-2 bg-ice-500/10 text-ice-400 rounded-lg">
-                                <i data-lucide="user-plus" class="w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-sm font-bold text-white">Waiver / Vapaat Agentit</h3>
-                                <p class="text-[11px] text-slate-400">Ensi viikon ottelumäärät</p>
-                            </div>
-                        </div>
-                        <span class="text-[10px] text-ice-400 bg-ice-500/10 px-2 py-0.5 rounded border border-ice-500/20 font-semibold">Top Pickit</span>
-                    </div>
-
-                    <div class="space-y-2.5" id="freeAgentsList">
-                        <!-- Dynamic Free Agents List -->
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </main>
-
-    <!-- CONFIG / DATA MODAL -->
-    <div id="configModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
-        <div class="glass-card bg-slate-900 border border-slate-800 rounded-2xl max-w-lg w-full p-6 space-y-4 shadow-2xl">
-            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
-                <h3 class="text-lg font-bold text-white flex items-center space-x-2">
-                    <i data-lucide="database" class="w-5 h-5 text-ice-400"></i>
-                    <span>ESPN Liigan Asetukset & Data</span>
-                </h3>
-                <button onclick="toggleModal(false)" class="text-slate-400 hover:text-white">
-                    <i data-lucide="x" class="w-5 h-5"></i>
-                </button>
-            </div>
-
-            <p class="text-xs text-slate-300 leading-relaxed">
-                Tämä sovellus toimii oletuksena simuloidulla valmisdatalla. Voit muokata liigan nimeä tai tuoda oman JSON-määritelmäsi ESPN API:sta saatujen tietojen pohjalta.
-            </p>
-
-            <div class="space-y-3">
-                <div>
-                    <label class="block text-xs font-semibold text-slate-400 mb-1">Liigan Nimi</label>
-                    <input type="text" id="inputLeagueName" value="Pohjoisen Liiga 2025–2026" class="w-full bg-slate-950 border border-slate-800 text-xs rounded-lg p-2.5 text-slate-200 focus:ring-1 focus:ring-ice-500 outline-none">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-semibold text-slate-400 mb-1">Pelaajamäärä Liigassa</label>
-                    <input type="number" id="inputTeamCount" value="8" disabled class="w-full bg-slate-950/50 border border-slate-800 text-xs rounded-lg p-2.5 text-slate-500 cursor-not-allowed">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-semibold text-slate-400 mb-1">Pistehistoria (JSON Format)</label>
-                    <textarea id="inputJsonData" rows="5" class="w-full bg-slate-950 border border-slate-800 text-[11px] font-mono text-slate-300 rounded-lg p-2.5 focus:ring-1 focus:ring-ice-500 outline-none" placeholder="Syötä oma JSON data tähän..."></textarea>
-                </div>
-            </div>
-
-            <div class="flex items-center justify-end space-x-3 border-t border-slate-800 pt-3">
-                <button onclick="resetToDefaults()" class="px-3 py-2 text-xs text-rose-400 hover:bg-rose-500/10 rounded-lg transition">Nollaa oletuksiin</button>
-                <button onclick="saveModalConfig()" class="px-4 py-2 text-xs font-semibold bg-ice-500 hover:bg-ice-600 text-white rounded-lg transition">Tallenna Muutokset</button>
-            </div>
-        </div>
+      <!-- Vertailukaavio -->
+      <div class="card">
+        <div class="card-title">📊 Joukkueiden Piste-erot</div>
+        <canvas id="pointsChart" height="220"></canvas>
+      </div>
     </div>
 
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
+    <!-- Vapaat agentit -->
+    <div class="card">
+      <div class="card-title">🔥 Kuumimmat Vapaat Agentit (Free Agents)</div>
+      <table id="fa-table">
+        <thead>
+          <tr>
+            <th>Pelaaja</th>
+            <th>Pelipaikka</th>
+            <th>Joukkue</th>
+            <th>Pisteet yhteensä</th>
+            <th>Pistekeskiarvo (P/G)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="5">Ladataan tietoja...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
-        // =========================================================================
-        // MOCK LEAGUE DATA & ENGINE
-        // =========================================================================
-        const WEEKS_COUNT = 18;
-        const FUTURE_WEEKS = 4; // Projected weeks 19-22
-
-        const TEAMS_MASTER = [
-            { id: 1, name: "Pohjoisen Pyssyt", manager: "Mikael", color: "#38bdf8", basePower: 82 },
-            { id: 2, name: "Nordic Avalanche", manager: "Jonne", color: "#818cf8", basePower: 80 },
-            { id: 3, name: "Oulu Ice Kings", manager: "Lauri", color: "#f43f5e", basePower: 83 },
-            { id: 4, name: "Puck Dynasty", manager: "Antti", color: "#10b981", basePower: 75 },
-            { id: 5, name: "Gretzky's Heirs", manager: "Sami", color: "#fbbf24", basePower: 74 },
-            { id: 6, name: "Kaleva Canadiens", manager: "Ville", color: "#c084fc", basePower: 71 },
-            { id: 7, name: "Arctic Blades", manager: "Tuomas", color: "#fb923c", basePower: 68 },
-            { id: 8, name: "Tundra Titans", manager: "Eero", color: "#94a3b8", basePower: 65 }
-        ];
-
-        // Seed realistic cumulative points progression over 18 weeks
-        function generateWeeklyData() {
-            const data = {};
-            TEAMS_MASTER.forEach(team => {
-                let cumulative = 0;
-                const pointsHistory = [];
-                const weeklyScores = [];
-
-                for (let w = 1; w <= WEEKS_COUNT; w++) {
-                    // Introduce variance & streaks
-                    let streakBonus = 0;
-                    if (team.id === 3 && w >= 14) streakBonus = 18; // Ice Kings hot streak
-                    if (team.id === 2 && w >= 10) streakBonus = 12; // Nordic Avalanche hot streak
-
-                    const randomVariance = (Math.sin(w * team.id) * 15) + (Math.random() * 10 - 5);
-                    const weekScore = Math.max(45, Math.round(team.basePower + randomVariance + streakBonus));
-                    
-                    cumulative += weekScore;
-                    weeklyScores.push(weekScore);
-                    pointsHistory.push(cumulative);
-                }
-
-                data[team.id] = {
-                    ...team,
-                    weeklyScores: weeklyScores,
-                    pointsHistory: pointsHistory,
-                    totalPoints: cumulative
-                };
-            });
-            return data;
+  <script>
+    async function loadDashboardData() {
+      try {
+        // Estetään selaimen välimuisti lisäämällä aikaleima URL-osoitteeseen
+        const cacheBuster = new Date().getTime();
+        const response = await fetch(`data.json?t=${cacheBuster}`);
+        
+        if (!response.ok) {
+          throw new Error("data.json-tiedostoa ei pystytty lataamaan.");
         }
 
-        let leagueData = generateWeeklyData();
-        let selectedTimeRange = 'all'; // 'all', '4w', '7d'
-        let chartInstance = null;
-        let hiddenTeamIds = new Set();
-        let showProjections = false;
+        const data = await response.json();
+        renderDashboard(data);
+      } catch (error) {
+        console.error("Virhe ladattaessa dataa:", error);
+        document.getElementById("update-time").innerText = "Virhe ladattaessa tiedostoa data.json";
+      }
+    }
 
-        // Mock Free Agents Data
-        const freeAgentsData = [
-            { name: "Wyatt Johnston", pos: "C/RW", team: "DAL", avgPts: 4.2, gamesNextWeek: 4, hot: true },
-            { name: "Gabriel Vilardi", pos: "C/RG", team: "WPG", avgPts: 3.8, gamesNextWeek: 4, hot: false },
-            { name: "Pavel Mintyukov", pos: "D", team: "ANA", avgPts: 3.1, gamesNextWeek: 4, hot: true },
-            { name: "Ukko-Pekka Luukkonen", pos: "G", team: "BUF", avgPts: 5.4, gamesNextWeek: 3, hot: false },
-            { name: "Marco Rossi", pos: "C", team: "MIN", avgPts: 3.4, gamesNextWeek: 3, hot: false }
-        ];
+    function renderDashboard(data) {
+      // 1. Otsikko & Meta-tiedot
+      document.getElementById("league-title").innerText = data.league_name || "ESPN Fantasy Hockey";
+      document.getElementById("week-badge").innerText = `Viikko ${data.current_week || 1}`;
+      document.getElementById("update-time").innerText = `Päivitetty: ${new Date().toLocaleString('fi-FI')}`;
 
-        // =========================================================================
-        // INITIALIZATION & RENDER
-        // =========================================================================
-        window.onload = function() {
-            renderLegendButtons();
-            initChart();
-            updateDashboardView();
-            renderFreeAgents();
-            
-            // Populate config JSON preview
-            document.getElementById('inputJsonData').value = JSON.stringify(leagueData, null, 2);
-        };
+      // 2. Sarjataulukko
+      const teams = data.teams || [];
+      // Järjestetään pisteiden mukaan laskevasti
+      teams.sort((a, b) => b.points_for - a.points_for);
 
-        function getFilteredWeeks() {
-            const labels = [];
-            let startWeek = 1;
-            
-            if (selectedTimeRange === '4w') startWeek = Math.max(1, WEEKS_COUNT - 3);
-            if (selectedTimeRange === '7d') startWeek = Math.max(1, WEEKS_COUNT - 1);
+      const standingsBody = document.querySelector("#standings-table tbody");
+      standingsBody.innerHTML = "";
 
-            for (let i = startWeek; i <= WEEKS_COUNT; i++) {
-                labels.push(`Vk ${i}`);
+      teams.forEach((team, index) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td><strong>${index + 1}</strong></td>
+          <td>${team.name} (${team.abbrev})</td>
+          <td><strong>${team.points_for}</strong></td>
+          <td>${team.wins}-${team.losses}-${team.ties}</td>
+        `;
+        standingsBody.appendChild(row);
+      });
+
+      // 3. Kaavio
+      renderChart(teams);
+
+      // 4. Vapaat agentit
+      const faBody = document.querySelector("#fa-table tbody");
+      faBody.innerHTML = "";
+
+      const freeAgents = data.free_agents || [];
+      freeAgents.forEach(player => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td><strong>${player.name}</strong></td>
+          <td><span class="badge">${player.position}</span></td>
+          <td>${player.proTeam}</td>
+          <td>${player.total_points}</td>
+          <td>${player.avg_points}</td>
+        `;
+        faBody.appendChild(row);
+      });
+    }
+
+    function renderChart(teams) {
+      const ctx = document.getElementById("pointsChart").getContext("2d");
+      
+      const labels = teams.map(t => t.abbrev || t.name);
+      const points = teams.map(t => t.points_for);
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Pisteet (PF)',
+            data: points,
+            backgroundColor: '#38bdf8',
+            borderRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: { color: '#334155' },
+              ticks: { color: '#94a3b8' }
+            },
+            x: {
+              grid: { display: false },
+              ticks: { color: '#94a3b8' }
             }
-
-            if (showProjections && selectedTimeRange === 'all') {
-                for (let i = WEEKS_COUNT + 1; i <= WEEKS_COUNT + FUTURE_WEEKS; i++) {
-                    labels.push(`Vk ${i} (Ennuste)`);
-                }
-            }
-
-            return { labels, startWeek };
+          }
         }
+      });
+    }
 
-        function initChart() {
-            const ctx = document.getElementById('pointsChart').getContext('2d');
-            const { labels, startWeek } = getFilteredWeeks();
-
-            const datasets = Object.values(leagueData).map(team => {
-                const visibleData = team.pointsHistory.slice(startWeek - 1);
-                
-                // Calculate projections if enabled
-                let fullData = [...visibleData];
-                if (showProjections && selectedTimeRange === 'all') {
-                    const recentAvg = (team.weeklyScores[17] + team.weeklyScores[16] + team.weeklyScores[15]) / 3;
-                    let lastVal = visibleData[visibleData.length - 1];
-                    for (let p = 0; p < FUTURE_WEEKS; p++) {
-                        lastVal += Math.round(recentAvg);
-                        fullData.push(lastVal);
-                    }
-                }
-
-                return {
-                    label: team.name,
-                    teamId: team.id,
-                    data: fullData,
-                    borderColor: team.color,
-                    backgroundColor: team.color + '20',
-                    borderWidth: 2.5,
-                    pointRadius: 3,
-                    pointHoverRadius: 6,
-                    tension: 0.25,
-                    hidden: hiddenTeamIds.has(team.id)
-                };
-            });
-
-            chartInstance = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: labels,
-                    datasets: datasets
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    interaction: {
-                        mode: 'index',
-                        intersect: false,
-                    },
-                    plugins: {
-                        legend: {
-                            display: false // We use our own interactive legend
-                        },
-                        tooltip: {
-                            backgroundColor: '#0f172a',
-                            titleColor: '#f8fafc',
-                            bodyColor: '#cbd5e1',
-                            borderColor: '#334155',
-                            borderWidth: 1,
-                            padding: 12,
-                            boxPadding: 6,
-                            usePointStyle: true,
-                            callbacks: {
-                                label: function(context) {
-                                    const val = context.parsed.y;
-                                    return ` ${context.dataset.label}: ${val.toLocaleString()} pts`;
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        x: {
-                            grid: {
-                                color: '#1e293b'
-                            },
-                            ticks: {
-                                color: '#94a3b8',
-                                font: { size: 11 }
-                            }
-                        },
-                        y: {
-                            grid: {
-                                color: '#1e293b'
-                            },
-                            ticks: {
-                                color: '#94a3b8',
-                                font: { size: 11 }
-                            }
-                        }
-                    }
-                }
-            });
-        }
-
-        function updateChart() {
-            if (!chartInstance) return;
-            const { labels, startWeek } = getFilteredWeeks();
-            
-            chartInstance.data.labels = labels;
-
-            chartInstance.data.datasets.forEach(dataset => {
-                const team = leagueData[dataset.teamId];
-                let visibleData = team.pointsHistory.slice(startWeek - 1);
-
-                if (showProjections && selectedTimeRange === 'all') {
-                    const recentAvg = (team.weeklyScores[17] + team.weeklyScores[16] + team.weeklyScores[15]) / 3;
-                    let lastVal = visibleData[visibleData.length - 1];
-                    const projected = [...visibleData];
-                    for (let p = 0; p < FUTURE_WEEKS; p++) {
-                        lastVal += Math.round(recentAvg);
-                        projected.push(lastVal);
-                    }
-                    dataset.data = projected;
-                    dataset.borderDash = [5, 5]; // Dashed projection line
-                } else {
-                    dataset.data = visibleData;
-                    dataset.borderDash = [];
-                }
-
-                dataset.hidden = hiddenTeamIds.has(team.id);
-            });
-
-            chartInstance.update();
-        }
-
-        // Custom Legend Toggle Buttons
-        function renderLegendButtons() {
-            const container = document.getElementById('teamLegendContainer');
-            container.innerHTML = '';
-
-            Object.values(leagueData).forEach(team => {
-                const isHidden = hiddenTeamIds.has(team.id);
-                const btn = document.createElement('button');
-                btn.className = `flex items-center space-x-1.5 px-2.5 py-1 rounded-lg text-xs font-medium border transition ${
-                    isHidden 
-                        ? 'bg-slate-900 border-slate-800 text-slate-500 line-through' 
-                        : 'bg-slate-800/90 border-slate-700 text-slate-200'
-                }`;
-                btn.onclick = () => toggleTeamVisibility(team.id);
-
-                btn.innerHTML = `
-                    <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${team.color}; opacity: ${isHidden ? 0.3 : 1}"></span>
-                    <span>${team.name}</span>
-                `;
-                container.appendChild(btn);
-            });
-        }
-
-        function toggleTeamVisibility(teamId) {
-            if (hiddenTeamIds.has(teamId)) {
-                hiddenTeamIds.delete(teamId);
-            } else {
-                hiddenTeamIds.add(teamId);
-            }
-            renderLegendButtons();
-            updateChart();
-        }
-
-        function resetChartZoom() {
-            hiddenTeamIds.clear();
-            renderLegendButtons();
-            updateChart();
-        }
-
-        function setTimeRange(range) {
-            selectedTimeRange = range;
-
-            // Button active state styling
-            ['all', '4w', '7d'].forEach(r => {
-                const btn = document.getElementById(`btn-range-${r}`);
-                if (r === range) {
-                    btn.className = "px-3 py-1.5 rounded-md bg-ice-500 text-white shadow-sm transition font-semibold";
-                } else {
-                    btn.className = "px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition";
-                }
-            });
-
-            updateChart();
-        }
-
-        function updateChartProjections() {
-            showProjections = document.getElementById('toggleProjection').checked;
-            updateChart();
-        }
-
-        // =========================================================================
-        // DASHBOARD COMPUTATIONS & STANDINGS TABLE
-        // =========================================================================
-        function updateDashboardView() {
-            const teamsArray = Object.values(leagueData);
-            
-            // Sort teams by total cumulative points descending
-            teamsArray.sort((a, b) => b.totalPoints - a.totalPoints);
-
-            // Update Header Stats
-            const leader = teamsArray[0];
-            const runnerUp = teamsArray[1];
-            const leadGap = (leader.totalPoints - runnerUp.totalPoints).toFixed(1);
-            
-            document.getElementById('statLeaderName').innerText = leader.name;
-            document.getElementById('statLeaderPts').innerText = `${leader.totalPoints.toLocaleString()} pts (+${leadGap} kaula)`;
-
-            // Compute Hot Team (Most points in last 3 weeks)
-            let maxRecentGain = 0;
-            let hotTeam = teamsArray[0];
-            teamsArray.forEach(t => {
-                const recent = t.weeklyScores.slice(-3).reduce((a, b) => a + b, 0);
-                if (recent > maxRecentGain) {
-                    maxRecentGain = recent;
-                    hotTeam = t;
-                }
-            });
-            document.getElementById('statHotTeam').innerText = hotTeam.name;
-            document.getElementById('statHotTeamGain').innerText = `+${maxRecentGain} pts viim. 3 viikossa`;
-
-            // Compute Pursuit / Chaser (Who gained most on leader in last 2 weeks)
-            let maxClosingGap = -999;
-            let primeChaser = teamsArray[1];
-            teamsArray.forEach(t => {
-                if (t.id === leader.id) return;
-                const teamRecent2w = t.weeklyScores.slice(-2).reduce((a,b) => a+b, 0);
-                const leaderRecent2w = leader.weeklyScores.slice(-2).reduce((a,b) => a+b, 0);
-                const gained = teamRecent2w - leaderRecent2w;
-                if (gained > maxClosingGap) {
-                    maxClosingGap = gained;
-                    primeChaser = t;
-                }
-            });
-
-            const pacePerWeek = (maxClosingGap / 2).toFixed(1);
-            document.getElementById('statChaserName').innerText = primeChaser.name;
-            document.getElementById('statChaserPace').innerText = maxClosingGap > 0 
-                ? `Kuroo ${pacePerWeek} pt/vk kärkeä` 
-                : `Jää lisää ${Math.abs(pacePerWeek)} pt/vk`;
-
-            // Render Standings Table
-            const tbody = document.getElementById('standingsTableBody');
-            tbody.innerHTML = '';
-
-            teamsArray.forEach((team, index) => {
-                const rank = index + 1;
-                const behindLeader = (leader.totalPoints - team.totalPoints).toFixed(1);
-                const behindNext = index === 0 ? '-' : (teamsArray[index - 1].totalPoints - team.totalPoints).toFixed(1);
-
-                // Recent form indicators (last 3 weeks)
-                const last3 = team.weeklyScores.slice(-3);
-                const formAvg = (last3.reduce((a,b)=>a+b,0) / 3).toFixed(0);
-                const isHot = formAvg > 80;
-
-                const tr = document.createElement('tr');
-                tr.className = "hover:bg-slate-800/40 transition border-b border-slate-800/40";
-                tr.innerHTML = `
-                    <td class="py-3 px-2 font-extrabold text-slate-400">
-                        <span class="inline-flex items-center justify-center w-6 h-6 rounded-full ${rank === 1 ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30' : rank === 2 ? 'bg-slate-700 text-slate-200' : rank === 3 ? 'bg-amber-800/20 text-amber-600' : 'text-slate-400'}">
-                            ${rank}
-                        </span>
-                    </td>
-                    <td class="py-3 px-3">
-                        <div class="flex items-center space-x-2">
-                            <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${team.color}"></span>
-                            <div>
-                                <div class="font-bold text-white">${team.name}</div>
-                                <div class="text-[10px] text-slate-400">${team.manager}</div>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="py-3 px-2 text-right font-bold text-white">${team.totalPoints.toLocaleString()}</td>
-                    <td class="py-3 px-2 text-right font-medium ${rank === 1 ? 'text-emerald-400 font-bold' : 'text-slate-400'}">
-                        ${rank === 1 ? 'Kärjessä' : `-${behindLeader}`}
-                    </td>
-                    <td class="py-3 px-2 text-right font-medium text-slate-400">
-                        ${behindNext === '-' ? '-' : `-${behindNext}`}
-                    </td>
-                    <td class="py-3 px-2 text-center">
-                        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold ${isHot ? 'bg-rose-500/10 text-rose-400 border border-rose-500/20' : 'bg-slate-800 text-slate-400'}">
-                            ${isHot ? '🔥' : '📈'} ${formAvg} pt/vk
-                        </span>
-                    </td>
-                `;
-                tbody.appendChild(tr);
-            });
-
-            // Render Pursuit Radar Box
-            renderPursuitRadar(leader, primeChaser, maxClosingGap, teamsArray);
-        }
-
-        function renderPursuitRadar(leader, chaser, gapGained, teamsArray) {
-            const pursuitCard = document.getElementById('pursuitCardContent');
-            const totalGap = leader.totalPoints - chaser.totalPoints;
-            const pacePerWeek = gapGained / 2;
-
-            let projectionText = "";
-            if (pacePerWeek > 0) {
-                const weeksNeeded = Math.ceil(totalGap / pacePerWeek);
-                projectionText = `Nykyisellä tahdilla <b>${chaser.name}</b> saavuttaa kärjen noin <b>${weeksNeeded} viikon</b> kuluttua (Vk ${WEEKS_COUNT + weeksNeeded}).`;
-            } else {
-                projectionText = `<b>${leader.name}</b> kasvattaa eroa tällä hetkellä +${Math.abs(pacePerWeek).toFixed(1)} pt/viikko tahtia.`;
-            }
-
-            pursuitCard.innerHTML = `
-                <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 space-y-2">
-                    <div class="flex items-center justify-between text-xs">
-                        <span class="text-slate-400">Kärjen takaa-ajaja:</span>
-                        <span class="font-bold text-ice-400">${chaser.name}</span>
-                    </div>
-                    <div class="flex items-center justify-between text-xs">
-                        <span class="text-slate-400">Piste-ero nyt:</span>
-                        <span class="font-bold text-white">${totalGap.toFixed(1)} pts</span>
-                    </div>
-                    <div class="flex items-center justify-between text-xs">
-                        <span class="text-slate-400">Kiri (Viim. 2 vk):</span>
-                        <span class="font-bold text-emerald-400">+${gapGained.toFixed(1)} pts saavutettu</span>
-                    </div>
-                </div>
-
-                <p class="text-xs text-slate-300 leading-relaxed bg-indigo-950/30 p-2.5 rounded-lg border border-indigo-900/40">
-                    💡 ${projectionText}
-                </p>
-            `;
-        }
-
-        function renderFreeAgents() {
-            const listContainer = document.getElementById('freeAgentsList');
-            listContainer.innerHTML = '';
-
-            freeAgentsData.forEach(player => {
-                const item = document.createElement('div');
-                item.className = "flex items-center justify-between p-2.5 bg-slate-900/60 hover:bg-slate-900 rounded-xl border border-slate-800/80 transition";
-                item.innerHTML = `
-                    <div class="flex items-center space-x-2.5">
-                        <div class="w-7 h-7 rounded-lg bg-slate-800 flex items-center justify-center font-extrabold text-[11px] text-ice-400">
-                            ${player.team}
-                        </div>
-                        <div>
-                            <div class="text-xs font-bold text-white flex items-center space-x-1">
-                                <span>${player.name}</span>
-                                ${player.hot ? '<span class="text-[10px]" title="Kuuma sarja">🔥</span>' : ''}
-                            </div>
-                            <div class="text-[10px] text-slate-400">${player.pos} • Keskiarvo ${player.avgPts} pt</div>
-                        </div>
-                    </div>
-                    <div class="text-right">
-                        <span class="inline-block bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-bold px-2 py-0.5 rounded">
-                            ${player.gamesNextWeek} peliä/vk
-                        </span>
-                    </div>
-                `;
-                listContainer.appendChild(item);
-            });
-        }
-
-        // =========================================================================
-        // SEARCH & MODAL CONTROLS
-        // =========================================================================
-        function handleSearch() {
-            const query = document.getElementById('searchInput').value.toLowerCase().trim();
-            const rows = document.querySelectorAll('#standingsTableBody tr');
-
-            rows.forEach(row => {
-                const text = row.innerText.toLowerCase();
-                if (!query || text.includes(query)) {
-                    row.style.display = '';
-                } else {
-                    row.style.display = 'none';
-                }
-            });
-        }
-
-        function toggleModal(show) {
-            const modal = document.getElementById('configModal');
-            if (show) {
-                modal.classList.remove('hidden');
-            } else {
-                modal.classList.add('hidden');
-            }
-        }
-
-        function saveModalConfig() {
-            const newName = document.getElementById('inputLeagueName').value.trim();
-            if (newName) {
-                document.getElementById('leagueNameSubtitle').innerText = newName;
-            }
-
-            try {
-                const customJson = document.getElementById('inputJsonData').value;
-                const parsed = JSON.parse(customJson);
-                leagueData = parsed;
-                updateDashboardView();
-                renderLegendButtons();
-                updateChart();
-                toggleModal(false);
-            } catch (e) {
-                alert("Virheellinen JSON-muoto. Varmista että syntaksi on oikein.");
-            }
-        }
-
-        function resetToDefaults() {
-            leagueData = generateWeeklyData();
-            document.getElementById('inputLeagueName').value = "Pohjoisen Liiga 2025–2026";
-            document.getElementById('leagueNameSubtitle').innerText = "Pohjoisen Liiga 2025–2026";
-            document.getElementById('inputJsonData').value = JSON.stringify(leagueData, null, 2);
-            updateDashboardView();
-            renderLegendButtons();
-            updateChart();
-            toggleModal(false);
-        }
-    </script>
+    // Käynnistetään lataus
+    loadDashboardData();
+  </script>
 </body>
 </html>
