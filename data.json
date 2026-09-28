@@ -10,7 +10,41 @@
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 1
+      "standing": 1,
+      "positions": {
+        "C": 6,
+        "LW": 5,
+        "RW": 4,
+        "D": 6,
+        "G": 2
+      },
+      "top_players": [
+        {
+          "name": "Jason Robertson",
+          "position": "Left Wing",
+          "points": 0
+        },
+        {
+          "name": "Cale Makar",
+          "position": "Defense",
+          "points": 0
+        },
+        {
+          "name": "Jack Eichel",
+          "position": "Center",
+          "points": 0
+        },
+        {
+          "name": "Cole Caufield",
+          "position": "Left Wing",
+          "points": 0
+        },
+        {
+          "name": "Mitch Marner",
+          "position": "Right Wing",
+          "points": 0
+        }
+      ]
     },
     {
       "id": 2,
@@ -20,7 +54,41 @@
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 1
+      "standing": 1,
+      "positions": {
+        "C": 6,
+        "LW": 4,
+        "RW": 5,
+        "D": 6,
+        "G": 2
+      },
+      "top_players": [
+        {
+          "name": "Connor McDavid",
+          "position": "Center",
+          "points": 0
+        },
+        {
+          "name": "Macklin Celebrini",
+          "position": "Center",
+          "points": 0
+        },
+        {
+          "name": "Wyatt Johnston",
+          "position": "Center",
+          "points": 0
+        },
+        {
+          "name": "Roman Josi",
+          "position": "Defense",
+          "points": 0
+        },
+        {
+          "name": "Alex DeBrincat",
+          "position": "Left Wing",
+          "points": 0
+        }
+      ]
     },
     {
       "id": 3,
@@ -30,7 +98,41 @@
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 1
+      "standing": 1,
+      "positions": {
+        "C": 7,
+        "LW": 4,
+        "RW": 4,
+        "D": 5,
+        "G": 2
+      },
+      "top_players": [
+        {
+          "name": "Nathan MacKinnon",
+          "position": "Center",
+          "points": 0
+        },
+        {
+          "name": "Zach Werenski",
+          "position": "Defense",
+          "points": 0
+        },
+        {
+          "name": "Filip Forsberg",
+          "position": "Left Wing",
+          "points": 0
+        },
+        {
+          "name": "David Pastrnak",
+          "position": "Right Wing",
+          "points": 0
+        },
+        {
+          "name": "Clayton Keller",
+          "position": "Left Wing",
+          "points": 0
+        }
+      ]
     },
     {
       "id": 4,
@@ -40,7 +142,41 @@
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 1
+      "standing": 1,
+      "positions": {
+        "C": 4,
+        "LW": 5,
+        "RW": 5,
+        "D": 6,
+        "G": 2
+      },
+      "top_players": [
+        {
+          "name": "Matthew Tkachuk",
+          "position": "Right Wing",
+          "points": 0
+        },
+        {
+          "name": "Leon Draisaitl",
+          "position": "Center",
+          "points": 0
+        },
+        {
+          "name": "Nikita Kucherov",
+          "position": "Right Wing",
+          "points": 0
+        },
+        {
+          "name": "Matt Boldy",
+          "position": "Left Wing",
+          "points": 0
+        },
+        {
+          "name": "Auston Matthews",
+          "position": "Center",
+          "points": 0
+        }
+      ]
     }
   ],
   "free_agents": [

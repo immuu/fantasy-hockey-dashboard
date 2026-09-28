@@ -35,12 +35,38 @@ if not league:
     print("VIRHE: Liigaan yhdistäminen epäonnistui kaikilla kausivuosilla.")
     sys.exit(1)
 
-# Kerätään joukkueiden tiedot turvallisesti
+# Kerätään joukkueiden tiedot ja rosterit
 teams_data = []
 for index, team in enumerate(league.teams, start=1):
     default_abbrev = team.team_name[:3].upper() if hasattr(team, 'team_name') and team.team_name else f"T{index}"
     abbrev = getattr(team, 'abbrev', default_abbrev)
     standing = getattr(team, 'standing', index)
+
+    # Lasketan pelipaikkajakauma rosterista kauppa-analyysiä varten
+    pos_counts = {"C": 0, "LW": 0, "RW": 0, "D": 0, "G": 0}
+    roster_summary = []
+
+    for player in getattr(team, 'roster', []):
+        pos = getattr(player, 'position', 'N/A')
+        p_name = getattr(player, 'name', 'Unknown')
+        p_pts = round(getattr(player, 'total_points', 0), 1)
+        
+        # Määritetään pääpelipaikka
+        if 'Center' in pos or pos == 'C': pos_key = 'C'
+        elif 'Left' in pos or pos == 'LW': pos_key = 'LW'
+        elif 'Right' in pos or pos == 'RW': pos_key = 'RW'
+        elif 'Defense' in pos or pos == 'D': pos_key = 'D'
+        elif 'Goalie' in pos or pos == 'G': pos_key = 'G'
+        else: pos_key = None
+
+        if pos_key:
+            pos_counts[pos_key] += 1
+
+        roster_summary.append({
+            "name": p_name,
+            "position": pos,
+            "points": p_pts
+        })
 
     teams_data.append({
         "id": team.team_id,
@@ -50,7 +76,9 @@ for index, team in enumerate(league.teams, start=1):
         "wins": getattr(team, 'wins', 0),
         "losses": getattr(team, 'losses', 0),
         "ties": getattr(team, 'ties', 0),
-        "standing": standing
+        "standing": standing,
+        "positions": pos_counts,
+        "top_players": sorted(roster_summary, key=lambda x: x['points'], reverse=True)[:5]
     })
 
 # Kerätään vapaat agentit (TOP 30)
@@ -68,7 +96,7 @@ for player in free_agents:
         "injuryStatus": getattr(player, 'injuryStatus', 'NORMAL')
     })
 
-# Kerätään viimeisimmät aktiviteetit ja kaupat (Recent Activity / Trades)
+# Kerätään viimeisimmät aktiviteetit
 recent_activities = []
 try:
     activities = league.recent_activity(size=25)
