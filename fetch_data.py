@@ -3,7 +3,7 @@ import os
 import sys
 from espn_api.nhl import League
 
-# 1. Lue ympäristömuuttujat
+# 1. Lue ja siivoa ympäristömuuttujat
 league_id_env = os.environ.get("ESPN_LEAGUE_ID", "").strip()
 espn_s2 = os.environ.get("ESPN_S2", "").strip()
 swid = os.environ.get("SWID", "").strip()
@@ -13,43 +13,49 @@ if not league_id_env:
     sys.exit(1)
 
 LEAGUE_ID = int(league_id_env)
-# Syyskuussa 2026 alkavalle kaudelle 2026-2027 ESPN käyttää vuotta 2027
+
+# NHL-kaudelle 2026-2027 ESPN käyttää kausivuotta 2027 (tai 2026)
 YEAR = int(os.environ.get("ESPN_YEAR", 2027))
 
-print(f"Yhdistetään liigaan ID: {LEAGUE_ID}, Kausi: {YEAR}...")
-print(f"Autentikointi: espn_s2={'Kyllä' if espn_s2 else 'Ei'}, swid={'Kyllä' if swid else 'Ei'}")
+print(f"Yhdistetään liigaan ID: {LEAGUE_ID}...")
 
-try:
-    # Syötetään espn_s2 ja swid VAIN jos ne oikeasti sisältävät arvon
-    if espn_s2 and swid:
-        league = League(league_id=LEAGUE_ID, year=YEAR, espn_s2=espn_s2, swid=swid)
-    else:
-        league = League(league_id=LEAGUE_ID, year=YEAR)
-except Exception as e:
-    print(f"\n[Etsintäapu] Yhdistäminen epäonnistui vuodella {YEAR}. Kokeillaan vuotta {YEAR-1}...")
+league = None
+
+for current_year in [YEAR, YEAR - 1]:
     try:
-        YEAR = YEAR - 1
+        print(f"Yritetään yhdistää kaudelle {current_year}...")
         if espn_s2 and swid:
-            league = League(league_id=LEAGUE_ID, year=YEAR, espn_s2=espn_s2, swid=swid)
+            league = League(league_id=LEAGUE_ID, year=current_year, espn_s2=espn_s2, swid=swid)
         else:
-            league = League(league_id=LEAGUE_ID, year=YEAR)
-        print(f"Yhdistäminen onnistui vuodella {YEAR}!")
-    except Exception as e2:
-        print(f"Virhe epäonnistui myös vuodella {YEAR}: {e2}")
-        raise e
+            league = League(league_id=LEAGUE_ID, year=current_year)
+        
+        print(f"Yhdistäminen onnistui kaudelle {current_year}!")
+        break
+    except Exception as e:
+        print(f"Kausi {current_year} epäonnistui: {e}")
 
-# Kerätään joukkueiden tiedot
+if not league:
+    print("VIRHE: Liigaan yhdistäminen epäonnistui kaikilla kausivuosilla.")
+    sys.exit(1)
+
+# Kerätään joukkueiden tiedot turvallisesti
 teams_data = []
-for team in league.teams:
+for index, team in enumerate(league.teams, start=1):
+    # Luodaan lyhenne joukkueen nimestä jos abbrev-kenttää ei ole (esim. "My Team" -> "MYT")
+    default_abbrev = team.team_name[:3].upper() if hasattr(team, 'team_name') and team.team_name else f"T{index}"
+    abbrev = getattr(team, 'abbrev', default_abbrev)
+    
+    standing = getattr(team, 'standing', index)
+
     teams_data.append({
         "id": team.team_id,
-        "name": team.team_name,
-        "abbrev": team.abbrev,
+        "name": getattr(team, 'team_name', f"Team {team.team_id}"),
+        "abbrev": abbrev,
         "points_for": round(getattr(team, 'points_for', 0), 1),
-        "wins": team.wins,
-        "losses": team.losses,
-        "ties": team.ties,
-        "standing": team.standing
+        "wins": getattr(team, 'wins', 0),
+        "losses": getattr(team, 'losses', 0),
+        "ties": getattr(team, 'ties', 0),
+        "standing": standing
     })
 
 # Kerätään vapaat agentit (TOP 30)
@@ -59,17 +65,17 @@ for player in free_agents:
     total_pts = getattr(player, 'total_points', 0)
     avg_pts = getattr(player, 'avg_points', 0)
     fa_data.append({
-        "name": player.name,
-        "position": player.position,
-        "proTeam": player.proTeam,
+        "name": getattr(player, 'name', 'Tuntematon'),
+        "position": getattr(player, 'position', 'N/A'),
+        "proTeam": getattr(player, 'proTeam', 'N/A'),
         "total_points": round(total_pts, 1),
         "avg_points": round(avg_pts, 2),
-        "injuryStatus": player.injuryStatus
+        "injuryStatus": getattr(player, 'injuryStatus', 'NORMAL')
     })
 
 output = {
-    "league_name": league.settings.name,
-    "current_week": league.current_week,
+    "league_name": getattr(league.settings, 'name', 'ESPN Fantasy League'),
+    "current_week": getattr(league, 'current_week', 1),
     "teams": teams_data,
     "free_agents": fa_data
 }
@@ -77,4 +83,4 @@ output = {
 with open("data.json", "w", encoding="utf-8") as f:
     json.dump(output, f, ensure_ascii=False, indent=2)
 
-print("data.json luotu onnistuneesti!")
+print("data.json luotu ja tallennettu onnistuneesti!")
