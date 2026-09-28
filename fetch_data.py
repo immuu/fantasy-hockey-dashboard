@@ -1,7 +1,7 @@
 import json
 import os
 import sys
-from espn_api.nhl import League
+from espn_api.hockey import League
 
 # 1. Lue ja siivoa ympäristömuuttujat
 league_id_env = os.environ.get("ESPN_LEAGUE_ID", "").strip()
