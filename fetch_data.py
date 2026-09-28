@@ -13,14 +13,11 @@ if not league_id_env:
     sys.exit(1)
 
 LEAGUE_ID = int(league_id_env)
-
-# NHL-kaudelle 2026-2027 ESPN käyttää kausivuotta 2027 (tai 2026)
 YEAR = int(os.environ.get("ESPN_YEAR", 2027))
 
 print(f"Yhdistetään liigaan ID: {LEAGUE_ID}...")
 
 league = None
-
 for current_year in [YEAR, YEAR - 1]:
     try:
         print(f"Yritetään yhdistää kaudelle {current_year}...")
@@ -41,10 +38,8 @@ if not league:
 # Kerätään joukkueiden tiedot turvallisesti
 teams_data = []
 for index, team in enumerate(league.teams, start=1):
-    # Luodaan lyhenne joukkueen nimestä jos abbrev-kenttää ei ole (esim. "My Team" -> "MYT")
     default_abbrev = team.team_name[:3].upper() if hasattr(team, 'team_name') and team.team_name else f"T{index}"
     abbrev = getattr(team, 'abbrev', default_abbrev)
-    
     standing = getattr(team, 'standing', index)
 
     teams_data.append({
@@ -73,11 +68,36 @@ for player in free_agents:
         "injuryStatus": getattr(player, 'injuryStatus', 'NORMAL')
     })
 
+# Kerätään viimeisimmät aktiviteetit ja kaupat (Recent Activity / Trades)
+recent_activities = []
+try:
+    activities = league.recent_activity(size=25)
+    for act in activities:
+        act_date = getattr(act, 'date', None)
+        actions_list = []
+        for action in getattr(act, 'actions', []):
+            team_obj, action_type, player_obj = action[0], action[1], action[2]
+            team_name = getattr(team_obj, 'team_name', str(team_obj))
+            player_name = getattr(player_obj, 'name', str(player_obj))
+            actions_list.append({
+                "team": team_name,
+                "action": action_type,
+                "player": player_name
+            })
+        if actions_list:
+            recent_activities.append({
+                "date": act_date,
+                "actions": actions_list
+            })
+except Exception as e:
+    print(f"Aktiviteettien haku epäonnistui: {e}")
+
 output = {
     "league_name": getattr(league.settings, 'name', 'ESPN Fantasy League'),
     "current_week": getattr(league, 'current_week', 1),
     "teams": teams_data,
-    "free_agents": fa_data
+    "free_agents": fa_data,
+    "recent_activity": recent_activities
 }
 
 with open("data.json", "w", encoding="utf-8") as f:

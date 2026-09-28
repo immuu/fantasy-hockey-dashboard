@@ -284,5 +284,62 @@
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
     }
+  ],
+  "recent_activity": [
+    {
+      "date": 1790580729079,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "WAIVER ADDED",
+          "player": "Jake Sanderson"
+        }
+      ]
+    },
+    {
+      "date": 1790580729079,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "WAIVER ADDED",
+          "player": "Nikolaj Ehlers"
+        }
+      ]
+    },
+    {
+      "date": 1790580729079,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "WAIVER ADDED",
+          "player": "Tom Wilson"
+        }
+      ]
+    },
+    {
+      "date": 1790580729079,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Joel Hofer"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "WAIVER ADDED",
+          "player": "Scott Wedgewood"
+        }
+      ]
+    },
+    {
+      "date": 1790452010603,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Alex Ovechkin"
+        }
+      ]
+    }
   ]
 }

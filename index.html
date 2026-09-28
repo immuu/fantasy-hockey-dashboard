@@ -59,12 +59,6 @@
             background: #334155;
         }
 
-        .gradient-text {
-            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
         .glass-card {
             background: rgba(19, 27, 46, 0.75);
             backdrop-filter: blur(12px);
@@ -135,12 +129,12 @@
                 </div>
             </div>
 
-            <!-- Card 2: Hot Team -->
+            <!-- Card 2: Power Rankings #1 -->
             <div class="glass-card rounded-2xl p-4 border border-slate-800 flex items-center justify-between">
                 <div>
-                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Kuumin Joukkue (Viim. 3 vk)</p>
-                    <h3 class="text-lg font-bold text-white mt-1" id="statHotTeam">-</h3>
-                    <p class="text-xs text-emerald-400 font-semibold mt-0.5" id="statHotTeamGain">0 pts</p>
+                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Power Rank #1 (Kuntopuntari)</p>
+                    <h3 class="text-lg font-bold text-white mt-1" id="statPowerRankLeader">-</h3>
+                    <p class="text-xs text-emerald-400 font-semibold mt-0.5" id="statPowerRankScore">0 pt/vk keskiarvo</p>
                 </div>
                 <div class="p-3 bg-rose-500/10 text-rose-400 border border-rose-500/20 rounded-xl">
                     <i data-lucide="flame" class="w-6 h-6"></i>
@@ -180,7 +174,7 @@
                         <h2 class="text-lg font-bold text-white">Pistemäärien Kehitys & Takaa-ajo</h2>
                         <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-medium border border-slate-700">Kertymägraafi</span>
                     </div>
-                    <p class="text-xs text-slate-400 mt-0.5">Klikkaa joukkueen nimeä alta kytkeäksesi viivan näkyviin tai pois. Vie hiiri pisteen päälle nähdäksesi eron.</p>
+                    <p class="text-xs text-slate-400 mt-0.5">Klikkaa joukkueen nimeä alta kytkeäksesi viivan näkyviin tai pois.</p>
                 </div>
 
                 <!-- Controls for Chart -->
@@ -198,9 +192,7 @@
             </div>
 
             <!-- Custom Interactive Team Toggles / Legend -->
-            <div id="teamLegendContainer" class="flex flex-wrap gap-2 mb-4 p-3 bg-slate-900/60 rounded-xl border border-slate-800/80">
-                <!-- Dynamically generated clickable legend buttons -->
-            </div>
+            <div id="teamLegendContainer" class="flex flex-wrap gap-2 mb-4 p-3 bg-slate-900/60 rounded-xl border border-slate-800/80"></div>
 
             <!-- Chart Canvas Container -->
             <div class="relative w-full h-[380px] sm:h-[420px]">
@@ -208,81 +200,100 @@
             </div>
         </div>
 
-        <!-- TWO COLUMN LAYOUT: Standings & Pursuit Radar -->
+        <!-- THREE COLUMN GRID: Power Rankings, Activity/Trades & Free Agents -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             
-            <!-- STANDINGS TABLE (2 Cols) -->
-            <div class="lg:col-span-2 glass-card rounded-2xl p-5 border border-slate-800 flex flex-col justify-between">
+            <!-- SECTION 4: POWER RANKINGS (KUNTOPUNTARI) -->
+            <div class="glass-card rounded-2xl p-5 border border-slate-800 flex flex-col justify-between">
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <div>
-                            <h2 class="text-lg font-bold text-white">Liigan Sarjataulukko & Ero Seuraavaan</h2>
-                            <p class="text-xs text-slate-400">Reaaliaikainen tilanne ja viikoittainen kuntopuntari</p>
+                        <div class="flex items-center space-x-2">
+                            <div class="p-2 bg-rose-500/10 text-rose-400 rounded-lg">
+                                <i data-lucide="zap" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-base font-bold text-white">Power Rankings</h2>
+                                <p class="text-xs text-slate-400">Kuntopuntari (3 viikon keskiarvo)</p>
+                            </div>
                         </div>
-                        <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2.5 py-1 rounded-lg font-semibold">Päivitetty tänään</span>
+                        <span class="text-[10px] bg-rose-500/10 text-rose-400 border border-rose-500/20 px-2 py-0.5 rounded font-semibold">Formi</span>
                     </div>
 
-                    <!-- Table -->
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-left text-xs text-slate-300">
-                            <thead class="bg-slate-900/80 text-slate-400 uppercase tracking-wider text-[10px] border-b border-slate-800">
-                                <tr>
-                                    <th class="py-3 px-2">Sija</th>
-                                    <th class="py-3 px-3">Joukkue</th>
-                                    <th class="py-3 px-2 text-right">Pisteet (PF)</th>
-                                    <th class="py-3 px-2 text-right">Ero Kärkeen</th>
-                                    <th class="py-3 px-2 text-right">Ero Seuraavaan</th>
-                                    <th class="py-3 px-2 text-center">Formi (3vk)</th>
-                                </tr>
-                            </thead>
-                            <tbody id="standingsTableBody" class="divide-y divide-slate-800/60">
-                                <tr><td colspan="6" class="text-center py-6 text-slate-500">Ladataan tietoja...</td></tr>
-                            </tbody>
-                        </table>
+                    <div class="space-y-3" id="powerRankingsList">
+                        <!-- Power rankings dynamic -->
                     </div>
                 </div>
             </div>
 
-            <!-- PURSUIT RADAR & FREE AGENTS (1 Col) -->
-            <div class="space-y-6">
-                
-                <!-- Pursuit / "Kuka ottaa kiinni?" Box -->
-                <div class="glass-card rounded-2xl p-5 border border-slate-800">
-                    <div class="flex items-center space-x-2 mb-3">
-                        <div class="p-2 bg-amber-500/10 text-amber-400 rounded-lg">
-                            <i data-lucide="crosshair" class="w-5 h-5"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-sm font-bold text-white">Takaa-ajo Analyysi</h3>
-                            <p class="text-[11px] text-slate-400">Kuka uhkaa kärkeä eniten?</p>
-                        </div>
-                    </div>
-
-                    <div id="pursuitCardContent" class="space-y-3">
-                        <!-- Dynamic Pursuit content -->
-                    </div>
-                </div>
-
-                <!-- Free Agent Hot List -->
-                <div class="glass-card rounded-2xl p-5 border border-slate-800">
-                    <div class="flex items-center justify-between mb-3">
+            <!-- RECENT TRADES & TRANSACTIONS SECTION -->
+            <div class="glass-card rounded-2xl p-5 border border-slate-800 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center space-x-2">
-                            <div class="p-2 bg-ice-500/10 text-ice-400 rounded-lg">
-                                <i data-lucide="user-plus" class="w-5 h-5"></i>
+                            <div class="p-2 bg-indigo-500/10 text-indigo-400 rounded-lg">
+                                <i data-lucide="repeat" class="w-5 h-5"></i>
                             </div>
                             <div>
-                                <h3 class="text-sm font-bold text-white">Vapaat Agentit (Free Agents)</h3>
-                                <p class="text-[11px] text-slate-400">Kuumimmat saatavilla olevat pelaajat</p>
+                                <h2 class="text-base font-bold text-white">Viimeisimmät Kaupat & Siirrot</h2>
+                                <p class="text-xs text-slate-400">Joukkueiden tekemät kaupat ja waivertilanteet</p>
                             </div>
                         </div>
-                        <span class="text-[10px] text-ice-400 bg-ice-500/10 px-2 py-0.5 rounded border border-ice-500/20 font-semibold">Top Pickit</span>
+                        <span class="text-[10px] bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 px-2 py-0.5 rounded font-semibold">Live Log</span>
                     </div>
 
-                    <div class="space-y-2.5 max-h-[350px] overflow-y-auto pr-1" id="freeAgentsList">
-                        <!-- Dynamic Free Agents List -->
+                    <div class="space-y-3 max-h-[380px] overflow-y-auto pr-1" id="tradesList">
+                        <!-- Trades & activity dynamic -->
                     </div>
                 </div>
+            </div>
 
+            <!-- FREE AGENTS LIST -->
+            <div class="glass-card rounded-2xl p-5 border border-slate-800">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center space-x-2">
+                        <div class="p-2 bg-ice-500/10 text-ice-400 rounded-lg">
+                            <i data-lucide="user-plus" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-base font-bold text-white">Vapaat Agentit</h3>
+                            <p class="text-xs text-slate-400">Kuumimmat saatavilla olevat pelaajat</p>
+                        </div>
+                    </div>
+                    <span class="text-[10px] text-ice-400 bg-ice-500/10 px-2 py-0.5 rounded border border-ice-500/20 font-semibold">Top Pickit</span>
+                </div>
+
+                <div class="space-y-2.5 max-h-[380px] overflow-y-auto pr-1" id="freeAgentsList">
+                    <!-- Dynamic Free Agents List -->
+                </div>
+            </div>
+        </div>
+
+        <!-- STANDINGS TABLE -->
+        <div class="glass-card rounded-2xl p-5 border border-slate-800">
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <h2 class="text-lg font-bold text-white">Liigan Sarjataulukko & Ero Seuraavaan</h2>
+                    <p class="text-xs text-slate-400">Reaaliaikainen pistetilanne ja ottelusaldot</p>
+                </div>
+                <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2.5 py-1 rounded-lg font-semibold">Päivitetty</span>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs text-slate-300">
+                    <thead class="bg-slate-900/80 text-slate-400 uppercase tracking-wider text-[10px] border-b border-slate-800">
+                        <tr>
+                            <th class="py-3 px-2">Sija</th>
+                            <th class="py-3 px-3">Joukkue</th>
+                            <th class="py-3 px-2 text-right">Pisteet (PF)</th>
+                            <th class="py-3 px-2 text-right">Ero Kärkeen</th>
+                            <th class="py-3 px-2 text-right">Ero Seuraavaan</th>
+                            <th class="py-3 px-2 text-center">V - H - T</th>
+                        </tr>
+                    </thead>
+                    <tbody id="standingsTableBody" class="divide-y divide-slate-800/60">
+                        <tr><td colspan="6" class="text-center py-6 text-slate-500">Ladataan tietoja...</td></tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
@@ -328,14 +339,14 @@
                 league_name: data.league_name,
                 current_week: data.current_week || 1,
                 teams: {},
-                free_agents: data.free_agents || []
+                free_agents: data.free_agents || [],
+                recent_activity: data.recent_activity || []
             };
 
             teams.forEach((t, i) => {
                 const teamId = t.id || i + 1;
                 const totalPts = t.points_for || 0;
 
-                // Check if history is provided, else generate smooth cumulative trend up to totalPts
                 let history = t.pointsHistory;
                 let weeklyScores = t.weeklyScores;
 
@@ -355,7 +366,6 @@
                             history.push(cumulative);
                         }
                     }
-                    // Adjust last point to match total_points exactly
                     if (history.length > 0) {
                         const diff = totalPts - history[history.length - 1];
                         history[history.length - 1] = totalPts;
@@ -382,6 +392,8 @@
             renderLegendButtons();
             initChart();
             updateDashboardView();
+            renderPowerRankings();
+            renderTradesAndActivity();
             renderFreeAgents();
         }
 
@@ -574,6 +586,104 @@
             updateChart();
         }
 
+        // =========================================================================
+        // POWER RANKINGS COMPUTATION & RENDER
+        // =========================================================================
+        function renderPowerRankings() {
+            const container = document.getElementById('powerRankingsList');
+            container.innerHTML = '';
+
+            const teamsArray = Object.values(leagueData.teams);
+            
+            // Calculate 3-week rolling average for Power Score
+            const powerList = teamsArray.map(t => {
+                const last3 = t.weeklyScores.slice(-3);
+                const avg = last3.length ? (last3.reduce((a,b) => a+b, 0) / last3.length) : 0;
+                return { ...t, powerScore: avg };
+            });
+
+            powerList.sort((a, b) => b.powerScore - a.powerScore);
+
+            if (powerList.length > 0) {
+                document.getElementById('statPowerRankLeader').innerText = powerList[0].name;
+                document.getElementById('statPowerRankScore').innerText = `${powerList[0].powerScore.toFixed(1)} pt/vk keskiarvo`;
+            }
+
+            powerList.forEach((team, index) => {
+                const rank = index + 1;
+                const item = document.createElement('div');
+                item.className = "flex items-center justify-between p-2.5 bg-slate-900/60 hover:bg-slate-900 rounded-xl border border-slate-800/80 transition";
+                item.innerHTML = `
+                    <div class="flex items-center space-x-2.5">
+                        <span class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${rank === 1 ? 'bg-rose-500/20 text-rose-400 border border-rose-500/30' : 'bg-slate-800 text-slate-400'}">
+                            ${rank}
+                        </span>
+                        <div>
+                            <div class="text-xs font-bold text-white flex items-center space-x-1.5">
+                                <span class="w-2 h-2 rounded-full" style="background-color: ${team.color}"></span>
+                                <span>${team.name}</span>
+                            </div>
+                            <div class="text-[10px] text-slate-400">Koko sarjan sija: #${teamsArray.findIndex(t => t.id === team.id) + 1}</div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-xs font-bold text-rose-400 font-mono">${team.powerScore.toFixed(1)} pt/vk</div>
+                        <span class="text-[10px] text-slate-400">3vk kuntopuntari</span>
+                    </div>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        // =========================================================================
+        // TRADES & RECENT ACTIVITY RENDER
+        // =========================================================================
+        function renderTradesAndActivity() {
+            const container = document.getElementById('tradesList');
+            container.innerHTML = '';
+
+            const activities = leagueData.recent_activity || [];
+
+            if (activities.length === 0) {
+                container.innerHTML = `<div class="text-center py-6 text-slate-500 text-xs">Ei viimeaikaisia kauppoja tai siirtoja.</div>`;
+                return;
+            }
+
+            activities.forEach(item => {
+                const formattedDate = item.date ? new Date(item.date).toLocaleDateString('fi-FI', { month: 'numeric', day: 'numeric' }) : '';
+                
+                item.actions.forEach(action => {
+                    const isTrade = action.action.includes('TRADED') || action.action.includes('TRADE');
+                    const isAdd = action.action.includes('ADDED') || action.action.includes('CLAIMED');
+                    const isDrop = action.action.includes('DROPPED');
+
+                    const actionColor = isTrade ? 'text-indigo-400 bg-indigo-500/10 border-indigo-500/20' 
+                                      : isAdd ? 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20' 
+                                      : 'text-rose-400 bg-rose-500/10 border-rose-500/20';
+
+                    const actionLabel = isTrade ? 'KAUPPA' : isAdd ? 'LISÄTTY' : 'PUDOTETTU';
+
+                    const div = document.createElement('div');
+                    div.className = "p-2.5 bg-slate-900/60 hover:bg-slate-900 rounded-xl border border-slate-800/80 transition flex items-center justify-between";
+                    div.innerHTML = `
+                        <div class="flex items-center space-x-2.5">
+                            <span class="px-2 py-0.5 rounded text-[9px] font-bold border ${actionColor}">
+                                ${actionLabel}
+                            </span>
+                            <div>
+                                <div class="text-xs font-bold text-white">${action.player}</div>
+                                <div class="text-[10px] text-slate-400">${action.team}</div>
+                            </div>
+                        </div>
+                        <div class="text-[10px] text-slate-500 font-mono">
+                            ${formattedDate}
+                        </div>
+                    `;
+                    container.appendChild(div);
+                });
+            });
+        }
+
         function updateDashboardView() {
             const teamsArray = Object.values(leagueData.teams);
             teamsArray.sort((a, b) => b.totalPoints - a.totalPoints);
@@ -588,19 +698,6 @@
 
             document.getElementById('statLeaderName').innerText = leader.name;
             document.getElementById('statLeaderPts').innerText = `${leader.totalPoints.toLocaleString()} pts (+${leadGap} kaula)`;
-
-            // Hot team (Most points in recent weekly scores)
-            let maxRecentGain = 0;
-            let hotTeam = leader;
-            teamsArray.forEach(t => {
-                const recent = t.weeklyScores.slice(-3).reduce((a, b) => a + b, 0);
-                if (recent > maxRecentGain) {
-                    maxRecentGain = recent;
-                    hotTeam = t;
-                }
-            });
-            document.getElementById('statHotTeam').innerText = hotTeam.name;
-            document.getElementById('statHotTeamGain').innerText = `+${maxRecentGain} pts viim. 3 viikossa`;
 
             // Pursuit Chaser
             let maxClosingGap = -999;
@@ -631,10 +728,6 @@
                 const behindLeader = (leader.totalPoints - team.totalPoints).toFixed(1);
                 const behindNext = index === 0 ? '-' : (teamsArray[index - 1].totalPoints - team.totalPoints).toFixed(1);
 
-                const last3 = team.weeklyScores.slice(-3);
-                const formAvg = last3.length ? (last3.reduce((a,b)=>a+b,0) / last3.length).toFixed(0) : 0;
-                const isHot = formAvg > 70;
-
                 const tr = document.createElement('tr');
                 tr.className = "hover:bg-slate-800/40 transition border-b border-slate-800/40";
                 tr.innerHTML = `
@@ -659,54 +752,12 @@
                     <td class="py-3 px-2 text-right font-medium font-mono text-slate-400">
                         ${behindNext === '-' ? '-' : `-${behindNext}`}
                     </td>
-                    <td class="py-3 px-2 text-center">
-                        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold ${isHot ? 'bg-rose-500/10 text-rose-400 border border-rose-500/20' : 'bg-slate-800 text-slate-400'}">
-                            ${isHot ? '🔥' : '📈'} ${formAvg} pt/vk
-                        </span>
+                    <td class="py-3 px-2 text-center font-medium text-slate-300">
+                        ${team.wins} - ${team.losses} - ${team.ties}
                     </td>
                 `;
                 tbody.appendChild(tr);
             });
-
-            renderPursuitRadar(leader, primeChaser, maxClosingGap);
-        }
-
-        function renderPursuitRadar(leader, chaser, gapGained) {
-            const pursuitCard = document.getElementById('pursuitCardContent');
-            if (!leader || !chaser) return;
-
-            const totalGap = leader.totalPoints - chaser.totalPoints;
-            const pacePerWeek = gapGained / 2;
-
-            let projectionText = "";
-            if (pacePerWeek > 0) {
-                const currentWk = leagueData.current_week || 1;
-                const weeksNeeded = Math.ceil(totalGap / pacePerWeek);
-                projectionText = `Nykyisellä tahdilla <b>${chaser.name}</b> saavuttaa kärjen noin <b>${weeksNeeded} viikon</b> kuluttua (Vk ${currentWk + weeksNeeded}).`;
-            } else {
-                projectionText = `<b>${leader.name}</b> kasvattaa eroa tällä hetkellä +${Math.abs(pacePerWeek).toFixed(1)} pt/viikko tahtia.`;
-            }
-
-            pursuitCard.innerHTML = `
-                <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800 space-y-2">
-                    <div class="flex items-center justify-between text-xs">
-                        <span class="text-slate-400">Kärjen takaa-ajaja:</span>
-                        <span class="font-bold text-ice-400">${chaser.name}</span>
-                    </div>
-                    <div class="flex items-center justify-between text-xs">
-                        <span class="text-slate-400">Piste-ero nyt:</span>
-                        <span class="font-bold text-white">${totalGap.toFixed(1)} pts</span>
-                    </div>
-                    <div class="flex items-center justify-between text-xs">
-                        <span class="text-slate-400">Kiri (Viim. 2 vk):</span>
-                        <span class="font-bold text-emerald-400">+${gapGained.toFixed(1)} pts saavutettu</span>
-                    </div>
-                </div>
-
-                <p class="text-xs text-slate-300 leading-relaxed bg-indigo-950/30 p-2.5 rounded-lg border border-indigo-900/40">
-                    💡 ${projectionText}
-                </p>
-            `;
         }
 
         function renderFreeAgents() {
