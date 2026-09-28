@@ -1,538 +1,438 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="fi" class="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ESPN Fantasy Hockey - Intelligence Hub</title>
-  
-  <!-- Google Fonts & Chart.js -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPN Fantasy Hockey Analytics Dashboard</title>
 
-  <style>
-    :root {
-      --bg-dark: #07090e;
-      --panel-bg: rgba(18, 24, 38, 0.75);
-      --panel-border: rgba(255, 255, 255, 0.08);
-      --text-main: #f1f5f9;
-      --text-muted: #64748b;
-      --accent-cyan: #38bdf8;
-      --accent-indigo: #6366f1;
-      --accent-emerald: #10b981;
-      --accent-amber: #f59e0b;
-      --accent-rose: #f43f5e;
-      --glow-cyan: rgba(56, 189, 248, 0.15);
-    }
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        ice: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        },
+                        darkBg: '#0b0f17',
+                        cardBg: '#131b2e',
+                        cardBorder: '#1e293b'
+                    }
+                }
+            }
+        }
+    </script>
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
-    }
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-    body {
-      background-color: var(--bg-dark);
-      background-image: 
-        radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, rgba(56, 189, 248, 0.1) 0px, transparent 50%);
-      background-attachment: fixed;
-      color: var(--text-main);
-      padding: 2rem 1.5rem;
-      min-height: 100vh;
-    }
+    <style>
+        body {
+            background-color: #0b0f17;
+            color: #f1f5f9;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
 
-    .container {
-      max-width: 1400px;
-      margin: 0 auto;
-    }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0f17;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
 
-    /* Header */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 2rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--panel-border);
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .brand-logo {
-      width: 44px;
-      height: 44px;
-      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-indigo));
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 1.3rem;
-      color: #fff;
-      box-shadow: 0 0 25px var(--glow-cyan);
-    }
-
-    h1 {
-      font-size: 1.6rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      background: linear-gradient(to right, #fff, #94a3b8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .status-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--panel-border);
-      padding: 6px 16px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
-
-    .dot {
-      width: 8px;
-      height: 8px;
-      background-color: var(--accent-emerald);
-      border-radius: 50%;
-      box-shadow: 0 0 10px var(--accent-emerald);
-    }
-
-    /* Top Stats Grid */
-    .top-stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.25rem;
-      margin-bottom: 2rem;
-    }
-
-    .stat-card {
-      background: var(--panel-bg);
-      backdrop-filter: blur(12px);
-      border: 1px solid var(--panel-border);
-      border-radius: 16px;
-      padding: 1.25rem;
-      position: relative;
-    }
-
-    .stat-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 4px;
-      height: 100%;
-      background: var(--accent-cyan);
-      border-radius: 4px 0 0 4px;
-    }
-
-    .stat-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-muted);
-      margin-bottom: 0.4rem;
-      font-weight: 600;
-    }
-
-    .stat-val {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--text-main);
-    }
-
-    .stat-sub {
-      font-size: 0.8rem;
-      color: var(--accent-cyan);
-      margin-top: 0.25rem;
-      font-weight: 500;
-    }
-
-    /* Nav Tabs */
-    .nav-tabs {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 1.5rem;
-      border-bottom: 1px solid var(--panel-border);
-      padding-bottom: 10px;
-    }
-
-    .tab-btn {
-      background: transparent;
-      border: none;
-      color: var(--text-muted);
-      padding: 10px 18px;
-      font-size: 0.95rem;
-      font-weight: 600;
-      cursor: pointer;
-      border-radius: 10px;
-      transition: all 0.2s ease;
-    }
-
-    .tab-btn:hover {
-      color: var(--text-main);
-      background: rgba(255, 255, 255, 0.04);
-    }
-
-    .tab-btn.active {
-      color: var(--text-main);
-      background: rgba(56, 189, 248, 0.15);
-      border: 1px solid rgba(56, 189, 248, 0.3);
-    }
-
-    .tab-content {
-      display: none;
-    }
-
-    .tab-content.active {
-      display: block;
-    }
-
-    /* Grids & Cards */
-    .main-grid {
-      display: grid;
-      grid-template-columns: 1.8fr 1.2fr;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    @media (max-width: 1024px) {
-      .main-grid { grid-template-columns: 1fr; }
-    }
-
-    .panel {
-      background: var(--panel-bg);
-      backdrop-filter: blur(12px);
-      border: 1px solid var(--panel-border);
-      border-radius: 18px;
-      padding: 1.5rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    }
-
-    .panel-header {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 1.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    /* Tables */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.9rem;
-    }
-
-    th {
-      text-align: left;
-      padding: 12px;
-      color: var(--text-muted);
-      font-weight: 600;
-      border-bottom: 1px solid var(--panel-border);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    td {
-      padding: 12px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-    }
-
-    tr:last-child td { border-bottom: none; }
-    tr:hover td { background: rgba(255, 255, 255, 0.02); }
-
-    .rank-pill {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 26px;
-      height: 26px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 0.8rem;
-      font-family: 'JetBrains Mono', monospace;
-      background: rgba(255, 255, 255, 0.05);
-    }
-
-    .rank-1 { background: rgba(245, 158, 11, 0.2); color: var(--accent-amber); border: 1px solid rgba(245, 158, 11, 0.3); }
-    .rank-2 { background: rgba(226, 232, 240, 0.15); color: #cbd5e1; }
-    .rank-3 { background: rgba(217, 119, 6, 0.2); color: #f59e0b; }
-
-    .tag-pos {
-      padding: 3px 8px;
-      border-radius: 6px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      background: rgba(56, 189, 248, 0.12);
-      color: var(--accent-cyan);
-      border: 1px solid rgba(56, 189, 248, 0.25);
-      font-family: 'JetBrains Mono', monospace;
-    }
-
-    .chart-box {
-      position: relative;
-      height: 320px;
-      width: 100%;
-    }
-  </style>
+        .glass-card {
+            background: rgba(19, 27, 46, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
 </head>
-<body>
-  <div class="container">
-    <!-- Header -->
-    <header>
-      <div class="brand">
-        <div class="brand-logo">🏒</div>
-        <div>
-          <h1 id="league-title">ESPN Fantasy Hockey</h1>
-          <div style="font-size: 0.85rem; color: var(--text-muted);" id="update-time">Päivitetään...</div>
+<body class="min-h-screen flex flex-col antialiased selection:bg-ice-500 selection:text-white">
+
+    <!-- TOP NAVIGATION / HEADER -->
+    <header class="sticky top-0 z-40 border-b border-slate-800/80 bg-darkBg/90 backdrop-blur-md px-4 lg:px-8 py-3">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
+            
+            <!-- Logo & Status -->
+            <div class="flex items-center space-x-3">
+                <div class="p-2.5 bg-gradient-to-tr from-ice-600 to-indigo-600 rounded-xl shadow-lg shadow-ice-500/20 text-white">
+                    <i data-lucide="activity" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <h1 class="font-extrabold text-xl tracking-tight text-white">FANTASY<span class="text-ice-400">PULSE</span></h1>
+                        <span class="px-2 py-0.5 text-xs font-semibold bg-ice-500/10 text-ice-400 border border-ice-500/30 rounded-full" id="leagueTypeBadge">ESPN NHL</span>
+                    </div>
+                    <p class="text-xs text-slate-400" id="leagueNameSubtitle">Ladataan liigaa...</p>
+                </div>
+            </div>
+
+            <!-- Controls: Search & Status -->
+            <div class="flex flex-wrap items-center gap-3">
+                
+                <!-- Search Input -->
+                <div class="relative">
+                    <i data-lucide="search" class="w-4 h-4 absolute left-3 top-2.5 text-slate-400"></i>
+                    <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Etsi joukkuetta tai pelaajaa..." 
+                        class="bg-slate-900 border border-slate-800 text-slate-200 text-xs rounded-lg pl-9 pr-3 py-2 w-48 focus:outline-none focus:ring-2 focus:ring-ice-500 focus:border-transparent">
+                </div>
+
+                <!-- Last Update Badge -->
+                <div class="text-xs text-slate-400 bg-slate-900 border border-slate-800 px-3 py-2 rounded-lg" id="updateTimeBadge">
+                    Päivitetty: -
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="status-badge">
-        <span class="dot"></span>
-        <span id="week-badge">Viikko -</span>
-      </div>
     </header>
 
-    <!-- Stat Banners -->
-    <div class="top-stats">
-      <div class="stat-card">
-        <div class="stat-label">Sarjakärki</div>
-        <div class="stat-val" id="stat-leader">-</div>
-        <div class="stat-sub" id="stat-leader-pts">0 PF</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">Keskiarvo / Joukkue</div>
-        <div class="stat-val" id="stat-avg-pts">0</div>
-        <div class="stat-sub">Liigan keskiarvo</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">Tiukin Kamppailu</div>
-        <div class="stat-val" id="stat-gap">0 pts</div>
-        <div class="stat-sub">1. ja 2. sijan ero</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">Joukkueita</div>
-        <div class="stat-val" id="stat-teams-count">0</div>
-        <div class="stat-sub">Liigassa mukana</div>
-      </div>
-    </div>
+    <!-- MAIN CONTAINER -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 space-y-6">
 
-    <!-- Navigaatio -->
-    <div class="nav-tabs">
-      <button class="tab-btn active" onclick="switchTab('tab-standings', this)">🏆 Sarjataulukko & Analyysi</button>
-      <button class="tab-btn" onclick="switchTab('tab-fa', this)">🔥 Vapaat Agentit (Free Agents)</button>
-    </div>
+        <!-- STATS HIGHLIGHT OVERVIEW -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <!-- Card 1: Leader -->
+            <div class="glass-card rounded-2xl p-4 border border-slate-800 flex items-center justify-between">
+                <div>
+                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Kärjessä (Liigajohtaja)</p>
+                    <h3 class="text-lg font-bold text-white mt-1" id="statLeaderName">-</h3>
+                    <p class="text-xs text-emerald-400 font-semibold mt-0.5" id="statLeaderPts">0 pts</p>
+                </div>
+                <div class="p-3 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-xl">
+                    <i data-lucide="crown" class="w-6 h-6"></i>
+                </div>
+            </div>
 
-    <!-- TAB 1: Sarjataulukko -->
-    <div id="tab-standings" class="tab-content active">
-      <div class="main-grid">
-        <div class="panel">
-          <div class="panel-header">
-            <span>🏆 Sarjataulukko</span>
-          </div>
-          <table id="standings-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Joukkue</th>
-                <th>Pisteet (PF)</th>
-                <th>Ero Kärkeen</th>
-                <th>V - H - T</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td colspan="5" style="text-align:center; color: var(--text-muted);">Ladataan tietoja...</td></tr>
-            </tbody>
-          </table>
+            <!-- Card 2: Average Points -->
+            <div class="glass-card rounded-2xl p-4 border border-slate-800 flex items-center justify-between">
+                <div>
+                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Keskiarvo / Joukkue</p>
+                    <h3 class="text-lg font-bold text-white mt-1" id="statAvgPts">0</h3>
+                    <p class="text-xs text-slate-400 mt-0.5">Liigan keskiarvo (PF)</p>
+                </div>
+                <div class="p-3 bg-ice-500/10 text-ice-400 border border-ice-500/20 rounded-xl">
+                    <i data-lucide="calculator" class="w-6 h-6"></i>
+                </div>
+            </div>
+
+            <!-- Card 3: Tightest Battle -->
+            <div class="glass-card rounded-2xl p-4 border border-slate-800 flex items-center justify-between">
+                <div>
+                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Kärjen Ero</p>
+                    <h3 class="text-lg font-bold text-white mt-1" id="statGap">0 pts</h3>
+                    <p class="text-xs text-ice-400 font-semibold mt-0.5">1. ja 2. sijan ero</p>
+                </div>
+                <div class="p-3 bg-rose-500/10 text-rose-400 border border-rose-500/20 rounded-xl">
+                    <i data-lucide="trending-up" class="w-6 h-6"></i>
+                </div>
+            </div>
+
+            <!-- Card 4: Matchup Week Info -->
+            <div class="glass-card rounded-2xl p-4 border border-slate-800 flex items-center justify-between">
+                <div>
+                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Meneillään Oleva Viikko</p>
+                    <h3 class="text-lg font-bold text-white mt-1" id="statWeekInfo">Viikko 1</h3>
+                    <p class="text-xs text-slate-400 mt-0.5" id="statTeamsCount">0 Joukkuetta</p>
+                </div>
+                <div class="p-3 bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded-xl">
+                    <i data-lucide="calendar" class="w-6 h-6"></i>
+                </div>
+            </div>
         </div>
 
-        <div class="panel">
-          <div class="panel-header">📊 Joukkueiden Piste-erot</div>
-          <div class="chart-box">
-            <canvas id="pointsChart"></canvas>
-          </div>
+        <!-- MAIN CHART SECTION -->
+        <div class="glass-card rounded-2xl p-5 border border-slate-800">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-4">
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <h2 class="text-lg font-bold text-white">Joukkueiden Piste-erot (PF)</h2>
+                        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-medium border border-slate-700">Pylväskaavio</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-0.5">Reaaliaikaiset kokonaispisteet joukkueittain.</p>
+                </div>
+            </div>
+
+            <!-- Chart Canvas Container -->
+            <div class="relative w-full h-[320px] sm:h-[380px]">
+                <canvas id="pointsChart"></canvas>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <!-- TAB 2: Vapaat Agentit -->
-    <div id="tab-fa" class="tab-content">
-      <div class="panel">
-        <div class="panel-header">🔥 Kuumimmat Vapaat Agentit (Free Agents)</div>
-        <table id="fa-table">
-          <thead>
-            <tr>
-              <th>Pelaaja</th>
-              <th>Pelipaikka</th>
-              <th>NHL-joukkue</th>
-              <th>Pisteet yhteensä</th>
-              <th>Keskiarvo (P/G)</th>
-              <th>Tila</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td colspan="6" style="text-align:center; color: var(--text-muted);">Ladataan tietoja...</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+        <!-- TWO COLUMN LAYOUT: Standings & Free Agents -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- STANDINGS TABLE (2 Cols) -->
+            <div class="lg:col-span-2 glass-card rounded-2xl p-5 border border-slate-800 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <h2 class="text-lg font-bold text-white">Liigan Sarjataulukko & Ero Seuraavaan</h2>
+                            <p class="text-xs text-slate-400">Reaaliaikainen tilanne ja ottelusaldot</p>
+                        </div>
+                        <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2.5 py-1 rounded-lg font-semibold">Aktiivinen</span>
+                    </div>
 
-  <script>
-    let pointsChart = null;
+                    <!-- Table -->
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs text-slate-300">
+                            <thead class="bg-slate-900/80 text-slate-400 uppercase tracking-wider text-[10px] border-b border-slate-800">
+                                <tr>
+                                    <th class="py-3 px-2">Sija</th>
+                                    <th class="py-3 px-3">Joukkue</th>
+                                    <th class="py-3 px-2 text-right">Pisteet (PF)</th>
+                                    <th class="py-3 px-2 text-right">Ero Kärkeen</th>
+                                    <th class="py-3 px-2 text-center">V - H - T</th>
+                                </tr>
+                            </thead>
+                            <tbody id="standingsTableBody" class="divide-y divide-slate-800/60">
+                                <tr><td colspan="5" class="text-center py-6 text-slate-500">Ladataan tietoja...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
-    function switchTab(tabId, btn) {
-      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-      
-      document.getElementById(tabId).classList.add('active');
-      btn.classList.add('active');
-    }
+            <!-- FREE AGENTS LIST (1 Col) -->
+            <div class="glass-card rounded-2xl p-5 border border-slate-800">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center space-x-2">
+                        <div class="p-2 bg-ice-500/10 text-ice-400 rounded-lg">
+                            <i data-lucide="user-plus" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-bold text-white">Vapaat Agentit (Free Agents)</h3>
+                            <p class="text-[11px] text-slate-400">Kuumimmat saatavilla olevat pelaajat</p>
+                        </div>
+                    </div>
+                    <span class="text-[10px] text-ice-400 bg-ice-500/10 px-2 py-0.5 rounded border border-ice-500/20 font-semibold">Top 30</span>
+                </div>
 
-    async function loadData() {
-      try {
-        // Ladataan data ilman välimuistia (cache buster)
-        const timestamp = new Date().getTime();
-        const response = await fetch(`data.json?t=${timestamp}`);
-        
-        if (!response.ok) {
-          throw new Error("Tiedostoa data.json ei löytynyt.");
-        }
+                <div class="space-y-2.5 max-h-[450px] overflow-y-auto pr-1" id="freeAgentsList">
+                    <!-- Dynamic Free Agents List -->
+                    <div class="text-center py-6 text-slate-500 text-xs">Ladataan vapaat agentit...</div>
+                </div>
+            </div>
+        </div>
 
-        const data = await response.json();
-        render(data);
-      } catch (err) {
-        console.error("Virhe ladattaessa dataa:", err);
-        document.getElementById("update-time").innerText = "Virhe ladattaessa tiedostoa data.json";
-      }
-    }
+    </main>
 
-    function render(data) {
-      document.getElementById("league-title").innerText = data.league_name || "ESPN Fantasy Hockey";
-      document.getElementById("week-badge").innerText = `Viikko ${data.current_week || 1}`;
-      document.getElementById("update-time").innerText = `Päivitetty: ${new Date().toLocaleString('fi-FI')}`;
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
 
-      const teams = data.teams || [];
-      teams.sort((a, b) => b.points_for - a.points_for);
+        let pointsChart = null;
 
-      const standingsBody = document.querySelector("#standings-table tbody");
-      standingsBody.innerHTML = "";
+        async function loadData() {
+            try {
+                const timestamp = new Date().getTime();
+                const response = await fetch(`data.json?t=${timestamp}`);
+                
+                if (!response.ok) {
+                    throw new Error("data.json failed to load");
+                }
 
-      let totalPts = 0;
-      const topPts = teams.length > 0 ? teams[0].points_for : 0;
-
-      teams.forEach((t, i) => {
-        totalPts += t.points_for;
-        const gap = (topPts - t.points_for).toFixed(1);
-
-        let rankCls = "";
-        if (i === 0) rankCls = "rank-1";
-        else if (i === 1) rankCls = "rank-2";
-        else if (i === 2) rankCls = "rank-3";
-
-        const tr = document.createElement("tr");
-        tr.innerHTML = `
-          <td><span class="rank-pill ${rankCls}">${i + 1}</span></td>
-          <td><strong>${t.name}</strong> <span style="color: var(--text-muted); font-size: 0.8rem;">(${t.abbrev})</span></td>
-          <td><strong style="color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace;">${t.points_for}</strong></td>
-          <td style="color: ${gap == 0 ? 'var(--accent-emerald)' : 'var(--text-muted)'}; font-family: 'JetBrains Mono', monospace;">${gap == 0 ? 'Kärjessä' : '-' + gap + ' pts'}</td>
-          <td>${t.wins} - ${t.losses} - ${t.ties}</td>
-        `;
-        standingsBody.appendChild(tr);
-      });
-
-      // Top Banners
-      document.getElementById("stat-teams-count").innerText = teams.length;
-      if (teams.length > 0) {
-        document.getElementById("stat-leader").innerText = teams[0].name;
-        document.getElementById("stat-leader-pts").innerText = `${teams[0].points_for} PF`;
-
-        const avg = (totalPts / teams.length).toFixed(1);
-        document.getElementById("stat-avg-pts").innerText = avg;
-
-        if (teams.length > 1) {
-          const diff = (teams[0].points_for - teams[1].points_for).toFixed(1);
-          document.getElementById("stat-gap").innerText = `${diff} pts`;
-        }
-      }
-
-      // Chart
-      renderChart(teams);
-
-      // Free Agents
-      const faBody = document.querySelector("#fa-table tbody");
-      faBody.innerHTML = "";
-
-      const freeAgents = data.free_agents || [];
-      freeAgents.forEach(p => {
-        const tr = document.createElement("tr");
-        tr.innerHTML = `
-          <td><strong>${p.name}</strong></td>
-          <td><span class="tag-pos">${p.position}</span></td>
-          <td>${p.proTeam}</td>
-          <td><strong style="font-family: 'JetBrains Mono', monospace;">${p.total_points}</strong></td>
-          <td style="font-family: 'JetBrains Mono', monospace;">${p.avg_points}</td>
-          <td><span style="color: ${p.injuryStatus === 'NORMAL' ? 'var(--accent-emerald)' : 'var(--accent-amber)'}; font-size: 0.85rem;">${p.injuryStatus}</span></td>
-        `;
-        faBody.appendChild(tr);
-      });
-    }
-
-    function renderChart(teams) {
-      const ctx = document.getElementById("pointsChart").getContext("2d");
-      const labels = teams.map(t => t.abbrev || t.name);
-      const points = teams.map(t => t.points_for);
-
-      if (pointsChart) pointsChart.destroy();
-
-      pointsChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: labels,
-          datasets: [{
-            label: 'Pisteet (PF)',
-            data: points,
-            backgroundColor: 'rgba(56, 189, 248, 0.85)',
-            borderColor: '#38bdf8',
-            borderWidth: 1,
-            borderRadius: 8
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: { legend: { display: false } },
-          scales: {
-            y: {
-              beginAtZero: true,
-              grid: { color: 'rgba(255, 255, 255, 0.05)' },
-              ticks: { color: '#64748b' }
-            },
-            x: {
-              grid: { display: false },
-              ticks: { color: '#64748b' }
+                const data = await response.json();
+                render(data);
+            } catch (err) {
+                console.error("Error loading data:", err);
+                document.getElementById("leagueNameSubtitle").innerText = "Virhe ladattaessa tiedostoa data.json";
             }
-          }
         }
-      });
-    }
 
-    loadData();
-  </script>
+        function render(data) {
+            document.getElementById("leagueNameSubtitle").innerText = data.league_name || "ESPN Fantasy Hockey";
+            document.getElementById("statWeekInfo").innerText = `Viikko ${data.current_week || 1}`;
+            document.getElementById("updateTimeBadge").innerText = `Päivitetty: ${new Date().toLocaleTimeString('fi-FI', {hour: '2-digit', minute:'2-digit'})}`;
+
+            const teams = data.teams || [];
+            teams.sort((a, b) => b.points_for - a.points_for);
+
+            // Render Header Stats
+            document.getElementById("statTeamsCount").innerText = `${teams.length} Joukkuetta`;
+            if (teams.length > 0) {
+                const leader = teams[0];
+                document.getElementById("statLeaderName").innerText = leader.name;
+                document.getElementById("statLeaderPts").innerText = `${leader.points_for} pts`;
+
+                const totalPts = teams.reduce((acc, t) => acc + t.points_for, 0);
+                const avg = (totalPts / teams.length).toFixed(1);
+                document.getElementById("statAvgPts").innerText = avg;
+
+                if (teams.length > 1) {
+                    const diff = (teams[0].points_for - teams[1].points_for).toFixed(1);
+                    document.getElementById("statGap").innerText = `${diff} pts`;
+                }
+            }
+
+            // Render Standings Table
+            const tbody = document.getElementById("standingsTableBody");
+            tbody.innerHTML = "";
+
+            const topPts = teams.length > 0 ? teams[0].points_for : 0;
+
+            teams.forEach((t, i) => {
+                const rank = i + 1;
+                const gap = (topPts - t.points_for).toFixed(1);
+
+                const tr = document.createElement("tr");
+                tr.className = "hover:bg-slate-800/40 transition border-b border-slate-800/40";
+                tr.innerHTML = `
+                    <td class="py-3 px-2 font-extrabold text-slate-400">
+                        <span class="inline-flex items-center justify-center w-6 h-6 rounded-full ${rank === 1 ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30' : rank === 2 ? 'bg-slate-700 text-slate-200' : rank === 3 ? 'bg-amber-800/20 text-amber-600' : 'text-slate-400'}">
+                            ${rank}
+                        </span>
+                    </td>
+                    <td class="py-3 px-3">
+                        <div>
+                            <div class="font-bold text-white">${t.name}</div>
+                            <div class="text-[10px] text-slate-400">${t.abbrev || ''}</div>
+                        </div>
+                    </td>
+                    <td class="py-3 px-2 text-right font-bold text-ice-400 font-mono text-sm">${t.points_for}</td>
+                    <td class="py-3 px-2 text-right font-medium font-mono ${gap == 0 ? 'text-emerald-400 font-bold' : 'text-slate-400'}">
+                        ${gap == 0 ? 'Kärjessä' : '-' + gap + ' pts'}
+                    </td>
+                    <td class="py-3 px-2 text-center font-medium text-slate-300">
+                        ${t.wins} - ${t.losses} - ${t.ties}
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            // Render Chart
+            renderChart(teams);
+
+            // Render Free Agents List
+            const faContainer = document.getElementById("freeAgentsList");
+            faContainer.innerHTML = "";
+
+            const freeAgents = data.free_agents || [];
+            freeAgents.forEach(player => {
+                const isNormal = player.injuryStatus === 'NORMAL' || player.injuryStatus === 'ACTIVE';
+                const item = document.createElement("div");
+                item.className = "flex items-center justify-between p-2.5 bg-slate-900/60 hover:bg-slate-900 rounded-xl border border-slate-800/80 transition";
+                item.innerHTML = `
+                    <div class="flex items-center space-x-2.5">
+                        <div class="w-8 h-8 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center font-extrabold text-[10px] text-ice-400">
+                            ${player.proTeam || 'NHL'}
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-white flex items-center space-x-1">
+                                <span>${player.name}</span>
+                            </div>
+                            <div class="text-[10px] text-slate-400">${player.position} • Keskiarvo ${player.avg_points} pt</div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-xs font-bold text-white font-mono">${player.total_points} pts</div>
+                        <span class="inline-block text-[10px] font-semibold ${isNormal ? 'text-emerald-400' : 'text-amber-400'}">
+                            ${player.injuryStatus}
+                        </span>
+                    </div>
+                `;
+                faContainer.appendChild(item);
+            });
+        }
+
+        function renderChart(teams) {
+            const ctx = document.getElementById("pointsChart").getContext("2d");
+            const labels = teams.map(t => t.name);
+            const points = teams.map(t => t.points_for);
+
+            if (pointsChart) pointsChart.destroy();
+
+            pointsChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Pisteet (PF)',
+                        data: points,
+                        backgroundColor: 'rgba(14, 165, 233, 0.75)',
+                        borderColor: '#38bdf8',
+                        borderWidth: 1.5,
+                        borderRadius: 8,
+                        hoverBackgroundColor: 'rgba(56, 189, 248, 0.95)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: '#0f172a',
+                            titleColor: '#f8fafc',
+                            bodyColor: '#cbd5e1',
+                            borderColor: '#334155',
+                            borderWidth: 1,
+                            padding: 10,
+                            callbacks: {
+                                label: function(context) {
+                                    return ` Pisteet: ${context.parsed.y} PF`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: '#1e293b' },
+                            ticks: { color: '#94a3b8', font: { size: 11 } }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#94a3b8', font: { size: 11 } }
+                        }
+                    }
+                }
+            });
+        }
+
+        function handleSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            
+            // Search in standings
+            const standingsRows = document.querySelectorAll('#standingsTableBody tr');
+            standingsRows.forEach(row => {
+                const text = row.innerText.toLowerCase();
+                row.style.display = (!query || text.includes(query)) ? '' : 'none';
+            });
+
+            // Search in free agents
+            const faItems = document.querySelectorAll('#freeAgentsList > div');
+            faItems.forEach(item => {
+                const text = item.innerText.toLowerCase();
+                item.style.display = (!query || text.includes(query)) ? '' : 'none';
+            });
+        }
+
+        window.onload = loadData;
+    </script>
 </body>
 </html>
