@@ -1,6 +1,6 @@
 import json
 import os
-from espn_api.nhl import League
+from espn_api.hockey import League
 
 # Hae asetukset ympäristömuuttujista (tai käytä oletuksia)
 LEAGUE_ID = int(os.environ.get("ESPN_LEAGUE_ID", 12345678))  # Aseta oma ID
