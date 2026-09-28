@@ -1,28 +1,51 @@
 import json
 import os
-from espn_api.hockey import League
+import sys
+from espn_api.nhl import League
 
-# Hae asetukset ympäristömuuttujista (tai käytä oletuksia)
-LEAGUE_ID = int(os.environ.get("ESPN_LEAGUE_ID", 12345678))  # Aseta oma ID
-YEAR = 2026
-ESPN_S2 = os.environ.get("ESPN_S2", "")
-SWID = os.environ.get("SWID", "")
+# 1. Lue ympäristömuuttujat
+league_id_env = os.environ.get("ESPN_LEAGUE_ID", "").strip()
+espn_s2 = os.environ.get("ESPN_S2", "").strip()
+swid = os.environ.get("SWID", "").strip()
 
-print(f"Yhdistetään liigaan ID: {LEAGUE_ID}...")
+if not league_id_env:
+    print("VIRHE: ESPN_LEAGUE_ID puuttuu tai on tyhjä!")
+    sys.exit(1)
 
-if ESPN_S2 and SWID:
-    league = League(league_id=LEAGUE_ID, year=YEAR, espn_s2=ESPN_S2, swid=SWID)
-else:
-    league = League(league_id=LEAGUE_ID, year=YEAR)
+LEAGUE_ID = int(league_id_env)
+# Syyskuussa 2026 alkavalle kaudelle 2026-2027 ESPN käyttää vuotta 2027
+YEAR = int(os.environ.get("ESPN_YEAR", 2027))
 
-# Kerätään sarjataulukko ja joukkueiden tiedot
+print(f"Yhdistetään liigaan ID: {LEAGUE_ID}, Kausi: {YEAR}...")
+print(f"Autentikointi: espn_s2={'Kyllä' if espn_s2 else 'Ei'}, swid={'Kyllä' if swid else 'Ei'}")
+
+try:
+    # Syötetään espn_s2 ja swid VAIN jos ne oikeasti sisältävät arvon
+    if espn_s2 and swid:
+        league = League(league_id=LEAGUE_ID, year=YEAR, espn_s2=espn_s2, swid=swid)
+    else:
+        league = League(league_id=LEAGUE_ID, year=YEAR)
+except Exception as e:
+    print(f"\n[Etsintäapu] Yhdistäminen epäonnistui vuodella {YEAR}. Kokeillaan vuotta {YEAR-1}...")
+    try:
+        YEAR = YEAR - 1
+        if espn_s2 and swid:
+            league = League(league_id=LEAGUE_ID, year=YEAR, espn_s2=espn_s2, swid=swid)
+        else:
+            league = League(league_id=LEAGUE_ID, year=YEAR)
+        print(f"Yhdistäminen onnistui vuodella {YEAR}!")
+    except Exception as e2:
+        print(f"Virhe epäonnistui myös vuodella {YEAR}: {e2}")
+        raise e
+
+# Kerätään joukkueiden tiedot
 teams_data = []
 for team in league.teams:
     teams_data.append({
         "id": team.team_id,
         "name": team.team_name,
         "abbrev": team.abbrev,
-        "points_for": round(team.points_for, 1),
+        "points_for": round(getattr(team, 'points_for', 0), 1),
         "wins": team.wins,
         "losses": team.losses,
         "ties": team.ties,
@@ -51,7 +74,6 @@ output = {
     "free_agents": fa_data
 }
 
-# Tallennettaan JSON-tiedostoon
 with open("data.json", "w", encoding="utf-8") as f:
     json.dump(output, f, ensure_ascii=False, indent=2)
 
