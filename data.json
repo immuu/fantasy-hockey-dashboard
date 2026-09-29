@@ -147,7 +147,7 @@
         "C": 4,
         "LW": 5,
         "RW": 5,
-        "D": 6,
+        "D": 7,
         "G": 2
       },
       "top_players": [
@@ -197,6 +197,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Dylan Guenther",
+      "position": "Right Wing",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Steven Stamkos",
       "position": "Center",
       "proTeam": "Nashville Predators",
@@ -205,9 +213,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Guenther",
-      "position": "Right Wing",
-      "proTeam": "Utah Hockey Club",
+      "name": "Thomas Chabot",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -237,14 +245,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Detroit Red Wings",
-      "total_points": 0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Mikhail Sergachev",
       "position": "Defense",
       "proTeam": "Utah Hockey Club",
@@ -253,17 +253,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vincent Trocheck",
+      "name": "Dylan Larkin",
       "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "proTeam": "Detroit Red Wings",
       "total_points": 0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Kirill Marchenko",
       "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
+      "total_points": 0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -279,14 +287,6 @@
     {
       "name": "Igor Shesterkin",
       "position": "Goalie",
-      "proTeam": "New York Rangers",
-      "total_points": 0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Adam Fox",
-      "position": "Defense",
       "proTeam": "New York Rangers",
       "total_points": 0,
       "avg_points": 0,
@@ -373,20 +373,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Connor Hellebuyck",
-      "position": "Goalie",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0,
-      "avg_points": 0,
-      "injuryStatus": "SUSPENSION"
-    },
-    {
       "name": "Jesper Bratt",
       "position": "Right Wing",
       "proTeam": "New Jersey Devils",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Connor Hellebuyck",
+      "position": "Goalie",
+      "proTeam": "Winnipeg Jets",
+      "total_points": 0,
+      "avg_points": 0,
+      "injuryStatus": "SUSPENSION"
     },
     {
       "name": "Adam Fantilli",
@@ -413,15 +413,40 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Bryan Rust",
+      "name": "Travis Konecny",
       "position": "Right Wing",
-      "proTeam": "Pittsburgh Penguins",
+      "proTeam": "Philadelphia Flyers",
       "total_points": 0,
       "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1790702709588,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Shea Theodore"
+        }
+      ]
+    },
+    {
+      "date": 1790695577980,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Adam Fox"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Thomas Chabot"
+        }
+      ]
+    },
     {
       "date": 1790580729079,
       "actions": [
