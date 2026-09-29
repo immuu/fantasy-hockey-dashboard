@@ -245,14 +245,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Elias Pettersson",
-      "position": "Center",
-      "proTeam": "Vancouver Canucks",
-      "total_points": 0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Vincent Trocheck",
       "position": "Center",
       "proTeam": "Utah Hockey Club",
@@ -261,9 +253,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Elias Pettersson",
+      "position": "Center",
+      "proTeam": "Vancouver Canucks",
+      "total_points": 0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Kirill Marchenko",
       "position": "Left Wing",
-      "proTeam": "Columbus Blue Jackets",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -333,17 +333,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "John Tavares",
-      "position": "Center",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Linus Ullmark",
+      "position": "Goalie",
+      "proTeam": "Ottawa Senators",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Linus Ullmark",
-      "position": "Goalie",
-      "proTeam": "Ottawa Senators",
+      "name": "John Tavares",
+      "position": "Center",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -389,6 +389,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Adam Fantilli",
+      "position": "Center",
+      "proTeam": "Columbus Blue Jackets",
+      "total_points": 0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "J.T. Miller",
       "position": "Center",
       "proTeam": "New York Rangers",
@@ -400,14 +408,6 @@
       "name": "Leo Carlsson",
       "position": "Center",
       "proTeam": "Anaheim Ducks",
-      "total_points": 0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Adam Fantilli",
-      "position": "Center",
-      "proTeam": "Columbus Blue Jackets",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
