@@ -261,17 +261,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mikhail Sergachev",
-      "position": "Defense",
-      "proTeam": "Utah Hockey Club",
+      "name": "Kirill Marchenko",
+      "position": "Left Wing",
+      "proTeam": "Columbus Blue Jackets",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Kirill Marchenko",
-      "position": "Left Wing",
-      "proTeam": "Columbus Blue Jackets",
+      "name": "Mikhail Sergachev",
+      "position": "Defense",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -317,17 +317,17 @@
       "injuryStatus": "SUSPENSION"
     },
     {
-      "name": "Drake Batherson",
-      "position": "Right Wing",
-      "proTeam": "Ottawa Senators",
+      "name": "Timo Meier",
+      "position": "Left Wing",
+      "proTeam": "New Jersey Devils",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Timo Meier",
-      "position": "Left Wing",
-      "proTeam": "New Jersey Devils",
+      "name": "Drake Batherson",
+      "position": "Right Wing",
+      "proTeam": "Ottawa Senators",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -341,17 +341,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Andrei Svechnikov",
-      "position": "Left Wing",
-      "proTeam": "Carolina Hurricanes",
+      "name": "Linus Ullmark",
+      "position": "Goalie",
+      "proTeam": "Ottawa Senators",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Linus Ullmark",
-      "position": "Goalie",
-      "proTeam": "Ottawa Senators",
+      "name": "Andrei Svechnikov",
+      "position": "Left Wing",
+      "proTeam": "Carolina Hurricanes",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -389,17 +389,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Leo Carlsson",
+      "name": "J.T. Miller",
       "position": "Center",
-      "proTeam": "Anaheim Ducks",
+      "proTeam": "New York Rangers",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "J.T. Miller",
+      "name": "Leo Carlsson",
       "position": "Center",
-      "proTeam": "New York Rangers",
+      "proTeam": "Anaheim Ducks",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
