@@ -213,14 +213,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
-      "total_points": 0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Karel Vejmelka",
       "position": "Goalie",
       "proTeam": "Utah Hockey Club",
@@ -229,9 +221,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Detroit Red Wings",
+      "name": "Alex Ovechkin",
+      "position": "Left Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "DAY_TO_DAY"
@@ -245,17 +237,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vincent Trocheck",
+      "name": "Dylan Larkin",
       "position": "Center",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
+    },
+    {
+      "name": "Mikhail Sergachev",
+      "position": "Defense",
       "proTeam": "Utah Hockey Club",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Elias Pettersson",
+      "name": "Vincent Trocheck",
       "position": "Center",
-      "proTeam": "Vancouver Canucks",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -269,9 +269,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mikhail Sergachev",
-      "position": "Defense",
-      "proTeam": "Utah Hockey Club",
+      "name": "Elias Pettersson",
+      "position": "Center",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -301,14 +301,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Nelson",
-      "position": "Center",
-      "proTeam": "Colorado Avalanche",
-      "total_points": 0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Charlie McAvoy",
       "position": "Defense",
       "proTeam": "Boston Bruins",
@@ -317,9 +309,9 @@
       "injuryStatus": "SUSPENSION"
     },
     {
-      "name": "Timo Meier",
-      "position": "Left Wing",
-      "proTeam": "New Jersey Devils",
+      "name": "Brock Nelson",
+      "position": "Center",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -333,9 +325,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Linus Ullmark",
-      "position": "Goalie",
-      "proTeam": "Ottawa Senators",
+      "name": "Timo Meier",
+      "position": "Left Wing",
+      "proTeam": "New Jersey Devils",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -344,6 +336,14 @@
       "name": "John Tavares",
       "position": "Center",
       "proTeam": "Toronto Maple Leafs",
+      "total_points": 0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Linus Ullmark",
+      "position": "Goalie",
+      "proTeam": "Ottawa Senators",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -365,20 +365,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Connor Hellebuyck",
-      "position": "Goalie",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0,
-      "avg_points": 0,
-      "injuryStatus": "SUSPENSION"
-    },
-    {
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Connor Hellebuyck",
+      "position": "Goalie",
+      "proTeam": "Winnipeg Jets",
+      "total_points": 0,
+      "avg_points": 0,
+      "injuryStatus": "SUSPENSION"
     },
     {
       "name": "Jesper Bratt",
