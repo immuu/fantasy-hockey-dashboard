@@ -197,17 +197,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Steven Stamkos",
-      "position": "Center",
-      "proTeam": "Nashville Predators",
+      "name": "Dylan Guenther",
+      "position": "Right Wing",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Guenther",
-      "position": "Right Wing",
-      "proTeam": "Utah Hockey Club",
+      "name": "Steven Stamkos",
+      "position": "Center",
+      "proTeam": "Nashville Predators",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -413,9 +413,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Travis Konecny",
-      "position": "Right Wing",
-      "proTeam": "Philadelphia Flyers",
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
