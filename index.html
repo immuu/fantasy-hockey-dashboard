@@ -370,27 +370,10 @@
                 let history = t.pointsHistory;
                 let weeklyScores = t.weeklyScores;
 
+                // Build points history using live totalPoints if empty
                 if (!history || history.length === 0) {
-                    history = [];
-                    weeklyScores = [];
-                    const currentWk = data.current_week || 1;
-                    const avgPerWeek = totalPts / (currentWk || 1);
-
-                    let cumulative = 0;
-                    for (let w = 1; w <= WEEKS_COUNT; w++) {
-                        if (w <= currentWk) {
-                            const variance = (Math.sin(w * teamId) * 12) + (Math.cos(w + teamId) * 8);
-                            const wScore = Math.max(30, Math.round(avgPerWeek + variance));
-                            weeklyScores.push(wScore);
-                            cumulative += wScore;
-                            history.push(cumulative);
-                        }
-                    }
-                    if (history.length > 0) {
-                        const diff = totalPts - history[history.length - 1];
-                        history[history.length - 1] = totalPts;
-                        weeklyScores[weeklyScores.length - 1] += diff;
-                    }
+                    history = [totalPts];
+                    weeklyScores = [totalPts];
                 }
 
                 leagueData.teams[teamId] = {
@@ -428,7 +411,7 @@
             if (selectedTimeRange === '4w') startWeek = Math.max(1, currentWk - 3);
             if (selectedTimeRange === '7d') startWeek = Math.max(1, currentWk - 1);
 
-            for (let i = startWeek; i <= currentWk; i++) {
+            for (let i = startWeek; i <= Math.max(currentWk, 1); i++) {
                 labels.push(`Vk ${i}`);
             }
 
@@ -622,7 +605,6 @@
                 return;
             }
 
-            // Matches teams with complementary needs/surpluses
             const suggestions = [];
 
             for (let i = 0; i < teams.length; i++) {
@@ -630,7 +612,6 @@
                     const teamA = teams[i];
                     const teamB = teams[j];
 
-                    // Find position surpluses
                     const posKeys = ['D', 'G', 'C', 'LW', 'RW'];
                     let bestMatch = null;
 
@@ -652,7 +633,6 @@
                 }
             }
 
-            // Fallback suggestions if exact surplus fit isn't triggered
             if (suggestions.length === 0 && teams.length >= 2) {
                 suggestions.push({
                     teamA: teams[0],
@@ -710,7 +690,7 @@
             
             const powerList = teamsArray.map(t => {
                 const last3 = t.weeklyScores.slice(-3);
-                const avg = last3.length ? (last3.reduce((a,b) => a+b, 0) / last3.length) : 0;
+                const avg = last3.length ? (last3.reduce((a,b) => a+b, 0) / last3.length) : t.totalPoints;
                 return { ...t, powerScore: avg };
             });
 
@@ -718,7 +698,7 @@
 
             if (powerList.length > 0) {
                 document.getElementById('statPowerRankLeader').innerText = powerList[0].name;
-                document.getElementById('statPowerRankScore').innerText = `${powerList[0].powerScore.toFixed(1)} pt/vk keskiarvo`;
+                document.getElementById('statPowerRankScore').innerText = `${powerList[0].powerScore.toFixed(1)} pt keskiarvo`;
             }
 
             powerList.forEach((team, index) => {
@@ -739,8 +719,8 @@
                         </div>
                     </div>
                     <div class="text-right">
-                        <div class="text-xs font-bold text-rose-400 font-mono">${team.powerScore.toFixed(1)} pt/vk</div>
-                        <span class="text-[10px] text-slate-400">3vk kuntopuntari</span>
+                        <div class="text-xs font-bold text-rose-400 font-mono">${team.powerScore.toFixed(1)} pt</div>
+                        <span class="text-[10px] text-slate-400">Kuntopuntari</span>
                     </div>
                 `;
                 container.appendChild(item);
@@ -828,8 +808,8 @@
             const pacePerWeek = (maxClosingGap / 2).toFixed(1);
             document.getElementById('statChaserName').innerText = primeChaser.name;
             document.getElementById('statChaserPace').innerText = maxClosingGap > 0 
-                ? `Kuroo ${pacePerWeek} pt/vk kärkeä` 
-                : `Jää lisää ${Math.abs(pacePerWeek)} pt/vk`;
+                ? `Kuroo ${pacePerWeek} pt kärkeä` 
+                : `Piste-ero ${Math.abs(leadGap)} pt`;
 
             // Standings table
             const tbody = document.getElementById('standingsTableBody');
