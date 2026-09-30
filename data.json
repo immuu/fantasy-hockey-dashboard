@@ -94,7 +94,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 28.2,
+      "points_for": 24.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -118,11 +118,6 @@
           "points": 7.0
         },
         {
-          "name": "Patrick Kane",
-          "position": "Right Wing",
-          "points": 3.7
-        },
-        {
           "name": "David Pastrnak",
           "position": "Right Wing",
           "points": 1.5
@@ -131,6 +126,11 @@
           "name": "Nick Suzuki",
           "position": "Center",
           "points": 0.8
+        },
+        {
+          "name": "Darren Raddysh",
+          "position": "Defense",
+          "points": 0.6
         }
       ]
     },
@@ -197,17 +197,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Guenther",
-      "position": "Right Wing",
-      "proTeam": "Utah Hockey Club",
+      "name": "Steven Stamkos",
+      "position": "Center",
+      "proTeam": "Nashville Predators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Steven Stamkos",
-      "position": "Center",
-      "proTeam": "Nashville Predators",
+      "name": "Dylan Guenther",
+      "position": "Right Wing",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -389,14 +389,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fantilli",
-      "position": "Center",
-      "proTeam": "Columbus Blue Jackets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Connor Hellebuyck",
       "position": "Goalie",
       "proTeam": "Winnipeg Jets",
@@ -405,10 +397,10 @@
       "injuryStatus": "SUSPENSION"
     },
     {
-      "name": "J.T. Miller",
+      "name": "Adam Fantilli",
       "position": "Center",
-      "proTeam": "New York Rangers",
-      "total_points": 0.3,
+      "proTeam": "Columbus Blue Jackets",
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -419,9 +411,47 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "J.T. Miller",
+      "position": "Center",
+      "proTeam": "New York Rangers",
+      "total_points": 0.3,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1790754064988,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Mackenzie Blackwood"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "John Gibson"
+        }
+      ]
+    },
+    {
+      "date": 1790753711261,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Matvei Michkov"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Patrick Kane"
+        }
+      ]
+    },
     {
       "date": 1790752578423,
       "actions": [
