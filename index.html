@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fi" class="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,13 +49,16 @@
             width: 8px;
             height: 8px;
         }
+
         ::-webkit-scrollbar-track {
             background: #0b0f17;
         }
+
         ::-webkit-scrollbar-thumb {
             background: #1e293b;
             border-radius: 4px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
             background: #334155;
         }
@@ -66,21 +70,26 @@
         }
     </style>
 </head>
+
 <body class="min-h-screen flex flex-col antialiased selection:bg-ice-500 selection:text-white">
 
     <!-- TOP NAVIGATION / HEADER -->
     <header class="sticky top-0 z-40 border-b border-slate-800/80 bg-darkBg/90 backdrop-blur-md px-4 lg:px-8 py-3">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
-            
+
             <!-- Logo & Status -->
             <div class="flex items-center space-x-3">
-                <div class="p-2.5 bg-gradient-to-tr from-ice-600 to-indigo-600 rounded-xl shadow-lg shadow-ice-500/20 text-white">
+                <div
+                    class="p-2.5 bg-gradient-to-tr from-ice-600 to-indigo-600 rounded-xl shadow-lg shadow-ice-500/20 text-white">
                     <i data-lucide="activity" class="w-6 h-6"></i>
                 </div>
                 <div>
                     <div class="flex items-center space-x-2">
-                        <h1 class="font-extrabold text-xl tracking-tight text-white">FANTASY<span class="text-ice-400">PULSE</span></h1>
-                        <span class="px-2 py-0.5 text-xs font-semibold bg-ice-500/10 text-ice-400 border border-ice-500/30 rounded-full">ESPN NHL</span>
+                        <h1 class="font-extrabold text-xl tracking-tight text-white">FANTASY<span
+                                class="text-ice-400">PULSE</span></h1>
+                        <span
+                            class="px-2 py-0.5 text-xs font-semibold bg-ice-500/10 text-ice-400 border border-ice-500/30 rounded-full">ESPN
+                            NHL</span>
                     </div>
                     <p class="text-xs text-slate-400" id="leagueNameSubtitle">Ladataan liigaa...</p>
                 </div>
@@ -88,23 +97,31 @@
 
             <!-- Controls: Range, Search & Status -->
             <div class="flex flex-wrap items-center gap-3">
-                
+
                 <!-- Time Range Filter -->
-                <div class="bg-slate-900/90 p-1 rounded-lg border border-slate-800 flex items-center text-xs font-medium">
-                    <button onclick="setTimeRange('all')" id="btn-range-all" class="px-3 py-1.5 rounded-md bg-ice-500 text-white shadow-sm transition">Koko kausi</button>
-                    <button onclick="setTimeRange('4w')" id="btn-range-4w" class="px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition">Viim. 4 viikkoa</button>
-                    <button onclick="setTimeRange('7d')" id="btn-range-7d" class="px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition">Viim. 2 viikkoa</button>
+                <div
+                    class="bg-slate-900/90 p-1 rounded-lg border border-slate-800 flex items-center text-xs font-medium">
+                    <button onclick="setTimeRange('all')" id="btn-range-all"
+                        class="px-3 py-1.5 rounded-md bg-ice-500 text-white shadow-sm transition">Koko kausi</button>
+                    <button onclick="setTimeRange('4w')" id="btn-range-4w"
+                        class="px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition">Viim. 4
+                        viikkoa</button>
+                    <button onclick="setTimeRange('7d')" id="btn-range-7d"
+                        class="px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition">Viim. 2
+                        viikkoa</button>
                 </div>
 
                 <!-- Search Input -->
                 <div class="relative">
                     <i data-lucide="search" class="w-4 h-4 absolute left-3 top-2.5 text-slate-400"></i>
-                    <input type="text" id="searchInput" oninput="handleSearch()" placeholder="Etsi joukkuetta tai pelaajaa..." 
+                    <input type="text" id="searchInput" oninput="handleSearch()"
+                        placeholder="Etsi joukkuetta tai pelaajaa..."
                         class="bg-slate-900 border border-slate-800 text-slate-200 text-xs rounded-lg pl-9 pr-3 py-2 w-48 focus:outline-none focus:ring-2 focus:ring-ice-500 focus:border-transparent">
                 </div>
 
                 <!-- Last Update Badge -->
-                <div class="text-xs text-slate-400 bg-slate-900 border border-slate-800 px-3 py-2 rounded-lg" id="updateTimeBadge">
+                <div class="text-xs text-slate-400 bg-slate-900 border border-slate-800 px-3 py-2 rounded-lg"
+                    id="updateTimeBadge">
                     Päivitetty: -
                 </div>
             </div>
@@ -116,7 +133,7 @@
 
         <!-- STATS HIGHLIGHT OVERVIEW -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            
+
             <!-- Card 1: Leader -->
             <div class="glass-card rounded-2xl p-4 border border-slate-800 flex items-center justify-between">
                 <div>
@@ -132,9 +149,11 @@
             <!-- Card 2: Power Rankings #1 -->
             <div class="glass-card rounded-2xl p-4 border border-slate-800 flex items-center justify-between">
                 <div>
-                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Power Rank #1 (Kuntopuntari)</p>
+                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Power Rank #1 (Kuntopuntari)
+                    </p>
                     <h3 class="text-lg font-bold text-white mt-1" id="statPowerRankLeader">-</h3>
-                    <p class="text-xs text-emerald-400 font-semibold mt-0.5" id="statPowerRankScore">0 pt/vk keskiarvo</p>
+                    <p class="text-xs text-emerald-400 font-semibold mt-0.5" id="statPowerRankScore">0 pt/vk keskiarvo
+                    </p>
                 </div>
                 <div class="p-3 bg-rose-500/10 text-rose-400 border border-rose-500/20 rounded-xl">
                     <i data-lucide="flame" class="w-6 h-6"></i>
@@ -172,27 +191,34 @@
                 <div>
                     <div class="flex items-center space-x-2">
                         <h2 class="text-lg font-bold text-white">Pistemäärien Kehitys & Takaa-ajo</h2>
-                        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-medium border border-slate-700">Kertymägraafi</span>
+                        <span
+                            class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-medium border border-slate-700">Kertymägraafi</span>
                     </div>
-                    <p class="text-xs text-slate-400 mt-0.5">Klikkaa joukkueen nimeä alta kytkeäksesi viivan näkyviin tai pois.</p>
+                    <p class="text-xs text-slate-400 mt-0.5">Klikkaa joukkueen nimeä alta kytkeäksesi viivan näkyviin
+                        tai pois.</p>
                 </div>
 
                 <!-- Controls for Chart -->
                 <div class="flex items-center space-x-3">
                     <label class="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" id="toggleProjection" onchange="updateChartProjections()" class="sr-only peer">
-                        <div class="w-9 h-5 bg-slate-800 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-ice-500 relative"></div>
+                        <input type="checkbox" id="toggleProjection" onchange="updateChartProjections()"
+                            class="sr-only peer">
+                        <div
+                            class="w-9 h-5 bg-slate-800 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-ice-500 relative">
+                        </div>
                         <span class="ml-2 text-xs font-medium text-slate-300">Näytä ennustelinjat (Loppukausi)</span>
                     </label>
 
-                    <button onclick="resetChartZoom()" class="text-xs px-2.5 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-md border border-slate-700 transition">
+                    <button onclick="resetChartZoom()"
+                        class="text-xs px-2.5 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-md border border-slate-700 transition">
                         Nollaa valinnat
                     </button>
                 </div>
             </div>
 
             <!-- Custom Interactive Team Toggles / Legend -->
-            <div id="teamLegendContainer" class="flex flex-wrap gap-2 mb-4 p-3 bg-slate-900/60 rounded-xl border border-slate-800/80"></div>
+            <div id="teamLegendContainer"
+                class="flex flex-wrap gap-2 mb-4 p-3 bg-slate-900/60 rounded-xl border border-slate-800/80"></div>
 
             <!-- Chart Canvas Container -->
             <div class="relative w-full h-[380px] sm:h-[420px]">
@@ -209,10 +235,13 @@
                     </div>
                     <div>
                         <h2 class="text-lg font-bold text-white">Kauppa-analysaattori & Target Radar</h2>
-                        <p class="text-xs text-slate-400">Automaattiset kauppaehdotukset joukkueiden pelipaikkatarpeiden ja vahvuuksien pohjalta</p>
+                        <p class="text-xs text-slate-400">Automaattiset kauppaehdotukset joukkueiden pelipaikkatarpeiden
+                            ja vahvuuksien pohjalta</p>
                     </div>
                 </div>
-                <span class="text-xs bg-amber-500/10 text-amber-400 border border-amber-500/20 px-2.5 py-1 rounded-lg font-semibold">AI Matchmaking</span>
+                <span
+                    class="text-xs bg-amber-500/10 text-amber-400 border border-amber-500/20 px-2.5 py-1 rounded-lg font-semibold">AI
+                    Matchmaking</span>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="tradeAnalyzerContainer">
@@ -222,7 +251,7 @@
 
         <!-- THREE COLUMN GRID: Power Rankings, Activity/Trades & Free Agents -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            
+
             <!-- SECTION 4: POWER RANKINGS (KUNTOPUNTARI) -->
             <div class="glass-card rounded-2xl p-5 border border-slate-800 flex flex-col justify-between">
                 <div>
@@ -236,7 +265,8 @@
                                 <p class="text-xs text-slate-400">Kuntopuntari (3 viikon keskiarvo)</p>
                             </div>
                         </div>
-                        <span class="text-[10px] bg-rose-500/10 text-rose-400 border border-rose-500/20 px-2 py-0.5 rounded font-semibold">Formi</span>
+                        <span
+                            class="text-[10px] bg-rose-500/10 text-rose-400 border border-rose-500/20 px-2 py-0.5 rounded font-semibold">Formi</span>
                     </div>
 
                     <div class="space-y-3" id="powerRankingsList">
@@ -258,7 +288,9 @@
                                 <p class="text-xs text-slate-400">Joukkueiden tekemät kaupat ja waivertilanteet</p>
                             </div>
                         </div>
-                        <span class="text-[10px] bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 px-2 py-0.5 rounded font-semibold">Live Log</span>
+                        <span
+                            class="text-[10px] bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 px-2 py-0.5 rounded font-semibold">Live
+                            Log</span>
                     </div>
 
                     <div class="space-y-3 max-h-[380px] overflow-y-auto pr-1" id="tradesList">
@@ -279,7 +311,9 @@
                             <p class="text-xs text-slate-400">Kuumimmat saatavilla olevat pelaajat</p>
                         </div>
                     </div>
-                    <span class="text-[10px] text-ice-400 bg-ice-500/10 px-2 py-0.5 rounded border border-ice-500/20 font-semibold">Top Pickit</span>
+                    <span
+                        class="text-[10px] text-ice-400 bg-ice-500/10 px-2 py-0.5 rounded border border-ice-500/20 font-semibold">Top
+                        Pickit</span>
                 </div>
 
                 <div class="space-y-2.5 max-h-[380px] overflow-y-auto pr-1" id="freeAgentsList">
@@ -295,12 +329,14 @@
                     <h2 class="text-lg font-bold text-white">Liigan Sarjataulukko & Ero Seuraavaan</h2>
                     <p class="text-xs text-slate-400">Reaaliaikainen pistetilanne ja ottelusaldot</p>
                 </div>
-                <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2.5 py-1 rounded-lg font-semibold">Päivitetty</span>
+                <span
+                    class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2.5 py-1 rounded-lg font-semibold">Päivitetty</span>
             </div>
 
             <div class="overflow-x-auto">
                 <table class="w-full text-left text-xs text-slate-300">
-                    <thead class="bg-slate-900/80 text-slate-400 uppercase tracking-wider text-[10px] border-b border-slate-800">
+                    <thead
+                        class="bg-slate-900/80 text-slate-400 uppercase tracking-wider text-[10px] border-b border-slate-800">
                         <tr>
                             <th class="py-3 px-2">Sija</th>
                             <th class="py-3 px-3">Joukkue</th>
@@ -311,7 +347,9 @@
                         </tr>
                     </thead>
                     <tbody id="standingsTableBody" class="divide-y divide-slate-800/60">
-                        <tr><td colspan="6" class="text-center py-6 text-slate-500">Ladataan tietoja...</td></tr>
+                        <tr>
+                            <td colspan="6" class="text-center py-6 text-slate-500">Ladataan tietoja...</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -337,7 +375,7 @@
             try {
                 const timestamp = new Date().getTime();
                 const response = await fetch(`data.json?t=${timestamp}`);
-                
+
                 if (!response.ok) throw new Error("data.json failed to load");
 
                 const data = await response.json();
@@ -352,7 +390,9 @@
         function processData(data) {
             document.getElementById("leagueNameSubtitle").innerText = data.league_name || "ESPN Fantasy Hockey";
             document.getElementById("statWeekInfo").innerText = `Viikko ${data.current_week || 1}`;
-            document.getElementById("updateTimeBadge").innerText = `Päivitetty: ${new Date().toLocaleTimeString('fi-FI', {hour: '2-digit', minute:'2-digit'})}`;
+            document.getElementById("updateTimeBadge").innerText = data.last_updated
+                ? `Päivitetty: ${data.last_updated}`
+                : `Päivitetty: ${new Date().toLocaleTimeString('fi-FI', { hour: '2-digit', minute: '2-digit' })}`;
 
             const teams = data.teams || [];
             leagueData = {
@@ -430,7 +470,7 @@
 
             const datasets = Object.values(leagueData.teams).map(team => {
                 const visibleData = team.pointsHistory.slice(startWeek - 1);
-                
+
                 let fullData = [...visibleData];
                 if (showProjections && selectedTimeRange === 'all') {
                     const recentScores = team.weeklyScores.slice(-3);
@@ -481,7 +521,7 @@
                             borderWidth: 1,
                             padding: 12,
                             callbacks: {
-                                label: function(context) {
+                                label: function (context) {
                                     const val = context.parsed.y;
                                     return ` ${context.dataset.label}: ${val.toLocaleString()} pts`;
                                 }
@@ -505,7 +545,7 @@
         function updateChart() {
             if (!chartInstance) return;
             const { labels, startWeek } = getFilteredWeeks();
-            
+
             chartInstance.data.labels = labels;
 
             chartInstance.data.datasets.forEach(dataset => {
@@ -543,11 +583,10 @@
             Object.values(leagueData.teams).forEach(team => {
                 const isHidden = hiddenTeamIds.has(team.id);
                 const btn = document.createElement('button');
-                btn.className = `flex items-center space-x-1.5 px-2.5 py-1 rounded-lg text-xs font-medium border transition ${
-                    isHidden 
-                        ? 'bg-slate-900 border-slate-800 text-slate-500 line-through' 
+                btn.className = `flex items-center space-x-1.5 px-2.5 py-1 rounded-lg text-xs font-medium border transition ${isHidden
+                        ? 'bg-slate-900 border-slate-800 text-slate-500 line-through'
                         : 'bg-slate-800/90 border-slate-700 text-slate-200'
-                }`;
+                    }`;
                 btn.onclick = () => toggleTeamVisibility(team.id);
 
                 btn.innerHTML = `
@@ -687,10 +726,10 @@
             container.innerHTML = '';
 
             const teamsArray = Object.values(leagueData.teams);
-            
+
             const powerList = teamsArray.map(t => {
                 const last3 = t.weeklyScores.slice(-3);
-                const avg = last3.length ? (last3.reduce((a,b) => a+b, 0) / last3.length) : t.totalPoints;
+                const avg = last3.length ? (last3.reduce((a, b) => a + b, 0) / last3.length) : t.totalPoints;
                 return { ...t, powerScore: avg };
             });
 
@@ -743,15 +782,15 @@
 
             activities.forEach(item => {
                 const formattedDate = item.date ? new Date(item.date).toLocaleDateString('fi-FI', { month: 'numeric', day: 'numeric' }) : '';
-                
+
                 item.actions.forEach(action => {
                     const isTrade = action.action.includes('TRADED') || action.action.includes('TRADE');
                     const isAdd = action.action.includes('ADDED') || action.action.includes('CLAIMED');
                     const isDrop = action.action.includes('DROPPED');
 
-                    const actionColor = isTrade ? 'text-indigo-400 bg-indigo-500/10 border-indigo-500/20' 
-                                      : isAdd ? 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20' 
-                                      : 'text-rose-400 bg-rose-500/10 border-rose-500/20';
+                    const actionColor = isTrade ? 'text-indigo-400 bg-indigo-500/10 border-indigo-500/20'
+                        : isAdd ? 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20'
+                            : 'text-rose-400 bg-rose-500/10 border-rose-500/20';
 
                     const actionLabel = isTrade ? 'KAUPPA' : isAdd ? 'LISÄTTY' : 'PUDOTETTU';
 
@@ -796,8 +835,8 @@
             let primeChaser = runnerUp;
             teamsArray.forEach(t => {
                 if (t.id === leader.id) return;
-                const teamRecent2w = t.weeklyScores.slice(-2).reduce((a,b) => a+b, 0);
-                const leaderRecent2w = leader.weeklyScores.slice(-2).reduce((a,b) => a+b, 0);
+                const teamRecent2w = t.weeklyScores.slice(-2).reduce((a, b) => a + b, 0);
+                const leaderRecent2w = leader.weeklyScores.slice(-2).reduce((a, b) => a + b, 0);
                 const gained = teamRecent2w - leaderRecent2w;
                 if (gained > maxClosingGap) {
                     maxClosingGap = gained;
@@ -807,8 +846,8 @@
 
             const pacePerWeek = (maxClosingGap / 2).toFixed(1);
             document.getElementById('statChaserName').innerText = primeChaser.name;
-            document.getElementById('statChaserPace').innerText = maxClosingGap > 0 
-                ? `Kuroo ${pacePerWeek} pt kärkeä` 
+            document.getElementById('statChaserPace').innerText = maxClosingGap > 0
+                ? `Kuroo ${pacePerWeek} pt kärkeä`
                 : `Piste-ero ${Math.abs(leadGap)} pt`;
 
             // Standings table
@@ -897,4 +936,5 @@
         window.onload = loadData;
     </script>
 </body>
+
 </html>
