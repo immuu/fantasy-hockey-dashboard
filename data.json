@@ -197,17 +197,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Guenther",
-      "position": "Right Wing",
-      "proTeam": "Utah Hockey Club",
+      "name": "Steven Stamkos",
+      "position": "Center",
+      "proTeam": "Nashville Predators",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Steven Stamkos",
-      "position": "Center",
-      "proTeam": "Nashville Predators",
+      "name": "Dylan Guenther",
+      "position": "Right Wing",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -381,20 +381,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Connor Hellebuyck",
-      "position": "Goalie",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0,
-      "avg_points": 0,
-      "injuryStatus": "SUSPENSION"
-    },
-    {
       "name": "Adam Fantilli",
       "position": "Center",
       "proTeam": "Columbus Blue Jackets",
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Connor Hellebuyck",
+      "position": "Goalie",
+      "proTeam": "Winnipeg Jets",
+      "total_points": 0,
+      "avg_points": 0,
+      "injuryStatus": "SUSPENSION"
     },
     {
       "name": "J.T. Miller",
