@@ -1,12 +1,14 @@
 import json
 import os
 import sys
+from datetime import datetime, timezone
+import espn_api.hockey.constant as c
 from espn_api.hockey import League
 
 # 1. Lue ja siivoa ympäristömuuttujat
-league_id_env = os.environ.get("ESPN_LEAGUE_ID", "").strip()
-espn_s2 = os.environ.get("ESPN_S2", "").strip()
-swid = os.environ.get("SWID", "").strip()
+league_id_env = os.environ.get("ESPN_LEAGUE_ID", "1122471427").strip()
+espn_s2 = os.environ.get("ESPN_S2", "AEC3XRcxe24PSvCsPtXTTxhLMSH%2FAQlyihNkcYivzTw04RsB4k3xPqm7wQbh0EoBMDIOp8Am3c6IKhDZK%2FLsY4un4EPIg9%2B5L8uFW7ikfKDizFCVi4H0TIREd4gSOqDnGfcSGmq5n%2Fspfwx%2BJnOOn4pU209JXNNyVsO2Ig1JPWol3DxBoQzcvVK8LhTcXBIIjTLlE1vR9pQ6Cu9sxyUEjNUyU5mCNZ2jvXCfa6lDMHJrZClFIUI8KTvgEk0RBG1BqlAQ1mjz6NiPDccRDk%2B%2BCGqIjBg5Q%2FfTzj8IEc8wWw8x4QrHW9b4cHz79qIPpoVpv9Gnoh%2B0J3kGMbsmCE%2BplwFJ").strip()
+swid = os.environ.get("SWID", "{FE1A61DC-440B-4FE9-A568-B4CBED877FB2}").strip()
 
 if not league_id_env:
     print("VIRHE: ESPN_LEAGUE_ID puuttuu tai on tyhjä!")
@@ -35,36 +37,13 @@ if not league:
     print("VIRHE: Liigaan yhdistäminen epäonnistui kaikilla kausivuosilla.")
     sys.exit(1)
 
-def calculate_player_points(player_stats):
-    """Laskee pelaajan todelliset fantasy-pisteet kaudelta/otteluista"""
-    s = player_stats.get('total', {})
-    if not s:
-        return 0.0
-    
-    pts = 0.0
-    # Kenttäpelaajien pisteet
-    pts += s.get('G', 0) * 3.0
-    pts += s.get('A', 0) * 2.0
-    pts += s.get('+/-', 0) * 0.5
-    pts += s.get('PIM', 0) * 0.2
-    pts += s.get('PPG', 0) * 1.0
-    pts += s.get('PPA', 0) * 0.5
-    pts += s.get('SHG', 0) * 2.0
-    pts += s.get('SHA', 0) * 1.0
-    pts += s.get('GWG', 0) * 1.0
-    pts += s.get('SOG', 0) * 0.2
-    pts += s.get('HIT', 0) * 0.2
-    pts += s.get('BLK', 0) * 0.5
-    pts += s.get('HAT', 0) * 3.0
-    
-    # Maalivahtien pisteet
-    pts += s.get('W', 0) * 4.0
-    pts += s.get('L', 0) * -2.0
-    pts += s.get('GA', 0) * -0.5
-    pts += s.get('SV', 0) * 0.2
-    pts += s.get('SO', 0) * 5.0
-    
-    return round(pts, 1)
+# Valmistellaan pisteiden pistelaskumappi liigan asetuksista
+scoring_items = league.settings._raw_scoring_settings.get('scoringItems', [])
+stat_points = {item['statId']: item['points'] for item in scoring_items}
+name_to_stat_id = {v: int(k) for k, v in c.STATS_MAP.items()}
+
+def calculate_player_points(player):
+    return round(getattr(player, 'total_points', 0.0), 1)
 
 # Kerätään joukkueiden tiedot, pisteet ja rosterit
 teams_data = []
@@ -75,21 +54,20 @@ for index, team in enumerate(league.teams, start=1):
 
     pos_counts = {"C": 0, "LW": 0, "RW": 0, "D": 0, "G": 0}
     roster_summary = []
+
+    # Lasketaan tarkat reaaliaikaiset joukkuepisteet liigan tilastokertoimista
     calc_team_points = 0.0
+    for stat_name, val in team.stats.items():
+        stat_id = name_to_stat_id.get(stat_name)
+        pts_per_unit = stat_points.get(stat_id, 0.0) if stat_id else 0.0
+        calc_team_points += val * pts_per_unit
+
+    final_points = round(calc_team_points, 1)
 
     for player in getattr(team, 'roster', []):
         pos = getattr(player, 'position', 'N/A')
         p_name = getattr(player, 'name', 'Unknown')
-        
-        # Haetaan pelaajan 2027 kausitilastot
-        stat_2027 = player.stats.get('Total 2027', {})
-        p_pts = calculate_player_points(stat_2027)
-
-        # Jos 2027-tilastoja ei vielä löydy, käytetään player.total_points-arvoa
-        if p_pts == 0.0 and getattr(player, 'total_points', 0) > 0:
-            p_pts = round(getattr(player, 'total_points', 0), 1)
-
-        calc_team_points += p_pts
+        p_pts = calculate_player_points(player)
 
         if 'Center' in pos or pos == 'C': pos_key = 'C'
         elif 'Left' in pos or pos == 'LW': pos_key = 'LW'
@@ -106,11 +84,6 @@ for index, team in enumerate(league.teams, start=1):
             "position": pos,
             "points": p_pts
         })
-
-    # Käytetään ESPN:n virallista points_for-arvoa jos se on suurempi kuin nolla,
-    # muussa tapauksessa käytetään laskettua reaaliaikaista summaa
-    official_pf = round(getattr(team, 'points_for', 0), 1)
-    final_points = official_pf if official_pf > 0 else round(calc_team_points, 1)
 
     teams_data.append({
         "id": team.team_id,
@@ -129,11 +102,7 @@ for index, team in enumerate(league.teams, start=1):
 free_agents = league.free_agents(size=30)
 fa_data = []
 for player in free_agents:
-    stat_2027 = player.stats.get('Total 2027', {})
-    calc_fa_pts = calculate_player_points(stat_2027)
-    if calc_fa_pts == 0.0 and getattr(player, 'total_points', 0) > 0:
-        calc_fa_pts = round(getattr(player, 'total_points', 0), 1)
-
+    calc_fa_pts = calculate_player_points(player)
     avg_pts = getattr(player, 'avg_points', 0)
 
     fa_data.append({
@@ -169,9 +138,14 @@ try:
 except Exception as e:
     print(f"Aktiviteettien haku epäonnistui: {e}")
 
+# Tallennetaan päivitysaika ISO/Suomi-muodossa
+now_utc = datetime.now(timezone.utc)
+last_updated_str = now_utc.strftime("%d.%m.%Y klo %H:%M UTC")
+
 output = {
     "league_name": getattr(league.settings, 'name', 'ESPN Fantasy League'),
     "current_week": getattr(league, 'current_week', 1),
+    "last_updated": last_updated_str,
     "teams": teams_data,
     "free_agents": fa_data,
     "recent_activity": recent_activities
