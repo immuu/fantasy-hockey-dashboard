@@ -6,7 +6,7 @@
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 0,
+      "points_for": 10.7,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -20,29 +20,29 @@
       },
       "top_players": [
         {
-          "name": "Jason Robertson",
-          "position": "Left Wing",
-          "points": 0
-        },
-        {
-          "name": "Cale Makar",
-          "position": "Defense",
-          "points": 0
-        },
-        {
           "name": "Jack Eichel",
           "position": "Center",
-          "points": 0
+          "points": 6.1
+        },
+        {
+          "name": "Sam Reinhart",
+          "position": "Right Wing",
+          "points": 1.2
         },
         {
           "name": "Cole Caufield",
           "position": "Left Wing",
-          "points": 0
+          "points": 1.1
+        },
+        {
+          "name": "Mark Stone",
+          "position": "Right Wing",
+          "points": 0.9
         },
         {
           "name": "Mitch Marner",
           "position": "Right Wing",
-          "points": 0
+          "points": 0.8
         }
       ]
     },
@@ -50,7 +50,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 0,
+      "points_for": 10.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -66,27 +66,27 @@
         {
           "name": "Connor McDavid",
           "position": "Center",
-          "points": 0
+          "points": 4.7
         },
         {
-          "name": "Macklin Celebrini",
-          "position": "Center",
-          "points": 0
-        },
-        {
-          "name": "Wyatt Johnston",
-          "position": "Center",
-          "points": 0
-        },
-        {
-          "name": "Roman Josi",
-          "position": "Defense",
-          "points": 0
-        },
-        {
-          "name": "Alex DeBrincat",
+          "name": "Brady Tkachuk",
           "position": "Left Wing",
-          "points": 0
+          "points": 2.1
+        },
+        {
+          "name": "Sebastian Aho",
+          "position": "Center",
+          "points": 2.1
+        },
+        {
+          "name": "Noah Dobson",
+          "position": "Defense",
+          "points": 1.2
+        },
+        {
+          "name": "Pavel Dorofeyev",
+          "position": "Right Wing",
+          "points": 0.7
         }
       ]
     },
@@ -94,7 +94,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 0,
+      "points_for": 28.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -108,29 +108,29 @@
       },
       "top_players": [
         {
-          "name": "Nathan MacKinnon",
-          "position": "Center",
-          "points": 0
+          "name": "Jeremy Swayman",
+          "position": "Goalie",
+          "points": 13.8
         },
         {
-          "name": "Zach Werenski",
-          "position": "Defense",
-          "points": 0
+          "name": "William Nylander",
+          "position": "Right Wing",
+          "points": 7.0
         },
         {
-          "name": "Filip Forsberg",
-          "position": "Left Wing",
-          "points": 0
+          "name": "Patrick Kane",
+          "position": "Right Wing",
+          "points": 3.8
         },
         {
           "name": "David Pastrnak",
           "position": "Right Wing",
-          "points": 0
+          "points": 1.5
         },
         {
-          "name": "Clayton Keller",
-          "position": "Left Wing",
-          "points": 0
+          "name": "Nick Suzuki",
+          "position": "Center",
+          "points": 0.8
         }
       ]
     },
@@ -138,7 +138,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 0,
+      "points_for": 36.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -152,29 +152,29 @@
       },
       "top_players": [
         {
-          "name": "Matthew Tkachuk",
-          "position": "Right Wing",
-          "points": 0
+          "name": "Evan Bouchard",
+          "position": "Defense",
+          "points": 20.4
+        },
+        {
+          "name": "Shea Theodore",
+          "position": "Defense",
+          "points": 5.7
+        },
+        {
+          "name": "Brandon Bussi",
+          "position": "Goalie",
+          "points": 3.3
         },
         {
           "name": "Leon Draisaitl",
           "position": "Center",
-          "points": 0
+          "points": 2.8
         },
         {
-          "name": "Nikita Kucherov",
+          "name": "Zach Hyman",
           "position": "Right Wing",
-          "points": 0
-        },
-        {
-          "name": "Matt Boldy",
-          "position": "Left Wing",
-          "points": 0
-        },
-        {
-          "name": "Auston Matthews",
-          "position": "Center",
-          "points": 0
+          "points": 1.5
         }
       ]
     }
@@ -184,7 +184,7 @@
       "name": "Rasmus Andersson",
       "position": "Defense",
       "proTeam": "Vegas Golden Knights",
-      "total_points": 0,
+      "total_points": 0.4,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -192,7 +192,7 @@
       "name": "Josh Morrissey",
       "position": "Defense",
       "proTeam": "Winnipeg Jets",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -200,7 +200,7 @@
       "name": "Dylan Guenther",
       "position": "Right Wing",
       "proTeam": "Utah Hockey Club",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -208,7 +208,7 @@
       "name": "Steven Stamkos",
       "position": "Center",
       "proTeam": "Nashville Predators",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -216,7 +216,7 @@
       "name": "Thomas Chabot",
       "position": "Defense",
       "proTeam": "Ottawa Senators",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -224,7 +224,7 @@
       "name": "Karel Vejmelka",
       "position": "Goalie",
       "proTeam": "Utah Hockey Club",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -232,7 +232,7 @@
       "name": "Alex Ovechkin",
       "position": "Left Wing",
       "proTeam": "Washington Capitals",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "DAY_TO_DAY"
     },
@@ -240,7 +240,7 @@
       "name": "Mike Matheson",
       "position": "Defense",
       "proTeam": "Montréal Canadiens",
-      "total_points": 0,
+      "total_points": 4.1,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -248,7 +248,7 @@
       "name": "Kirill Marchenko",
       "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
-      "total_points": 0,
+      "total_points": 3.7,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -256,7 +256,7 @@
       "name": "Mikhail Sergachev",
       "position": "Defense",
       "proTeam": "Utah Hockey Club",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -264,7 +264,7 @@
       "name": "Dylan Larkin",
       "position": "Center",
       "proTeam": "Detroit Red Wings",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "DAY_TO_DAY"
     },
@@ -272,7 +272,7 @@
       "name": "Vincent Trocheck",
       "position": "Center",
       "proTeam": "Utah Hockey Club",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -280,7 +280,7 @@
       "name": "Elias Pettersson",
       "position": "Center",
       "proTeam": "Vancouver Canucks",
-      "total_points": 0,
+      "total_points": 5.2,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -288,7 +288,7 @@
       "name": "Igor Shesterkin",
       "position": "Goalie",
       "proTeam": "New York Rangers",
-      "total_points": 0,
+      "total_points": 1.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -296,7 +296,7 @@
       "name": "Bowen Byram",
       "position": "Defense",
       "proTeam": "Chicago Blackhawks",
-      "total_points": 0,
+      "total_points": 0.5,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -304,7 +304,7 @@
       "name": "Charlie McAvoy",
       "position": "Defense",
       "proTeam": "Boston Bruins",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "SUSPENSION"
     },
@@ -312,7 +312,7 @@
       "name": "Brock Nelson",
       "position": "Center",
       "proTeam": "Colorado Avalanche",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -320,7 +320,7 @@
       "name": "Drake Batherson",
       "position": "Right Wing",
       "proTeam": "Ottawa Senators",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -328,7 +328,7 @@
       "name": "Timo Meier",
       "position": "Left Wing",
       "proTeam": "New Jersey Devils",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -336,7 +336,7 @@
       "name": "John Tavares",
       "position": "Center",
       "proTeam": "Toronto Maple Leafs",
-      "total_points": 0,
+      "total_points": 4.4,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -344,7 +344,7 @@
       "name": "Linus Ullmark",
       "position": "Goalie",
       "proTeam": "Ottawa Senators",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -352,7 +352,7 @@
       "name": "Andrei Svechnikov",
       "position": "Left Wing",
       "proTeam": "Carolina Hurricanes",
-      "total_points": 0,
+      "total_points": 2.9,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -360,7 +360,7 @@
       "name": "Dylan Cozens",
       "position": "Center",
       "proTeam": "Ottawa Senators",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -368,7 +368,7 @@
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -376,7 +376,7 @@
       "name": "Jesper Bratt",
       "position": "Right Wing",
       "proTeam": "New Jersey Devils",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -384,7 +384,7 @@
       "name": "Adam Fantilli",
       "position": "Center",
       "proTeam": "Columbus Blue Jackets",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -392,7 +392,7 @@
       "name": "Connor Hellebuyck",
       "position": "Goalie",
       "proTeam": "Winnipeg Jets",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "SUSPENSION"
     },
@@ -400,7 +400,7 @@
       "name": "J.T. Miller",
       "position": "Center",
       "proTeam": "New York Rangers",
-      "total_points": 0,
+      "total_points": 0.3,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -408,7 +408,7 @@
       "name": "Leo Carlsson",
       "position": "Center",
       "proTeam": "Anaheim Ducks",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -416,7 +416,7 @@
       "name": "Mackenzie Blackwood",
       "position": "Goalie",
       "proTeam": "Colorado Avalanche",
-      "total_points": 0,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
