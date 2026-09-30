@@ -245,6 +245,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Kirill Marchenko",
+      "position": "Left Wing",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Mikhail Sergachev",
       "position": "Defense",
       "proTeam": "Utah Hockey Club",
@@ -259,14 +267,6 @@
       "total_points": 0,
       "avg_points": 0,
       "injuryStatus": "DAY_TO_DAY"
-    },
-    {
-      "name": "Kirill Marchenko",
-      "position": "Left Wing",
-      "proTeam": "Toronto Maple Leafs",
-      "total_points": 0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Vincent Trocheck",
