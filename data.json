@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 2,
-  "last_updated": "30.09.2026 klo 17:28 UTC",
+  "last_updated": "30.09.2026 klo 19:41 UTC",
   "teams": [
     {
       "id": 1,
@@ -15,8 +15,8 @@
       "positions": {
         "C": 6,
         "LW": 5,
-        "RW": 4,
-        "D": 6,
+        "RW": 5,
+        "D": 5,
         "G": 2
       },
       "top_players": [
@@ -262,20 +262,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Detroit Red Wings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Elias Pettersson",
       "position": "Center",
       "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Vincent Trocheck",
@@ -294,9 +294,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Adam Fox",
+      "position": "Defense",
+      "proTeam": "New York Rangers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Bowen Byram",
       "position": "Defense",
       "proTeam": "Chicago Blackhawks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Brock Nelson",
+      "position": "Center",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -308,14 +324,6 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "SUSPENSION"
-    },
-    {
-      "name": "Brock Nelson",
-      "position": "Center",
-      "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Drake Batherson",
@@ -412,17 +420,24 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "SUSPENSION"
-    },
-    {
-      "name": "J.T. Miller",
-      "position": "Center",
-      "proTeam": "New York Rangers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1790792506025,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Adam Fox"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Porter Martone"
+        }
+      ]
+    },
     {
       "date": 1790754064988,
       "actions": [
