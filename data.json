@@ -1,16 +1,16 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 1,
+  "current_week": 2,
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 10.7,
+      "points_for": 17.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 1,
+      "standing": 3,
       "positions": {
         "C": 6,
         "LW": 5,
@@ -22,7 +22,12 @@
         {
           "name": "Jack Eichel",
           "position": "Center",
-          "points": 6.1
+          "points": 9.6
+        },
+        {
+          "name": "Mark Stone",
+          "position": "Right Wing",
+          "points": 4.6
         },
         {
           "name": "Sam Reinhart",
@@ -33,11 +38,6 @@
           "name": "Cole Caufield",
           "position": "Left Wing",
           "points": 1.1
-        },
-        {
-          "name": "Mark Stone",
-          "position": "Right Wing",
-          "points": 0.9
         },
         {
           "name": "Mitch Marner",
@@ -54,7 +54,7 @@
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 1,
+      "standing": 4,
       "positions": {
         "C": 6,
         "LW": 4,
@@ -94,15 +94,15 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 28.3,
+      "points_for": 28.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 1,
+      "standing": 2,
       "positions": {
         "C": 7,
-        "LW": 4,
-        "RW": 4,
+        "LW": 3,
+        "RW": 5,
         "D": 5,
         "G": 2
       },
@@ -120,7 +120,7 @@
         {
           "name": "Patrick Kane",
           "position": "Right Wing",
-          "points": 3.8
+          "points": 3.7
         },
         {
           "name": "David Pastrnak",
@@ -138,7 +138,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 36.8,
+      "points_for": 37.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -159,7 +159,7 @@
         {
           "name": "Shea Theodore",
           "position": "Defense",
-          "points": 5.7
+          "points": 6.2
         },
         {
           "name": "Brandon Bussi",
@@ -169,7 +169,7 @@
         {
           "name": "Leon Draisaitl",
           "position": "Center",
-          "points": 2.8
+          "points": 3.0
         },
         {
           "name": "Zach Hyman",
@@ -269,18 +269,18 @@
       "injuryStatus": "DAY_TO_DAY"
     },
     {
-      "name": "Vincent Trocheck",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Elias Pettersson",
       "position": "Center",
       "proTeam": "Vancouver Canucks",
       "total_points": 5.2,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -296,7 +296,7 @@
       "name": "Bowen Byram",
       "position": "Defense",
       "proTeam": "Chicago Blackhawks",
-      "total_points": 0.5,
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -325,6 +325,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "John Tavares",
+      "position": "Center",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 4.4,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Timo Meier",
       "position": "Left Wing",
       "proTeam": "New Jersey Devils",
@@ -333,10 +341,10 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "John Tavares",
-      "position": "Center",
-      "proTeam": "Toronto Maple Leafs",
-      "total_points": 4.4,
+      "name": "Andrei Svechnikov",
+      "position": "Left Wing",
+      "proTeam": "Carolina Hurricanes",
+      "total_points": 2.9,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -349,10 +357,10 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Andrei Svechnikov",
+      "name": "Dylan Holloway",
       "position": "Left Wing",
-      "proTeam": "Carolina Hurricanes",
-      "total_points": 2.9,
+      "proTeam": "St. Louis Blues",
+      "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
@@ -411,17 +419,24 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1790752578423,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Dylan Holloway"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Travis Konecny"
+        }
+      ]
+    },
     {
       "date": 1790702709588,
       "actions": [
