@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 3,
-  "last_updated": "01.10.2026 klo 16:44 UTC",
+  "last_updated": "01.10.2026 klo 21:27 UTC",
   "teams": [
     {
       "id": 1,
@@ -146,9 +146,9 @@
       "standing": 1,
       "positions": {
         "C": 4,
-        "LW": 5,
-        "RW": 5,
-        "D": 7,
+        "LW": 4,
+        "RW": 7,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -206,14 +206,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Guenther",
-      "position": "Right Wing",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Thomas Chabot",
       "position": "Defense",
       "proTeam": "Ottawa Senators",
@@ -238,17 +230,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mike Matheson",
-      "position": "Defense",
-      "proTeam": "Montréal Canadiens",
+      "name": "Kirill Marchenko",
+      "position": "Left Wing",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Kirill Marchenko",
-      "position": "Left Wing",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Mike Matheson",
+      "position": "Defense",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -270,20 +262,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Detroit Red Wings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "Vincent Trocheck",
       "position": "Center",
       "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
     },
     {
       "name": "Adam Fox",
@@ -350,6 +342,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Brock Faber",
+      "position": "Defense",
+      "proTeam": "Minnesota Wild",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
+    },
+    {
       "name": "Andrei Svechnikov",
       "position": "Left Wing",
       "proTeam": "Carolina Hurricanes",
@@ -414,15 +414,45 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Connor Hellebuyck",
-      "position": "Goalie",
-      "proTeam": "Winnipeg Jets",
+      "name": "J.T. Miller",
+      "position": "Center",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "SUSPENSION"
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1790887263483,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Gavin McKenna"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Dylan Guenther"
+        }
+      ]
+    },
+    {
+      "date": 1790887049506,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Vasily Podkolzin"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Brock Faber"
+        }
+      ]
+    },
     {
       "date": 1790870969083,
       "actions": [
