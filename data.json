@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 3,
-  "last_updated": "01.10.2026 klo 09:29 UTC",
+  "last_updated": "01.10.2026 klo 16:44 UTC",
   "teams": [
     {
       "id": 1,
@@ -57,9 +57,9 @@
       "ties": 0,
       "standing": 4,
       "positions": {
-        "C": 6,
+        "C": 7,
         "LW": 4,
-        "RW": 5,
+        "RW": 4,
         "D": 6,
         "G": 2
       },
@@ -190,17 +190,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
+      "name": "Adrian Kempe",
+      "position": "Right Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Steven Stamkos",
-      "position": "Center",
-      "proTeam": "Nashville Predators",
+      "name": "Josh Morrissey",
+      "position": "Defense",
+      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -275,7 +275,7 @@
       "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Vincent Trocheck",
@@ -286,16 +286,16 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Igor Shesterkin",
-      "position": "Goalie",
+      "name": "Adam Fox",
+      "position": "Defense",
       "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fox",
-      "position": "Defense",
+      "name": "Igor Shesterkin",
+      "position": "Goalie",
       "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
@@ -423,6 +423,21 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1790870969083,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Adrian Kempe"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Steven Stamkos"
+        }
+      ]
+    },
     {
       "date": 1790792506025,
       "actions": [
