@@ -1,22 +1,22 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 3,
-  "last_updated": "01.10.2026 klo 15:37 UTC",
+  "current_week": 57,
+  "last_updated": "24.11.2026 klo 17:56 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 23.5,
+      "points_for": 1601.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 3,
+      "standing": 4,
       "positions": {
-        "C": 6,
-        "LW": 5,
-        "RW": 5,
-        "D": 5,
+        "C": 4,
+        "LW": 4,
+        "RW": 7,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -46,23 +46,139 @@
           "points": 0.0
         }
       ],
-      "pointsHistory": [],
-      "weeklyScores": []
+      "pointsHistory": [
+        15.3,
+        23.5,
+        33.6,
+        54.2,
+        113.5,
+        138.1,
+        159.2,
+        193.6,
+        210.6,
+        277.2,
+        288.0,
+        315.7,
+        322.4,
+        336.8,
+        391.5,
+        396.7,
+        459.4,
+        475.3,
+        546.4,
+        549.6,
+        550.3,
+        606.5,
+        604.2,
+        637.2,
+        646.4,
+        661.8,
+        703.7,
+        707.9,
+        766.3,
+        779.1,
+        835.0,
+        866.8,
+        936.9,
+        949.8,
+        982.4,
+        1048.4,
+        1078.7,
+        1114.2,
+        1135.6,
+        1172.4,
+        1206.4,
+        1208.2,
+        1248.7,
+        1277.4,
+        1343.3,
+        1355.5,
+        1404.6,
+        1432.6,
+        1430.4,
+        1461.1,
+        1466.8,
+        1513.0,
+        1513.0,
+        1567.3,
+        1582.7,
+        1601.2,
+        1601.2
+      ],
+      "weeklyScores": [
+        15.3,
+        8.2,
+        10.1,
+        20.6,
+        59.3,
+        24.6,
+        21.1,
+        34.4,
+        17.0,
+        66.6,
+        10.8,
+        27.7,
+        6.7,
+        14.4,
+        54.7,
+        5.2,
+        62.7,
+        15.9,
+        71.1,
+        3.2,
+        0.7,
+        56.2,
+        -2.3,
+        33.0,
+        9.2,
+        15.4,
+        41.9,
+        4.2,
+        58.4,
+        12.8,
+        55.9,
+        31.8,
+        70.1,
+        12.9,
+        32.6,
+        66.0,
+        30.3,
+        35.5,
+        21.4,
+        36.8,
+        34.0,
+        1.8,
+        40.5,
+        28.7,
+        65.9,
+        12.2,
+        49.1,
+        28.0,
+        -2.2,
+        30.7,
+        5.7,
+        46.2,
+        0.0,
+        54.3,
+        15.4,
+        18.5,
+        0.0
+      ]
     },
     {
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 13.4,
+      "points_for": 1607.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 4,
+      "standing": 3,
       "positions": {
-        "C": 6,
+        "C": 8,
         "LW": 4,
-        "RW": 5,
-        "D": 6,
+        "RW": 2,
+        "D": 7,
         "G": 2
       },
       "top_players": [
@@ -77,38 +193,154 @@
           "points": 0.0
         },
         {
-          "name": "Wyatt Johnston",
-          "position": "Center",
-          "points": 0.0
-        },
-        {
           "name": "Roman Josi",
           "position": "Defense",
           "points": 0.0
         },
         {
-          "name": "Alex DeBrincat",
+          "name": "Brady Tkachuk",
           "position": "Left Wing",
+          "points": 0.0
+        },
+        {
+          "name": "Matthew Schaefer",
+          "position": "Defense",
           "points": 0.0
         }
       ],
-      "pointsHistory": [],
-      "weeklyScores": []
+      "pointsHistory": [
+        9.9,
+        13.4,
+        55.4,
+        75.3,
+        135.6,
+        156.5,
+        186.5,
+        223.3,
+        234.9,
+        296.6,
+        302.7,
+        371.3,
+        385.4,
+        389.9,
+        462.0,
+        471.8,
+        531.5,
+        529.0,
+        626.7,
+        636.2,
+        651.3,
+        706.0,
+        707.2,
+        751.0,
+        753.4,
+        791.0,
+        827.3,
+        837.7,
+        876.1,
+        886.4,
+        942.9,
+        961.6,
+        983.9,
+        1031.8,
+        1061.7,
+        1095.6,
+        1102.4,
+        1148.9,
+        1152.1,
+        1225.5,
+        1223.6,
+        1239.0,
+        1259.2,
+        1295.6,
+        1338.4,
+        1353.0,
+        1413.4,
+        1437.9,
+        1439.0,
+        1490.5,
+        1494.9,
+        1530.8,
+        1530.8,
+        1563.7,
+        1604.8,
+        1607.1,
+        1607.1
+      ],
+      "weeklyScores": [
+        9.9,
+        3.5,
+        42.0,
+        19.9,
+        60.3,
+        20.9,
+        30.0,
+        36.8,
+        11.6,
+        61.7,
+        6.1,
+        68.6,
+        14.1,
+        4.5,
+        72.1,
+        9.8,
+        59.7,
+        -2.5,
+        97.7,
+        9.5,
+        15.1,
+        54.7,
+        1.2,
+        43.8,
+        2.4,
+        37.6,
+        36.3,
+        10.4,
+        38.4,
+        10.3,
+        56.5,
+        18.7,
+        22.3,
+        47.9,
+        29.9,
+        33.9,
+        6.8,
+        46.5,
+        3.2,
+        73.4,
+        -1.9,
+        15.4,
+        20.2,
+        36.4,
+        42.8,
+        14.6,
+        60.4,
+        24.5,
+        1.1,
+        51.5,
+        4.4,
+        35.9,
+        0.0,
+        32.9,
+        41.1,
+        2.3,
+        0.0
+      ]
     },
     {
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 29.3,
+      "points_for": 1870.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 7,
-        "LW": 3,
-        "RW": 5,
-        "D": 5,
+        "C": 8,
+        "LW": 5,
+        "RW": 2,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -123,11 +355,6 @@
           "points": 0.0
         },
         {
-          "name": "Filip Forsberg",
-          "position": "Left Wing",
-          "points": 0.0
-        },
-        {
           "name": "David Pastrnak",
           "position": "Right Wing",
           "points": 0.0
@@ -136,25 +363,146 @@
           "name": "Clayton Keller",
           "position": "Left Wing",
           "points": 0.0
+        },
+        {
+          "name": "Jake Guentzel",
+          "position": "Left Wing",
+          "points": 0.0
         }
       ],
-      "pointsHistory": [],
-      "weeklyScores": []
+      "pointsHistory": [
+        26.3,
+        29.3,
+        64.9,
+        104.5,
+        186.3,
+        215.9,
+        234.5,
+        297.0,
+        308.1,
+        348.3,
+        366.4,
+        427.2,
+        438.1,
+        462.3,
+        516.2,
+        537.8,
+        567.5,
+        594.7,
+        634.1,
+        641.4,
+        672.9,
+        704.3,
+        720.8,
+        765.6,
+        787.7,
+        849.4,
+        867.9,
+        873.9,
+        900.6,
+        921.8,
+        989.6,
+        989.8,
+        1077.5,
+        1123.0,
+        1143.3,
+        1195.0,
+        1203.2,
+        1267.5,
+        1296.0,
+        1368.6,
+        1392.8,
+        1399.2,
+        1430.8,
+        1460.9,
+        1490.0,
+        1501.0,
+        1562.7,
+        1584.8,
+        1598.5,
+        1646.8,
+        1679.4,
+        1766.6,
+        1766.6,
+        1834.2,
+        1850.0,
+        1870.9,
+        1870.9
+      ],
+      "weeklyScores": [
+        26.3,
+        3.0,
+        35.6,
+        39.6,
+        81.8,
+        29.6,
+        18.6,
+        62.5,
+        11.1,
+        40.2,
+        18.1,
+        60.8,
+        10.9,
+        24.2,
+        53.9,
+        21.6,
+        29.7,
+        27.2,
+        39.4,
+        7.3,
+        31.5,
+        31.4,
+        16.5,
+        44.8,
+        22.1,
+        61.7,
+        18.5,
+        6.0,
+        26.7,
+        21.2,
+        67.8,
+        0.2,
+        87.7,
+        45.5,
+        20.3,
+        51.7,
+        8.2,
+        64.3,
+        28.5,
+        72.6,
+        24.2,
+        6.4,
+        31.6,
+        30.1,
+        29.1,
+        11.0,
+        61.7,
+        22.1,
+        13.7,
+        48.3,
+        32.6,
+        87.2,
+        0.0,
+        67.6,
+        15.8,
+        20.9,
+        0.0
+      ]
     },
     {
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 47.8,
+      "points_for": 2166.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 4,
-        "LW": 5,
-        "RW": 5,
-        "D": 7,
+        "C": 5,
+        "LW": 4,
+        "RW": 6,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -184,78 +532,138 @@
           "points": 0.0
         }
       ],
-      "pointsHistory": [],
-      "weeklyScores": []
+      "pointsHistory": [
+        39.7,
+        47.8,
+        107.5,
+        110.9,
+        212.8,
+        225.3,
+        242.0,
+        278.6,
+        315.8,
+        378.4,
+        392.9,
+        461.4,
+        490.4,
+        517.7,
+        593.9,
+        596.1,
+        656.4,
+        674.8,
+        743.0,
+        754.0,
+        768.1,
+        840.1,
+        843.7,
+        884.0,
+        896.2,
+        941.3,
+        979.0,
+        998.0,
+        1047.1,
+        1075.2,
+        1119.4,
+        1130.8,
+        1186.4,
+        1263.0,
+        1269.0,
+        1351.2,
+        1364.3,
+        1416.2,
+        1476.8,
+        1549.4,
+        1594.5,
+        1613.3,
+        1638.6,
+        1693.9,
+        1759.2,
+        1763.4,
+        1800.5,
+        1863.7,
+        1868.7,
+        1986.6,
+        1992.0,
+        2031.4,
+        2031.4,
+        2081.6,
+        2111.2,
+        2166.4,
+        2166.4
+      ],
+      "weeklyScores": [
+        39.7,
+        8.1,
+        59.7,
+        3.4,
+        101.9,
+        12.5,
+        16.7,
+        36.6,
+        37.2,
+        62.6,
+        14.5,
+        68.5,
+        29.0,
+        27.3,
+        76.2,
+        2.2,
+        60.3,
+        18.4,
+        68.2,
+        11.0,
+        14.1,
+        72.0,
+        3.6,
+        40.3,
+        12.2,
+        45.1,
+        37.7,
+        19.0,
+        49.1,
+        28.1,
+        44.2,
+        11.4,
+        55.6,
+        76.6,
+        6.0,
+        82.2,
+        13.1,
+        51.9,
+        60.6,
+        72.6,
+        45.1,
+        18.8,
+        25.3,
+        55.3,
+        65.3,
+        4.2,
+        37.1,
+        63.2,
+        5.0,
+        117.9,
+        5.4,
+        39.4,
+        0.0,
+        50.2,
+        29.6,
+        55.2,
+        0.0
+      ]
     }
   ],
   "free_agents": [
     {
-      "name": "Rasmus Andersson",
+      "name": "Moritz Seider",
       "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
+      "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Steven Stamkos",
-      "position": "Center",
-      "proTeam": "Nashville Predators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Dylan Guenther",
+      "name": "William Nylander",
       "position": "Right Wing",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Thomas Chabot",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Mike Matheson",
-      "position": "Defense",
-      "proTeam": "Montréal Canadiens",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Kirill Marchenko",
-      "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
@@ -270,68 +678,124 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Elias Pettersson",
-      "position": "Center",
-      "proTeam": "Vancouver Canucks",
+      "name": "Rasmus Dahlin",
+      "position": "Defense",
+      "proTeam": "Buffalo Sabres",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
-      "position": "Center",
+      "name": "Jakob Chychrun",
+      "position": "Defense",
+      "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Alex DeBrincat",
+      "position": "Left Wing",
       "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vincent Trocheck",
+      "name": "Mika Zibanejad",
       "position": "Center",
+      "proTeam": "New York Rangers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "MacKenzie Weegar",
+      "position": "Defense",
       "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fox",
-      "position": "Defense",
-      "proTeam": "New York Rangers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Igor Shesterkin",
-      "position": "Goalie",
-      "proTeam": "New York Rangers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Bowen Byram",
-      "position": "Defense",
-      "proTeam": "Chicago Blackhawks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Brock Nelson",
+      "name": "Elias Pettersson",
       "position": "Center",
-      "proTeam": "Colorado Avalanche",
+      "proTeam": "Vancouver Canucks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
+    },
+    {
+      "name": "Artemi Panarin",
+      "position": "Left Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Charlie McAvoy",
-      "position": "Defense",
+      "name": "Jeremy Swayman",
+      "position": "Goalie",
       "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "SUSPENSION"
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Erik Karlsson",
+      "position": "Defense",
+      "proTeam": "Pittsburgh Penguins",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Kirill Marchenko",
+      "position": "Left Wing",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Leo Carlsson",
+      "position": "Center",
+      "proTeam": "Anaheim Ducks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
+    },
+    {
+      "name": "Sidney Crosby",
+      "position": "Center",
+      "proTeam": "Pittsburgh Penguins",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Adrian Kempe",
+      "position": "Right Wing",
+      "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Drake Batherson",
@@ -342,49 +806,33 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "John Tavares",
+      "name": "Dylan Larkin",
       "position": "Center",
-      "proTeam": "Toronto Maple Leafs",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Timo Meier",
-      "position": "Left Wing",
-      "proTeam": "New Jersey Devils",
+      "name": "Charlie McAvoy",
+      "position": "Defense",
+      "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Andrei Svechnikov",
-      "position": "Left Wing",
-      "proTeam": "Carolina Hurricanes",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Linus Ullmark",
-      "position": "Goalie",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Dylan Holloway",
-      "position": "Left Wing",
-      "proTeam": "St. Louis Blues",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Dylan Cozens",
+      "name": "Nick Schmaltz",
       "position": "Center",
-      "proTeam": "Ottawa Senators",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Dylan Guenther",
+      "position": "Right Wing",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -398,176 +846,412 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jesper Bratt",
-      "position": "Right Wing",
-      "proTeam": "New Jersey Devils",
+      "name": "Filip Hronek",
+      "position": "Defense",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fantilli",
+      "name": "Ryan O'Reilly",
       "position": "Center",
-      "proTeam": "Columbus Blue Jackets",
+      "proTeam": "Nashville Predators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Leo Carlsson",
-      "position": "Center",
-      "proTeam": "Anaheim Ducks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Connor Hellebuyck",
+      "name": "Mackenzie Blackwood",
       "position": "Goalie",
-      "proTeam": "Winnipeg Jets",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "SUSPENSION"
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Joel Hofer",
+      "position": "Goalie",
+      "proTeam": "St. Louis Blues",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Noah Dobson",
+      "position": "Defense",
+      "proTeam": "Montréal Canadiens",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Lucas Raymond",
+      "position": "Left Wing",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
     {
-      "date": 1790792506025,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Adam Fox"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Porter Martone"
-        }
-      ]
-    },
-    {
-      "date": 1790754064988,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Mackenzie Blackwood"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "John Gibson"
-        }
-      ]
-    },
-    {
-      "date": 1790753711261,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Matvei Michkov"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Patrick Kane"
-        }
-      ]
-    },
-    {
-      "date": 1790752578423,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Dylan Holloway"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Travis Konecny"
-        }
-      ]
-    },
-    {
-      "date": 1790702709588,
+      "date": 1795499134119,
       "actions": [
         {
           "team": "Moron Losers",
           "action": "FA ADDED",
+          "player": "Mathieu Joseph"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Matthew Knies"
+        }
+      ]
+    },
+    {
+      "date": 1795499099222,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "William Karlsson"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Kent Johnson"
+        }
+      ]
+    },
+    {
+      "date": 1795497679853,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Mikhail Sergachev"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Mattias Ekholm"
+        }
+      ]
+    },
+    {
+      "date": 1795497134009,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Ivan Barbashev"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Drake Batherson"
+        }
+      ]
+    },
+    {
+      "date": 1795496563329,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "William Nylander"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Tomas Hertl"
+        }
+      ]
+    },
+    {
+      "date": 1795495062069,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Kasperi Kapanen"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Cole Perfetti"
+        }
+      ]
+    },
+    {
+      "date": 1795447707668,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Zach Hyman"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Dylan Cozens"
+        }
+      ]
+    },
+    {
+      "date": 1795447614237,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Luke Hughes"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Erik Cernak"
+        }
+      ]
+    },
+    {
+      "date": 1795447566821,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Jesper Bratt"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Jordan Martinook"
+        }
+      ]
+    },
+    {
+      "date": 1795412732660,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Brock Boeser"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Kent Johnson"
+        }
+      ]
+    },
+    {
+      "date": 1795412584732,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Sam Rinzel"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Matthew Knies"
+        }
+      ]
+    },
+    {
+      "date": 1795411353346,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Drake Batherson"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Brayden Point"
+        }
+      ]
+    },
+    {
+      "date": 1795410849522,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Jared Spurgeon"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Charle-Edouard D'Astous"
+        }
+      ]
+    },
+    {
+      "date": 1795410759680,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Cole Perfetti"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Carter Verhaeghe"
+        }
+      ]
+    },
+    {
+      "date": 1795410457725,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Roope Hintz"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Simon Holmstrom"
+        }
+      ]
+    },
+    {
+      "date": 1795365587662,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Sam Rinzel"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Leo Carlsson"
+        }
+      ]
+    },
+    {
+      "date": 1795365540208,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
           "player": "Shea Theodore"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Erik Cernak"
         }
       ]
     },
     {
-      "date": 1790695577980,
+      "date": 1795365359760,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Jordan Martinook"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Arseny Gritsyuk"
+        }
+      ]
+    },
+    {
+      "date": 1795365285621,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Alexis Lafreniere"
+        }
+      ]
+    },
+    {
+      "date": 1795333507096,
       "actions": [
         {
           "team": "Fridge Raiders",
           "action": "FA ADDED",
-          "player": "Adam Fox"
+          "player": "Charle-Edouard D'Astous"
         },
         {
           "team": "Fridge Raiders",
           "action": "DROPPED",
-          "player": "Thomas Chabot"
+          "player": "K'Andre Miller"
         }
       ]
     },
     {
-      "date": 1790580729079,
+      "date": 1795329902777,
       "actions": [
         {
-          "team": "Fridge Raiders",
-          "action": "WAIVER ADDED",
-          "player": "Jake Sanderson"
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Brayden Point"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Brandt Clarke"
         }
       ]
     },
     {
-      "date": 1790580729079,
+      "date": 1795327929637,
       "actions": [
         {
           "team": "Moron Losers",
-          "action": "WAIVER ADDED",
+          "action": "FA ADDED",
+          "player": "Brock Boeser"
+        }
+      ]
+    },
+    {
+      "date": 1795121272740,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
           "player": "Nikolaj Ehlers"
         }
       ]
     },
     {
-      "date": 1790580729079,
+      "date": 1795113166068,
       "actions": [
         {
           "team": "Julmat",
-          "action": "WAIVER ADDED",
-          "player": "Tom Wilson"
-        }
-      ]
-    },
-    {
-      "date": 1790580729079,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Joel Hofer"
+          "action": "FA ADDED",
+          "player": "Alexander Nikishin"
         },
         {
-          "team": "Fridge Raiders",
-          "action": "WAIVER ADDED",
-          "player": "Scott Wedgewood"
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Moritz Seider"
         }
       ]
     },
     {
-      "date": 1790452010603,
+      "date": 1795113092713,
       "actions": [
         {
-          "team": "Moron Losers",
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Juraj Slafkovsky"
+        },
+        {
+          "team": "Julmat",
           "action": "DROPPED",
-          "player": "Alex Ovechkin"
+          "player": "Morgan Geekie"
         }
       ]
     }

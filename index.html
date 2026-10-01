@@ -104,11 +104,11 @@
                     <button onclick="setTimeRange('all')" id="btn-range-all"
                         class="px-3 py-1.5 rounded-md bg-ice-500 text-white shadow-sm transition">Koko kausi</button>
                     <button onclick="setTimeRange('4w')" id="btn-range-4w"
-                        class="px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition">Viim. 4
-                        viikkoa</button>
+                        class="px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition">Viim. 28
+                        päivää</button>
                     <button onclick="setTimeRange('7d')" id="btn-range-7d"
-                        class="px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition">Viim. 2
-                        viikkoa</button>
+                        class="px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition">Viim. 7
+                        päivää</button>
                 </div>
 
                 <!-- Search Input -->
@@ -175,8 +175,8 @@
             <!-- Card 4: Matchup Week Info -->
             <div class="glass-card rounded-2xl p-4 border border-slate-800 flex items-center justify-between">
                 <div>
-                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Meneillään Oleva Viikko</p>
-                    <h3 class="text-lg font-bold text-white mt-1" id="statWeekInfo">Viikko 1</h3>
+                    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Meneillään Oleva Päivä</p>
+                    <h3 class="text-lg font-bold text-white mt-1" id="statWeekInfo">Päivä 1</h3>
                     <p class="text-xs text-slate-400 mt-0.5" id="statTeamsCount">0 Joukkuetta</p>
                 </div>
                 <div class="p-3 bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded-xl">
@@ -363,7 +363,7 @@
 
         const COLOR_PALETTE = ["#38bdf8", "#818cf8", "#f43f5e", "#10b981", "#fbbf24", "#c084fc", "#fb923c", "#94a3b8"];
         const WEEKS_COUNT = 18;
-        const FUTURE_WEEKS = 4;
+        const FUTURE_WEEKS = 7;
 
         let leagueData = {};
         let selectedTimeRange = 'all';
@@ -389,7 +389,7 @@
 
         function processData(data) {
             document.getElementById("leagueNameSubtitle").innerText = data.league_name || "ESPN Fantasy Hockey";
-            document.getElementById("statWeekInfo").innerText = `Viikko ${data.current_week || 1}`;
+            document.getElementById("statWeekInfo").innerText = `Päivä ${data.current_week || 1}`;
             document.getElementById("updateTimeBadge").innerText = data.last_updated
                 ? `Päivitetty: ${data.last_updated}`
                 : `Päivitetty: ${new Date().toLocaleTimeString('fi-FI', { hour: '2-digit', minute: '2-digit' })}`;
@@ -407,13 +407,12 @@
                 const teamId = t.id || i + 1;
                 const totalPts = t.points_for || 0;
 
-                let history = t.pointsHistory;
-                let weeklyScores = t.weeklyScores;
-
-                // Build points history using live totalPoints if empty
-                if (!history || history.length === 0) {
+                // Use pre‑computed cumulative history and raw daily scores
+                let history = t.pointsHistory || [];
+                let weeklyScores = t.weeklyScores || [];
+                // Fallback to total points if no history (first load)
+                if (history.length === 0) {
                     history = [totalPts];
-                    weeklyScores = [totalPts];
                 }
 
                 leagueData.teams[teamId] = {
@@ -448,16 +447,16 @@
             const currentWk = leagueData.current_week || 1;
             let startWeek = 1;
 
-            if (selectedTimeRange === '4w') startWeek = Math.max(1, currentWk - 3);
-            if (selectedTimeRange === '7d') startWeek = Math.max(1, currentWk - 1);
+            if (selectedTimeRange === '4w') startWeek = Math.max(1, currentWk - 27);
+            if (selectedTimeRange === '7d') startWeek = Math.max(1, currentWk - 6);
 
             for (let i = startWeek; i <= Math.max(currentWk, 1); i++) {
-                labels.push(`Vk ${i}`);
+                labels.push(`Pv ${i}`);
             }
 
             if (showProjections && selectedTimeRange === 'all') {
                 for (let i = currentWk + 1; i <= currentWk + FUTURE_WEEKS; i++) {
-                    labels.push(`Vk ${i} (Ennuste)`);
+                    labels.push(`Pv ${i} (Ennuste)`);
                 }
             }
 
@@ -489,7 +488,7 @@
                     borderColor: team.color,
                     backgroundColor: team.color + '20',
                     borderWidth: 2.5,
-                    pointRadius: 3,
+                    pointRadius: 0,
                     pointHoverRadius: 6,
                     tension: 0.25,
                     hidden: hiddenTeamIds.has(team.id)

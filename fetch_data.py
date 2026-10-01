@@ -20,6 +20,7 @@ YEAR = int(os.environ.get("ESPN_YEAR", 2027))
 print(f"Yhdistetään liigaan ID: {LEAGUE_ID}...")
 
 league = None
+YEAR_USED = YEAR
 for current_year in [YEAR, YEAR - 1]:
     try:
         print(f"Yritetään yhdistää kaudelle {current_year}...")
@@ -27,6 +28,7 @@ for current_year in [YEAR, YEAR - 1]:
             league = League(league_id=LEAGUE_ID, year=current_year, espn_s2=espn_s2, swid=swid)
         else:
             league = League(league_id=LEAGUE_ID, year=current_year)
+        YEAR_USED = current_year
         print(f"Yhdistäminen onnistui kaudelle {current_year}!")
         break
     except Exception as e:
@@ -41,31 +43,34 @@ scoring_items = league.settings._raw_scoring_settings.get('scoringItems', [])
 stat_points = {item['statId']: item['points'] for item in scoring_items}
 name_to_stat_id = {v: int(k) for k, v in c.STATS_MAP.items()}
 
-# ---- NEW: Gather daily points for each team and compute cumulative sum ----
-# We treat each matchup as a "day"; the order is week -> matchup index.
-# For each team we store a list of points earned per day.
-
+# ---- Daily points per team (this is a total-season-points league: no matchups) ----
+# For every scoring period (day) we fetch the roster as it was that day and sum the
+# daily applied points of players in active lineup slots (bench=7, IR=8 excluded).
+# The sum over all days equals the official ESPN season total.
+BENCH_SLOTS = (7, 8)
 daily_points = {team.team_id: [] for team in league.teams}
-current_wk = getattr(league, 'current_week', 1)
-for wk in range(1, current_wk + 1):
+last_period = getattr(league, 'scoringPeriodId', None) or getattr(league, 'current_week', 1)
+for period in range(1, last_period + 1):
     try:
-        scoreboard = league.scoreboard(week=wk)
-    except Exception:
+        raw = league.espn_request.league_get(params={'view': 'mRoster', 'scoringPeriodId': period})
+    except Exception as e:
+        print(f"Päivän {period} haku epäonnistui: {e}")
+        for tid in daily_points:
+            daily_points[tid].append(0.0)
         continue
-    for matchup in scoreboard:
-        home = getattr(matchup, 'home_team', None)
-        away = getattr(matchup, 'away_team', None)
-        if not home or not away:
-            continue
-        home_id = getattr(home, 'team_id', None)
-        away_id = getattr(away, 'team_id', None)
-        # Use the reported scores; fallback to total_points if missing
-        home_score = getattr(matchup, 'home_score', getattr(home, 'total_points', 0))
-        away_score = getattr(matchup, 'away_score', getattr(away, 'total_points', 0))
-        if home_id is not None:
-            daily_points[home_id].append(home_score)
-        if away_id is not None:
-            daily_points[away_id].append(away_score)
+    day_totals = {}
+    for raw_team in raw.get('teams', []):
+        s = 0.0
+        for entry in raw_team.get('roster', {}).get('entries', []):
+            if entry.get('lineupSlotId') in BENCH_SLOTS:
+                continue
+            for st in entry['playerPoolEntry']['player'].get('stats', []):
+                if (st.get('statSplitTypeId') == 5 and st.get('scoringPeriodId') == period
+                        and st.get('seasonId') == YEAR_USED):
+                    s += st.get('appliedTotal', 0.0)
+        day_totals[raw_team['id']] = round(s, 1)
+    for tid in daily_points:
+        daily_points[tid].append(day_totals.get(tid, 0.0))
 
 def calculate_player_points(player):
     return round(getattr(player, 'total_points', 0.0), 1)
@@ -79,13 +84,14 @@ for index, team in enumerate(league.teams, start=1):
     pos_counts = {"C": 0, "LW": 0, "RW": 0, "D": 0, "G": 0}
     roster_summary = []
 
-    # Calculate real‑time team points from stats
     calc_team_points = 0.0
     for stat_name, val in team.stats.items():
         stat_id = name_to_stat_id.get(stat_name)
         pts_per_unit = stat_points.get(stat_id, 0.0) if stat_id else 0.0
         calc_team_points += val * pts_per_unit
     final_points = round(calc_team_points, 1)
+    if daily_points.get(team.team_id):
+        final_points = round(sum(daily_points[team.team_id]), 1)
 
     for player in getattr(team, 'roster', []):
         pos = getattr(player, 'position', 'N/A')
@@ -108,7 +114,11 @@ for index, team in enumerate(league.teams, start=1):
         roster_summary.append({"name": p_name, "position": pos, "points": p_pts})
 
     team_daily = daily_points.get(team.team_id, [])
-    total_sum = round(sum(team_daily), 1)
+    cumulative = []
+    sum_pts = 0
+    for p in team_daily:
+        sum_pts += p
+        cumulative.append(round(sum_pts, 1))
 
     teams_data.append({
         "id": team.team_id,
@@ -121,8 +131,8 @@ for index, team in enumerate(league.teams, start=1):
         "standing": standing,
         "positions": pos_counts,
         "top_players": sorted(roster_summary, key=lambda x: x['points'], reverse=True)[:5],
-        "dailyPoints": team_daily,
-        "totalPoints": total_sum
+        "pointsHistory": cumulative,
+        "weeklyScores": team_daily
     })
 
 # Free agents (TOP 30)
@@ -161,7 +171,6 @@ try:
 except Exception as e:
     print(f"Aktiviteettien haku epäonnistui: {e}")
 
-# Timestamp
 now_utc = datetime.now(timezone.utc)
 last_updated_str = now_utc.strftime("%d.%m.%Y klo %H:%M UTC")
 
