@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 3,
-  "last_updated": "01.10.2026 klo 09:29 UTC",
+  "last_updated": "01.10.2026 klo 15:47 UTC",
   "teams": [
     {
       "id": 1,
@@ -45,7 +45,9 @@
           "position": "Right Wing",
           "points": 0.0
         }
-      ]
+      ],
+      "dailyPoints": [],
+      "totalPoints": 0
     },
     {
       "id": 2,
@@ -89,7 +91,9 @@
           "position": "Left Wing",
           "points": 0.0
         }
-      ]
+      ],
+      "dailyPoints": [],
+      "totalPoints": 0
     },
     {
       "id": 3,
@@ -133,7 +137,9 @@
           "position": "Left Wing",
           "points": 0.0
         }
-      ]
+      ],
+      "dailyPoints": [],
+      "totalPoints": 0
     },
     {
       "id": 4,
@@ -177,7 +183,9 @@
           "position": "Center",
           "points": 0.0
         }
-      ]
+      ],
+      "dailyPoints": [],
+      "totalPoints": 0
     }
   ],
   "free_agents": [
@@ -286,16 +294,16 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Igor Shesterkin",
-      "position": "Goalie",
+      "name": "Adam Fox",
+      "position": "Defense",
       "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fox",
-      "position": "Defense",
+      "name": "Igor Shesterkin",
+      "position": "Goalie",
       "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
