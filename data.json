@@ -1,21 +1,21 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 3,
-  "last_updated": "02.10.2026 klo 01:08 UTC",
+  "current_week": 4,
+  "last_updated": "02.10.2026 klo 07:36 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 23.5,
+      "points_for": 33.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 3,
+      "standing": 4,
       "positions": {
         "C": 6,
-        "LW": 5,
-        "RW": 5,
+        "LW": 6,
+        "RW": 4,
         "D": 5,
         "G": 2
       },
@@ -51,11 +51,11 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 13.4,
+      "points_for": 55.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 4,
+      "standing": 3,
       "positions": {
         "C": 7,
         "LW": 4,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 29.3,
+      "points_for": 65.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 47.8,
+      "points_for": 107.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -350,14 +350,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Faber",
-      "position": "Defense",
-      "proTeam": "Minnesota Wild",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Linus Ullmark",
       "position": "Goalie",
       "proTeam": "Ottawa Senators",
@@ -369,6 +361,22 @@
       "name": "Dylan Holloway",
       "position": "Left Wing",
       "proTeam": "St. Louis Blues",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Brock Faber",
+      "position": "Defense",
+      "proTeam": "Minnesota Wild",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Owen Tippett",
+      "position": "Right Wing",
+      "proTeam": "Philadelphia Flyers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -412,17 +420,39 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "J.T. Miller",
-      "position": "Center",
-      "proTeam": "New York Rangers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1790922315577,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "JJ Peterka"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Owen Tippett"
+        }
+      ]
+    },
+    {
+      "date": 1790917200174,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Artturi Lehkonen"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Porter Martone"
+        }
+      ]
+    },
     {
       "date": 1790887263483,
       "actions": [
