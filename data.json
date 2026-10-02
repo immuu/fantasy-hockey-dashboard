@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 4,
-  "last_updated": "02.10.2026 klo 07:36 UTC",
+  "last_updated": "02.10.2026 klo 14:12 UTC",
   "teams": [
     {
       "id": 1,
@@ -214,17 +214,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
-      "proTeam": "Utah Hockey Club",
+      "name": "Alex Ovechkin",
+      "position": "Left Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -246,17 +246,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mikhail Sergachev",
-      "position": "Defense",
-      "proTeam": "Utah Hockey Club",
+      "name": "Elias Pettersson",
+      "position": "Center",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Elias Pettersson",
-      "position": "Center",
-      "proTeam": "Vancouver Canucks",
+      "name": "Mikhail Sergachev",
+      "position": "Defense",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -294,17 +294,17 @@
       "injuryStatus": "OUT"
     },
     {
-      "name": "Bowen Byram",
-      "position": "Defense",
-      "proTeam": "Chicago Blackhawks",
+      "name": "Brock Nelson",
+      "position": "Center",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Nelson",
-      "position": "Center",
-      "proTeam": "Colorado Avalanche",
+      "name": "Bowen Byram",
+      "position": "Defense",
+      "proTeam": "Chicago Blackhawks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -350,14 +350,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Linus Ullmark",
-      "position": "Goalie",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Dylan Holloway",
       "position": "Left Wing",
       "proTeam": "St. Louis Blues",
@@ -372,6 +364,14 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Linus Ullmark",
+      "position": "Goalie",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Owen Tippett",
