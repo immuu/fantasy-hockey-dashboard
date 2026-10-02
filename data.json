@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 4,
-  "last_updated": "02.10.2026 klo 19:36 UTC",
+  "last_updated": "02.10.2026 klo 23:20 UTC",
   "teams": [
     {
       "id": 1,
@@ -291,7 +291,7 @@
       "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Brock Nelson",
