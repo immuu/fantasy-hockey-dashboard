@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 4,
-  "last_updated": "02.10.2026 klo 14:12 UTC",
+  "last_updated": "02.10.2026 klo 19:36 UTC",
   "teams": [
     {
       "id": 1,
@@ -101,9 +101,9 @@
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 7,
-        "LW": 3,
-        "RW": 5,
+        "C": 8,
+        "LW": 4,
+        "RW": 3,
         "D": 5,
         "G": 2
       },
@@ -262,14 +262,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vincent Trocheck",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Adam Fox",
       "position": "Defense",
       "proTeam": "New York Rangers",
@@ -281,6 +273,14 @@
       "name": "Igor Shesterkin",
       "position": "Goalie",
       "proTeam": "New York Rangers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -342,17 +342,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Andrei Svechnikov",
+      "name": "Dylan Holloway",
       "position": "Left Wing",
-      "proTeam": "Carolina Hurricanes",
+      "proTeam": "St. Louis Blues",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Holloway",
-      "position": "Left Wing",
-      "proTeam": "St. Louis Blues",
+      "name": "Linus Ullmark",
+      "position": "Goalie",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -364,14 +364,6 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
-    },
-    {
-      "name": "Linus Ullmark",
-      "position": "Goalie",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Owen Tippett",
@@ -414,15 +406,53 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Leo Carlsson",
+      "name": "J.T. Miller",
       "position": "Center",
-      "proTeam": "Anaheim Ducks",
+      "proTeam": "New York Rangers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Patrick Kane",
+      "position": "Right Wing",
+      "proTeam": "Chicago Blackhawks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1790966604897,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Travis Konecny"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Leo Carlsson"
+        }
+      ]
+    },
+    {
+      "date": 1790966552650,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Matvei Michkov"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Andrei Svechnikov"
+        }
+      ]
+    },
     {
       "date": 1790922315577,
       "actions": [
