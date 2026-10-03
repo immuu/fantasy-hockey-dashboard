@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 5,
-  "last_updated": "03.10.2026 klo 17:46 UTC",
+  "last_updated": "03.10.2026 klo 20:15 UTC",
   "teams": [
     {
       "id": 1,
@@ -302,20 +302,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Bowen Byram",
-      "position": "Defense",
-      "proTeam": "Chicago Blackhawks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "Charlie McAvoy",
       "position": "Defense",
       "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "SUSPENSION"
+    },
+    {
+      "name": "Bowen Byram",
+      "position": "Defense",
+      "proTeam": "Chicago Blackhawks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
     },
     {
       "name": "Drake Batherson",
@@ -342,14 +342,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Holloway",
-      "position": "Left Wing",
-      "proTeam": "St. Louis Blues",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Linus Ullmark",
       "position": "Goalie",
       "proTeam": "Ottawa Senators",
@@ -358,12 +350,12 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Faber",
-      "position": "Defense",
-      "proTeam": "Minnesota Wild",
+      "name": "Dylan Holloway",
+      "position": "Left Wing",
+      "proTeam": "St. Louis Blues",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Owen Tippett",
@@ -380,6 +372,14 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Brock Faber",
+      "position": "Defense",
+      "proTeam": "Minnesota Wild",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Adam Fantilli",
