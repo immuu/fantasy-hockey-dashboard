@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 5,
-  "last_updated": "03.10.2026 klo 20:15 UTC",
+  "last_updated": "03.10.2026 klo 23:24 UTC",
   "teams": [
     {
       "id": 1,
@@ -318,17 +318,17 @@
       "injuryStatus": "OUT"
     },
     {
-      "name": "Drake Batherson",
-      "position": "Right Wing",
-      "proTeam": "Ottawa Senators",
+      "name": "John Tavares",
+      "position": "Center",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "John Tavares",
-      "position": "Center",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Drake Batherson",
+      "position": "Right Wing",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -374,20 +374,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Faber",
-      "position": "Defense",
-      "proTeam": "Minnesota Wild",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Adam Fantilli",
       "position": "Center",
       "proTeam": "Columbus Blue Jackets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Brock Faber",
+      "position": "Defense",
+      "proTeam": "Minnesota Wild",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Jesper Bratt",
