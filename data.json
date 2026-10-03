@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 4,
-  "last_updated": "03.10.2026 klo 02:30 UTC",
+  "current_week": 5,
+  "last_updated": "03.10.2026 klo 08:36 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 33.6,
+      "points_for": 54.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 55.4,
+      "points_for": 75.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 65.1,
+      "points_for": 104.7,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,16 +139,16 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 107.5,
+      "points_for": 110.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
         "C": 4,
-        "LW": 4,
+        "LW": 3,
         "RW": 7,
-        "D": 6,
+        "D": 7,
         "G": 2
       },
       "top_players": [
@@ -206,6 +206,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Thomas Chabot",
       "position": "Defense",
       "proTeam": "Ottawa Senators",
@@ -217,14 +225,6 @@
       "name": "Alex Ovechkin",
       "position": "Left Wing",
       "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
-      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -406,23 +406,38 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Nikolaj Ehlers",
+      "position": "Left Wing",
+      "proTeam": "Carolina Hurricanes",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "J.T. Miller",
       "position": "Center",
       "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Patrick Kane",
-      "position": "Right Wing",
-      "proTeam": "Chicago Blackhawks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791005207636,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Nikolaj Ehlers"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Filip Hronek"
+        }
+      ]
+    },
     {
       "date": 1790966604897,
       "actions": [
