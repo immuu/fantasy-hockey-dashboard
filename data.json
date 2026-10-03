@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 4,
-  "last_updated": "02.10.2026 klo 23:20 UTC",
+  "last_updated": "03.10.2026 klo 02:30 UTC",
   "teams": [
     {
       "id": 1,
@@ -262,16 +262,16 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fox",
-      "position": "Defense",
+      "name": "Igor Shesterkin",
+      "position": "Goalie",
       "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Igor Shesterkin",
-      "position": "Goalie",
+      "name": "Adam Fox",
+      "position": "Defense",
       "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
@@ -382,6 +382,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Adam Fantilli",
+      "position": "Center",
+      "proTeam": "Columbus Blue Jackets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
@@ -393,14 +401,6 @@
       "name": "Jesper Bratt",
       "position": "Right Wing",
       "proTeam": "New Jersey Devils",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Adam Fantilli",
-      "position": "Center",
-      "proTeam": "Columbus Blue Jackets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
