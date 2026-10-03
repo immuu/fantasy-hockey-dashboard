@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 5,
-  "last_updated": "03.10.2026 klo 13:59 UTC",
+  "last_updated": "03.10.2026 klo 17:46 UTC",
   "teams": [
     {
       "id": 1,
@@ -182,17 +182,17 @@
   ],
   "free_agents": [
     {
-      "name": "Rasmus Andersson",
-      "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
+      "name": "Adrian Kempe",
+      "position": "Right Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adrian Kempe",
-      "position": "Right Wing",
-      "proTeam": "Los Angeles Kings",
+      "name": "Rasmus Andersson",
+      "position": "Defense",
+      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -214,17 +214,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Thomas Chabot",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
+      "name": "Alex Ovechkin",
+      "position": "Left Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
+      "name": "Thomas Chabot",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -238,17 +238,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mike Matheson",
-      "position": "Defense",
-      "proTeam": "Montréal Canadiens",
+      "name": "Elias Pettersson",
+      "position": "Center",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Elias Pettersson",
-      "position": "Center",
-      "proTeam": "Vancouver Canucks",
+      "name": "Mike Matheson",
+      "position": "Defense",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -307,7 +307,7 @@
       "proTeam": "Chicago Blackhawks",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Charlie McAvoy",
@@ -390,17 +390,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "name": "Jesper Bratt",
+      "position": "Right Wing",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jesper Bratt",
-      "position": "Right Wing",
-      "proTeam": "New Jersey Devils",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -414,9 +414,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "J.T. Miller",
-      "position": "Center",
-      "proTeam": "New York Rangers",
+      "name": "Patrick Kane",
+      "position": "Right Wing",
+      "proTeam": "Chicago Blackhawks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
