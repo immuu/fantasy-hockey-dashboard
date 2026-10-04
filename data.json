@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 5,
-  "last_updated": "04.10.2026 klo 03:00 UTC",
+  "current_week": 6,
+  "last_updated": "04.10.2026 klo 10:15 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 54.2,
+      "points_for": 113.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 75.3,
+      "points_for": 135.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 104.7,
+      "points_for": 186.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 110.9,
+      "points_for": 212.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -206,6 +206,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Karel Vejmelka",
       "position": "Goalie",
       "proTeam": "Utah Hockey Club",
@@ -233,14 +241,6 @@
       "name": "Kirill Marchenko",
       "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Elias Pettersson",
-      "position": "Center",
-      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -310,14 +310,6 @@
       "injuryStatus": "SUSPENSION"
     },
     {
-      "name": "Bowen Byram",
-      "position": "Defense",
-      "proTeam": "Chicago Blackhawks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "John Tavares",
       "position": "Center",
       "proTeam": "Toronto Maple Leafs",
@@ -332,6 +324,14 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Bowen Byram",
+      "position": "Defense",
+      "proTeam": "Chicago Blackhawks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
     },
     {
       "name": "Timo Meier",
@@ -390,20 +390,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Faber",
-      "position": "Defense",
-      "proTeam": "Minnesota Wild",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Brock Faber",
+      "position": "Defense",
+      "proTeam": "Minnesota Wild",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Nikolaj Ehlers",
@@ -414,15 +414,30 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Patrick Kane",
-      "position": "Right Wing",
-      "proTeam": "Chicago Blackhawks",
+      "name": "J.T. Miller",
+      "position": "Center",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791098187110,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Elias Pettersson"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Nico Hischier"
+        }
+      ]
+    },
     {
       "date": 1791005207636,
       "actions": [
