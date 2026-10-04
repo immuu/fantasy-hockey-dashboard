@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 6,
-  "last_updated": "04.10.2026 klo 10:15 UTC",
+  "last_updated": "04.10.2026 klo 15:31 UTC",
   "teams": [
     {
       "id": 1,
@@ -190,17 +190,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Rasmus Andersson",
+      "name": "Josh Morrissey",
       "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
+      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Josh Morrissey",
+      "name": "Rasmus Andersson",
       "position": "Defense",
-      "proTeam": "Winnipeg Jets",
+      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -246,17 +246,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mike Matheson",
+      "name": "Mikhail Sergachev",
       "position": "Defense",
-      "proTeam": "Montréal Canadiens",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mikhail Sergachev",
+      "name": "Mike Matheson",
       "position": "Defense",
-      "proTeam": "Utah Hockey Club",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -331,7 +331,7 @@
       "proTeam": "Chicago Blackhawks",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Timo Meier",
@@ -366,14 +366,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Cozens",
-      "position": "Center",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Adam Fantilli",
       "position": "Center",
       "proTeam": "Columbus Blue Jackets",
@@ -382,9 +374,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jesper Bratt",
-      "position": "Right Wing",
-      "proTeam": "New Jersey Devils",
+      "name": "Dylan Cozens",
+      "position": "Center",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -393,6 +385,14 @@
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Jesper Bratt",
+      "position": "Right Wing",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
