@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 6,
-  "last_updated": "04.10.2026 klo 15:31 UTC",
+  "last_updated": "04.10.2026 klo 18:50 UTC",
   "teams": [
     {
       "id": 1,
@@ -102,8 +102,8 @@
       "standing": 2,
       "positions": {
         "C": 8,
-        "LW": 4,
-        "RW": 3,
+        "LW": 3,
+        "RW": 4,
         "D": 5,
         "G": 2
       },
@@ -182,17 +182,17 @@
   ],
   "free_agents": [
     {
-      "name": "Adrian Kempe",
-      "position": "Right Wing",
-      "proTeam": "Los Angeles Kings",
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
+      "name": "Adrian Kempe",
+      "position": "Right Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -214,14 +214,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Thomas Chabot",
       "position": "Defense",
       "proTeam": "Ottawa Senators",
@@ -230,9 +222,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -241,6 +233,14 @@
       "name": "Kirill Marchenko",
       "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Alex Ovechkin",
+      "position": "Left Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -313,6 +313,14 @@
       "name": "John Tavares",
       "position": "Center",
       "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Andrei Svechnikov",
+      "position": "Left Wing",
+      "proTeam": "Carolina Hurricanes",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -412,17 +420,39 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "J.T. Miller",
-      "position": "Center",
-      "proTeam": "New York Rangers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791131522621,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Josh Morrissey"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Darren Raddysh"
+        }
+      ]
+    },
+    {
+      "date": 1791130315300,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Andrei Svechnikov"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Beckett Sennecke"
+        }
+      ]
+    },
     {
       "date": 1791098187110,
       "actions": [
