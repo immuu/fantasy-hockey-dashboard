@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 6,
-  "last_updated": "04.10.2026 klo 22:02 UTC",
+  "last_updated": "05.10.2026 klo 01:20 UTC",
   "teams": [
     {
       "id": 1,
@@ -206,17 +206,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nico Hischier",
-      "position": "Center",
-      "proTeam": "New Jersey Devils",
+      "name": "Thomas Chabot",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Thomas Chabot",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -342,14 +342,6 @@
       "injuryStatus": "DAY_TO_DAY"
     },
     {
-      "name": "Timo Meier",
-      "position": "Left Wing",
-      "proTeam": "New Jersey Devils",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Linus Ullmark",
       "position": "Goalie",
       "proTeam": "Ottawa Senators",
@@ -358,9 +350,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Holloway",
+      "name": "Timo Meier",
       "position": "Left Wing",
-      "proTeam": "St. Louis Blues",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -369,6 +361,14 @@
       "name": "Owen Tippett",
       "position": "Right Wing",
       "proTeam": "Philadelphia Flyers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Dylan Holloway",
+      "position": "Left Wing",
+      "proTeam": "St. Louis Blues",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
