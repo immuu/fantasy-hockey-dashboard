@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 7,
-  "last_updated": "05.10.2026 klo 16:28 UTC",
+  "last_updated": "05.10.2026 klo 22:57 UTC",
   "teams": [
     {
       "id": 1,
@@ -57,9 +57,9 @@
       "ties": 0,
       "standing": 3,
       "positions": {
-        "C": 7,
+        "C": 8,
         "LW": 4,
-        "RW": 4,
+        "RW": 3,
         "D": 6,
         "G": 2
       },
@@ -103,8 +103,8 @@
       "positions": {
         "C": 8,
         "LW": 3,
-        "RW": 4,
-        "D": 5,
+        "RW": 3,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -198,9 +198,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Thomas Chabot",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
+      "name": "Kirill Marchenko",
+      "position": "Left Wing",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -214,9 +214,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Kirill Marchenko",
-      "position": "Left Wing",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -230,8 +230,8 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
+      "name": "Mikhail Sergachev",
+      "position": "Defense",
       "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
@@ -246,9 +246,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mikhail Sergachev",
+      "name": "Jake Sanderson",
       "position": "Defense",
-      "proTeam": "Utah Hockey Club",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
+    },
+    {
+      "name": "Igor Shesterkin",
+      "position": "Goalie",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -257,14 +265,6 @@
       "name": "Mike Matheson",
       "position": "Defense",
       "proTeam": "Montréal Canadiens",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Igor Shesterkin",
-      "position": "Goalie",
-      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -342,6 +342,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Tom Wilson",
+      "position": "Right Wing",
+      "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Bowen Byram",
       "position": "Defense",
       "proTeam": "Chicago Blackhawks",
@@ -406,14 +414,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nikolaj Ehlers",
-      "position": "Left Wing",
-      "proTeam": "Carolina Hurricanes",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "J.T. Miller",
       "position": "Center",
       "proTeam": "New York Rangers",
@@ -423,6 +423,51 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791230417813,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Jake Sanderson"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Thomas Chabot"
+        }
+      ]
+    },
+    {
+      "date": 1791224648395,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Tom Wilson"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Mark Kastelic"
+        }
+      ]
+    },
+    {
+      "date": 1791218397505,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Victor Hedman"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Beckett Sennecke"
+        }
+      ]
+    },
     {
       "date": 1791198451080,
       "actions": [
@@ -730,16 +775,6 @@
           "team": "Fridge Raiders",
           "action": "WAIVER ADDED",
           "player": "Scott Wedgewood"
-        }
-      ]
-    },
-    {
-      "date": 1790452010603,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Alex Ovechkin"
         }
       ]
     }
