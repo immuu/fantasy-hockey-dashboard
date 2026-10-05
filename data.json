@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 7,
-  "last_updated": "05.10.2026 klo 07:47 UTC",
+  "last_updated": "05.10.2026 klo 16:28 UTC",
   "teams": [
     {
       "id": 1,
@@ -146,8 +146,8 @@
       "standing": 1,
       "positions": {
         "C": 4,
-        "LW": 3,
-        "RW": 7,
+        "LW": 2,
+        "RW": 8,
         "D": 7,
         "G": 2
       },
@@ -182,6 +182,14 @@
   ],
   "free_agents": [
     {
+      "name": "Adrian Kempe",
+      "position": "Right Wing",
+      "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Darren Raddysh",
       "position": "Defense",
       "proTeam": "Toronto Maple Leafs",
@@ -190,9 +198,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adrian Kempe",
-      "position": "Right Wing",
-      "proTeam": "Los Angeles Kings",
+      "name": "Thomas Chabot",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -206,9 +214,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Thomas Chabot",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
+      "name": "Kirill Marchenko",
+      "position": "Left Wing",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -225,14 +233,6 @@
       "name": "Karel Vejmelka",
       "position": "Goalie",
       "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Kirill Marchenko",
-      "position": "Left Wing",
-      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -286,20 +286,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Detroit Red Wings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Brock Nelson",
       "position": "Center",
       "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Charlie McAvoy",
@@ -310,17 +310,17 @@
       "injuryStatus": "SUSPENSION"
     },
     {
-      "name": "John Tavares",
-      "position": "Center",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Andrei Svechnikov",
+      "position": "Left Wing",
+      "proTeam": "Carolina Hurricanes",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Andrei Svechnikov",
-      "position": "Left Wing",
-      "proTeam": "Carolina Hurricanes",
+      "name": "John Tavares",
+      "position": "Center",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -334,17 +334,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Bowen Byram",
-      "position": "Defense",
-      "proTeam": "Chicago Blackhawks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Linus Ullmark",
       "position": "Goalie",
       "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Bowen Byram",
+      "position": "Defense",
+      "proTeam": "Chicago Blackhawks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -366,14 +366,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Holloway",
-      "position": "Left Wing",
-      "proTeam": "St. Louis Blues",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Adam Fantilli",
       "position": "Center",
       "proTeam": "Columbus Blue Jackets",
@@ -385,6 +377,14 @@
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Dylan Holloway",
+      "position": "Left Wing",
+      "proTeam": "St. Louis Blues",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -406,23 +406,38 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Faber",
-      "position": "Defense",
-      "proTeam": "Minnesota Wild",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Nikolaj Ehlers",
       "position": "Left Wing",
       "proTeam": "Carolina Hurricanes",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "J.T. Miller",
+      "position": "Center",
+      "proTeam": "New York Rangers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791198451080,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Will Smith"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Lucas Raymond"
+        }
+      ]
+    },
     {
       "date": 1791131522621,
       "actions": [
