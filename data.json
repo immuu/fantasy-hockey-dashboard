@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 6,
-  "last_updated": "05.10.2026 klo 01:20 UTC",
+  "current_week": 7,
+  "last_updated": "05.10.2026 klo 07:47 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 113.5,
+      "points_for": 138.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 135.6,
+      "points_for": 156.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 186.5,
+      "points_for": 215.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 212.6,
+      "points_for": 225.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -382,17 +382,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Cozens",
-      "position": "Center",
-      "proTeam": "Ottawa Senators",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "name": "Dylan Cozens",
+      "position": "Center",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
