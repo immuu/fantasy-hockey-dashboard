@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 7,
-  "last_updated": "06.10.2026 klo 02:37 UTC",
+  "current_week": 8,
+  "last_updated": "06.10.2026 klo 09:29 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 138.3,
+      "points_for": 159.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,14 +51,14 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 156.5,
+      "points_for": 187.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 3,
       "positions": {
-        "C": 8,
-        "LW": 4,
+        "C": 7,
+        "LW": 5,
         "RW": 3,
         "D": 6,
         "G": 2
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 215.6,
+      "points_for": 234.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 225.1,
+      "points_for": 241.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -147,8 +147,8 @@
       "positions": {
         "C": 4,
         "LW": 2,
-        "RW": 8,
-        "D": 7,
+        "RW": 7,
+        "D": 8,
         "G": 2
       },
       "top_players": [
@@ -339,7 +339,7 @@
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Tom Wilson",
@@ -423,6 +423,36 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791269070422,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Eeli Tolvanen"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Mark Kastelic"
+        }
+      ]
+    },
+    {
+      "date": 1791262484642,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Will Smith"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Brayden McNabb"
+        }
+      ]
+    },
     {
       "date": 1791230417813,
       "actions": [
@@ -750,31 +780,6 @@
           "team": "Moron Losers",
           "action": "WAIVER ADDED",
           "player": "Nikolaj Ehlers"
-        }
-      ]
-    },
-    {
-      "date": 1790580729079,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "WAIVER ADDED",
-          "player": "Tom Wilson"
-        }
-      ]
-    },
-    {
-      "date": 1790580729079,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Joel Hofer"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "WAIVER ADDED",
-          "player": "Scott Wedgewood"
         }
       ]
     }
