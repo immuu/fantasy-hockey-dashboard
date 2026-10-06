@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 8,
-  "last_updated": "06.10.2026 klo 16:19 UTC",
+  "last_updated": "06.10.2026 klo 21:19 UTC",
   "teams": [
     {
       "id": 1,
@@ -206,16 +206,16 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
+      "name": "Mikhail Sergachev",
+      "position": "Defense",
       "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mikhail Sergachev",
-      "position": "Defense",
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
       "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
@@ -339,7 +339,7 @@
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Tom Wilson",
