@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 8,
-  "last_updated": "06.10.2026 klo 09:29 UTC",
+  "last_updated": "06.10.2026 klo 16:19 UTC",
   "teams": [
     {
       "id": 1,
@@ -214,14 +214,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Rasmus Andersson",
-      "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Mikhail Sergachev",
       "position": "Defense",
       "proTeam": "Utah Hockey Club",
@@ -233,6 +225,14 @@
       "name": "Nico Hischier",
       "position": "Center",
       "proTeam": "New Jersey Devils",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Rasmus Andersson",
+      "position": "Defense",
+      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -254,12 +254,12 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jake Sanderson",
+      "name": "Adam Fox",
       "position": "Defense",
-      "proTeam": "Ottawa Senators",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Mike Matheson",
@@ -270,12 +270,12 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fox",
+      "name": "Jake Sanderson",
       "position": "Defense",
-      "proTeam": "New York Rangers",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Vincent Trocheck",
@@ -299,7 +299,7 @@
       "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Charlie McAvoy",
