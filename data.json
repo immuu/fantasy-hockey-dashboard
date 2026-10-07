@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 9,
-  "last_updated": "07.10.2026 klo 07:47 UTC",
+  "last_updated": "07.10.2026 klo 14:48 UTC",
   "teams": [
     {
       "id": 1,
@@ -103,8 +103,8 @@
       "positions": {
         "C": 8,
         "LW": 3,
-        "RW": 3,
-        "D": 6,
+        "RW": 4,
+        "D": 5,
         "G": 2
       },
       "top_players": [
@@ -182,6 +182,14 @@
   ],
   "free_agents": [
     {
+      "name": "Moritz Seider",
+      "position": "Defense",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Adrian Kempe",
       "position": "Right Wing",
       "proTeam": "Los Angeles Kings",
@@ -238,14 +246,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nico Hischier",
-      "position": "Center",
-      "proTeam": "New Jersey Devils",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Igor Shesterkin",
       "position": "Goalie",
       "proTeam": "New York Rangers",
@@ -257,6 +257,14 @@
       "name": "Alex Ovechkin",
       "position": "Left Wing",
       "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -291,7 +299,7 @@
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Vincent Trocheck",
@@ -305,14 +313,6 @@
       "name": "Dylan Larkin",
       "position": "Center",
       "proTeam": "Detroit Red Wings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Brock Nelson",
-      "position": "Center",
-      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -350,20 +350,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Brayden Point",
+      "position": "Center",
+      "proTeam": "Tampa Bay Lightning",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Tom Wilson",
       "position": "Right Wing",
       "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Linus Ullmark",
-      "position": "Goalie",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
     },
     {
       "name": "Bowen Byram",
@@ -374,12 +374,12 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Morgan Geekie",
-      "position": "Right Wing",
-      "proTeam": "Boston Bruins",
+      "name": "Linus Ullmark",
+      "position": "Goalie",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Timo Meier",
@@ -393,6 +393,14 @@
       "name": "Owen Tippett",
       "position": "Right Wing",
       "proTeam": "Philadelphia Flyers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Morgan Geekie",
+      "position": "Right Wing",
+      "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -412,17 +420,54 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Jesper Bratt",
-      "position": "Right Wing",
-      "proTeam": "New Jersey Devils",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791368768716,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Kris Letang"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Victor Hedman"
+        }
+      ]
+    },
+    {
+      "date": 1791368510067,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Beckett Sennecke"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Moritz Seider"
+        }
+      ]
+    },
+    {
+      "date": 1791368307232,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Brayden Point"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Brock Nelson"
+        }
+      ]
+    },
     {
       "date": 1791351498366,
       "actions": [
@@ -750,46 +795,6 @@
           "team": "Underdogs",
           "action": "DROPPED",
           "player": "John Gibson"
-        }
-      ]
-    },
-    {
-      "date": 1790753711261,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Matvei Michkov"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Patrick Kane"
-        }
-      ]
-    },
-    {
-      "date": 1790752578423,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Dylan Holloway"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Travis Konecny"
-        }
-      ]
-    },
-    {
-      "date": 1790702709588,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Shea Theodore"
         }
       ]
     }
