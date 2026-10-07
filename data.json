@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 9,
-  "last_updated": "07.10.2026 klo 14:48 UTC",
+  "last_updated": "07.10.2026 klo 20:15 UTC",
   "teams": [
     {
       "id": 1,
@@ -270,17 +270,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Rasmus Andersson",
+      "name": "Adam Fox",
       "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fox",
+      "name": "Rasmus Andersson",
       "position": "Defense",
-      "proTeam": "New York Rangers",
+      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -366,20 +366,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Bowen Byram",
-      "position": "Defense",
-      "proTeam": "Chicago Blackhawks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Linus Ullmark",
       "position": "Goalie",
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "DAY_TO_DAY"
+    },
+    {
+      "name": "Bowen Byram",
+      "position": "Defense",
+      "proTeam": "Chicago Blackhawks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Timo Meier",
@@ -398,17 +398,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Morgan Geekie",
-      "position": "Right Wing",
-      "proTeam": "Boston Bruins",
+      "name": "Adam Fantilli",
+      "position": "Center",
+      "proTeam": "Columbus Blue Jackets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fantilli",
-      "position": "Center",
-      "proTeam": "Columbus Blue Jackets",
+      "name": "Morgan Geekie",
+      "position": "Right Wing",
+      "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
