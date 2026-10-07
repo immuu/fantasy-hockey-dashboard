@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 8,
-  "last_updated": "06.10.2026 klo 21:19 UTC",
+  "last_updated": "07.10.2026 klo 01:04 UTC",
   "teams": [
     {
       "id": 1,
@@ -230,14 +230,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Rasmus Andersson",
-      "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Alex Ovechkin",
       "position": "Left Wing",
       "proTeam": "Washington Capitals",
@@ -249,6 +241,14 @@
       "name": "Igor Shesterkin",
       "position": "Goalie",
       "proTeam": "New York Rangers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Rasmus Andersson",
+      "position": "Defense",
+      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -286,17 +286,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Nelson",
+      "name": "Dylan Larkin",
       "position": "Center",
-      "proTeam": "Colorado Avalanche",
+      "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
+      "name": "Brock Nelson",
       "position": "Center",
-      "proTeam": "Detroit Red Wings",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -334,14 +334,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Linus Ullmark",
-      "position": "Goalie",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "Tom Wilson",
       "position": "Right Wing",
       "proTeam": "Washington Capitals",
@@ -356,6 +348,14 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Linus Ullmark",
+      "position": "Goalie",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
     },
     {
       "name": "Owen Tippett",
