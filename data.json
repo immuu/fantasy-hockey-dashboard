@@ -1,21 +1,21 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 9,
-  "last_updated": "08.10.2026 klo 06:44 UTC",
+  "current_week": 10,
+  "last_updated": "08.10.2026 klo 14:07 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 193.4,
+      "points_for": 210.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 4,
       "positions": {
-        "C": 6,
+        "C": 7,
         "LW": 5,
-        "RW": 5,
+        "RW": 4,
         "D": 5,
         "G": 2
       },
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 223.1,
+      "points_for": 234.7,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,16 +95,16 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 297.0,
+      "points_for": 308.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 1,
+      "standing": 2,
       "positions": {
-        "C": 8,
+        "C": 7,
         "LW": 3,
         "RW": 4,
-        "D": 5,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -139,11 +139,11 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 278.8,
+      "points_for": 316.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 2,
+      "standing": 1,
       "positions": {
         "C": 5,
         "LW": 2,
@@ -198,17 +198,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Juraj Slafkovsky",
+      "position": "Left Wing",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Juraj Slafkovsky",
-      "position": "Left Wing",
-      "proTeam": "Montréal Canadiens",
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -254,14 +254,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fox",
-      "position": "Defense",
-      "proTeam": "New York Rangers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Nico Hischier",
       "position": "Center",
       "proTeam": "New Jersey Devils",
@@ -294,6 +286,14 @@
       "injuryStatus": "DAY_TO_DAY"
     },
     {
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Vincent Trocheck",
       "position": "Center",
       "proTeam": "Utah Hockey Club",
@@ -302,9 +302,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
+      "name": "Brock Nelson",
       "position": "Center",
-      "proTeam": "Detroit Red Wings",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -374,6 +374,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Adam Fantilli",
+      "position": "Center",
+      "proTeam": "Columbus Blue Jackets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Bowen Byram",
       "position": "Defense",
       "proTeam": "Chicago Blackhawks",
@@ -385,14 +393,6 @@
       "name": "Owen Tippett",
       "position": "Right Wing",
       "proTeam": "Philadelphia Flyers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Adam Fantilli",
-      "position": "Center",
-      "proTeam": "Columbus Blue Jackets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,21 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791457794053,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Adam Fox"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Brock Nelson"
+        }
+      ]
+    },
     {
       "date": 1791436179756,
       "actions": [
@@ -780,21 +795,6 @@
           "team": "Moron Losers",
           "action": "DROPPED",
           "player": "Brock Faber"
-        }
-      ]
-    },
-    {
-      "date": 1790870969083,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Adrian Kempe"
-        },
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Steven Stamkos"
         }
       ]
     }
