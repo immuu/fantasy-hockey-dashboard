@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 10,
-  "last_updated": "08.10.2026 klo 20:17 UTC",
+  "last_updated": "09.10.2026 klo 00:43 UTC",
   "teams": [
     {
       "id": 1,
@@ -278,20 +278,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jake Sanderson",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "Dylan Larkin",
       "position": "Center",
       "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Jake Sanderson",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
     },
     {
       "name": "Vincent Trocheck",
@@ -366,17 +366,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Timo Meier",
-      "position": "Left Wing",
-      "proTeam": "New Jersey Devils",
+      "name": "Owen Tippett",
+      "position": "Right Wing",
+      "proTeam": "Philadelphia Flyers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Owen Tippett",
-      "position": "Right Wing",
-      "proTeam": "Philadelphia Flyers",
+      "name": "Timo Meier",
+      "position": "Left Wing",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
