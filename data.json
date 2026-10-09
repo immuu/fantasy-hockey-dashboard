@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 10,
-  "last_updated": "09.10.2026 klo 06:51 UTC",
+  "current_week": 11,
+  "last_updated": "09.10.2026 klo 13:54 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 210.4,
+      "points_for": 277.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 234.7,
+      "points_for": 296.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 308.1,
+      "points_for": 348.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,16 +139,16 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 316.0,
+      "points_for": 378.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 5,
-        "LW": 2,
+        "C": 4,
+        "LW": 4,
         "RW": 6,
-        "D": 8,
+        "D": 7,
         "G": 2
       },
       "top_players": [
@@ -206,17 +206,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Juraj Slafkovsky",
-      "position": "Left Wing",
-      "proTeam": "Montréal Canadiens",
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Juraj Slafkovsky",
+      "position": "Left Wing",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -299,7 +299,7 @@
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Vincent Trocheck",
@@ -374,6 +374,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Morgan Geekie",
+      "position": "Right Wing",
+      "proTeam": "Boston Bruins",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Timo Meier",
       "position": "Left Wing",
       "proTeam": "New Jersey Devils",
@@ -390,9 +398,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Morgan Geekie",
-      "position": "Right Wing",
-      "proTeam": "Boston Bruins",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -409,14 +417,6 @@
       "name": "Bowen Byram",
       "position": "Defense",
       "proTeam": "Chicago Blackhawks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
