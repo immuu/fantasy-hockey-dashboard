@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 10,
-  "last_updated": "09.10.2026 klo 00:43 UTC",
+  "last_updated": "09.10.2026 klo 06:51 UTC",
   "teams": [
     {
       "id": 1,
@@ -190,6 +190,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Artemi Panarin",
+      "position": "Left Wing",
+      "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Adrian Kempe",
       "position": "Right Wing",
       "proTeam": "Los Angeles Kings",
@@ -246,6 +254,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Scott Wedgewood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Alex Ovechkin",
       "position": "Left Wing",
       "proTeam": "Washington Capitals",
@@ -273,14 +289,6 @@
       "name": "Rasmus Andersson",
       "position": "Defense",
       "proTeam": "Vegas Golden Knights",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -366,14 +374,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Owen Tippett",
-      "position": "Right Wing",
-      "proTeam": "Philadelphia Flyers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Timo Meier",
       "position": "Left Wing",
       "proTeam": "New Jersey Devils",
@@ -382,25 +382,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Bowen Byram",
-      "position": "Defense",
-      "proTeam": "Chicago Blackhawks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "name": "Owen Tippett",
+      "position": "Right Wing",
+      "proTeam": "Philadelphia Flyers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -414,15 +398,106 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jesper Bratt",
-      "position": "Right Wing",
-      "proTeam": "New Jersey Devils",
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Bowen Byram",
+      "position": "Defense",
+      "proTeam": "Chicago Blackhawks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791527324524,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Nazem Kadri"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Jared McCann"
+        }
+      ]
+    },
+    {
+      "date": 1791527272620,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Brayden McNabb"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Matthew Knies"
+        }
+      ]
+    },
+    {
+      "date": 1791521861344,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Artemi Panarin"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Cole Perfetti"
+        }
+      ]
+    },
+    {
+      "date": 1791521563525,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Scott Wedgewood"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Stuart Skinner"
+        }
+      ]
+    },
+    {
+      "date": 1791521269900,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Tomas Hertl"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Dylan Larkin"
+        }
+      ]
+    },
     {
       "date": 1791473948411,
       "actions": [
@@ -720,81 +795,6 @@
           "team": "Moron Losers",
           "action": "FA ADDED",
           "player": "Filip Hronek"
-        }
-      ]
-    },
-    {
-      "date": 1790966604897,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Travis Konecny"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Leo Carlsson"
-        }
-      ]
-    },
-    {
-      "date": 1790966552650,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Matvei Michkov"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Andrei Svechnikov"
-        }
-      ]
-    },
-    {
-      "date": 1790922315577,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "JJ Peterka"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Owen Tippett"
-        }
-      ]
-    },
-    {
-      "date": 1790917200174,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Artturi Lehkonen"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Porter Martone"
-        }
-      ]
-    },
-    {
-      "date": 1790887263483,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Gavin McKenna"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Dylan Guenther"
         }
       ]
     }
