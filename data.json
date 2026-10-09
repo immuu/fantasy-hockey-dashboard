@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 11,
-  "last_updated": "09.10.2026 klo 19:06 UTC",
+  "last_updated": "09.10.2026 klo 23:37 UTC",
   "teams": [
     {
       "id": 1,
@@ -103,8 +103,8 @@
       "positions": {
         "C": 7,
         "LW": 3,
-        "RW": 4,
-        "D": 6,
+        "RW": 5,
+        "D": 5,
         "G": 2
       },
       "top_players": [
@@ -230,6 +230,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Josh Morrissey",
+      "position": "Defense",
+      "proTeam": "Winnipeg Jets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
+    },
+    {
       "name": "Kirill Marchenko",
       "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
@@ -286,20 +294,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Rasmus Andersson",
-      "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Jake Sanderson",
       "position": "Defense",
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "DAY_TO_DAY"
+    },
+    {
+      "name": "Rasmus Andersson",
+      "position": "Defense",
+      "proTeam": "Vegas Golden Knights",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Vincent Trocheck",
@@ -339,7 +347,7 @@
       "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Drake Batherson",
@@ -366,9 +374,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fantilli",
+      "name": "Logan Cooley",
       "position": "Center",
-      "proTeam": "Columbus Blue Jackets",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -412,17 +420,39 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Bowen Byram",
-      "position": "Defense",
-      "proTeam": "Chicago Blackhawks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791576467677,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Logan Cooley"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Adam Fantilli"
+        }
+      ]
+    },
+    {
+      "date": 1791573099444,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Josh Morrissey"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Gabe Perreault"
+        }
+      ]
+    },
     {
       "date": 1791527324524,
       "actions": [
@@ -765,36 +795,6 @@
           "team": "Underdogs",
           "action": "FA ADDED",
           "player": "Beckett Sennecke"
-        }
-      ]
-    },
-    {
-      "date": 1791098187110,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Elias Pettersson"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Nico Hischier"
-        }
-      ]
-    },
-    {
-      "date": 1791005207636,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Nikolaj Ehlers"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Filip Hronek"
         }
       ]
     }
