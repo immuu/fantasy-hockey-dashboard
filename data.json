@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 12,
-  "last_updated": "10.10.2026 klo 09:10 UTC",
+  "last_updated": "10.10.2026 klo 15:36 UTC",
   "teams": [
     {
       "id": 1,
@@ -190,6 +190,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Jakob Chychrun",
+      "position": "Defense",
+      "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Artemi Panarin",
       "position": "Left Wing",
       "proTeam": "Los Angeles Kings",
@@ -214,14 +222,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Thomas Chabot",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Juraj Slafkovsky",
       "position": "Left Wing",
       "proTeam": "Montréal Canadiens",
@@ -235,7 +235,7 @@
       "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Kirill Marchenko",
@@ -294,17 +294,17 @@
       "injuryStatus": "DAY_TO_DAY"
     },
     {
-      "name": "Rasmus Andersson",
-      "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vincent Trocheck",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "name": "Rasmus Andersson",
+      "position": "Defense",
+      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -326,20 +326,20 @@
       "injuryStatus": "SUSPENSION"
     },
     {
-      "name": "John Tavares",
-      "position": "Center",
-      "proTeam": "Toronto Maple Leafs",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "Drake Batherson",
       "position": "Right Wing",
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "John Tavares",
+      "position": "Center",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
     },
     {
       "name": "Brayden Point",
@@ -423,6 +423,36 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791643281303,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Brayden McNabb"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Josh Manson"
+        }
+      ]
+    },
+    {
+      "date": 1791630758945,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Jakob Chychrun"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Thomas Chabot"
+        }
+      ]
+    },
     {
       "date": 1791613650457,
       "actions": [
@@ -765,36 +795,6 @@
           "team": "Fridge Raiders",
           "action": "FA ADDED",
           "player": "Thomas Chabot"
-        }
-      ]
-    },
-    {
-      "date": 1791224648395,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Tom Wilson"
-        },
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Mark Kastelic"
-        }
-      ]
-    },
-    {
-      "date": 1791218397505,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Victor Hedman"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Beckett Sennecke"
         }
       ]
     }
