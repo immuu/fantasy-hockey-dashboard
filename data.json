@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 12,
-  "last_updated": "10.10.2026 klo 15:36 UTC",
+  "last_updated": "10.10.2026 klo 19:35 UTC",
   "teams": [
     {
       "id": 1,
@@ -230,14 +230,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Kirill Marchenko",
       "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
@@ -246,9 +238,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Igor Shesterkin",
-      "position": "Goalie",
-      "proTeam": "New York Rangers",
+      "name": "Josh Morrissey",
+      "position": "Defense",
+      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "DAY_TO_DAY"
@@ -374,17 +366,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Timo Meier",
-      "position": "Left Wing",
-      "proTeam": "New Jersey Devils",
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "name": "Timo Meier",
+      "position": "Left Wing",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -406,9 +398,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Bowen Byram",
-      "position": "Defense",
-      "proTeam": "Chicago Blackhawks",
+      "name": "Jesper Wallstedt",
+      "position": "Goalie",
+      "proTeam": "Minnesota Wild",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -417,6 +409,14 @@
       "name": "Matthew Knies",
       "position": "Left Wing",
       "proTeam": "Columbus Blue Jackets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Bowen Byram",
+      "position": "Defense",
+      "proTeam": "Chicago Blackhawks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
