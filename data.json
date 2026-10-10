@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 11,
-  "last_updated": "10.10.2026 klo 02:55 UTC",
+  "current_week": 12,
+  "last_updated": "10.10.2026 klo 09:10 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 277.2,
+      "points_for": 288.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 296.8,
+      "points_for": 301.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 348.3,
+      "points_for": 366.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -103,8 +103,8 @@
       "positions": {
         "C": 7,
         "LW": 3,
-        "RW": 5,
-        "D": 5,
+        "RW": 4,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -139,15 +139,15 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 378.4,
+      "points_for": 392.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 4,
+        "C": 3,
         "LW": 4,
-        "RW": 6,
+        "RW": 7,
         "D": 7,
         "G": 2
       },
@@ -246,14 +246,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mikhail Sergachev",
-      "position": "Defense",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Igor Shesterkin",
       "position": "Goalie",
       "proTeam": "New York Rangers",
@@ -326,14 +318,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Andrei Svechnikov",
-      "position": "Left Wing",
-      "proTeam": "Carolina Hurricanes",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Charlie McAvoy",
       "position": "Defense",
       "proTeam": "Boston Bruins",
@@ -353,14 +337,6 @@
       "name": "Drake Batherson",
       "position": "Right Wing",
       "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Tom Wilson",
-      "position": "Right Wing",
-      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -390,17 +366,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Timo Meier",
-      "position": "Left Wing",
-      "proTeam": "New Jersey Devils",
+      "name": "Adam Fantilli",
+      "position": "Center",
+      "proTeam": "Columbus Blue Jackets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Owen Tippett",
-      "position": "Right Wing",
-      "proTeam": "Philadelphia Flyers",
+      "name": "Timo Meier",
+      "position": "Left Wing",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -420,9 +396,78 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Owen Tippett",
+      "position": "Right Wing",
+      "proTeam": "Philadelphia Flyers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Bowen Byram",
+      "position": "Defense",
+      "proTeam": "Chicago Blackhawks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Matthew Knies",
+      "position": "Left Wing",
+      "proTeam": "Columbus Blue Jackets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791613650457,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Mikhail Sergachev"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Gabe Perreault"
+        }
+      ]
+    },
+    {
+      "date": 1791612762254,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Matthew Knies"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Tom Wilson"
+        }
+      ]
+    },
+    {
+      "date": 1791612562037,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Andrei Svechnikov"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Adam Fantilli"
+        }
+      ]
+    },
     {
       "date": 1791576467677,
       "actions": [
@@ -749,51 +794,6 @@
         {
           "team": "Underdogs",
           "action": "DROPPED",
-          "player": "Beckett Sennecke"
-        }
-      ]
-    },
-    {
-      "date": 1791198451080,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Will Smith"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Lucas Raymond"
-        }
-      ]
-    },
-    {
-      "date": 1791131522621,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Josh Morrissey"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Darren Raddysh"
-        }
-      ]
-    },
-    {
-      "date": 1791130315300,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Andrei Svechnikov"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
           "player": "Beckett Sennecke"
         }
       ]
