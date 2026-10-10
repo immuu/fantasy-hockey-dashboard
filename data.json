@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 11,
-  "last_updated": "09.10.2026 klo 23:37 UTC",
+  "last_updated": "10.10.2026 klo 02:55 UTC",
   "teams": [
     {
       "id": 1,
@@ -259,7 +259,7 @@
       "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Scott Wedgewood",
@@ -406,17 +406,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
