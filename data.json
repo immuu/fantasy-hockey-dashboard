@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 13,
-  "last_updated": "11.10.2026 klo 14:27 UTC",
+  "last_updated": "11.10.2026 klo 19:14 UTC",
   "teams": [
     {
       "id": 1,
@@ -238,17 +238,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Juraj Slafkovsky",
+      "name": "Kirill Marchenko",
       "position": "Left Wing",
-      "proTeam": "Montréal Canadiens",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Kirill Marchenko",
+      "name": "Juraj Slafkovsky",
       "position": "Left Wing",
-      "proTeam": "Toronto Maple Leafs",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -278,17 +278,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Scott Wedgewood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nico Hischier",
-      "position": "Center",
-      "proTeam": "New Jersey Devils",
+      "name": "Scott Wedgewood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -406,17 +406,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Timo Meier",
-      "position": "Left Wing",
-      "proTeam": "New Jersey Devils",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "name": "Timo Meier",
+      "position": "Left Wing",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
