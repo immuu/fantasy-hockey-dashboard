@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 12,
-  "last_updated": "10.10.2026 klo 22:59 UTC",
+  "last_updated": "11.10.2026 klo 01:34 UTC",
   "teams": [
     {
       "id": 1,
@@ -382,17 +382,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "name": "Jesper Wallstedt",
+      "position": "Goalie",
+      "proTeam": "Minnesota Wild",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jesper Wallstedt",
-      "position": "Goalie",
-      "proTeam": "Minnesota Wild",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -414,9 +414,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Bowen Byram",
-      "position": "Defense",
-      "proTeam": "Chicago Blackhawks",
+      "name": "J.T. Miller",
+      "position": "Center",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
