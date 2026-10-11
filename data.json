@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 12,
-  "last_updated": "11.10.2026 klo 01:34 UTC",
+  "current_week": 13,
+  "last_updated": "11.10.2026 klo 07:55 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 288.0,
+      "points_for": 315.7,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 301.9,
+      "points_for": 370.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 366.2,
+      "points_for": 427.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -103,8 +103,8 @@
       "positions": {
         "C": 7,
         "LW": 3,
-        "RW": 4,
-        "D": 6,
+        "RW": 5,
+        "D": 5,
         "G": 2
       },
       "top_players": [
@@ -139,16 +139,16 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 392.9,
+      "points_for": 461.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
         "C": 3,
-        "LW": 4,
+        "LW": 5,
         "RW": 7,
-        "D": 7,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -206,6 +206,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Sidney Crosby",
+      "position": "Center",
+      "proTeam": "Pittsburgh Penguins",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Adrian Kempe",
       "position": "Right Wing",
       "proTeam": "Los Angeles Kings",
@@ -217,6 +225,14 @@
       "name": "Darren Raddysh",
       "position": "Defense",
       "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Erik Karlsson",
+      "position": "Defense",
+      "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -238,12 +254,28 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Sam Reinhart",
+      "position": "Right Wing",
+      "proTeam": "Florida Panthers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Josh Morrissey",
       "position": "Defense",
       "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "DAY_TO_DAY"
+    },
+    {
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Scott Wedgewood",
@@ -366,9 +398,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mackenzie Blackwood",
+      "name": "Jesper Wallstedt",
       "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "proTeam": "Minnesota Wild",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -382,47 +414,90 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jesper Wallstedt",
+      "name": "Mackenzie Blackwood",
       "position": "Goalie",
-      "proTeam": "Minnesota Wild",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Owen Tippett",
-      "position": "Right Wing",
-      "proTeam": "Philadelphia Flyers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Matthew Knies",
-      "position": "Left Wing",
-      "proTeam": "Columbus Blue Jackets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "J.T. Miller",
-      "position": "Center",
-      "proTeam": "New York Rangers",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791698218372,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Sidney Crosby"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Kaapo Kakko"
+        }
+      ]
+    },
+    {
+      "date": 1791697976336,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Logan Stankoven"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Sam Reinhart"
+        }
+      ]
+    },
+    {
+      "date": 1791697834083,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Dylan Larkin"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Boone Jenner"
+        }
+      ]
+    },
+    {
+      "date": 1791696935841,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Jackson Blake"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Kris Letang"
+        }
+      ]
+    },
+    {
+      "date": 1791694930956,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Alexis Lafreniere"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Erik Karlsson"
+        }
+      ]
+    },
     {
       "date": 1791643281303,
       "actions": [
@@ -720,81 +795,6 @@
           "team": "Moron Losers",
           "action": "DROPPED",
           "player": "Morgan Geekie"
-        }
-      ]
-    },
-    {
-      "date": 1791347131718,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Juraj Slafkovsky"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Ville Koivunen"
-        }
-      ]
-    },
-    {
-      "date": 1791346825886,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Josh Manson"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Thomas Chabot"
-        }
-      ]
-    },
-    {
-      "date": 1791269070422,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Eeli Tolvanen"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Mark Kastelic"
-        }
-      ]
-    },
-    {
-      "date": 1791262484642,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Will Smith"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Brayden McNabb"
-        }
-      ]
-    },
-    {
-      "date": 1791230417813,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Jake Sanderson"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Thomas Chabot"
         }
       ]
     }
