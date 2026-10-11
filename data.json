@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 13,
-  "last_updated": "11.10.2026 klo 07:55 UTC",
+  "last_updated": "11.10.2026 klo 14:27 UTC",
   "teams": [
     {
       "id": 1,
@@ -286,17 +286,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nico Hischier",
-      "position": "Center",
-      "proTeam": "New Jersey Devils",
+      "name": "Alex Ovechkin",
+      "position": "Left Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -315,7 +315,7 @@
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Vincent Trocheck",
@@ -347,7 +347,7 @@
       "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "SUSPENSION"
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Drake Batherson",
@@ -363,7 +363,7 @@
       "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Brayden Point",
@@ -390,17 +390,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fantilli",
-      "position": "Center",
-      "proTeam": "Columbus Blue Jackets",
+      "name": "Jesper Wallstedt",
+      "position": "Goalie",
+      "proTeam": "Minnesota Wild",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jesper Wallstedt",
-      "position": "Goalie",
-      "proTeam": "Minnesota Wild",
+      "name": "Adam Fantilli",
+      "position": "Center",
+      "proTeam": "Columbus Blue Jackets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -414,9 +414,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
