@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 14,
-  "last_updated": "12.10.2026 klo 09:52 UTC",
+  "last_updated": "12.10.2026 klo 19:26 UTC",
   "teams": [
     {
       "id": 1,
@@ -307,7 +307,7 @@
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Mike Matheson",
@@ -350,9 +350,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Drake Batherson",
+      "name": "Tom Wilson",
       "position": "Right Wing",
-      "proTeam": "Ottawa Senators",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -363,20 +363,28 @@
       "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
-      "name": "Brayden Point",
-      "position": "Center",
-      "proTeam": "Tampa Bay Lightning",
-      "total_points": 0.0,
-      "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
       "name": "Jesper Wallstedt",
       "position": "Goalie",
       "proTeam": "Minnesota Wild",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Filip Hronek",
+      "position": "Defense",
+      "proTeam": "Vancouver Canucks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Brayden Point",
+      "position": "Center",
+      "proTeam": "Tampa Bay Lightning",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -412,17 +420,49 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Timo Meier",
-      "position": "Left Wing",
-      "proTeam": "New Jersey Devils",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791819901974,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Owen Power"
+        }
+      ]
+    },
+    {
+      "date": 1791819837651,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Drake Batherson"
+        }
+      ]
+    },
+    {
+      "date": 1791819719467,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Filip Hronek"
+        }
+      ]
+    },
+    {
+      "date": 1791819682245,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Tom Wilson"
+        }
+      ]
+    },
     {
       "date": 1791783161996,
       "actions": [
@@ -735,66 +775,6 @@
           "team": "Underdogs",
           "action": "DROPPED",
           "player": "Brock Nelson"
-        }
-      ]
-    },
-    {
-      "date": 1791436179756,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Mackenzie Blackwood"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Karel Vejmelka"
-        }
-      ]
-    },
-    {
-      "date": 1791434297382,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Ville Koivunen"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Tomas Hertl"
-        }
-      ]
-    },
-    {
-      "date": 1791368768716,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Kris Letang"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Victor Hedman"
-        }
-      ]
-    },
-    {
-      "date": 1791368510067,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Beckett Sennecke"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Moritz Seider"
         }
       ]
     }
