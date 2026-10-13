@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 14,
-  "last_updated": "13.10.2026 klo 01:40 UTC",
+  "current_week": 15,
+  "last_updated": "13.10.2026 klo 08:35 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 322.4,
+      "points_for": 336.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 385.7,
+      "points_for": 390.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 438.1,
+      "points_for": 462.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 490.4,
+      "points_for": 517.7,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -230,14 +230,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Erik Karlsson",
-      "position": "Defense",
-      "proTeam": "Pittsburgh Penguins",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Kirill Marchenko",
       "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
@@ -246,9 +238,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Juraj Slafkovsky",
-      "position": "Left Wing",
-      "proTeam": "Montréal Canadiens",
+      "name": "Erik Karlsson",
+      "position": "Defense",
+      "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -257,6 +249,14 @@
       "name": "Sam Reinhart",
       "position": "Right Wing",
       "proTeam": "Florida Panthers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Juraj Slafkovsky",
+      "position": "Left Wing",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -358,17 +358,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "John Tavares",
-      "position": "Center",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Jesper Wallstedt",
+      "position": "Goalie",
+      "proTeam": "Minnesota Wild",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jesper Wallstedt",
-      "position": "Goalie",
-      "proTeam": "Minnesota Wild",
+      "name": "John Tavares",
+      "position": "Center",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
