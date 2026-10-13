@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 14,
-  "last_updated": "12.10.2026 klo 19:26 UTC",
+  "last_updated": "13.10.2026 klo 01:40 UTC",
   "teams": [
     {
       "id": 1,
@@ -254,20 +254,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Sam Reinhart",
       "position": "Right Wing",
       "proTeam": "Florida Panthers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Josh Morrissey",
+      "position": "Defense",
+      "proTeam": "Winnipeg Jets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Nico Hischier",
@@ -318,17 +318,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vincent Trocheck",
+      "name": "Brock Nelson",
       "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Nelson",
+      "name": "Vincent Trocheck",
       "position": "Center",
-      "proTeam": "Colorado Avalanche",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
