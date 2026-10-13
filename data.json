@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 15,
-  "last_updated": "13.10.2026 klo 16:31 UTC",
+  "last_updated": "13.10.2026 klo 21:36 UTC",
   "teams": [
     {
       "id": 1,
@@ -267,7 +267,7 @@
       "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Nico Hischier",
@@ -302,20 +302,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jake Sanderson",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "Brock Nelson",
       "position": "Center",
       "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Jake Sanderson",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
     },
     {
       "name": "Vincent Trocheck",
