@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 15,
-  "last_updated": "13.10.2026 klo 21:36 UTC",
+  "last_updated": "14.10.2026 klo 00:41 UTC",
   "teams": [
     {
       "id": 1,
@@ -358,17 +358,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "John Tavares",
-      "position": "Center",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Filip Hronek",
+      "position": "Defense",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Filip Hronek",
-      "position": "Defense",
-      "proTeam": "Vancouver Canucks",
+      "name": "John Tavares",
+      "position": "Center",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
