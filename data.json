@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 15,
-  "last_updated": "14.10.2026 klo 05:33 UTC",
+  "current_week": 16,
+  "last_updated": "14.10.2026 klo 10:42 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 336.8,
+      "points_for": 392.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 390.4,
+      "points_for": 462.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 462.3,
+      "points_for": 516.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,14 +139,14 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 517.7,
+      "points_for": 593.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 3,
-        "LW": 5,
+        "C": 4,
+        "LW": 4,
         "RW": 7,
         "D": 6,
         "G": 2
@@ -238,14 +238,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Sam Reinhart",
-      "position": "Right Wing",
-      "proTeam": "Florida Panthers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Kirill Marchenko",
       "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
@@ -262,20 +254,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "Nico Hischier",
       "position": "Center",
       "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Josh Morrissey",
+      "position": "Defense",
+      "proTeam": "Winnipeg Jets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
     },
     {
       "name": "Dylan Larkin",
@@ -296,14 +288,6 @@
     {
       "name": "Scott Wedgewood",
       "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Brock Nelson",
-      "position": "Center",
       "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
@@ -334,9 +318,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Drake Batherson",
+      "position": "Right Wing",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Tom Wilson",
       "position": "Right Wing",
       "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Jesper Wallstedt",
+      "position": "Goalie",
+      "proTeam": "Minnesota Wild",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -348,14 +348,6 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "OUT"
-    },
-    {
-      "name": "Jesper Wallstedt",
-      "position": "Goalie",
-      "proTeam": "Minnesota Wild",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Filip Hronek",
@@ -398,17 +390,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fantilli",
-      "position": "Center",
-      "proTeam": "Columbus Blue Jackets",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "name": "Adam Fantilli",
+      "position": "Center",
+      "proTeam": "Columbus Blue Jackets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -420,9 +412,62 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "J.T. Miller",
+      "position": "Center",
+      "proTeam": "New York Rangers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791971809370,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Kaapo Kakko"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Sam Reinhart"
+        }
+      ]
+    },
+    {
+      "date": 1791957661572,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Drake Batherson"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Brock Nelson"
+        }
+      ]
+    },
+    {
+      "date": 1791957531754,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Ryan Leonard"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Jared McCann"
+        }
+      ]
+    },
     {
       "date": 1791953727321,
       "actions": [
@@ -730,51 +775,6 @@
           "team": "Moron Losers",
           "action": "FA ADDED",
           "player": "Jared McCann"
-        }
-      ]
-    },
-    {
-      "date": 1791527272620,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Brayden McNabb"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Matthew Knies"
-        }
-      ]
-    },
-    {
-      "date": 1791521861344,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Artemi Panarin"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Cole Perfetti"
-        }
-      ]
-    },
-    {
-      "date": 1791521563525,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Scott Wedgewood"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Stuart Skinner"
         }
       ]
     }
