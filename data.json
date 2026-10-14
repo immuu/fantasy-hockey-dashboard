@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 16,
-  "last_updated": "14.10.2026 klo 10:42 UTC",
+  "last_updated": "14.10.2026 klo 15:34 UTC",
   "teams": [
     {
       "id": 1,
@@ -219,7 +219,7 @@
       "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Adrian Kempe",
@@ -267,7 +267,7 @@
       "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Dylan Larkin",
@@ -294,20 +294,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jake Sanderson",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "Rasmus Andersson",
       "position": "Defense",
       "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Jake Sanderson",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Vincent Trocheck",
@@ -347,7 +347,7 @@
       "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Filip Hronek",
