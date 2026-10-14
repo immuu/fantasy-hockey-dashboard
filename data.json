@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 15,
-  "last_updated": "14.10.2026 klo 00:41 UTC",
+  "last_updated": "14.10.2026 klo 05:33 UTC",
   "teams": [
     {
       "id": 1,
@@ -214,6 +214,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Cutter Gauthier",
+      "position": "Left Wing",
+      "proTeam": "Anaheim Ducks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
+    },
+    {
       "name": "Adrian Kempe",
       "position": "Right Wing",
       "proTeam": "Los Angeles Kings",
@@ -230,6 +238,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Sam Reinhart",
+      "position": "Right Wing",
+      "proTeam": "Florida Panthers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Kirill Marchenko",
       "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
@@ -241,22 +257,6 @@
       "name": "Erik Karlsson",
       "position": "Defense",
       "proTeam": "Pittsburgh Penguins",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Sam Reinhart",
-      "position": "Right Wing",
-      "proTeam": "Florida Panthers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Juraj Slafkovsky",
-      "position": "Left Wing",
-      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -318,6 +318,14 @@
       "injuryStatus": "OUT"
     },
     {
+      "name": "Rasmus Andersson",
+      "position": "Defense",
+      "proTeam": "Vegas Golden Knights",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Vincent Trocheck",
       "position": "Center",
       "proTeam": "Utah Hockey Club",
@@ -326,9 +334,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Rasmus Andersson",
-      "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
+      "name": "Tom Wilson",
+      "position": "Right Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -340,14 +348,6 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "OUT"
-    },
-    {
-      "name": "Tom Wilson",
-      "position": "Right Wing",
-      "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Jesper Wallstedt",
@@ -423,6 +423,36 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1791953727321,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Cutter Gauthier"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Juraj Slafkovsky"
+        }
+      ]
+    },
+    {
+      "date": 1791952075422,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Jacob Trouba"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Devon Toews"
+        }
+      ]
+    },
     {
       "date": 1791907266898,
       "actions": [
@@ -745,36 +775,6 @@
           "team": "Fridge Raiders",
           "action": "FA ADDED",
           "player": "Stuart Skinner"
-        }
-      ]
-    },
-    {
-      "date": 1791521269900,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Tomas Hertl"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Dylan Larkin"
-        }
-      ]
-    },
-    {
-      "date": 1791473948411,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Brandon Bussi"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Linus Ullmark"
         }
       ]
     }
