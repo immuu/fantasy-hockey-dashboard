@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 16,
-  "last_updated": "15.10.2026 klo 06:35 UTC",
+  "current_week": 17,
+  "last_updated": "15.10.2026 klo 12:12 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 392.5,
+      "points_for": 396.7,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 462.5,
+      "points_for": 471.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 516.2,
+      "points_for": 537.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 593.9,
+      "points_for": 595.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -147,8 +147,8 @@
       "positions": {
         "C": 4,
         "LW": 4,
-        "RW": 7,
-        "D": 6,
+        "RW": 6,
+        "D": 7,
         "G": 2
       },
       "top_players": [
@@ -334,17 +334,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Tom Wilson",
-      "position": "Right Wing",
-      "proTeam": "Washington Capitals",
+      "name": "Jesper Wallstedt",
+      "position": "Goalie",
+      "proTeam": "Minnesota Wild",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jesper Wallstedt",
-      "position": "Goalie",
-      "proTeam": "Minnesota Wild",
+      "name": "Tom Wilson",
+      "position": "Right Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
