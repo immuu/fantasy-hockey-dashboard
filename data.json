@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 17,
-  "last_updated": "15.10.2026 klo 12:12 UTC",
+  "last_updated": "15.10.2026 klo 17:25 UTC",
   "teams": [
     {
       "id": 1,
@@ -182,14 +182,6 @@
   ],
   "free_agents": [
     {
-      "name": "Moritz Seider",
-      "position": "Defense",
-      "proTeam": "Detroit Red Wings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Jakob Chychrun",
       "position": "Defense",
       "proTeam": "Washington Capitals",
@@ -262,6 +254,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Noah Dobson",
+      "position": "Defense",
+      "proTeam": "Montréal Canadiens",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Nico Hischier",
       "position": "Center",
       "proTeam": "New Jersey Devils",
@@ -275,7 +275,7 @@
       "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Dylan Larkin",
@@ -315,7 +315,7 @@
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Vincent Trocheck",
@@ -326,17 +326,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Drake Batherson",
-      "position": "Right Wing",
-      "proTeam": "Ottawa Senators",
+      "name": "Jesper Wallstedt",
+      "position": "Goalie",
+      "proTeam": "Minnesota Wild",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jesper Wallstedt",
-      "position": "Goalie",
-      "proTeam": "Minnesota Wild",
+      "name": "Drake Batherson",
+      "position": "Right Wing",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -366,14 +366,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mike Matheson",
-      "position": "Defense",
-      "proTeam": "Montréal Canadiens",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "Morgan Geekie",
       "position": "Right Wing",
       "proTeam": "Boston Bruins",
@@ -396,6 +388,14 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Mike Matheson",
+      "position": "Defense",
+      "proTeam": "Montréal Canadiens",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Brandt Clarke",
@@ -423,6 +423,36 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792074690792,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Mattias Ekholm"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Devon Toews"
+        }
+      ]
+    },
+    {
+      "date": 1792074501160,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Moritz Seider"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Noah Dobson"
+        }
+      ]
+    },
     {
       "date": 1792037212211,
       "actions": [
@@ -745,36 +775,6 @@
           "team": "Fridge Raiders",
           "action": "DROPPED",
           "player": "Josh Manson"
-        }
-      ]
-    },
-    {
-      "date": 1791630758945,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Jakob Chychrun"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Thomas Chabot"
-        }
-      ]
-    },
-    {
-      "date": 1791613650457,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Mikhail Sergachev"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Gabe Perreault"
         }
       ]
     }
