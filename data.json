@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 16,
-  "last_updated": "15.10.2026 klo 01:00 UTC",
+  "last_updated": "15.10.2026 klo 06:35 UTC",
   "teams": [
     {
       "id": 1,
@@ -326,17 +326,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Tom Wilson",
+      "name": "Drake Batherson",
       "position": "Right Wing",
-      "proTeam": "Washington Capitals",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Drake Batherson",
+      "name": "Tom Wilson",
       "position": "Right Wing",
-      "proTeam": "Ottawa Senators",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -406,23 +406,83 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adam Fantilli",
-      "position": "Center",
-      "proTeam": "Columbus Blue Jackets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Jesper Bratt",
       "position": "Right Wing",
       "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Adam Fantilli",
+      "position": "Center",
+      "proTeam": "Columbus Blue Jackets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792037212211,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Brayden McNabb"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Seth Jones"
+        }
+      ]
+    },
+    {
+      "date": 1792037027584,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Mikael Granlund"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Dylan Strome"
+        }
+      ]
+    },
+    {
+      "date": 1792036634010,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Vladislav Gavrikov"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Roope Hintz"
+        }
+      ]
+    },
+    {
+      "date": 1792036467800,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Ryan Leonard"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Mason McTavish"
+        }
+      ]
+    },
     {
       "date": 1792010123633,
       "actions": [
@@ -714,66 +774,6 @@
         {
           "team": "Underdogs",
           "action": "DROPPED",
-          "player": "Gabe Perreault"
-        }
-      ]
-    },
-    {
-      "date": 1791612762254,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Matthew Knies"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Tom Wilson"
-        }
-      ]
-    },
-    {
-      "date": 1791612562037,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Andrei Svechnikov"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Adam Fantilli"
-        }
-      ]
-    },
-    {
-      "date": 1791576467677,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Logan Cooley"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Adam Fantilli"
-        }
-      ]
-    },
-    {
-      "date": 1791573099444,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Josh Morrissey"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
           "player": "Gabe Perreault"
         }
       ]
