@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 17,
-  "last_updated": "16.10.2026 klo 01:50 UTC",
+  "last_updated": "16.10.2026 klo 06:29 UTC",
   "teams": [
     {
       "id": 1,
@@ -206,6 +206,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Thomas Chabot",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Elias Pettersson",
       "position": "Center",
       "proTeam": "Vancouver Canucks",
@@ -241,14 +249,6 @@
       "name": "Kirill Marchenko",
       "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Erik Karlsson",
-      "position": "Defense",
-      "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -363,7 +363,7 @@
       "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Morgan Geekie",
@@ -423,6 +423,36 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792130501911,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Erik Karlsson"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Thomas Chabot"
+        }
+      ]
+    },
+    {
+      "date": 1792130065420,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Mattias Ekholm"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Josh Manson"
+        }
+      ]
+    },
     {
       "date": 1792074690792,
       "actions": [
@@ -745,36 +775,6 @@
           "team": "Underdogs",
           "action": "DROPPED",
           "player": "Kris Letang"
-        }
-      ]
-    },
-    {
-      "date": 1791694930956,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Alexis Lafreniere"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Erik Karlsson"
-        }
-      ]
-    },
-    {
-      "date": 1791643281303,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Brayden McNabb"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Josh Manson"
         }
       ]
     }
