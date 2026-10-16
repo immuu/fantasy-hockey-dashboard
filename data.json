@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 18,
-  "last_updated": "16.10.2026 klo 15:55 UTC",
+  "last_updated": "16.10.2026 klo 19:05 UTC",
   "teams": [
     {
       "id": 1,
@@ -235,20 +235,20 @@
       "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
-      "name": "Adrian Kempe",
-      "position": "Right Wing",
-      "proTeam": "Los Angeles Kings",
-      "total_points": 0.0,
-      "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
       "name": "Kirill Marchenko",
       "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Adrian Kempe",
+      "position": "Right Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -414,9 +414,9 @@
       "injuryStatus": "DAY_TO_DAY"
     },
     {
-      "name": "Adam Fantilli",
+      "name": "J.T. Miller",
       "position": "Center",
-      "proTeam": "Columbus Blue Jackets",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
