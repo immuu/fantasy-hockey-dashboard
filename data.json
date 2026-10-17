@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 19,
-  "last_updated": "17.10.2026 klo 13:18 UTC",
+  "last_updated": "17.10.2026 klo 16:41 UTC",
   "teams": [
     {
       "id": 1,
@@ -222,17 +222,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Cutter Gauthier",
-      "position": "Left Wing",
-      "proTeam": "Anaheim Ducks",
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Cutter Gauthier",
+      "position": "Left Wing",
+      "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -323,7 +323,7 @@
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Vincent Trocheck",
@@ -371,7 +371,7 @@
       "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Morgan Geekie",
@@ -390,17 +390,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brayden Point",
-      "position": "Center",
-      "proTeam": "Tampa Bay Lightning",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "name": "Brayden Point",
+      "position": "Center",
+      "proTeam": "Tampa Bay Lightning",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -414,9 +414,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jacob Trouba",
+      "name": "Vince Dunn",
       "position": "Defense",
-      "proTeam": "San Jose Sharks",
+      "proTeam": "Seattle Kraken",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
