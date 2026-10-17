@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 18,
-  "last_updated": "17.10.2026 klo 00:51 UTC",
+  "last_updated": "17.10.2026 klo 05:07 UTC",
   "teams": [
     {
       "id": 1,
@@ -222,17 +222,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Cutter Gauthier",
-      "position": "Left Wing",
-      "proTeam": "Anaheim Ducks",
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Cutter Gauthier",
+      "position": "Left Wing",
+      "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -414,9 +414,9 @@
       "injuryStatus": "DAY_TO_DAY"
     },
     {
-      "name": "J.T. Miller",
-      "position": "Center",
-      "proTeam": "New York Rangers",
+      "name": "Jacob Trouba",
+      "position": "Defense",
+      "proTeam": "San Jose Sharks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
