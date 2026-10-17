@@ -1,22 +1,22 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 18,
-  "last_updated": "17.10.2026 klo 05:07 UTC",
+  "current_week": 19,
+  "last_updated": "17.10.2026 klo 09:46 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 458.4,
+      "points_for": 475.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 4,
       "positions": {
-        "C": 7,
+        "C": 6,
         "LW": 5,
         "RW": 4,
-        "D": 5,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 531.5,
+      "points_for": 529.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 563.3,
+      "points_for": 594.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,13 +139,13 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 656.0,
+      "points_for": 674.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 4,
+        "C": 3,
         "LW": 4,
         "RW": 6,
         "D": 7,
@@ -222,17 +222,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Cutter Gauthier",
+      "position": "Left Wing",
+      "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Cutter Gauthier",
-      "position": "Left Wing",
-      "proTeam": "Anaheim Ducks",
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -289,6 +289,14 @@
       "name": "Rasmus Andersson",
       "position": "Defense",
       "proTeam": "Vegas Golden Knights",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Brock Nelson",
+      "position": "Center",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -406,14 +414,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mike Matheson",
-      "position": "Defense",
-      "proTeam": "Montréal Canadiens",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Jacob Trouba",
       "position": "Defense",
       "proTeam": "San Jose Sharks",
@@ -423,6 +423,31 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792218173583,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Brock Nelson"
+        }
+      ]
+    },
+    {
+      "date": 1792215156220,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Boone Jenner"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Colton Parayko"
+        }
+      ]
+    },
     {
       "date": 1792130501911,
       "actions": [
@@ -745,36 +770,6 @@
           "team": "Fridge Raiders",
           "action": "DROPPED",
           "player": "Sam Reinhart"
-        }
-      ]
-    },
-    {
-      "date": 1791697834083,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Dylan Larkin"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Boone Jenner"
-        }
-      ]
-    },
-    {
-      "date": 1791696935841,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Jackson Blake"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Kris Letang"
         }
       ]
     }
