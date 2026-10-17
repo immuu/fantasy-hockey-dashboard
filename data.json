@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 19,
-  "last_updated": "17.10.2026 klo 18:54 UTC",
+  "last_updated": "17.10.2026 klo 21:05 UTC",
   "teams": [
     {
       "id": 1,
@@ -371,7 +371,7 @@
       "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Morgan Geekie",
