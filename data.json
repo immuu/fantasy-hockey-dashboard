@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 19,
-  "last_updated": "17.10.2026 klo 23:33 UTC",
+  "last_updated": "18.10.2026 klo 01:42 UTC",
   "teams": [
     {
       "id": 1,
@@ -211,7 +211,7 @@
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Elias Pettersson",
