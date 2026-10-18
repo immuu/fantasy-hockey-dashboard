@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 19,
-  "last_updated": "18.10.2026 klo 01:42 UTC",
+  "last_updated": "18.10.2026 klo 06:41 UTC",
   "teams": [
     {
       "id": 1,
@@ -190,17 +190,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Artemi Panarin",
-      "position": "Left Wing",
-      "proTeam": "Los Angeles Kings",
+      "name": "Sidney Crosby",
+      "position": "Center",
+      "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Sidney Crosby",
-      "position": "Center",
-      "proTeam": "Pittsburgh Penguins",
+      "name": "Artemi Panarin",
+      "position": "Left Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -249,6 +249,14 @@
       "name": "Adrian Kempe",
       "position": "Right Wing",
       "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -329,14 +337,6 @@
       "name": "Vincent Trocheck",
       "position": "Center",
       "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Jesper Wallstedt",
-      "position": "Goalie",
-      "proTeam": "Minnesota Wild",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,66 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792303190167,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Alexis Lafreniere"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Mark Jankowski"
+        }
+      ]
+    },
+    {
+      "date": 1792302749771,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Karel Vejmelka"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Jesper Wallstedt"
+        }
+      ]
+    },
+    {
+      "date": 1792302694486,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Tomas Hertl"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Jackson Blake"
+        }
+      ]
+    },
+    {
+      "date": 1792302493778,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Vladislav Gavrikov"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Joel Eriksson Ek"
+        }
+      ]
+    },
     {
       "date": 1792218173583,
       "actions": [
@@ -710,66 +770,6 @@
           "team": "Moron Losers",
           "action": "DROPPED",
           "player": "Tom Wilson"
-        }
-      ]
-    },
-    {
-      "date": 1791783161996,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Tomas Hertl"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Jackson Blake"
-        }
-      ]
-    },
-    {
-      "date": 1791780908325,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Jared Spurgeon"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Mattias Samuelsson"
-        }
-      ]
-    },
-    {
-      "date": 1791698218372,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Sidney Crosby"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Kaapo Kakko"
-        }
-      ]
-    },
-    {
-      "date": 1791697976336,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Logan Stankoven"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Sam Reinhart"
         }
       ]
     }
