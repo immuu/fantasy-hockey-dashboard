@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 20,
-  "last_updated": "18.10.2026 klo 11:48 UTC",
+  "last_updated": "18.10.2026 klo 14:57 UTC",
   "teams": [
     {
       "id": 1,
@@ -58,8 +58,8 @@
       "standing": 3,
       "positions": {
         "C": 7,
-        "LW": 5,
-        "RW": 3,
+        "LW": 6,
+        "RW": 2,
         "D": 6,
         "G": 2
       },
@@ -222,17 +222,17 @@
       "injuryStatus": "DAY_TO_DAY"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Cutter Gauthier",
+      "position": "Left Wing",
+      "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Cutter Gauthier",
-      "position": "Left Wing",
-      "proTeam": "Anaheim Ducks",
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -318,20 +318,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Jake Sanderson",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
+    },
+    {
       "name": "Scott Wedgewood",
       "position": "Goalie",
       "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Jake Sanderson",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
     },
     {
       "name": "Vincent Trocheck",
@@ -361,6 +361,14 @@
       "name": "Tom Wilson",
       "position": "Right Wing",
       "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Pavel Dorofeyev",
+      "position": "Right Wing",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -412,17 +420,24 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Vince Dunn",
-      "position": "Defense",
-      "proTeam": "Seattle Kraken",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792332925148,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Eric Robinson"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Pavel Dorofeyev"
+        }
+      ]
+    },
     {
       "date": 1792317166782,
       "actions": [
@@ -765,16 +780,6 @@
           "team": "Moron Losers",
           "action": "FA ADDED",
           "player": "Drake Batherson"
-        }
-      ]
-    },
-    {
-      "date": 1791819719467,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Filip Hronek"
         }
       ]
     }
