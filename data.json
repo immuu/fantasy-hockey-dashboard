@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 21,
-  "last_updated": "19.10.2026 klo 07:23 UTC",
+  "last_updated": "19.10.2026 klo 15:03 UTC",
   "teams": [
     {
       "id": 1,
@@ -101,9 +101,9 @@
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 7,
+        "C": 8,
         "LW": 3,
-        "RW": 5,
+        "RW": 4,
         "D": 5,
         "G": 2
       },
@@ -198,17 +198,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Artemi Panarin",
-      "position": "Left Wing",
-      "proTeam": "Los Angeles Kings",
+      "name": "Elias Pettersson",
+      "position": "Center",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Elias Pettersson",
-      "position": "Center",
-      "proTeam": "Vancouver Canucks",
+      "name": "Artemi Panarin",
+      "position": "Left Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -246,17 +246,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
-      "proTeam": "Utah Hockey Club",
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nico Hischier",
-      "position": "Center",
-      "proTeam": "New Jersey Devils",
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -366,20 +366,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "John Tavares",
-      "position": "Center",
-      "proTeam": "Toronto Maple Leafs",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "John Tavares",
+      "position": "Center",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Brayden Point",
@@ -398,14 +398,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vince Dunn",
-      "position": "Defense",
-      "proTeam": "Seattle Kraken",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Jacob Trouba",
       "position": "Defense",
       "proTeam": "San Jose Sharks",
@@ -414,15 +406,38 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Tomas Hertl",
-      "position": "Center",
-      "proTeam": "Vegas Golden Knights",
+      "name": "Vince Dunn",
+      "position": "Defense",
+      "proTeam": "Seattle Kraken",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792405997678,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Jackson Blake"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Evgeni Malkin"
+        }
+      ]
+    },
     {
       "date": 1792387108449,
       "actions": [
@@ -775,21 +790,6 @@
           "team": "Julmat",
           "action": "FA ADDED",
           "player": "Juraj Slafkovsky"
-        }
-      ]
-    },
-    {
-      "date": 1791952075422,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Jacob Trouba"
-        },
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Devon Toews"
         }
       ]
     }
