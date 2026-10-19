@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 20,
-  "last_updated": "19.10.2026 klo 02:00 UTC",
+  "current_week": 21,
+  "last_updated": "19.10.2026 klo 07:23 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 546.4,
+      "points_for": 549.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 626.7,
+      "points_for": 636.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 634.2,
+      "points_for": 641.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,16 +139,16 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 742.6,
+      "points_for": 754.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 5,
-        "LW": 3,
+        "C": 4,
+        "LW": 5,
         "RW": 6,
-        "D": 6,
+        "D": 5,
         "G": 2
       },
       "top_players": [
@@ -222,24 +222,8 @@
       "injuryStatus": "DAY_TO_DAY"
     },
     {
-      "name": "Cutter Gauthier",
-      "position": "Left Wing",
-      "proTeam": "Anaheim Ducks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Darren Raddysh",
       "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Kirill Marchenko",
-      "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
@@ -300,14 +284,6 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "OUT"
-    },
-    {
-      "name": "Brock Nelson",
-      "position": "Center",
-      "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Alex Ovechkin",
@@ -420,9 +396,78 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Vince Dunn",
+      "position": "Defense",
+      "proTeam": "Seattle Kraken",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Jacob Trouba",
+      "position": "Defense",
+      "proTeam": "San Jose Sharks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Tomas Hertl",
+      "position": "Center",
+      "proTeam": "Vegas Golden Knights",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792387108449,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Cutter Gauthier"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Owen Power"
+        }
+      ]
+    },
+    {
+      "date": 1792386930786,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Brock Nelson"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Mason McTavish"
+        }
+      ]
+    },
+    {
+      "date": 1792386525180,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Mark Jankowski"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Kirill Marchenko"
+        }
+      ]
+    },
     {
       "date": 1792332925148,
       "actions": [
@@ -745,41 +790,6 @@
           "team": "Julmat",
           "action": "FA ADDED",
           "player": "Devon Toews"
-        }
-      ]
-    },
-    {
-      "date": 1791907266898,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Jared Spurgeon"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Charlie McAvoy"
-        }
-      ]
-    },
-    {
-      "date": 1791819901974,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Owen Power"
-        }
-      ]
-    },
-    {
-      "date": 1791819837651,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Drake Batherson"
         }
       ]
     }
