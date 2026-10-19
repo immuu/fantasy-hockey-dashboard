@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 21,
-  "last_updated": "19.10.2026 klo 15:03 UTC",
+  "last_updated": "19.10.2026 klo 20:45 UTC",
   "teams": [
     {
       "id": 1,
@@ -58,9 +58,9 @@
       "standing": 3,
       "positions": {
         "C": 7,
-        "LW": 6,
+        "LW": 5,
         "RW": 2,
-        "D": 6,
+        "D": 7,
         "G": 2
       },
       "top_players": [
@@ -75,17 +75,17 @@
           "points": 0.0
         },
         {
-          "name": "Wyatt Johnston",
-          "position": "Center",
-          "points": 0.0
-        },
-        {
           "name": "Roman Josi",
           "position": "Defense",
           "points": 0.0
         },
         {
           "name": "Alex DeBrincat",
+          "position": "Left Wing",
+          "points": 0.0
+        },
+        {
+          "name": "Brady Tkachuk",
           "position": "Left Wing",
           "points": 0.0
         }
@@ -214,12 +214,12 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Thomas Chabot",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
+      "name": "Wyatt Johnston",
+      "position": "Center",
+      "proTeam": "Dallas Stars",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Darren Raddysh",
@@ -230,6 +230,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Thomas Chabot",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
+    },
+    {
       "name": "Adrian Kempe",
       "position": "Right Wing",
       "proTeam": "Los Angeles Kings",
@@ -238,8 +246,8 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Noah Dobson",
-      "position": "Defense",
+      "name": "Juraj Slafkovsky",
+      "position": "Left Wing",
       "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
@@ -262,9 +270,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Detroit Red Wings",
+      "name": "Noah Dobson",
+      "position": "Defense",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -278,12 +286,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Josh Morrissey",
       "position": "Defense",
       "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Alex Ovechkin",
@@ -299,7 +315,7 @@
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Scott Wedgewood",
@@ -374,14 +390,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "John Tavares",
-      "position": "Center",
-      "proTeam": "Toronto Maple Leafs",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Brayden Point",
       "position": "Center",
       "proTeam": "Tampa Bay Lightning",
@@ -398,31 +406,83 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "John Tavares",
+      "position": "Center",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
+    },
+    {
       "name": "Jacob Trouba",
       "position": "Defense",
       "proTeam": "San Jose Sharks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Vince Dunn",
-      "position": "Defense",
-      "proTeam": "Seattle Kraken",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792434505799,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "JJ Peterka"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Kailer Yamamoto"
+        }
+      ]
+    },
+    {
+      "date": 1792434234738,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Devon Toews"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Wyatt Johnston"
+        }
+      ]
+    },
+    {
+      "date": 1792434146628,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Nazem Kadri"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Eric Robinson"
+        }
+      ]
+    },
+    {
+      "date": 1792433994217,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Alexis Lafreniere"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Juraj Slafkovsky"
+        }
+      ]
+    },
     {
       "date": 1792405997678,
       "actions": [
@@ -730,66 +790,6 @@
           "team": "Fridge Raiders",
           "action": "FA ADDED",
           "player": "Dylan Strome"
-        }
-      ]
-    },
-    {
-      "date": 1791971809370,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Kaapo Kakko"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Sam Reinhart"
-        }
-      ]
-    },
-    {
-      "date": 1791957661572,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Drake Batherson"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Brock Nelson"
-        }
-      ]
-    },
-    {
-      "date": 1791957531754,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Ryan Leonard"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Jared McCann"
-        }
-      ]
-    },
-    {
-      "date": 1791953727321,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Cutter Gauthier"
-        },
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Juraj Slafkovsky"
         }
       ]
     }
