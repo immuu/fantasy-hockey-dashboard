@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 21,
-  "last_updated": "19.10.2026 klo 20:45 UTC",
+  "last_updated": "19.10.2026 klo 23:58 UTC",
   "teams": [
     {
       "id": 1,
@@ -334,17 +334,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Drake Batherson",
-      "position": "Right Wing",
-      "proTeam": "Ottawa Senators",
+      "name": "Filip Hronek",
+      "position": "Defense",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Filip Hronek",
-      "position": "Defense",
-      "proTeam": "Vancouver Canucks",
+      "name": "Drake Batherson",
+      "position": "Right Wing",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -398,6 +398,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Jacob Trouba",
+      "position": "Defense",
+      "proTeam": "San Jose Sharks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Jesper Bratt",
       "position": "Right Wing",
       "proTeam": "New Jersey Devils",
@@ -406,17 +414,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "John Tavares",
-      "position": "Center",
-      "proTeam": "Toronto Maple Leafs",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
-      "name": "Jacob Trouba",
-      "position": "Defense",
-      "proTeam": "San Jose Sharks",
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
