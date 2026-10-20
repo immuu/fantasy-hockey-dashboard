@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 21,
-  "last_updated": "20.10.2026 klo 03:22 UTC",
+  "current_week": 22,
+  "last_updated": "20.10.2026 klo 08:55 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 549.6,
+      "points_for": 550.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 636.2,
+      "points_for": 651.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,14 +95,14 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 641.5,
+      "points_for": 673.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 8,
-        "LW": 3,
+        "C": 7,
+        "LW": 4,
         "RW": 4,
         "D": 5,
         "G": 2
@@ -139,17 +139,17 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 754.0,
+      "points_for": 768.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 4,
+        "C": 3,
         "LW": 5,
         "RW": 6,
         "D": 5,
-        "G": 2
+        "G": 3
       },
       "top_players": [
         {
@@ -230,6 +230,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Cutter Gauthier",
+      "position": "Left Wing",
+      "proTeam": "Anaheim Ducks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Thomas Chabot",
       "position": "Defense",
       "proTeam": "Ottawa Senators",
@@ -262,17 +270,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
-      "proTeam": "Utah Hockey Club",
+      "name": "Noah Dobson",
+      "position": "Defense",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Noah Dobson",
-      "position": "Defense",
-      "proTeam": "Montréal Canadiens",
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -289,6 +297,14 @@
       "name": "Dylan Larkin",
       "position": "Center",
       "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Brock Nelson",
+      "position": "Center",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -326,17 +342,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vincent Trocheck",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "name": "Filip Hronek",
+      "position": "Defense",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Filip Hronek",
-      "position": "Defense",
-      "proTeam": "Vancouver Canucks",
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -404,25 +420,54 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Jesper Bratt",
-      "position": "Right Wing",
-      "proTeam": "New Jersey Devils",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Vince Dunn",
-      "position": "Defense",
-      "proTeam": "Seattle Kraken",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792482040823,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Evgeni Malkin"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Jared McCann"
+        }
+      ]
+    },
+    {
+      "date": 1792473318970,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Brock Nelson"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Carter Verhaeghe"
+        }
+      ]
+    },
+    {
+      "date": 1792473051226,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Cutter Gauthier"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Pyotr Kochetkov"
+        }
+      ]
+    },
     {
       "date": 1792434505799,
       "actions": [
@@ -744,51 +789,6 @@
         {
           "team": "Fridge Raiders",
           "action": "DROPPED",
-          "player": "Dylan Strome"
-        }
-      ]
-    },
-    {
-      "date": 1792036634010,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Vladislav Gavrikov"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Roope Hintz"
-        }
-      ]
-    },
-    {
-      "date": 1792036467800,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Ryan Leonard"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Mason McTavish"
-        }
-      ]
-    },
-    {
-      "date": 1792010123633,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Elias Pettersson"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
           "player": "Dylan Strome"
         }
       ]
