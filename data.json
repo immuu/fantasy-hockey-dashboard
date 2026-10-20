@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 21,
-  "last_updated": "19.10.2026 klo 23:58 UTC",
+  "last_updated": "20.10.2026 klo 03:22 UTC",
   "teams": [
     {
       "id": 1,
@@ -414,9 +414,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "name": "Vince Dunn",
+      "position": "Defense",
+      "proTeam": "Seattle Kraken",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
