@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 22,
-  "last_updated": "20.10.2026 klo 13:57 UTC",
+  "last_updated": "20.10.2026 klo 18:13 UTC",
   "teams": [
     {
       "id": 1,
@@ -57,9 +57,9 @@
       "ties": 0,
       "standing": 3,
       "positions": {
-        "C": 7,
+        "C": 6,
         "LW": 5,
-        "RW": 2,
+        "RW": 3,
         "D": 7,
         "G": 2
       },
@@ -214,17 +214,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Wyatt Johnston",
-      "position": "Center",
-      "proTeam": "Dallas Stars",
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Wyatt Johnston",
+      "position": "Center",
+      "proTeam": "Dallas Stars",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -238,20 +238,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Thomas Chabot",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "Adrian Kempe",
       "position": "Right Wing",
       "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Thomas Chabot",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
     },
     {
       "name": "Juraj Slafkovsky",
@@ -310,6 +310,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Jake Sanderson",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Josh Morrissey",
       "position": "Defense",
       "proTeam": "Winnipeg Jets",
@@ -321,14 +329,6 @@
       "name": "Alex Ovechkin",
       "position": "Left Wing",
       "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Jake Sanderson",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -390,14 +390,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Morgan Geekie",
-      "position": "Right Wing",
-      "proTeam": "Boston Bruins",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
@@ -420,9 +412,32 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Vince Dunn",
+      "position": "Defense",
+      "proTeam": "Seattle Kraken",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792519735891,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Nazem Kadri"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Morgan Geekie"
+        }
+      ]
+    },
     {
       "date": 1792482040823,
       "actions": [
@@ -775,21 +790,6 @@
           "team": "Fridge Raiders",
           "action": "FA ADDED",
           "player": "Seth Jones"
-        }
-      ]
-    },
-    {
-      "date": 1792037027584,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Mikael Granlund"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Dylan Strome"
         }
       ]
     }
