@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 23,
-  "last_updated": "21.10.2026 klo 10:41 UTC",
+  "last_updated": "21.10.2026 klo 15:41 UTC",
   "teams": [
     {
       "id": 1,
@@ -182,6 +182,14 @@
   ],
   "free_agents": [
     {
+      "name": "Logan Thompson",
+      "position": "Goalie",
+      "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
+    },
+    {
       "name": "Jakob Chychrun",
       "position": "Defense",
       "proTeam": "Washington Capitals",
@@ -350,17 +358,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vincent Trocheck",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "name": "Tom Wilson",
+      "position": "Right Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Tom Wilson",
-      "position": "Right Wing",
-      "proTeam": "Washington Capitals",
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -406,14 +414,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brayden Point",
-      "position": "Center",
-      "proTeam": "Tampa Bay Lightning",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Vince Dunn",
       "position": "Defense",
       "proTeam": "Seattle Kraken",
@@ -423,6 +423,21 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792597234930,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Logan Thompson"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Ukko-Pekka Luukkonen"
+        }
+      ]
+    },
     {
       "date": 1792561423811,
       "actions": [
@@ -775,21 +790,6 @@
           "team": "Fridge Raiders",
           "action": "FA ADDED",
           "player": "Colton Parayko"
-        }
-      ]
-    },
-    {
-      "date": 1792130501911,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Erik Karlsson"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Thomas Chabot"
         }
       ]
     }
