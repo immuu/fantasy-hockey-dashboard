@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 22,
-  "last_updated": "21.10.2026 klo 00:20 UTC",
+  "last_updated": "21.10.2026 klo 05:26 UTC",
   "teams": [
     {
       "id": 1,
@@ -390,17 +390,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "name": "Beckett Sennecke",
+      "position": "Right Wing",
+      "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brayden Point",
-      "position": "Center",
-      "proTeam": "Tampa Bay Lightning",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -414,15 +414,45 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vince Dunn",
-      "position": "Defense",
-      "proTeam": "Seattle Kraken",
+      "name": "Brayden Point",
+      "position": "Center",
+      "proTeam": "Tampa Bay Lightning",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792557977289,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Jack Quinn"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Beckett Sennecke"
+        }
+      ]
+    },
+    {
+      "date": 1792557448429,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Sam Bennett"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Adam Fantilli"
+        }
+      ]
+    },
     {
       "date": 1792519735891,
       "actions": [
@@ -760,36 +790,6 @@
           "team": "Julmat",
           "action": "DROPPED",
           "player": "Devon Toews"
-        }
-      ]
-    },
-    {
-      "date": 1792074501160,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Moritz Seider"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Noah Dobson"
-        }
-      ]
-    },
-    {
-      "date": 1792037212211,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Brayden McNabb"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Seth Jones"
         }
       ]
     }
