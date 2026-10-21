@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 22,
-  "last_updated": "21.10.2026 klo 05:26 UTC",
+  "current_week": 23,
+  "last_updated": "21.10.2026 klo 10:41 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 550.3,
+      "points_for": 606.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,11 +51,11 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 651.3,
+      "points_for": 706.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 3,
+      "standing": 2,
       "positions": {
         "C": 6,
         "LW": 5,
@@ -95,16 +95,16 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 673.2,
+      "points_for": 704.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 2,
+      "standing": 3,
       "positions": {
         "C": 7,
-        "LW": 4,
+        "LW": 3,
         "RW": 4,
-        "D": 5,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 768.1,
+      "points_for": 840.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -148,8 +148,8 @@
         "C": 3,
         "LW": 5,
         "RW": 6,
-        "D": 5,
-        "G": 3
+        "D": 6,
+        "G": 2
       },
       "top_players": [
         {
@@ -310,12 +310,12 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jake Sanderson",
+      "name": "Josh Morrissey",
       "position": "Defense",
-      "proTeam": "Ottawa Senators",
+      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Alex Ovechkin",
@@ -324,14 +324,6 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Scott Wedgewood",
@@ -420,9 +412,47 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Vince Dunn",
+      "position": "Defense",
+      "proTeam": "Seattle Kraken",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792561423811,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Jake Sanderson"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Jared McCann"
+        }
+      ]
+    },
+    {
+      "date": 1792560639334,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Pyotr Kochetkov"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Owen Power"
+        }
+      ]
+    },
     {
       "date": 1792557977289,
       "actions": [
@@ -760,36 +790,6 @@
           "team": "Underdogs",
           "action": "DROPPED",
           "player": "Thomas Chabot"
-        }
-      ]
-    },
-    {
-      "date": 1792130065420,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Mattias Ekholm"
-        },
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Josh Manson"
-        }
-      ]
-    },
-    {
-      "date": 1792074690792,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Mattias Ekholm"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Devon Toews"
         }
       ]
     }
