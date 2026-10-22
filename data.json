@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 24,
-  "last_updated": "22.10.2026 klo 12:33 UTC",
+  "last_updated": "22.10.2026 klo 17:41 UTC",
   "teams": [
     {
       "id": 1,
@@ -59,7 +59,7 @@
       "positions": {
         "C": 7,
         "LW": 4,
-        "RW": 3,
+        "RW": 2,
         "D": 7,
         "G": 2
       },
@@ -206,20 +206,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Thompson",
-      "position": "Goalie",
-      "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Elias Pettersson",
       "position": "Center",
       "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Logan Thompson",
+      "position": "Goalie",
+      "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Artemi Panarin",
@@ -310,14 +310,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Filip Hronek",
       "position": "Defense",
       "proTeam": "Vancouver Canucks",
@@ -326,17 +318,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
+      "name": "Josh Morrissey",
+      "position": "Defense",
+      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Drake Batherson",
       "position": "Right Wing",
       "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Alex Ovechkin",
+      "position": "Left Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -358,17 +358,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vincent Trocheck",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "name": "Pavel Dorofeyev",
+      "position": "Right Wing",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Pavel Dorofeyev",
-      "position": "Right Wing",
-      "proTeam": "New York Rangers",
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,31 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792683934528,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Sean Walker"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Mattias Samuelsson"
+        }
+      ]
+    },
+    {
+      "date": 1792683839450,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Matvei Michkov"
+        }
+      ]
+    },
     {
       "date": 1792656238061,
       "actions": [
@@ -765,36 +790,6 @@
           "team": "Moron Losers",
           "action": "FA ADDED",
           "player": "Kirill Marchenko"
-        }
-      ]
-    },
-    {
-      "date": 1792332925148,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Eric Robinson"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Pavel Dorofeyev"
-        }
-      ]
-    },
-    {
-      "date": 1792317166782,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Colton Parayko"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Adam Fantilli"
         }
       ]
     }
