@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 24,
-  "last_updated": "22.10.2026 klo 17:41 UTC",
+  "last_updated": "22.10.2026 klo 20:54 UTC",
   "teams": [
     {
       "id": 1,
@@ -149,7 +149,7 @@
         "LW": 4,
         "RW": 6,
         "D": 7,
-        "G": 2
+        "G": 3
       },
       "top_players": [
         {
@@ -257,14 +257,6 @@
       "name": "Nico Hischier",
       "position": "Center",
       "proTeam": "New Jersey Devils",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
-      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -420,9 +412,42 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Jesper Bratt",
+      "position": "Right Wing",
+      "proTeam": "New Jersey Devils",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792698165628,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Adin Hill"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Ukko-Pekka Luukkonen"
+        }
+      ]
+    },
+    {
+      "date": 1792694169121,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Karel Vejmelka"
+        }
+      ]
+    },
     {
       "date": 1792683934528,
       "actions": [
@@ -760,36 +785,6 @@
           "team": "Moron Losers",
           "action": "DROPPED",
           "player": "Owen Power"
-        }
-      ]
-    },
-    {
-      "date": 1792386930786,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Brock Nelson"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Mason McTavish"
-        }
-      ]
-    },
-    {
-      "date": 1792386525180,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Mark Jankowski"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Kirill Marchenko"
         }
       ]
     }
