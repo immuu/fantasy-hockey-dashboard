@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 24,
-  "last_updated": "22.10.2026 klo 20:54 UTC",
+  "last_updated": "22.10.2026 klo 23:42 UTC",
   "teams": [
     {
       "id": 1,
@@ -214,20 +214,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Thompson",
-      "position": "Goalie",
-      "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Artemi Panarin",
       "position": "Left Wing",
       "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Logan Thompson",
+      "position": "Goalie",
+      "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Cutter Gauthier",
@@ -382,17 +382,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Morgan Geekie",
-      "position": "Right Wing",
-      "proTeam": "Boston Bruins",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "name": "Morgan Geekie",
+      "position": "Right Wing",
+      "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
