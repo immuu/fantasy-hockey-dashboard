@@ -1,22 +1,22 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 23,
-  "last_updated": "22.10.2026 klo 06:43 UTC",
+  "current_week": 24,
+  "last_updated": "22.10.2026 klo 12:33 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 606.5,
+      "points_for": 604.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 4,
       "positions": {
-        "C": 7,
+        "C": 6,
         "LW": 5,
         "RW": 4,
-        "D": 5,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -51,11 +51,11 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 706.0,
+      "points_for": 707.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 2,
+      "standing": 3,
       "positions": {
         "C": 7,
         "LW": 4,
@@ -95,15 +95,15 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 704.1,
+      "points_for": 720.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 3,
+      "standing": 2,
       "positions": {
-        "C": 7,
+        "C": 8,
         "LW": 3,
-        "RW": 4,
+        "RW": 3,
         "D": 6,
         "G": 2
       },
@@ -139,16 +139,16 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 840.1,
+      "points_for": 843.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
         "C": 3,
-        "LW": 5,
+        "LW": 4,
         "RW": 6,
-        "D": 6,
+        "D": 7,
         "G": 2
       },
       "top_players": [
@@ -198,20 +198,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Thompson",
-      "position": "Goalie",
-      "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Sidney Crosby",
       "position": "Center",
       "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Logan Thompson",
+      "position": "Goalie",
+      "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Elias Pettersson",
@@ -225,14 +225,6 @@
       "name": "Artemi Panarin",
       "position": "Left Wing",
       "proTeam": "Los Angeles Kings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Wyatt Johnston",
-      "position": "Center",
-      "proTeam": "Dallas Stars",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -420,9 +412,32 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Vince Dunn",
+      "position": "Defense",
+      "proTeam": "Seattle Kraken",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792656238061,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Wyatt Johnston"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Jack Quinn"
+        }
+      ]
+    },
     {
       "date": 1792646099707,
       "actions": [
@@ -780,21 +795,6 @@
           "team": "Fridge Raiders",
           "action": "FA ADDED",
           "player": "Adam Fantilli"
-        }
-      ]
-    },
-    {
-      "date": 1792303190167,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Alexis Lafreniere"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Mark Jankowski"
         }
       ]
     }
