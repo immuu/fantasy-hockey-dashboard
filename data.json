@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 23,
-  "last_updated": "22.10.2026 klo 01:01 UTC",
+  "last_updated": "22.10.2026 klo 06:43 UTC",
   "teams": [
     {
       "id": 1,
@@ -230,14 +230,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Wyatt Johnston",
       "position": "Center",
       "proTeam": "Dallas Stars",
@@ -334,14 +326,6 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Filip Hronek",
       "position": "Defense",
       "proTeam": "Vancouver Canucks",
@@ -350,9 +334,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Scott Wedgewood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "name": "Alex Ovechkin",
+      "position": "Left Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -361,6 +345,14 @@
       "name": "Drake Batherson",
       "position": "Right Wing",
       "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Scott Wedgewood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -420,9 +412,47 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Jacob Trouba",
+      "position": "Defense",
+      "proTeam": "San Jose Sharks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792646099707,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Carter Verhaeghe"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Darren Raddysh"
+        }
+      ]
+    },
+    {
+      "date": 1792643882458,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Sam Bennett"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Thomas Harley"
+        }
+      ]
+    },
     {
       "date": 1792599510260,
       "actions": [
@@ -765,36 +795,6 @@
           "team": "Moron Losers",
           "action": "FA ADDED",
           "player": "Mark Jankowski"
-        }
-      ]
-    },
-    {
-      "date": 1792302749771,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Karel Vejmelka"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Jesper Wallstedt"
-        }
-      ]
-    },
-    {
-      "date": 1792302694486,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Tomas Hertl"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Jackson Blake"
         }
       ]
     }
