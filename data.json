@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 24,
-  "last_updated": "23.10.2026 klo 02:09 UTC",
+  "current_week": 25,
+  "last_updated": "23.10.2026 klo 07:59 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 604.0,
+      "points_for": 637.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 707.2,
+      "points_for": 751.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,14 +95,14 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 720.6,
+      "points_for": 765.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
         "C": 8,
-        "LW": 3,
+        "LW": 4,
         "RW": 3,
         "D": 6,
         "G": 2
@@ -139,17 +139,17 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 843.5,
+      "points_for": 883.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 3,
-        "LW": 4,
-        "RW": 6,
-        "D": 7,
-        "G": 3
+        "C": 5,
+        "LW": 5,
+        "RW": 5,
+        "D": 6,
+        "G": 2
       },
       "top_players": [
         {
@@ -184,6 +184,14 @@
     {
       "name": "MacKenzie Weegar",
       "position": "Defense",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Dylan Guenther",
+      "position": "Right Wing",
       "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
@@ -230,6 +238,14 @@
       "injuryStatus": "DAY_TO_DAY"
     },
     {
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Cutter Gauthier",
       "position": "Left Wing",
       "proTeam": "Anaheim Ducks",
@@ -246,17 +262,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Juraj Slafkovsky",
-      "position": "Left Wing",
-      "proTeam": "Montréal Canadiens",
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nico Hischier",
-      "position": "Center",
-      "proTeam": "New Jersey Devils",
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -294,9 +310,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Nelson",
+      "name": "Leo Carlsson",
       "position": "Center",
-      "proTeam": "Colorado Avalanche",
+      "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -310,20 +326,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Drake Batherson",
       "position": "Right Wing",
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Josh Morrissey",
+      "position": "Defense",
+      "proTeam": "Winnipeg Jets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Alex Ovechkin",
@@ -390,14 +406,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Morgan Geekie",
-      "position": "Right Wing",
-      "proTeam": "Boston Bruins",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Jacob Trouba",
       "position": "Defense",
       "proTeam": "San Jose Sharks",
@@ -406,23 +414,115 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vince Dunn",
-      "position": "Defense",
-      "proTeam": "Seattle Kraken",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Jesper Bratt",
+      "name": "Morgan Geekie",
       "position": "Right Wing",
-      "proTeam": "New Jersey Devils",
+      "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792733489170,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Zack Bolduc"
+        }
+      ]
+    },
+    {
+      "date": 1792733420100,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Anthony Cirelli"
+        }
+      ]
+    },
+    {
+      "date": 1792733316152,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Brayden Point"
+        }
+      ]
+    },
+    {
+      "date": 1792733301762,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Owen Power"
+        }
+      ]
+    },
+    {
+      "date": 1792733293641,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Darren Raddysh"
+        }
+      ]
+    },
+    {
+      "date": 1792733103317,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Dylan Guenther"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Victor Hedman"
+        }
+      ]
+    },
+    {
+      "date": 1792732945906,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Leo Carlsson"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Brock Nelson"
+        }
+      ]
+    },
+    {
+      "date": 1792732710915,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Juraj Slafkovsky"
+        }
+      ]
+    },
+    {
+      "date": 1792732611672,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Karel Vejmelka"
+        }
+      ]
+    },
     {
       "date": 1792698165628,
       "actions": [
@@ -650,141 +750,6 @@
           "team": "Julmat",
           "action": "FA ADDED",
           "player": "Morgan Geekie"
-        }
-      ]
-    },
-    {
-      "date": 1792482040823,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Evgeni Malkin"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Jared McCann"
-        }
-      ]
-    },
-    {
-      "date": 1792473318970,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Brock Nelson"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Carter Verhaeghe"
-        }
-      ]
-    },
-    {
-      "date": 1792473051226,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Cutter Gauthier"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Pyotr Kochetkov"
-        }
-      ]
-    },
-    {
-      "date": 1792434505799,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "JJ Peterka"
-        },
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Kailer Yamamoto"
-        }
-      ]
-    },
-    {
-      "date": 1792434234738,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Devon Toews"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Wyatt Johnston"
-        }
-      ]
-    },
-    {
-      "date": 1792434146628,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Nazem Kadri"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Eric Robinson"
-        }
-      ]
-    },
-    {
-      "date": 1792433994217,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Alexis Lafreniere"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Juraj Slafkovsky"
-        }
-      ]
-    },
-    {
-      "date": 1792405997678,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Jackson Blake"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Evgeni Malkin"
-        }
-      ]
-    },
-    {
-      "date": 1792387108449,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Cutter Gauthier"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Owen Power"
         }
       ]
     }
