@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 25,
-  "last_updated": "23.10.2026 klo 07:59 UTC",
+  "last_updated": "23.10.2026 klo 13:06 UTC",
   "teams": [
     {
       "id": 1,
@@ -101,8 +101,8 @@
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 8,
-        "LW": 4,
+        "C": 9,
+        "LW": 3,
         "RW": 3,
         "D": 6,
         "G": 2
@@ -119,17 +119,17 @@
           "points": 0.0
         },
         {
-          "name": "Filip Forsberg",
-          "position": "Left Wing",
-          "points": 0.0
-        },
-        {
           "name": "David Pastrnak",
           "position": "Right Wing",
           "points": 0.0
         },
         {
           "name": "Clayton Keller",
+          "position": "Left Wing",
+          "points": 0.0
+        },
+        {
+          "name": "Jake Guentzel",
           "position": "Left Wing",
           "points": 0.0
         }
@@ -190,6 +190,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Filip Forsberg",
+      "position": "Left Wing",
+      "proTeam": "Nashville Predators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Dylan Guenther",
       "position": "Right Wing",
       "proTeam": "Utah Hockey Club",
@@ -206,17 +214,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Sidney Crosby",
+      "name": "Elias Pettersson",
       "position": "Center",
-      "proTeam": "Pittsburgh Penguins",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Elias Pettersson",
+      "name": "Sidney Crosby",
       "position": "Center",
-      "proTeam": "Vancouver Canucks",
+      "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -398,14 +406,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Jacob Trouba",
       "position": "Defense",
       "proTeam": "San Jose Sharks",
@@ -414,15 +414,30 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Morgan Geekie",
-      "position": "Right Wing",
-      "proTeam": "Boston Bruins",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792754636043,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Filip Forsberg"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Oliver Kapanen"
+        }
+      ]
+    },
     {
       "date": 1792733489170,
       "actions": [
@@ -735,21 +750,6 @@
           "team": "Fridge Raiders",
           "action": "DROPPED",
           "player": "Adam Fantilli"
-        }
-      ]
-    },
-    {
-      "date": 1792519735891,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Nazem Kadri"
-        },
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Morgan Geekie"
         }
       ]
     }
