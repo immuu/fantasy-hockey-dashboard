@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 25,
-  "last_updated": "23.10.2026 klo 13:06 UTC",
+  "last_updated": "23.10.2026 klo 17:59 UTC",
   "teams": [
     {
       "id": 1,
@@ -15,8 +15,8 @@
       "positions": {
         "C": 6,
         "LW": 5,
-        "RW": 4,
-        "D": 6,
+        "RW": 5,
+        "D": 5,
         "G": 2
       },
       "top_players": [
@@ -254,17 +254,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Cutter Gauthier",
-      "position": "Left Wing",
-      "proTeam": "Anaheim Ducks",
+      "name": "Adrian Kempe",
+      "position": "Right Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adrian Kempe",
-      "position": "Right Wing",
-      "proTeam": "Los Angeles Kings",
+      "name": "Cutter Gauthier",
+      "position": "Left Wing",
+      "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -286,20 +286,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Thomas Chabot",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "Noah Dobson",
       "position": "Defense",
       "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Thomas Chabot",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
     },
     {
       "name": "Rasmus Andersson",
@@ -374,6 +374,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Logan Cooley",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Pavel Dorofeyev",
       "position": "Right Wing",
       "proTeam": "New York Rangers",
@@ -390,9 +398,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Cooley",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "name": "Jacob Trouba",
+      "position": "Defense",
+      "proTeam": "San Jose Sharks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -401,14 +409,6 @@
       "name": "Beckett Sennecke",
       "position": "Right Wing",
       "proTeam": "Anaheim Ducks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Jacob Trouba",
-      "position": "Defense",
-      "proTeam": "San Jose Sharks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,51 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792773253257,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Adin Hill"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Connor Hellebuyck"
+        }
+      ]
+    },
+    {
+      "date": 1792768726549,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Mikael Granlund"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Michael Brandsegg-Nygard"
+        }
+      ]
+    },
+    {
+      "date": 1792768435185,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Ryan Nugent-Hopkins"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Thomas Harley"
+        }
+      ]
+    },
     {
       "date": 1792754636043,
       "actions": [
@@ -705,51 +750,6 @@
           "team": "Underdogs",
           "action": "DROPPED",
           "player": "Jared McCann"
-        }
-      ]
-    },
-    {
-      "date": 1792560639334,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Pyotr Kochetkov"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Owen Power"
-        }
-      ]
-    },
-    {
-      "date": 1792557977289,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Jack Quinn"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Beckett Sennecke"
-        }
-      ]
-    },
-    {
-      "date": 1792557448429,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Sam Bennett"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Adam Fantilli"
         }
       ]
     }
