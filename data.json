@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 25,
-  "last_updated": "23.10.2026 klo 17:59 UTC",
+  "last_updated": "23.10.2026 klo 20:59 UTC",
   "teams": [
     {
       "id": 1,
@@ -278,17 +278,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
-      "proTeam": "Utah Hockey Club",
+      "name": "Noah Dobson",
+      "position": "Defense",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Noah Dobson",
-      "position": "Defense",
-      "proTeam": "Montréal Canadiens",
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -406,17 +406,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Beckett Sennecke",
-      "position": "Right Wing",
-      "proTeam": "Anaheim Ducks",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "name": "Beckett Sennecke",
+      "position": "Right Wing",
+      "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
