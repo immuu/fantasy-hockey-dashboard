@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 25,
-  "last_updated": "23.10.2026 klo 23:44 UTC",
+  "last_updated": "24.10.2026 klo 02:08 UTC",
   "teams": [
     {
       "id": 1,
@@ -286,20 +286,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Thomas Chabot",
       "position": "Defense",
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "OUT"
+    },
+    {
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Dylan Larkin",
