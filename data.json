@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 25,
-  "last_updated": "24.10.2026 klo 02:08 UTC",
+  "current_week": 26,
+  "last_updated": "24.10.2026 klo 07:39 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 637.2,
+      "points_for": 646.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 751.0,
+      "points_for": 753.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 765.8,
+      "points_for": 787.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,17 +139,17 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 883.4,
+      "points_for": 895.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 5,
+        "C": 4,
         "LW": 5,
         "RW": 5,
-        "D": 6,
-        "G": 2
+        "D": 5,
+        "G": 4
       },
       "top_players": [
         {
@@ -270,14 +270,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nico Hischier",
-      "position": "Center",
-      "proTeam": "New Jersey Devils",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Noah Dobson",
       "position": "Defense",
       "proTeam": "Montréal Canadiens",
@@ -366,17 +358,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Tom Wilson",
-      "position": "Right Wing",
-      "proTeam": "Washington Capitals",
+      "name": "Logan Cooley",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Cooley",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "name": "Tom Wilson",
+      "position": "Right Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -390,17 +382,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Pavel Dorofeyev",
-      "position": "Right Wing",
-      "proTeam": "New York Rangers",
+      "name": "Jacob Trouba",
+      "position": "Defense",
+      "proTeam": "San Jose Sharks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jacob Trouba",
-      "position": "Defense",
-      "proTeam": "San Jose Sharks",
+      "name": "Pavel Dorofeyev",
+      "position": "Right Wing",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -420,9 +412,82 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Morgan Geekie",
+      "position": "Right Wing",
+      "proTeam": "Boston Bruins",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792825386335,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Dennis Hildeby"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Anthony Cirelli"
+        }
+      ]
+    },
+    {
+      "date": 1792825160735,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Juuse Saros"
+        }
+      ]
+    },
+    {
+      "date": 1792825040036,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Victor Hedman"
+        }
+      ]
+    },
+    {
+      "date": 1792820864754,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Dylan Holloway"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Zack Bolduc"
+        }
+      ]
+    },
+    {
+      "date": 1792819321458,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Oliver Kapanen"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Nico Hischier"
+        }
+      ]
+    },
     {
       "date": 1792773253257,
       "actions": [
@@ -675,81 +740,6 @@
           "team": "Fridge Raiders",
           "action": "FA ADDED",
           "player": "Thomas Harley"
-        }
-      ]
-    },
-    {
-      "date": 1792599510260,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Matvei Michkov"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Eeli Tolvanen"
-        }
-      ]
-    },
-    {
-      "date": 1792599461448,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Claude Giroux"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Morgan Geekie"
-        }
-      ]
-    },
-    {
-      "date": 1792599392469,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Mattias Samuelsson"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "MacKenzie Weegar"
-        }
-      ]
-    },
-    {
-      "date": 1792597234930,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Logan Thompson"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Ukko-Pekka Luukkonen"
-        }
-      ]
-    },
-    {
-      "date": 1792561423811,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Jake Sanderson"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Jared McCann"
         }
       ]
     }
