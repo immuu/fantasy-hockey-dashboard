@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 26,
-  "last_updated": "24.10.2026 klo 07:39 UTC",
+  "last_updated": "24.10.2026 klo 12:16 UTC",
   "teams": [
     {
       "id": 1,
@@ -198,17 +198,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Guenther",
-      "position": "Right Wing",
-      "proTeam": "Utah Hockey Club",
+      "name": "Jakob Chychrun",
+      "position": "Defense",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jakob Chychrun",
-      "position": "Defense",
-      "proTeam": "Washington Capitals",
+      "name": "Dylan Guenther",
+      "position": "Right Wing",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -342,17 +342,17 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Scott Wedgewood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "name": "Alex Ovechkin",
+      "position": "Left Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
+      "name": "Scott Wedgewood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
