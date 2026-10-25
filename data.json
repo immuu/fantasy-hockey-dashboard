@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 27,
-  "last_updated": "25.10.2026 klo 10:14 UTC",
+  "last_updated": "25.10.2026 klo 14:37 UTC",
   "teams": [
     {
       "id": 1,
@@ -286,20 +286,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Thomas Chabot",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "Dylan Larkin",
       "position": "Center",
       "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Thomas Chabot",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
     },
     {
       "name": "Rasmus Andersson",
@@ -374,17 +374,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vincent Trocheck",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "name": "Alex Ovechkin",
+      "position": "Left Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
