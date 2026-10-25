@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 27,
-  "last_updated": "25.10.2026 klo 20:03 UTC",
+  "last_updated": "25.10.2026 klo 22:51 UTC",
   "teams": [
     {
       "id": 1,
@@ -254,14 +254,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Thompson",
-      "position": "Goalie",
-      "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Nico Hischier",
       "position": "Center",
       "proTeam": "New Jersey Devils",
@@ -276,6 +268,14 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Logan Thompson",
+      "position": "Goalie",
+      "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Noah Dobson",
