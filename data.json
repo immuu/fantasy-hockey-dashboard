@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 27,
-  "last_updated": "25.10.2026 klo 17:55 UTC",
+  "last_updated": "25.10.2026 klo 20:03 UTC",
   "teams": [
     {
       "id": 1,
@@ -262,17 +262,17 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Cutter Gauthier",
-      "position": "Left Wing",
-      "proTeam": "Anaheim Ducks",
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nico Hischier",
-      "position": "Center",
-      "proTeam": "New Jersey Devils",
+      "name": "Cutter Gauthier",
+      "position": "Left Wing",
+      "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -326,17 +326,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Filip Hronek",
-      "position": "Defense",
-      "proTeam": "Vancouver Canucks",
+      "name": "Drake Batherson",
+      "position": "Right Wing",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Drake Batherson",
-      "position": "Right Wing",
-      "proTeam": "Ottawa Senators",
+      "name": "Filip Hronek",
+      "position": "Defense",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
