@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 26,
-  "last_updated": "25.10.2026 klo 05:25 UTC",
+  "current_week": 27,
+  "last_updated": "25.10.2026 klo 10:14 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 646.4,
+      "points_for": 661.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 753.4,
+      "points_for": 791.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 787.9,
+      "points_for": 849.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,17 +139,17 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 895.6,
+      "points_for": 941.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 4,
+        "C": 5,
         "LW": 5,
         "RW": 5,
-        "D": 5,
-        "G": 4
+        "D": 6,
+        "G": 2
       },
       "top_players": [
         {
@@ -270,6 +270,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Noah Dobson",
       "position": "Defense",
       "proTeam": "Montréal Canadiens",
@@ -342,14 +350,6 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Scott Wedgewood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Jacob Trouba",
       "position": "Defense",
       "proTeam": "San Jose Sharks",
@@ -358,9 +358,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
+      "name": "Scott Wedgewood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -374,6 +374,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Alex Ovechkin",
+      "position": "Left Wing",
+      "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Vincent Trocheck",
       "position": "Center",
       "proTeam": "Utah Hockey Club",
@@ -382,17 +390,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Tom Wilson",
-      "position": "Right Wing",
-      "proTeam": "Washington Capitals",
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "name": "Tom Wilson",
+      "position": "Right Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -412,17 +420,64 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Vince Dunn",
-      "position": "Defense",
-      "proTeam": "Seattle Kraken",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792917345762,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Neal Pionk"
+        }
+      ]
+    },
+    {
+      "date": 1792916997587,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Ryan O'Reilly"
+        }
+      ]
+    },
+    {
+      "date": 1792916853565,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Juuse Saros"
+        }
+      ]
+    },
+    {
+      "date": 1792910307531,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Nico Hischier"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Roope Hintz"
+        }
+      ]
+    },
+    {
+      "date": 1792908290145,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Dennis Hildeby"
+        }
+      ]
+    },
     {
       "date": 1792825386335,
       "actions": [
@@ -670,76 +725,6 @@
           "team": "Moron Losers",
           "action": "FA ADDED",
           "player": "Karel Vejmelka"
-        }
-      ]
-    },
-    {
-      "date": 1792683934528,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Sean Walker"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Mattias Samuelsson"
-        }
-      ]
-    },
-    {
-      "date": 1792683839450,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Matvei Michkov"
-        }
-      ]
-    },
-    {
-      "date": 1792656238061,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Wyatt Johnston"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Jack Quinn"
-        }
-      ]
-    },
-    {
-      "date": 1792646099707,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Carter Verhaeghe"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Darren Raddysh"
-        }
-      ]
-    },
-    {
-      "date": 1792643882458,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Sam Bennett"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Thomas Harley"
         }
       ]
     }
