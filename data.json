@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 27,
-  "last_updated": "25.10.2026 klo 14:37 UTC",
+  "last_updated": "25.10.2026 klo 17:55 UTC",
   "teams": [
     {
       "id": 1,
@@ -382,14 +382,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
@@ -398,8 +390,8 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Tom Wilson",
-      "position": "Right Wing",
+      "name": "Alex Ovechkin",
+      "position": "Left Wing",
       "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
@@ -409,6 +401,14 @@
       "name": "Pavel Dorofeyev",
       "position": "Right Wing",
       "proTeam": "New York Rangers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Tom Wilson",
+      "position": "Right Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
