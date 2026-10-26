@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 27,
-  "last_updated": "25.10.2026 klo 22:51 UTC",
+  "last_updated": "26.10.2026 klo 00:47 UTC",
   "teams": [
     {
       "id": 1,
@@ -390,17 +390,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
+      "name": "Pavel Dorofeyev",
+      "position": "Right Wing",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Pavel Dorofeyev",
-      "position": "Right Wing",
-      "proTeam": "New York Rangers",
+      "name": "Alex Ovechkin",
+      "position": "Left Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
