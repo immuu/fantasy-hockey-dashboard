@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 28,
-  "last_updated": "26.10.2026 klo 11:39 UTC",
+  "last_updated": "26.10.2026 klo 17:43 UTC",
   "teams": [
     {
       "id": 1,
@@ -145,8 +145,8 @@
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 6,
-        "LW": 5,
+        "C": 5,
+        "LW": 6,
         "RW": 6,
         "D": 4,
         "G": 2
@@ -217,14 +217,6 @@
       "name": "Dylan Guenther",
       "position": "Right Wing",
       "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Artemi Panarin",
-      "position": "Left Wing",
-      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -350,14 +342,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Jacob Trouba",
       "position": "Defense",
       "proTeam": "San Jose Sharks",
@@ -366,15 +350,15 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Cooley",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "name": "Josh Morrissey",
+      "position": "Defense",
+      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Vincent Trocheck",
+      "name": "Logan Cooley",
       "position": "Center",
       "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
@@ -390,6 +374,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Pavel Dorofeyev",
       "position": "Right Wing",
       "proTeam": "New York Rangers",
@@ -398,9 +390,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Scott Wedgewood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "name": "Beckett Sennecke",
+      "position": "Right Wing",
+      "proTeam": "Anaheim Ducks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Tom Wilson",
+      "position": "Right Wing",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -414,15 +414,30 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Beckett Sennecke",
-      "position": "Right Wing",
-      "proTeam": "Anaheim Ducks",
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793023239900,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Artemi Panarin"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Brayden Point"
+        }
+      ]
+    },
     {
       "date": 1792996318643,
       "actions": [
@@ -715,21 +730,6 @@
           "team": "Moron Losers",
           "action": "DROPPED",
           "player": "Darren Raddysh"
-        }
-      ]
-    },
-    {
-      "date": 1792733103317,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Dylan Guenther"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Victor Hedman"
         }
       ]
     }
