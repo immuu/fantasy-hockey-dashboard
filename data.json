@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 27,
-  "last_updated": "26.10.2026 klo 00:47 UTC",
+  "last_updated": "26.10.2026 klo 05:30 UTC",
   "teams": [
     {
       "id": 1,
@@ -238,6 +238,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Mark Scheifele",
+      "position": "Center",
+      "proTeam": "Winnipeg Jets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Darren Raddysh",
       "position": "Defense",
       "proTeam": "Toronto Maple Leafs",
@@ -326,14 +334,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Drake Batherson",
-      "position": "Right Wing",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Filip Hronek",
       "position": "Defense",
       "proTeam": "Vancouver Canucks",
@@ -358,14 +358,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Scott Wedgewood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Logan Cooley",
       "position": "Center",
       "proTeam": "Utah Hockey Club",
@@ -385,6 +377,14 @@
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Scott Wedgewood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,36 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1792992413842,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Neal Pionk"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Easton Cowan"
+        }
+      ]
+    },
+    {
+      "date": 1792990699585,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Mark Scheifele"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Drake Batherson"
+        }
+      ]
+    },
     {
       "date": 1792917345762,
       "actions": [
@@ -699,31 +729,6 @@
         {
           "team": "Moron Losers",
           "action": "DROPPED",
-          "player": "Karel Vejmelka"
-        }
-      ]
-    },
-    {
-      "date": 1792698165628,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Adin Hill"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Ukko-Pekka Luukkonen"
-        }
-      ]
-    },
-    {
-      "date": 1792694169121,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
           "player": "Karel Vejmelka"
         }
       ]
