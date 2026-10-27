@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 29,
-  "last_updated": "27.10.2026 klo 12:48 UTC",
+  "last_updated": "27.10.2026 klo 18:25 UTC",
   "teams": [
     {
       "id": 1,
@@ -326,20 +326,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Zach Hyman",
-      "position": "Right Wing",
-      "proTeam": "Edmonton Oilers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Leo Carlsson",
       "position": "Center",
       "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Zach Hyman",
+      "position": "Right Wing",
+      "proTeam": "Edmonton Oilers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Filip Hronek",
@@ -358,20 +358,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Josh Morrissey",
+      "position": "Defense",
+      "proTeam": "Winnipeg Jets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Vincent Trocheck",
