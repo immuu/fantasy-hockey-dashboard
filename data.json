@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 28,
-  "last_updated": "27.10.2026 klo 06:54 UTC",
+  "current_week": 29,
+  "last_updated": "27.10.2026 klo 12:48 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 703.7,
+      "points_for": 707.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 827.5,
+      "points_for": 837.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 867.7,
+      "points_for": 873.7,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 979.0,
+      "points_for": 998.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -147,9 +147,9 @@
       "positions": {
         "C": 5,
         "LW": 6,
-        "RW": 6,
-        "D": 4,
-        "G": 2
+        "RW": 5,
+        "D": 6,
+        "G": 1
       },
       "top_players": [
         {
@@ -310,14 +310,6 @@
       "injuryStatus": "OUT"
     },
     {
-      "name": "Zach Hyman",
-      "position": "Right Wing",
-      "proTeam": "Edmonton Oilers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Rasmus Andersson",
       "position": "Defense",
       "proTeam": "Vegas Golden Knights",
@@ -332,6 +324,14 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Zach Hyman",
+      "position": "Right Wing",
+      "proTeam": "Edmonton Oilers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Leo Carlsson",
