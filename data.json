@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 28,
-  "last_updated": "27.10.2026 klo 01:03 UTC",
+  "last_updated": "27.10.2026 klo 06:54 UTC",
   "teams": [
     {
       "id": 1,
@@ -278,6 +278,14 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
+      "name": "Linus Ullmark",
+      "position": "Goalie",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
+    },
+    {
       "name": "Noah Dobson",
       "position": "Defense",
       "proTeam": "Montréal Canadiens",
@@ -300,6 +308,14 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "OUT"
+    },
+    {
+      "name": "Zach Hyman",
+      "position": "Right Wing",
+      "proTeam": "Edmonton Oilers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Rasmus Andersson",
@@ -337,14 +353,6 @@
       "name": "Brock Nelson",
       "position": "Center",
       "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Jacob Trouba",
-      "position": "Defense",
-      "proTeam": "San Jose Sharks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -406,14 +414,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alex Ovechkin",
-      "position": "Left Wing",
-      "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Mackenzie Blackwood",
       "position": "Goalie",
       "proTeam": "Colorado Avalanche",
@@ -423,6 +423,66 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793080998941,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Jacob Trouba"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Linus Ullmark"
+        }
+      ]
+    },
+    {
+      "date": 1793078251602,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Zach Hyman"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Kaiden Guhle"
+        }
+      ]
+    },
+    {
+      "date": 1793078062459,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Trevor Zegras"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Easton Cowan"
+        }
+      ]
+    },
+    {
+      "date": 1793077997846,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Jackson Blake"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Jack Roslovic"
+        }
+      ]
+    },
     {
       "date": 1793023239900,
       "actions": [
@@ -690,46 +750,6 @@
           "team": "Underdogs",
           "action": "FA ADDED",
           "player": "Zack Bolduc"
-        }
-      ]
-    },
-    {
-      "date": 1792733420100,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Anthony Cirelli"
-        }
-      ]
-    },
-    {
-      "date": 1792733316152,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Brayden Point"
-        }
-      ]
-    },
-    {
-      "date": 1792733301762,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Owen Power"
-        }
-      ]
-    },
-    {
-      "date": 1792733293641,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Darren Raddysh"
         }
       ]
     }
