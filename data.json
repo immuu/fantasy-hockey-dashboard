@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 29,
-  "last_updated": "27.10.2026 klo 18:25 UTC",
+  "last_updated": "27.10.2026 klo 22:41 UTC",
   "teams": [
     {
       "id": 1,
@@ -424,6 +424,36 @@
   ],
   "recent_activity": [
     {
+      "date": 1793128973129,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Jacob Fowler"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Stuart Skinner"
+        }
+      ]
+    },
+    {
+      "date": 1793128885408,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Brayden McNabb"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Josh Manson"
+        }
+      ]
+    },
+    {
       "date": 1793080998941,
       "actions": [
         {
@@ -725,31 +755,6 @@
           "team": "Fridge Raiders",
           "action": "DROPPED",
           "player": "Thomas Harley"
-        }
-      ]
-    },
-    {
-      "date": 1792754636043,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Filip Forsberg"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Oliver Kapanen"
-        }
-      ]
-    },
-    {
-      "date": 1792733489170,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Zack Bolduc"
         }
       ]
     }
