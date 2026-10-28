@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 30,
-  "last_updated": "28.10.2026 klo 19:55 UTC",
+  "last_updated": "28.10.2026 klo 23:42 UTC",
   "teams": [
     {
       "id": 1,
@@ -145,7 +145,7 @@
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 5,
+        "C": 6,
         "LW": 6,
         "RW": 5,
         "D": 5,
@@ -246,17 +246,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mark Scheifele",
-      "position": "Center",
-      "proTeam": "Winnipeg Jets",
+      "name": "Adrian Kempe",
+      "position": "Right Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adrian Kempe",
-      "position": "Right Wing",
-      "proTeam": "Los Angeles Kings",
+      "name": "Mark Scheifele",
+      "position": "Center",
+      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,16 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793228615335,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Dylan Strome"
+        }
+      ]
+    },
     {
       "date": 1793183976821,
       "actions": [
@@ -745,21 +755,6 @@
           "team": "Moron Losers",
           "action": "DROPPED",
           "player": "Dennis Hildeby"
-        }
-      ]
-    },
-    {
-      "date": 1792825386335,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Dennis Hildeby"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Anthony Cirelli"
         }
       ]
     }
