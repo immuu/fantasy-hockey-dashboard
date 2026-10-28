@@ -1,20 +1,20 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 29,
-  "last_updated": "28.10.2026 klo 01:51 UTC",
+  "current_week": 30,
+  "last_updated": "28.10.2026 klo 07:36 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 707.9,
+      "points_for": 766.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 4,
       "positions": {
-        "C": 5,
-        "LW": 5,
+        "C": 6,
+        "LW": 4,
         "RW": 6,
         "D": 5,
         "G": 2
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 837.9,
+      "points_for": 876.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,14 +95,14 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 873.7,
+      "points_for": 900.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 8,
-        "LW": 3,
+        "C": 9,
+        "LW": 2,
         "RW": 4,
         "D": 6,
         "G": 2
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 998.0,
+      "points_for": 1047.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -148,7 +148,7 @@
         "C": 5,
         "LW": 6,
         "RW": 5,
-        "D": 6,
+        "D": 5,
         "G": 1
       },
       "top_players": [
@@ -254,9 +254,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nico Hischier",
-      "position": "Center",
-      "proTeam": "New Jersey Devils",
+      "name": "Adrian Kempe",
+      "position": "Right Wing",
+      "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Juraj Slafkovsky",
+      "position": "Left Wing",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -350,6 +358,14 @@
       "injuryStatus": "DAY_TO_DAY"
     },
     {
+      "name": "Jacob Trouba",
+      "position": "Defense",
+      "proTeam": "San Jose Sharks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Brock Nelson",
       "position": "Center",
       "proTeam": "Colorado Avalanche",
@@ -390,14 +406,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Pavel Dorofeyev",
-      "position": "Right Wing",
-      "proTeam": "New York Rangers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Beckett Sennecke",
       "position": "Right Wing",
       "proTeam": "Anaheim Ducks",
@@ -406,23 +414,100 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Tom Wilson",
+      "name": "Pavel Dorofeyev",
       "position": "Right Wing",
-      "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793168514598,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Adrian Kempe"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Jack Roslovic"
+        }
+      ]
+    },
+    {
+      "date": 1793167796530,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Dylan Holloway"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Arseny Gritsyuk"
+        }
+      ]
+    },
+    {
+      "date": 1793165025595,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Jacob Trouba"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Joel Farabee"
+        }
+      ]
+    },
+    {
+      "date": 1793164549671,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Juraj Slafkovsky"
+        }
+      ]
+    },
+    {
+      "date": 1793164344123,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Easton Cowan"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Cole Perfetti"
+        }
+      ]
+    },
+    {
+      "date": 1793164021831,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Michael Brandsegg-Nygard"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Nico Hischier"
+        }
+      ]
+    },
     {
       "date": 1793128973129,
       "actions": [
@@ -670,91 +755,6 @@
           "team": "Moron Losers",
           "action": "FA ADDED",
           "player": "Juuse Saros"
-        }
-      ]
-    },
-    {
-      "date": 1792825040036,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Victor Hedman"
-        }
-      ]
-    },
-    {
-      "date": 1792820864754,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Dylan Holloway"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Zack Bolduc"
-        }
-      ]
-    },
-    {
-      "date": 1792819321458,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Oliver Kapanen"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Nico Hischier"
-        }
-      ]
-    },
-    {
-      "date": 1792773253257,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Adin Hill"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Connor Hellebuyck"
-        }
-      ]
-    },
-    {
-      "date": 1792768726549,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Mikael Granlund"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Michael Brandsegg-Nygard"
-        }
-      ]
-    },
-    {
-      "date": 1792768435185,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Ryan Nugent-Hopkins"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Thomas Harley"
         }
       ]
     }
