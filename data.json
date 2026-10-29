@@ -1,21 +1,21 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 30,
-  "last_updated": "29.10.2026 klo 03:03 UTC",
+  "current_week": 31,
+  "last_updated": "29.10.2026 klo 10:28 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 766.1,
+      "points_for": 778.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 4,
       "positions": {
         "C": 6,
-        "LW": 4,
-        "RW": 6,
+        "LW": 5,
+        "RW": 5,
         "D": 5,
         "G": 2
       },
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 876.1,
+      "points_for": 886.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,15 +95,15 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 900.6,
+      "points_for": 921.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
         "C": 9,
-        "LW": 2,
-        "RW": 4,
+        "LW": 3,
+        "RW": 3,
         "D": 6,
         "G": 2
       },
@@ -139,16 +139,16 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1047.1,
+      "points_for": 1075.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 6,
+        "C": 5,
         "LW": 6,
         "RW": 5,
-        "D": 5,
+        "D": 6,
         "G": 1
       },
       "top_players": [
@@ -185,22 +185,6 @@
       "name": "MacKenzie Weegar",
       "position": "Defense",
       "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Filip Forsberg",
-      "position": "Left Wing",
-      "proTeam": "Nashville Predators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Jakob Chychrun",
-      "position": "Defense",
-      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -257,6 +241,14 @@
       "name": "Mark Scheifele",
       "position": "Center",
       "proTeam": "Winnipeg Jets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -358,6 +350,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Brock Nelson",
       "position": "Center",
       "proTeam": "Colorado Avalanche",
@@ -366,9 +366,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
+      "name": "Logan Cooley",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Josh Morrissey",
       "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "proTeam": "Winnipeg Jets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -380,30 +396,6 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
-    },
-    {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
-      "name": "Logan Cooley",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Vincent Trocheck",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Beckett Sennecke",
@@ -420,9 +412,92 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793255101600,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Filip Forsberg"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Arseny Gritsyuk"
+        }
+      ]
+    },
+    {
+      "date": 1793250711248,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Nico Hischier"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Elias Lindholm"
+        }
+      ]
+    },
+    {
+      "date": 1793250676532,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Lucas Raymond"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Trevor Zegras"
+        }
+      ]
+    },
+    {
+      "date": 1793250542992,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Nikolaj Ehlers"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Easton Cowan"
+        }
+      ]
+    },
+    {
+      "date": 1793250494965,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Joel Farabee"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Jakob Chychrun"
+        }
+      ]
+    },
     {
       "date": 1793228615335,
       "actions": [
@@ -700,61 +775,6 @@
           "team": "Fridge Raiders",
           "action": "FA ADDED",
           "player": "Drake Batherson"
-        }
-      ]
-    },
-    {
-      "date": 1792917345762,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Neal Pionk"
-        }
-      ]
-    },
-    {
-      "date": 1792916997587,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Ryan O'Reilly"
-        }
-      ]
-    },
-    {
-      "date": 1792916853565,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Juuse Saros"
-        }
-      ]
-    },
-    {
-      "date": 1792910307531,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Nico Hischier"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Roope Hintz"
-        }
-      ]
-    },
-    {
-      "date": 1792908290145,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Dennis Hildeby"
         }
       ]
     }
