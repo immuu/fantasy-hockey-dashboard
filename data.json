@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 31,
-  "last_updated": "29.10.2026 klo 10:28 UTC",
+  "last_updated": "29.10.2026 klo 17:07 UTC",
   "teams": [
     {
       "id": 1,
@@ -291,12 +291,20 @@
       "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Noah Dobson",
       "position": "Defense",
       "proTeam": "Montréal Canadiens",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Leo Carlsson",
+      "position": "Center",
+      "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -308,14 +316,6 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "OUT"
-    },
-    {
-      "name": "Leo Carlsson",
-      "position": "Center",
-      "proTeam": "Anaheim Ducks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Rasmus Andersson",
