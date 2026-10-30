@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 31,
-  "last_updated": "30.10.2026 klo 02:12 UTC",
+  "current_week": 32,
+  "last_updated": "30.10.2026 klo 09:08 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 778.9,
+      "points_for": 834.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 886.4,
+      "points_for": 942.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,14 +95,14 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 921.8,
+      "points_for": 989.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 9,
-        "LW": 3,
+        "C": 8,
+        "LW": 4,
         "RW": 3,
         "D": 6,
         "G": 2
@@ -139,16 +139,16 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1075.2,
+      "points_for": 1119.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 5,
+        "C": 4,
         "LW": 6,
         "RW": 5,
-        "D": 6,
+        "D": 7,
         "G": 1
       },
       "top_players": [
@@ -230,22 +230,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adrian Kempe",
-      "position": "Right Wing",
-      "proTeam": "Los Angeles Kings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Nico Hischier",
-      "position": "Center",
-      "proTeam": "New Jersey Devils",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Mark Scheifele",
       "position": "Center",
       "proTeam": "Winnipeg Jets",
@@ -254,9 +238,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Adrian Kempe",
+      "position": "Right Wing",
+      "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Juraj Slafkovsky",
       "position": "Left Wing",
       "proTeam": "Montréal Canadiens",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Andrei Svechnikov",
+      "position": "Left Wing",
+      "proTeam": "Carolina Hurricanes",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -310,20 +310,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Detroit Red Wings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Rasmus Andersson",
       "position": "Defense",
       "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Filip Hronek",
@@ -355,20 +355,20 @@
       "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
+    },
+    {
+      "name": "Logan Cooley",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
       "name": "Brock Nelson",
       "position": "Center",
       "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Logan Cooley",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,81 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793350590820,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Dylan Strome"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Joel Farabee"
+        }
+      ]
+    },
+    {
+      "date": 1793345629869,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Roope Hintz"
+        },
+        {
+          "team": "Underdogs",
+          "action": "WAIVER ADDED",
+          "player": "Nico Hischier"
+        }
+      ]
+    },
+    {
+      "date": 1793343413739,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Jack Roslovic"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Cole Perfetti"
+        }
+      ]
+    },
+    {
+      "date": 1793339977585,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Brandon Montour"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Andrei Svechnikov"
+        }
+      ]
+    },
+    {
+      "date": 1793337468839,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Carter Verhaeghe"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Nikolaj Ehlers"
+        }
+      ]
+    },
     {
       "date": 1793300989952,
       "actions": [
@@ -710,71 +785,6 @@
           "team": "Moron Losers",
           "action": "DROPPED",
           "player": "Jack Roslovic"
-        }
-      ]
-    },
-    {
-      "date": 1793023239900,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Artemi Panarin"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Brayden Point"
-        }
-      ]
-    },
-    {
-      "date": 1792996318643,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Adrian Kempe"
-        }
-      ]
-    },
-    {
-      "date": 1792996293749,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Brock Nelson"
-        }
-      ]
-    },
-    {
-      "date": 1792992806179,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Jack Roslovic"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "John Carlson"
-        }
-      ]
-    },
-    {
-      "date": 1792992413842,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Neal Pionk"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Easton Cowan"
         }
       ]
     }
