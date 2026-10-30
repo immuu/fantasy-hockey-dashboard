@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 32,
-  "last_updated": "30.10.2026 klo 16:18 UTC",
+  "last_updated": "30.10.2026 klo 21:10 UTC",
   "teams": [
     {
       "id": 1,
@@ -206,17 +206,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Sidney Crosby",
-      "position": "Center",
-      "proTeam": "Pittsburgh Penguins",
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Sidney Crosby",
+      "position": "Center",
+      "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
