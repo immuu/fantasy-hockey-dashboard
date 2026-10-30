@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 32,
-  "last_updated": "30.10.2026 klo 09:08 UTC",
+  "last_updated": "30.10.2026 klo 16:18 UTC",
   "teams": [
     {
       "id": 1,
@@ -318,20 +318,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Detroit Red Wings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Filip Hronek",
       "position": "Defense",
       "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Karel Vejmelka",
@@ -366,17 +366,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Nelson",
+      "name": "Vincent Trocheck",
       "position": "Center",
-      "proTeam": "Colorado Avalanche",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vincent Trocheck",
+      "name": "Brock Nelson",
       "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
