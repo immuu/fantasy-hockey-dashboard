@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 32,
-  "last_updated": "30.10.2026 klo 21:10 UTC",
+  "last_updated": "31.10.2026 klo 01:07 UTC",
   "teams": [
     {
       "id": 1,
@@ -254,17 +254,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Andrei Svechnikov",
+      "name": "Cutter Gauthier",
       "position": "Left Wing",
-      "proTeam": "Carolina Hurricanes",
+      "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Cutter Gauthier",
+      "name": "Andrei Svechnikov",
       "position": "Left Wing",
-      "proTeam": "Anaheim Ducks",
+      "proTeam": "Carolina Hurricanes",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -374,20 +374,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Nelson",
-      "position": "Center",
-      "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Josh Morrissey",
       "position": "Defense",
       "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Brock Nelson",
+      "position": "Center",
+      "proTeam": "Colorado Avalanche",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Beckett Sennecke",
