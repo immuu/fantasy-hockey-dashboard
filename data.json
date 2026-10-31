@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 33,
-  "last_updated": "31.10.2026 klo 13:56 UTC",
+  "last_updated": "31.10.2026 klo 18:02 UTC",
   "teams": [
     {
       "id": 1,
@@ -334,14 +334,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Detroit Red Wings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Karel Vejmelka",
       "position": "Goalie",
       "proTeam": "Utah Hockey Club",
@@ -350,12 +342,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
+    },
+    {
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Logan Cooley",
@@ -398,12 +398,12 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Zach Hyman",
-      "position": "Right Wing",
-      "proTeam": "Edmonton Oilers",
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Pavel Dorofeyev",
@@ -414,12 +414,12 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "name": "Zach Hyman",
+      "position": "Right Wing",
+      "proTeam": "Edmonton Oilers",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "INJURY_RESERVE"
     }
   ],
   "recent_activity": [
