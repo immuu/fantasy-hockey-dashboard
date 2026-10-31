@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 33,
-  "last_updated": "31.10.2026 klo 07:36 UTC",
+  "last_updated": "31.10.2026 klo 13:56 UTC",
   "teams": [
     {
       "id": 1,
@@ -326,20 +326,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Detroit Red Wings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Jacob Trouba",
       "position": "Defense",
       "proTeam": "San Jose Sharks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Karel Vejmelka",
