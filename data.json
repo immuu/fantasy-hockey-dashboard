@@ -1,21 +1,21 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 32,
-  "last_updated": "31.10.2026 klo 01:07 UTC",
+  "current_week": 33,
+  "last_updated": "31.10.2026 klo 07:36 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 834.8,
+      "points_for": 866.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 4,
       "positions": {
         "C": 6,
-        "LW": 5,
-        "RW": 5,
+        "LW": 4,
+        "RW": 6,
         "D": 5,
         "G": 2
       },
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 942.9,
+      "points_for": 961.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 989.4,
+      "points_for": 989.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1119.0,
+      "points_for": 1130.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -147,8 +147,8 @@
       "positions": {
         "C": 4,
         "LW": 6,
-        "RW": 5,
-        "D": 7,
+        "RW": 6,
+        "D": 6,
         "G": 1
       },
       "top_players": [
@@ -238,6 +238,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Adrian Kempe",
       "position": "Right Wing",
       "proTeam": "Los Angeles Kings",
@@ -318,14 +326,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Filip Hronek",
-      "position": "Defense",
-      "proTeam": "Vancouver Canucks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Dylan Larkin",
       "position": "Center",
       "proTeam": "Detroit Red Wings",
@@ -334,17 +334,17 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
-      "proTeam": "Utah Hockey Club",
+      "name": "Jacob Trouba",
+      "position": "Defense",
+      "proTeam": "San Jose Sharks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jacob Trouba",
-      "position": "Defense",
-      "proTeam": "San Jose Sharks",
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,96 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793430544177,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "James Hagens"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Cole Perfetti"
+        }
+      ]
+    },
+    {
+      "date": 1793430404598,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Emmitt Finnie"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Nico Hischier"
+        }
+      ]
+    },
+    {
+      "date": 1793429853335,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Easton Cowan"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Carter Verhaeghe"
+        }
+      ]
+    },
+    {
+      "date": 1793429640761,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Shea Theodore"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Filip Hronek"
+        }
+      ]
+    },
+    {
+      "date": 1793429381585,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Matvei Gridin"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Brandon Montour"
+        }
+      ]
+    },
+    {
+      "date": 1793428496520,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Viktor Arvidsson"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Kailer Yamamoto"
+        }
+      ]
+    },
     {
       "date": 1793350590820,
       "actions": [
@@ -695,96 +785,6 @@
           "team": "Fridge Raiders",
           "action": "FA ADDED",
           "player": "Nico Hischier"
-        }
-      ]
-    },
-    {
-      "date": 1793128973129,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Jacob Fowler"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Stuart Skinner"
-        }
-      ]
-    },
-    {
-      "date": 1793128885408,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Brayden McNabb"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Josh Manson"
-        }
-      ]
-    },
-    {
-      "date": 1793080998941,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Jacob Trouba"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Linus Ullmark"
-        }
-      ]
-    },
-    {
-      "date": 1793078251602,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Zach Hyman"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Kaiden Guhle"
-        }
-      ]
-    },
-    {
-      "date": 1793078062459,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Trevor Zegras"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Easton Cowan"
-        }
-      ]
-    },
-    {
-      "date": 1793077997846,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Jackson Blake"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Jack Roslovic"
         }
       ]
     }
