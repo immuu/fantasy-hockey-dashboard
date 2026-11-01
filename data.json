@@ -1,21 +1,21 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 33,
-  "last_updated": "01.11.2026 klo 06:56 UTC",
+  "current_week": 34,
+  "last_updated": "01.11.2026 klo 13:54 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 866.6,
+      "points_for": 936.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 4,
       "positions": {
-        "C": 6,
+        "C": 7,
         "LW": 4,
-        "RW": 6,
+        "RW": 5,
         "D": 5,
         "G": 2
       },
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 961.6,
+      "points_for": 984.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,14 +95,14 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 989.6,
+      "points_for": 1077.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 8,
-        "LW": 4,
+        "C": 7,
+        "LW": 5,
         "RW": 3,
         "D": 6,
         "G": 2
@@ -139,16 +139,16 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1130.4,
+      "points_for": 1186.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 4,
+        "C": 6,
         "LW": 6,
-        "RW": 6,
-        "D": 6,
+        "RW": 5,
+        "D": 5,
         "G": 1
       },
       "top_players": [
@@ -238,14 +238,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mark Scheifele",
-      "position": "Center",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Nico Hischier",
       "position": "Center",
       "proTeam": "New Jersey Devils",
@@ -267,20 +259,12 @@
       "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Logan Thompson",
       "position": "Goalie",
       "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Andrei Svechnikov",
-      "position": "Left Wing",
-      "proTeam": "Carolina Hurricanes",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -382,17 +366,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Pavel Dorofeyev",
-      "position": "Right Wing",
-      "proTeam": "New York Rangers",
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "name": "Pavel Dorofeyev",
+      "position": "Right Wing",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -420,9 +404,70 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Brayden Point",
+      "position": "Center",
+      "proTeam": "Tampa Bay Lightning",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Jesper Bratt",
+      "position": "Right Wing",
+      "proTeam": "New Jersey Devils",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793518205326,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "James Hagens"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Nikolaj Ehlers"
+        }
+      ]
+    },
+    {
+      "date": 1793517835568,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Emmitt Finnie"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Andrei Svechnikov"
+        }
+      ]
+    },
+    {
+      "date": 1793517289377,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Mark Scheifele"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Easton Cowan"
+        }
+      ]
+    },
     {
       "date": 1793513006380,
       "actions": [
@@ -720,46 +765,6 @@
           "team": "Fridge Raiders",
           "action": "DROPPED",
           "player": "Easton Cowan"
-        }
-      ]
-    },
-    {
-      "date": 1793250494965,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Joel Farabee"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Jakob Chychrun"
-        }
-      ]
-    },
-    {
-      "date": 1793228615335,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Dylan Strome"
-        }
-      ]
-    },
-    {
-      "date": 1793183976821,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Sean Walker"
-        },
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Brett Pesce"
         }
       ]
     }
