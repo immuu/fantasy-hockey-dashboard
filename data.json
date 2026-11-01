@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 33,
-  "last_updated": "01.11.2026 klo 00:39 UTC",
+  "last_updated": "01.11.2026 klo 06:56 UTC",
   "teams": [
     {
       "id": 1,
@@ -190,6 +190,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Artemi Panarin",
+      "position": "Left Wing",
+      "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Elias Pettersson",
       "position": "Center",
       "proTeam": "Vancouver Canucks",
@@ -262,9 +270,9 @@
       "injuryStatus": "OUT"
     },
     {
-      "name": "Cutter Gauthier",
-      "position": "Left Wing",
-      "proTeam": "Anaheim Ducks",
+      "name": "Logan Thompson",
+      "position": "Goalie",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -273,14 +281,6 @@
       "name": "Andrei Svechnikov",
       "position": "Left Wing",
       "proTeam": "Carolina Hurricanes",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Logan Thompson",
-      "position": "Goalie",
-      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -305,14 +305,6 @@
       "name": "Noah Dobson",
       "position": "Defense",
       "proTeam": "Montréal Canadiens",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Leo Carlsson",
-      "position": "Center",
-      "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -350,14 +342,6 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Logan Cooley",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
@@ -382,14 +366,6 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Brock Nelson",
-      "position": "Center",
-      "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Beckett Sennecke",
       "position": "Right Wing",
       "proTeam": "Anaheim Ducks",
@@ -398,8 +374,8 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
+      "name": "Brock Nelson",
+      "position": "Center",
       "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
@@ -414,15 +390,99 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Zach Hyman",
       "position": "Right Wing",
       "proTeam": "Edmonton Oilers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Joel Hofer",
+      "position": "Goalie",
+      "proTeam": "St. Louis Blues",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Vince Dunn",
+      "position": "Defense",
+      "proTeam": "Seattle Kraken",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793513006380,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Cutter Gauthier"
+        }
+      ]
+    },
+    {
+      "date": 1793512889997,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Leo Carlsson"
+        }
+      ]
+    },
+    {
+      "date": 1793512832981,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Logan Cooley"
+        }
+      ]
+    },
+    {
+      "date": 1793512791240,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Artemi Panarin"
+        }
+      ]
+    },
+    {
+      "date": 1793512758807,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Matvei Gridin"
+        }
+      ]
+    },
+    {
+      "date": 1793512742102,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Kaiden Guhle"
+        }
+      ]
+    },
     {
       "date": 1793430544177,
       "actions": [
@@ -700,91 +760,6 @@
           "team": "Julmat",
           "action": "FA ADDED",
           "player": "Brett Pesce"
-        }
-      ]
-    },
-    {
-      "date": 1793168514598,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Adrian Kempe"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Jack Roslovic"
-        }
-      ]
-    },
-    {
-      "date": 1793167796530,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Dylan Holloway"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Arseny Gritsyuk"
-        }
-      ]
-    },
-    {
-      "date": 1793165025595,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Jacob Trouba"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Joel Farabee"
-        }
-      ]
-    },
-    {
-      "date": 1793164549671,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Juraj Slafkovsky"
-        }
-      ]
-    },
-    {
-      "date": 1793164344123,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Easton Cowan"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Cole Perfetti"
-        }
-      ]
-    },
-    {
-      "date": 1793164021831,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Michael Brandsegg-Nygard"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Nico Hischier"
         }
       ]
     }
