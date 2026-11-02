@@ -1,20 +1,20 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 34,
-  "last_updated": "02.11.2026 klo 01:55 UTC",
+  "current_week": 35,
+  "last_updated": "02.11.2026 klo 08:34 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 936.5,
+      "points_for": 949.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 4,
       "positions": {
-        "C": 7,
-        "LW": 4,
+        "C": 6,
+        "LW": 5,
         "RW": 5,
         "D": 5,
         "G": 2
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 984.5,
+      "points_for": 1032.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1077.1,
+      "points_for": 1122.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1186.0,
+      "points_for": 1262.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -222,14 +222,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Sidney Crosby",
       "position": "Center",
       "proTeam": "Pittsburgh Penguins",
@@ -238,9 +230,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "John Carlson",
       "position": "Defense",
       "proTeam": "Tampa Bay Lightning",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Mark Scheifele",
+      "position": "Center",
+      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -318,20 +326,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Dylan Larkin",
       "position": "Center",
       "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Brandt Clarke",
@@ -412,17 +420,24 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Vince Dunn",
-      "position": "Defense",
-      "proTeam": "Seattle Kraken",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793598332747,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Carter Verhaeghe"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Mark Scheifele"
+        }
+      ]
+    },
     {
       "date": 1793553016140,
       "actions": [
@@ -750,21 +765,6 @@
           "team": "Underdogs",
           "action": "DROPPED",
           "player": "Arseny Gritsyuk"
-        }
-      ]
-    },
-    {
-      "date": 1793250711248,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Nico Hischier"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Elias Lindholm"
         }
       ]
     }
