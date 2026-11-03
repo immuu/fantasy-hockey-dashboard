@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 35,
-  "last_updated": "02.11.2026 klo 18:54 UTC",
+  "last_updated": "03.11.2026 klo 01:22 UTC",
   "teams": [
     {
       "id": 1,
@@ -230,17 +230,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Sidney Crosby",
-      "position": "Center",
-      "proTeam": "Pittsburgh Penguins",
+      "name": "John Carlson",
+      "position": "Defense",
+      "proTeam": "Tampa Bay Lightning",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "John Carlson",
-      "position": "Defense",
-      "proTeam": "Tampa Bay Lightning",
+      "name": "Sidney Crosby",
+      "position": "Center",
+      "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
