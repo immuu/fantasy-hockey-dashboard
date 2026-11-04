@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 37,
-  "last_updated": "04.11.2026 klo 10:00 UTC",
+  "last_updated": "04.11.2026 klo 18:16 UTC",
   "teams": [
     {
       "id": 1,
@@ -146,10 +146,10 @@
       "standing": 1,
       "positions": {
         "C": 6,
-        "LW": 5,
+        "LW": 6,
         "RW": 5,
         "D": 5,
-        "G": 2
+        "G": 1
       },
       "top_players": [
         {
@@ -278,17 +278,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Thompson",
-      "position": "Goalie",
-      "proTeam": "Washington Capitals",
+      "name": "Thomas Chabot",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Thomas Chabot",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
+      "name": "Logan Thompson",
+      "position": "Goalie",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -326,17 +326,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Rasmus Andersson",
+      "name": "Brandt Clarke",
       "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
+      "name": "Rasmus Andersson",
       "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -390,17 +390,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Nelson",
-      "position": "Center",
-      "proTeam": "Colorado Avalanche",
+      "name": "Joel Hofer",
+      "position": "Goalie",
+      "proTeam": "St. Louis Blues",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Pavel Dorofeyev",
-      "position": "Right Wing",
-      "proTeam": "New York Rangers",
+      "name": "Brock Nelson",
+      "position": "Center",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -414,15 +414,30 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Zach Hyman",
+      "name": "Pavel Dorofeyev",
       "position": "Right Wing",
-      "proTeam": "Edmonton Oilers",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793788947131,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Joel Hofer"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Zach Benson"
+        }
+      ]
+    },
     {
       "date": 1793777568321,
       "actions": [
@@ -750,21 +765,6 @@
           "team": "Moron Losers",
           "action": "FA ADDED",
           "player": "Joel Farabee"
-        }
-      ]
-    },
-    {
-      "date": 1793345629869,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Roope Hintz"
-        },
-        {
-          "team": "Underdogs",
-          "action": "WAIVER ADDED",
-          "player": "Nico Hischier"
         }
       ]
     }
