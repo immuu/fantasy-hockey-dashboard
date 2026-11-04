@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 37,
-  "last_updated": "04.11.2026 klo 18:16 UTC",
+  "last_updated": "04.11.2026 klo 23:59 UTC",
   "teams": [
     {
       "id": 1,
@@ -145,10 +145,10 @@
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 6,
+        "C": 7,
         "LW": 6,
         "RW": 5,
-        "D": 5,
+        "D": 4,
         "G": 1
       },
       "top_players": [
@@ -318,9 +318,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jacob Trouba",
+      "name": "Filip Hronek",
       "position": "Defense",
-      "proTeam": "San Jose Sharks",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,66 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793822791763,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Anton Lundell"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Claude Giroux"
+        }
+      ]
+    },
+    {
+      "date": 1793822683737,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Sam Malinski"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Jacob Trouba"
+        }
+      ]
+    },
+    {
+      "date": 1793822623410,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Brayden McNabb"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Brandon Montour"
+        }
+      ]
+    },
+    {
+      "date": 1793822561423,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Shane Pinto"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Filip Hronek"
+        }
+      ]
+    },
     {
       "date": 1793788947131,
       "actions": [
@@ -705,66 +765,6 @@
           "team": "Fridge Raiders",
           "action": "DROPPED",
           "player": "Carter Verhaeghe"
-        }
-      ]
-    },
-    {
-      "date": 1793429640761,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Shea Theodore"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Filip Hronek"
-        }
-      ]
-    },
-    {
-      "date": 1793429381585,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Matvei Gridin"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Brandon Montour"
-        }
-      ]
-    },
-    {
-      "date": 1793428496520,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Viktor Arvidsson"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Kailer Yamamoto"
-        }
-      ]
-    },
-    {
-      "date": 1793350590820,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Dylan Strome"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Joel Farabee"
         }
       ]
     }
