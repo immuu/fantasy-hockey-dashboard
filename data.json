@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 36,
-  "last_updated": "04.11.2026 klo 02:47 UTC",
+  "current_week": 37,
+  "last_updated": "04.11.2026 klo 10:00 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 982.4,
+      "points_for": 1048.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1061.7,
+      "points_for": 1095.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,15 +95,15 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1143.3,
+      "points_for": 1195.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
         "C": 7,
-        "LW": 5,
-        "RW": 3,
+        "LW": 4,
+        "RW": 4,
         "D": 6,
         "G": 2
       },
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1269.0,
+      "points_for": 1351.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -190,14 +190,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Elias Pettersson",
-      "position": "Center",
-      "proTeam": "Vancouver Canucks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Artemi Panarin",
       "position": "Left Wing",
       "proTeam": "Los Angeles Kings",
@@ -206,9 +198,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mika Zibanejad",
+      "name": "Elias Pettersson",
       "position": "Center",
-      "proTeam": "New York Rangers",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -217,6 +209,14 @@
       "name": "Jeremy Swayman",
       "position": "Goalie",
       "proTeam": "Boston Bruins",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Mika Zibanejad",
+      "position": "Center",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,21 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793777568321,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Jack Quinn"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Emmitt Finnie"
+        }
+      ]
+    },
     {
       "date": 1793685595216,
       "actions": [
@@ -750,21 +765,6 @@
           "team": "Underdogs",
           "action": "WAIVER ADDED",
           "player": "Nico Hischier"
-        }
-      ]
-    },
-    {
-      "date": 1793343413739,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Jack Roslovic"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Cole Perfetti"
         }
       ]
     }
