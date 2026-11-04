@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 36,
-  "last_updated": "03.11.2026 klo 22:06 UTC",
+  "last_updated": "04.11.2026 klo 02:47 UTC",
   "teams": [
     {
       "id": 1,
@@ -190,14 +190,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mika Zibanejad",
-      "position": "Center",
-      "proTeam": "New York Rangers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Elias Pettersson",
       "position": "Center",
       "proTeam": "Vancouver Canucks",
@@ -209,6 +201,14 @@
       "name": "Artemi Panarin",
       "position": "Left Wing",
       "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Mika Zibanejad",
+      "position": "Center",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -270,17 +270,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Thompson",
-      "position": "Goalie",
-      "proTeam": "Washington Capitals",
+      "name": "Juraj Slafkovsky",
+      "position": "Left Wing",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Juraj Slafkovsky",
-      "position": "Left Wing",
-      "proTeam": "Montréal Canadiens",
+      "name": "Logan Thompson",
+      "position": "Goalie",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
