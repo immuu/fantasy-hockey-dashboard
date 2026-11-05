@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 37,
-  "last_updated": "05.11.2026 klo 05:19 UTC",
+  "current_week": 38,
+  "last_updated": "05.11.2026 klo 13:34 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1048.9,
+      "points_for": 1078.7,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1095.6,
+      "points_for": 1102.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,15 +95,15 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1195.0,
+      "points_for": 1203.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 7,
+        "C": 8,
         "LW": 4,
-        "RW": 4,
+        "RW": 3,
         "D": 6,
         "G": 2
       },
@@ -139,16 +139,16 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1351.2,
+      "points_for": 1364.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 7,
+        "C": 6,
         "LW": 6,
         "RW": 5,
-        "D": 4,
+        "D": 5,
         "G": 1
       },
       "top_players": [
@@ -366,20 +366,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Mackenzie Blackwood",
       "position": "Goalie",
       "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Josh Morrissey",
+      "position": "Defense",
+      "proTeam": "Winnipeg Jets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Joel Hofer",
@@ -393,14 +393,6 @@
       "name": "Karel Vejmelka",
       "position": "Goalie",
       "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Brayden Point",
-      "position": "Center",
-      "proTeam": "Tampa Bay Lightning",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -420,9 +412,47 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Zach Hyman",
+      "position": "Right Wing",
+      "proTeam": "Edmonton Oilers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793875099975,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Jack Quinn"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Brayden Point"
+        }
+      ]
+    },
+    {
+      "date": 1793860097484,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Shane Pinto"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Thomas Harley"
+        }
+      ]
+    },
     {
       "date": 1793822791763,
       "actions": [
@@ -735,36 +765,6 @@
           "team": "Underdogs",
           "action": "DROPPED",
           "player": "Cole Perfetti"
-        }
-      ]
-    },
-    {
-      "date": 1793430404598,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Emmitt Finnie"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Nico Hischier"
-        }
-      ]
-    },
-    {
-      "date": 1793429853335,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Easton Cowan"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Carter Verhaeghe"
         }
       ]
     }
