@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 37,
-  "last_updated": "04.11.2026 klo 23:59 UTC",
+  "last_updated": "05.11.2026 klo 05:19 UTC",
   "teams": [
     {
       "id": 1,
@@ -286,20 +286,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Adrian Kempe",
+      "position": "Right Wing",
+      "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Logan Thompson",
       "position": "Goalie",
       "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Adrian Kempe",
-      "position": "Right Wing",
-      "proTeam": "Los Angeles Kings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Linus Ullmark",
@@ -382,14 +382,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Karel Vejmelka",
-      "position": "Goalie",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Joel Hofer",
       "position": "Goalie",
       "proTeam": "St. Louis Blues",
@@ -398,9 +390,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brock Nelson",
-      "position": "Center",
-      "proTeam": "Colorado Avalanche",
+      "name": "Karel Vejmelka",
+      "position": "Goalie",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -409,6 +401,14 @@
       "name": "Brayden Point",
       "position": "Center",
       "proTeam": "Tampa Bay Lightning",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Brock Nelson",
+      "position": "Center",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
