@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 38,
-  "last_updated": "05.11.2026 klo 13:34 UTC",
+  "last_updated": "05.11.2026 klo 20:51 UTC",
   "teams": [
     {
       "id": 1,
@@ -101,7 +101,7 @@
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 8,
+        "C": 7,
         "LW": 4,
         "RW": 3,
         "D": 6,
@@ -246,17 +246,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Mark Scheifele",
+      "position": "Center",
+      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mark Scheifele",
-      "position": "Center",
-      "proTeam": "Winnipeg Jets",
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -294,20 +294,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Thompson",
-      "position": "Goalie",
-      "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Linus Ullmark",
       "position": "Goalie",
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Logan Thompson",
+      "position": "Goalie",
+      "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Noah Dobson",
@@ -350,17 +350,17 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Vincent Trocheck",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "name": "Beckett Sennecke",
+      "position": "Right Wing",
+      "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Beckett Sennecke",
-      "position": "Right Wing",
-      "proTeam": "Anaheim Ducks",
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,16 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793902837262,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "James Hagens"
+        }
+      ]
+    },
     {
       "date": 1793875099975,
       "actions": [
@@ -750,21 +760,6 @@
           "team": "Moron Losers",
           "action": "DROPPED",
           "player": "Kaiden Guhle"
-        }
-      ]
-    },
-    {
-      "date": 1793430544177,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "James Hagens"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Cole Perfetti"
         }
       ]
     }
