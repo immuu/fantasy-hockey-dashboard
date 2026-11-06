@@ -1,20 +1,20 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 38,
-  "last_updated": "06.11.2026 klo 01:12 UTC",
+  "current_week": 39,
+  "last_updated": "06.11.2026 klo 08:37 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1078.7,
+      "points_for": 1114.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 4,
       "positions": {
-        "C": 6,
-        "LW": 5,
+        "C": 5,
+        "LW": 6,
         "RW": 5,
         "D": 5,
         "G": 2
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1102.8,
+      "points_for": 1148.7,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1203.2,
+      "points_for": 1267.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,14 +139,14 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1364.3,
+      "points_for": 1415.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 6,
-        "LW": 6,
+        "C": 7,
+        "LW": 5,
         "RW": 5,
         "D": 5,
         "G": 1
@@ -222,6 +222,22 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Connor Bedard",
+      "position": "Center",
+      "proTeam": "Chicago Blackhawks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Erik Karlsson",
+      "position": "Defense",
+      "proTeam": "Pittsburgh Penguins",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Dylan Guenther",
       "position": "Right Wing",
       "proTeam": "Utah Hockey Club",
@@ -238,17 +254,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Sidney Crosby",
+      "name": "Mark Scheifele",
       "position": "Center",
-      "proTeam": "Pittsburgh Penguins",
+      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mark Scheifele",
+      "name": "Sidney Crosby",
       "position": "Center",
-      "proTeam": "Winnipeg Jets",
+      "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -334,6 +350,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Vasily Podkolzin",
+      "position": "Right Wing",
+      "proTeam": "Edmonton Oilers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Rasmus Andersson",
       "position": "Defense",
       "proTeam": "Vegas Golden Knights",
@@ -348,14 +372,6 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
-    },
-    {
-      "name": "Beckett Sennecke",
-      "position": "Right Wing",
-      "proTeam": "Anaheim Ducks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Vincent Trocheck",
@@ -382,6 +398,14 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
+      "name": "Lucas Raymond",
+      "position": "Left Wing",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Joel Hofer",
       "position": "Goalie",
       "proTeam": "St. Louis Blues",
@@ -396,33 +420,79 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Brock Nelson",
-      "position": "Center",
-      "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Pavel Dorofeyev",
-      "position": "Right Wing",
-      "proTeam": "New York Rangers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Zach Hyman",
-      "position": "Right Wing",
-      "proTeam": "Edmonton Oilers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1793947502015,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Erik Karlsson"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Owen Power"
+        }
+      ]
+    },
+    {
+      "date": 1793943081127,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Mikael Granlund"
+        }
+      ]
+    },
+    {
+      "date": 1793942387076,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Connor Bedard"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Kent Johnson"
+        }
+      ]
+    },
+    {
+      "date": 1793941972086,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Beckett Sennecke"
+        }
+      ]
+    },
+    {
+      "date": 1793941669359,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Lucas Raymond"
+        }
+      ]
+    },
+    {
+      "date": 1793941629544,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Vasily Podkolzin"
+        }
+      ]
+    },
     {
       "date": 1793902837262,
       "actions": [
@@ -700,66 +770,6 @@
           "team": "Fridge Raiders",
           "action": "DROPPED",
           "player": "Easton Cowan"
-        }
-      ]
-    },
-    {
-      "date": 1793513006380,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Cutter Gauthier"
-        }
-      ]
-    },
-    {
-      "date": 1793512889997,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Leo Carlsson"
-        }
-      ]
-    },
-    {
-      "date": 1793512832981,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Logan Cooley"
-        }
-      ]
-    },
-    {
-      "date": 1793512791240,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Artemi Panarin"
-        }
-      ]
-    },
-    {
-      "date": 1793512758807,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Matvei Gridin"
-        }
-      ]
-    },
-    {
-      "date": 1793512742102,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Kaiden Guhle"
         }
       ]
     }
