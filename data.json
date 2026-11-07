@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 40,
-  "last_updated": "07.11.2026 klo 14:26 UTC",
+  "last_updated": "07.11.2026 klo 19:07 UTC",
   "teams": [
     {
       "id": 1,
@@ -374,17 +374,17 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Vincent Trocheck",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -398,17 +398,17 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Lucas Raymond",
-      "position": "Left Wing",
-      "proTeam": "Detroit Red Wings",
+      "name": "Joel Hofer",
+      "position": "Goalie",
+      "proTeam": "St. Louis Blues",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Joel Hofer",
-      "position": "Goalie",
-      "proTeam": "St. Louis Blues",
+      "name": "Lucas Raymond",
+      "position": "Left Wing",
+      "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
