@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 39,
-  "last_updated": "06.11.2026 klo 21:48 UTC",
+  "last_updated": "07.11.2026 klo 01:21 UTC",
   "teams": [
     {
       "id": 1,
@@ -182,17 +182,17 @@
   ],
   "free_agents": [
     {
-      "name": "MacKenzie Weegar",
-      "position": "Defense",
-      "proTeam": "Utah Hockey Club",
+      "name": "Artemi Panarin",
+      "position": "Left Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Artemi Panarin",
-      "position": "Left Wing",
-      "proTeam": "Los Angeles Kings",
+      "name": "MacKenzie Weegar",
+      "position": "Defense",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
