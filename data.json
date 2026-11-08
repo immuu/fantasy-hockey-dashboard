@@ -1,21 +1,21 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 40,
-  "last_updated": "08.11.2026 klo 02:53 UTC",
+  "current_week": 41,
+  "last_updated": "08.11.2026 klo 09:38 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1135.6,
+      "points_for": 1172.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 4,
       "positions": {
-        "C": 5,
+        "C": 6,
         "LW": 6,
-        "RW": 5,
+        "RW": 4,
         "D": 5,
         "G": 2
       },
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1152.1,
+      "points_for": 1224.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1296.2,
+      "points_for": 1368.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -103,8 +103,8 @@
       "positions": {
         "C": 6,
         "LW": 4,
-        "RW": 3,
-        "D": 7,
+        "RW": 4,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1477.0,
+      "points_for": 1549.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -246,14 +246,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "John Carlson",
-      "position": "Defense",
-      "proTeam": "Tampa Bay Lightning",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Mark Scheifele",
       "position": "Center",
       "proTeam": "Winnipeg Jets",
@@ -262,9 +254,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
+      "name": "John Carlson",
       "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
+      "proTeam": "Tampa Bay Lightning",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -278,9 +270,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Nico Hischier",
       "position": "Center",
       "proTeam": "New Jersey Devils",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Nick Schmaltz",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -304,6 +312,14 @@
     {
       "name": "Thomas Chabot",
       "position": "Defense",
+      "proTeam": "Ottawa Senators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Drake Batherson",
+      "position": "Right Wing",
       "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
@@ -374,20 +390,20 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Mackenzie Blackwood",
       "position": "Goalie",
       "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Josh Morrissey",
+      "position": "Defense",
+      "proTeam": "Winnipeg Jets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Vincent Trocheck",
@@ -404,25 +420,54 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Lucas Raymond",
-      "position": "Left Wing",
-      "proTeam": "Detroit Red Wings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Brayden Point",
-      "position": "Center",
-      "proTeam": "Tampa Bay Lightning",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1794127563429,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Drake Batherson"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "WAIVER ADDED",
+          "player": "Brayden Point"
+        }
+      ]
+    },
+    {
+      "date": 1794125841695,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Nick Schmaltz"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Jesper Bratt"
+        }
+      ]
+    },
+    {
+      "date": 1794125798673,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Philip Broberg"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Tomas Hertl"
+        }
+      ]
+    },
     {
       "date": 1794034224232,
       "actions": [
@@ -725,51 +770,6 @@
           "team": "Underdogs",
           "action": "FA ADDED",
           "player": "Emmitt Finnie"
-        }
-      ]
-    },
-    {
-      "date": 1793613625356,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Mika Zibanejad"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "James Hagens"
-        }
-      ]
-    },
-    {
-      "date": 1793598332747,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Carter Verhaeghe"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Mark Scheifele"
-        }
-      ]
-    },
-    {
-      "date": 1793553016140,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Sean Walker"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Victor Hedman"
         }
       ]
     }
