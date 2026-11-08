@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 41,
-  "last_updated": "08.11.2026 klo 09:38 UTC",
+  "last_updated": "08.11.2026 klo 16:24 UTC",
   "teams": [
     {
       "id": 1,
@@ -198,17 +198,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Elias Pettersson",
-      "position": "Center",
-      "proTeam": "Vancouver Canucks",
+      "name": "Jeremy Swayman",
+      "position": "Goalie",
+      "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jeremy Swayman",
-      "position": "Goalie",
-      "proTeam": "Boston Bruins",
+      "name": "Elias Pettersson",
+      "position": "Center",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -366,17 +366,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vasily Podkolzin",
-      "position": "Right Wing",
-      "proTeam": "Edmonton Oilers",
+      "name": "Rasmus Andersson",
+      "position": "Defense",
+      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Rasmus Andersson",
-      "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
+      "name": "Vasily Podkolzin",
+      "position": "Right Wing",
+      "proTeam": "Edmonton Oilers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
