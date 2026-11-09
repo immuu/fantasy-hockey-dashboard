@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 41,
-  "last_updated": "09.11.2026 klo 07:18 UTC",
+  "current_week": 42,
+  "last_updated": "09.11.2026 klo 17:52 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1172.4,
+      "points_for": 1206.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1224.8,
+      "points_for": 1222.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1368.6,
+      "points_for": 1392.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,16 +139,16 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1549.4,
+      "points_for": 1594.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
         "C": 7,
-        "LW": 5,
+        "LW": 4,
         "RW": 5,
-        "D": 5,
+        "D": 6,
         "G": 1
       },
       "top_players": [
@@ -190,17 +190,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "MacKenzie Weegar",
-      "position": "Defense",
-      "proTeam": "Utah Hockey Club",
+      "name": "Jeremy Swayman",
+      "position": "Goalie",
+      "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jeremy Swayman",
-      "position": "Goalie",
-      "proTeam": "Boston Bruins",
+      "name": "MacKenzie Weegar",
+      "position": "Defense",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -254,14 +254,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Nico Hischier",
       "position": "Center",
       "proTeam": "New Jersey Devils",
@@ -278,6 +270,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Adrian Kempe",
       "position": "Right Wing",
       "proTeam": "Los Angeles Kings",
@@ -286,17 +286,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Juraj Slafkovsky",
-      "position": "Left Wing",
-      "proTeam": "Montréal Canadiens",
+      "name": "Thomas Chabot",
+      "position": "Defense",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Thomas Chabot",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
+      "name": "Juraj Slafkovsky",
+      "position": "Left Wing",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -374,17 +374,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Detroit Red Wings",
+      "name": "Josh Morrissey",
+      "position": "Defense",
+      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
@@ -398,9 +398,9 @@
       "injuryStatus": "DAY_TO_DAY"
     },
     {
-      "name": "Vincent Trocheck",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "name": "Lucas Raymond",
+      "position": "Left Wing",
+      "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -414,15 +414,30 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Lucas Raymond",
-      "position": "Left Wing",
-      "proTeam": "Detroit Red Wings",
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1794212969230,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Jamie Drysdale"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Tristan Luneau"
+        }
+      ]
+    },
     {
       "date": 1794204191137,
       "actions": [
@@ -755,21 +770,6 @@
           "team": "Moron Losers",
           "action": "FA ADDED",
           "player": "Zach Benson"
-        }
-      ]
-    },
-    {
-      "date": 1793777568321,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Jack Quinn"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Emmitt Finnie"
         }
       ]
     }
