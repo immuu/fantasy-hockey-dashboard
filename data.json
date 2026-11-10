@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 42,
-  "last_updated": "09.11.2026 klo 17:52 UTC",
+  "last_updated": "10.11.2026 klo 00:54 UTC",
   "teams": [
     {
       "id": 1,
@@ -350,17 +350,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Rasmus Andersson",
-      "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
+      "name": "Vasily Podkolzin",
+      "position": "Right Wing",
+      "proTeam": "Edmonton Oilers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vasily Podkolzin",
-      "position": "Right Wing",
-      "proTeam": "Edmonton Oilers",
+      "name": "Rasmus Andersson",
+      "position": "Defense",
+      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -390,20 +390,20 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Brayden Point",
-      "position": "Center",
-      "proTeam": "Tampa Bay Lightning",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Lucas Raymond",
       "position": "Left Wing",
       "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Brayden Point",
+      "position": "Center",
+      "proTeam": "Tampa Bay Lightning",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Joel Hofer",
