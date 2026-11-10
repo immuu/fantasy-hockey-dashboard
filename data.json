@@ -1,21 +1,21 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 42,
-  "last_updated": "10.11.2026 klo 07:50 UTC",
+  "current_week": 43,
+  "last_updated": "10.11.2026 klo 15:51 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1206.2,
+      "points_for": 1208.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 4,
       "positions": {
-        "C": 6,
+        "C": 5,
         "LW": 6,
-        "RW": 4,
+        "RW": 5,
         "D": 5,
         "G": 2
       },
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1222.9,
+      "points_for": 1239.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,15 +95,15 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1392.8,
+      "points_for": 1399.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 6,
+        "C": 5,
         "LW": 4,
-        "RW": 4,
+        "RW": 5,
         "D": 6,
         "G": 2
       },
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1594.5,
+      "points_for": 1612.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -148,8 +148,8 @@
         "C": 7,
         "LW": 4,
         "RW": 5,
-        "D": 6,
-        "G": 1
+        "D": 5,
+        "G": 2
       },
       "top_players": [
         {
@@ -334,14 +334,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Vasily Podkolzin",
       "position": "Right Wing",
       "proTeam": "Edmonton Oilers",
@@ -350,9 +342,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Rasmus Andersson",
-      "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -364,6 +356,14 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Rasmus Andersson",
+      "position": "Defense",
+      "proTeam": "Vegas Golden Knights",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Dylan Larkin",
@@ -395,7 +395,15 @@
       "proTeam": "Tampa Bay Lightning",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Tomas Hertl",
+      "position": "Center",
+      "proTeam": "Vegas Golden Knights",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Vincent Trocheck",
@@ -409,14 +417,6 @@
       "name": "Zach Hyman",
       "position": "Right Wing",
       "proTeam": "Edmonton Oilers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Tomas Hertl",
-      "position": "Center",
-      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
