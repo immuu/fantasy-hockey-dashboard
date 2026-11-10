@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 42,
-  "last_updated": "10.11.2026 klo 00:54 UTC",
+  "last_updated": "10.11.2026 klo 07:50 UTC",
   "teams": [
     {
       "id": 1,
@@ -198,9 +198,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Elias Pettersson",
+      "position": "Center",
+      "proTeam": "Vancouver Canucks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "MacKenzie Weegar",
       "position": "Defense",
       "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Mika Zibanejad",
+      "position": "Center",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -254,14 +270,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nico Hischier",
-      "position": "Center",
-      "proTeam": "New Jersey Devils",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Nick Schmaltz",
       "position": "Center",
       "proTeam": "Utah Hockey Club",
@@ -278,14 +286,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adrian Kempe",
-      "position": "Right Wing",
-      "proTeam": "Los Angeles Kings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Thomas Chabot",
       "position": "Defense",
       "proTeam": "Ottawa Senators",
@@ -297,22 +297,6 @@
       "name": "Juraj Slafkovsky",
       "position": "Left Wing",
       "proTeam": "Montréal Canadiens",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Drake Batherson",
-      "position": "Right Wing",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Linus Ullmark",
-      "position": "Goalie",
-      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -350,6 +334,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Vasily Podkolzin",
       "position": "Right Wing",
       "proTeam": "Edmonton Oilers",
@@ -361,14 +353,6 @@
       "name": "Rasmus Andersson",
       "position": "Defense",
       "proTeam": "Vegas Golden Knights",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -398,14 +382,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brayden Point",
-      "position": "Center",
-      "proTeam": "Tampa Bay Lightning",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Joel Hofer",
       "position": "Goalie",
       "proTeam": "St. Louis Blues",
@@ -414,15 +390,114 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Brayden Point",
+      "position": "Center",
+      "proTeam": "Tampa Bay Lightning",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
+    },
+    {
       "name": "Vincent Trocheck",
       "position": "Center",
       "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Zach Hyman",
+      "position": "Right Wing",
+      "proTeam": "Edmonton Oilers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Tomas Hertl",
+      "position": "Center",
+      "proTeam": "Vegas Golden Knights",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1794290454718,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Mattias Ekholm"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Linus Ullmark"
+        }
+      ]
+    },
+    {
+      "date": 1794288185221,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Jamie Drysdale"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Luke Hughes"
+        }
+      ]
+    },
+    {
+      "date": 1794288067974,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Drake Batherson"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Mika Zibanejad"
+        }
+      ]
+    },
+    {
+      "date": 1794287661900,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Ryan Nugent-Hopkins"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Adrian Kempe"
+        }
+      ]
+    },
+    {
+      "date": 1794287370101,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Nico Hischier"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Elias Pettersson"
+        }
+      ]
+    },
     {
       "date": 1794212969230,
       "actions": [
@@ -695,81 +770,6 @@
           "team": "Moron Losers",
           "action": "FA ADDED",
           "player": "Thomas Harley"
-        }
-      ]
-    },
-    {
-      "date": 1793822791763,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Anton Lundell"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Claude Giroux"
-        }
-      ]
-    },
-    {
-      "date": 1793822683737,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Sam Malinski"
-        },
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Jacob Trouba"
-        }
-      ]
-    },
-    {
-      "date": 1793822623410,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Brayden McNabb"
-        },
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Brandon Montour"
-        }
-      ]
-    },
-    {
-      "date": 1793822561423,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Shane Pinto"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Filip Hronek"
-        }
-      ]
-    },
-    {
-      "date": 1793788947131,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Joel Hofer"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Zach Benson"
         }
       ]
     }
