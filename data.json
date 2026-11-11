@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 43,
-  "last_updated": "10.11.2026 klo 21:29 UTC",
+  "last_updated": "11.11.2026 klo 01:31 UTC",
   "teams": [
     {
       "id": 1,
@@ -230,6 +230,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Mark Scheifele",
+      "position": "Center",
+      "proTeam": "Winnipeg Jets",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Erik Karlsson",
       "position": "Defense",
       "proTeam": "Pittsburgh Penguins",
@@ -238,9 +246,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mark Scheifele",
-      "position": "Center",
-      "proTeam": "Winnipeg Jets",
+      "name": "John Carlson",
+      "position": "Defense",
+      "proTeam": "Tampa Bay Lightning",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -252,14 +260,6 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "DAY_TO_DAY"
-    },
-    {
-      "name": "John Carlson",
-      "position": "Defense",
-      "proTeam": "Tampa Bay Lightning",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Kirill Marchenko",
@@ -334,14 +334,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jacob Trouba",
-      "position": "Defense",
-      "proTeam": "San Jose Sharks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Brandt Clarke",
       "position": "Defense",
       "proTeam": "Los Angeles Kings",
@@ -350,9 +342,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Jacob Trouba",
+      "position": "Defense",
+      "proTeam": "San Jose Sharks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Alexis Lafreniere",
       "position": "Left Wing",
       "proTeam": "New York Rangers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Josh Morrissey",
+      "position": "Defense",
+      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -369,14 +377,6 @@
       "name": "Vasily Podkolzin",
       "position": "Right Wing",
       "proTeam": "Edmonton Oilers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
