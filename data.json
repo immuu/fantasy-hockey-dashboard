@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 44,
-  "last_updated": "11.11.2026 klo 08:30 UTC",
+  "last_updated": "11.11.2026 klo 16:41 UTC",
   "teams": [
     {
       "id": 1,
@@ -145,10 +145,10 @@
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 8,
+        "C": 7,
         "LW": 3,
         "RW": 5,
-        "D": 5,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -246,14 +246,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Guenther",
-      "position": "Right Wing",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "Sidney Crosby",
       "position": "Center",
       "proTeam": "Pittsburgh Penguins",
@@ -276,6 +268,14 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Dylan Guenther",
+      "position": "Right Wing",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Adrian Kempe",
@@ -382,14 +382,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vasily Podkolzin",
-      "position": "Right Wing",
-      "proTeam": "Edmonton Oilers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Rasmus Andersson",
       "position": "Defense",
       "proTeam": "Vegas Golden Knights",
@@ -420,9 +412,47 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1794388319632,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Jesper Bratt"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Vasily Podkolzin"
+        }
+      ]
+    },
+    {
+      "date": 1794386872486,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Mattias Ekholm"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Shane Pinto"
+        }
+      ]
+    },
     {
       "date": 1794378625545,
       "actions": [
@@ -755,36 +785,6 @@
           "team": "Julmat",
           "action": "FA ADDED",
           "player": "Jonas Brodin"
-        }
-      ]
-    },
-    {
-      "date": 1793991900511,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Adam Fantilli"
-        },
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Anton Lundell"
-        }
-      ]
-    },
-    {
-      "date": 1793989074924,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Tristan Luneau"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Brayden Point"
         }
       ]
     }
