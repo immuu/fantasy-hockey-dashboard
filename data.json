@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 43,
-  "last_updated": "11.11.2026 klo 01:31 UTC",
+  "current_week": 44,
+  "last_updated": "11.11.2026 klo 08:30 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1208.2,
+      "points_for": 1248.7,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1239.0,
+      "points_for": 1259.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,15 +95,15 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1399.0,
+      "points_for": 1430.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 5,
+        "C": 6,
         "LW": 4,
-        "RW": 5,
+        "RW": 4,
         "D": 6,
         "G": 2
       },
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1612.9,
+      "points_for": 1638.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -238,14 +238,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Erik Karlsson",
-      "position": "Defense",
-      "proTeam": "Pittsburgh Penguins",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "John Carlson",
       "position": "Defense",
       "proTeam": "Tampa Bay Lightning",
@@ -262,14 +254,6 @@
       "injuryStatus": "DAY_TO_DAY"
     },
     {
-      "name": "Kirill Marchenko",
-      "position": "Left Wing",
-      "proTeam": "Toronto Maple Leafs",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Sidney Crosby",
       "position": "Center",
       "proTeam": "Pittsburgh Penguins",
@@ -278,9 +262,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nick Schmaltz",
+      "name": "Kirill Marchenko",
+      "position": "Left Wing",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Nico Hischier",
       "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "proTeam": "New Jersey Devils",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Adrian Kempe",
+      "position": "Right Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -305,6 +305,14 @@
       "name": "Juraj Slafkovsky",
       "position": "Left Wing",
       "proTeam": "Montréal Canadiens",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Drake Batherson",
+      "position": "Right Wing",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -412,17 +420,69 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Tomas Hertl",
-      "position": "Center",
-      "proTeam": "Vegas Golden Knights",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1794378625545,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Luke Hughes"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Erik Karlsson"
+        }
+      ]
+    },
+    {
+      "date": 1794378523367,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Drake Batherson"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Nick Schmaltz"
+        }
+      ]
+    },
+    {
+      "date": 1794373042209,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Victor Olofsson"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Adrian Kempe"
+        }
+      ]
+    },
+    {
+      "date": 1794372971012,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Nico Hischier"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Tomas Hertl"
+        }
+      ]
+    },
     {
       "date": 1794343432546,
       "actions": [
@@ -725,56 +785,6 @@
           "team": "Underdogs",
           "action": "DROPPED",
           "player": "Brayden Point"
-        }
-      ]
-    },
-    {
-      "date": 1793947502015,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Erik Karlsson"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Owen Power"
-        }
-      ]
-    },
-    {
-      "date": 1793943081127,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Mikael Granlund"
-        }
-      ]
-    },
-    {
-      "date": 1793942387076,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Connor Bedard"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Kent Johnson"
-        }
-      ]
-    },
-    {
-      "date": 1793941972086,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Beckett Sennecke"
         }
       ]
     }
