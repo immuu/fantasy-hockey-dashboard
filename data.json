@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 45,
-  "last_updated": "12.11.2026 klo 13:21 UTC",
+  "last_updated": "12.11.2026 klo 21:10 UTC",
   "teams": [
     {
       "id": 1,
@@ -390,14 +390,6 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Rasmus Andersson",
-      "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Joel Hofer",
       "position": "Goalie",
       "proTeam": "St. Louis Blues",
@@ -409,6 +401,14 @@
       "name": "Lucas Raymond",
       "position": "Left Wing",
       "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Rasmus Andersson",
+      "position": "Defense",
+      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
