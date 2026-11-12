@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 44,
-  "last_updated": "11.11.2026 klo 23:09 UTC",
+  "last_updated": "12.11.2026 klo 04:31 UTC",
   "teams": [
     {
       "id": 1,
@@ -254,14 +254,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Kirill Marchenko",
-      "position": "Left Wing",
-      "proTeam": "Toronto Maple Leafs",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Nico Hischier",
       "position": "Center",
       "proTeam": "New Jersey Devils",
@@ -270,12 +262,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Kirill Marchenko",
+      "position": "Left Wing",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
+    },
+    {
       "name": "Dylan Guenther",
       "position": "Right Wing",
       "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Adrian Kempe",
