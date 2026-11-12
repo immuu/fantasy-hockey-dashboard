@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 44,
-  "last_updated": "12.11.2026 klo 04:31 UTC",
+  "current_week": 45,
+  "last_updated": "12.11.2026 klo 13:21 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1248.7,
+      "points_for": 1277.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1259.0,
+      "points_for": 1295.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1430.8,
+      "points_for": 1460.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,16 +139,16 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1638.6,
+      "points_for": 1693.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 7,
+        "C": 6,
         "LW": 3,
         "RW": 5,
-        "D": 6,
+        "D": 7,
         "G": 2
       },
       "top_players": [
@@ -238,9 +238,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "John Carlson",
+      "name": "Erik Karlsson",
       "position": "Defense",
-      "proTeam": "Tampa Bay Lightning",
+      "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -270,12 +270,12 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Dylan Guenther",
-      "position": "Right Wing",
-      "proTeam": "Utah Hockey Club",
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Adrian Kempe",
@@ -286,20 +286,12 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Dylan Guenther",
+      "position": "Right Wing",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Thomas Chabot",
-      "position": "Defense",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Juraj Slafkovsky",
@@ -358,6 +350,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Ryan O'Reilly",
+      "position": "Center",
+      "proTeam": "Nashville Predators",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Alexis Lafreniere",
       "position": "Left Wing",
       "proTeam": "New York Rangers",
@@ -382,20 +382,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Rasmus Andersson",
-      "position": "Defense",
-      "proTeam": "Vegas Golden Knights",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Dylan Larkin",
       "position": "Center",
       "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Rasmus Andersson",
+      "position": "Defense",
+      "proTeam": "Vegas Golden Knights",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Joel Hofer",
@@ -414,15 +414,60 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vincent Trocheck",
+      "name": "Tomas Hertl",
       "position": "Center",
-      "proTeam": "Utah Hockey Club",
+      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1794465106711,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "John Carlson"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Erik Karlsson"
+        }
+      ]
+    },
+    {
+      "date": 1794460931618,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Roope Hintz"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Tomas Hertl"
+        }
+      ]
+    },
+    {
+      "date": 1794459387542,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Ryan O'Reilly"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Thomas Chabot"
+        }
+      ]
+    },
     {
       "date": 1794388319632,
       "actions": [
@@ -740,51 +785,6 @@
           "team": "Underdogs",
           "action": "FA ADDED",
           "player": "Jesper Bratt"
-        }
-      ]
-    },
-    {
-      "date": 1794125798673,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Philip Broberg"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Tomas Hertl"
-        }
-      ]
-    },
-    {
-      "date": 1794034224232,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Owen Power"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Philip Broberg"
-        }
-      ]
-    },
-    {
-      "date": 1793991980286,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Brandon Montour"
-        },
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Jonas Brodin"
         }
       ]
     }
