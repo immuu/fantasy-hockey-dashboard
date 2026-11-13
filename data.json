@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 46,
-  "last_updated": "13.11.2026 klo 10:10 UTC",
+  "last_updated": "13.11.2026 klo 18:11 UTC",
   "teams": [
     {
       "id": 1,
@@ -60,7 +60,7 @@
         "C": 7,
         "LW": 3,
         "RW": 3,
-        "D": 7,
+        "D": 8,
         "G": 2
       },
       "top_players": [
@@ -270,20 +270,20 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Nick Schmaltz",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
       "name": "Darren Raddysh",
       "position": "Defense",
       "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Nick Schmaltz",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Adrian Kempe",
@@ -423,6 +423,31 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1794570231560,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Jonas Brodin"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Vladislav Gavrikov"
+        }
+      ]
+    },
+    {
+      "date": 1794569984268,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Shea Theodore"
+        }
+      ]
+    },
     {
       "date": 1794559837693,
       "actions": [
@@ -755,36 +780,6 @@
           "team": "Fridge Raiders",
           "action": "FA ADDED",
           "player": "Adrian Kempe"
-        }
-      ]
-    },
-    {
-      "date": 1794287370101,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Nico Hischier"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Elias Pettersson"
-        }
-      ]
-    },
-    {
-      "date": 1794212969230,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Jamie Drysdale"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Tristan Luneau"
         }
       ]
     }
