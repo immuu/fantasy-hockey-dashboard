@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 45,
-  "last_updated": "12.11.2026 klo 21:10 UTC",
+  "last_updated": "13.11.2026 klo 02:11 UTC",
   "teams": [
     {
       "id": 1,
@@ -382,20 +382,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Detroit Red Wings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Joel Hofer",
       "position": "Goalie",
       "proTeam": "St. Louis Blues",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Lucas Raymond",
@@ -406,16 +406,16 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Rasmus Andersson",
-      "position": "Defense",
+      "name": "Tomas Hertl",
+      "position": "Center",
       "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Tomas Hertl",
-      "position": "Center",
+      "name": "Rasmus Andersson",
+      "position": "Defense",
       "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
