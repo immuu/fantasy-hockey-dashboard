@@ -1,20 +1,20 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 45,
-  "last_updated": "13.11.2026 klo 02:11 UTC",
+  "current_week": 46,
+  "last_updated": "13.11.2026 klo 10:10 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1277.0,
+      "points_for": 1343.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 4,
+      "standing": 3,
       "positions": {
-        "C": 5,
-        "LW": 6,
+        "C": 6,
+        "LW": 5,
         "RW": 5,
         "D": 5,
         "G": 2
@@ -51,11 +51,11 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1295.6,
+      "points_for": 1338.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 3,
+      "standing": 4,
       "positions": {
         "C": 7,
         "LW": 3,
@@ -95,15 +95,15 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1460.9,
+      "points_for": 1489.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 6,
-        "LW": 4,
-        "RW": 4,
+        "C": 5,
+        "LW": 6,
+        "RW": 3,
         "D": 6,
         "G": 2
       },
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1693.9,
+      "points_for": 1758.7,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -182,17 +182,17 @@
   ],
   "free_agents": [
     {
-      "name": "Artemi Panarin",
-      "position": "Left Wing",
-      "proTeam": "Los Angeles Kings",
+      "name": "Jakob Chychrun",
+      "position": "Defense",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jeremy Swayman",
-      "position": "Goalie",
-      "proTeam": "Boston Bruins",
+      "name": "Artemi Panarin",
+      "position": "Left Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -206,17 +206,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "MacKenzie Weegar",
-      "position": "Defense",
-      "proTeam": "Utah Hockey Club",
+      "name": "Jeremy Swayman",
+      "position": "Goalie",
+      "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mika Zibanejad",
-      "position": "Center",
-      "proTeam": "New York Rangers",
+      "name": "MacKenzie Weegar",
+      "position": "Defense",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -268,6 +268,14 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Nick Schmaltz",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
     },
     {
       "name": "Darren Raddysh",
@@ -358,14 +366,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alexis Lafreniere",
-      "position": "Left Wing",
-      "proTeam": "New York Rangers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Josh Morrissey",
       "position": "Defense",
       "proTeam": "Winnipeg Jets",
@@ -382,9 +382,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Vasily Podkolzin",
+      "position": "Right Wing",
+      "proTeam": "Edmonton Oilers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Joel Hofer",
       "position": "Goalie",
       "proTeam": "St. Louis Blues",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Lucas Raymond",
+      "position": "Left Wing",
+      "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -398,22 +414,6 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Lucas Raymond",
-      "position": "Left Wing",
-      "proTeam": "Detroit Red Wings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Tomas Hertl",
-      "position": "Center",
-      "proTeam": "Vegas Golden Knights",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Rasmus Andersson",
       "position": "Defense",
       "proTeam": "Vegas Golden Knights",
@@ -423,6 +423,81 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1794559837693,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Joel Eriksson Ek"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Tomas Hertl"
+        }
+      ]
+    },
+    {
+      "date": 1794550950468,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Brayden McNabb"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Jakob Chychrun"
+        }
+      ]
+    },
+    {
+      "date": 1794550109731,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Alexis Lafreniere"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Vasily Podkolzin"
+        }
+      ]
+    },
+    {
+      "date": 1794550049075,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Tye Kartye"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Nick Schmaltz"
+        }
+      ]
+    },
+    {
+      "date": 1794549724801,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Kent Johnson"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Mika Zibanejad"
+        }
+      ]
+    },
     {
       "date": 1794465106711,
       "actions": [
@@ -710,81 +785,6 @@
           "team": "Underdogs",
           "action": "DROPPED",
           "player": "Tristan Luneau"
-        }
-      ]
-    },
-    {
-      "date": 1794204191137,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Mika Zibanejad"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Tomas Hertl"
-        }
-      ]
-    },
-    {
-      "date": 1794202747140,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Mattias Ekholm"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Zach Benson"
-        }
-      ]
-    },
-    {
-      "date": 1794199977604,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Brayden Point"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Elias Pettersson"
-        }
-      ]
-    },
-    {
-      "date": 1794127563429,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Drake Batherson"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "WAIVER ADDED",
-          "player": "Brayden Point"
-        }
-      ]
-    },
-    {
-      "date": 1794125841695,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Nick Schmaltz"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Jesper Bratt"
         }
       ]
     }
