@@ -1,17 +1,17 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 47,
-  "last_updated": "15.11.2026 klo 01:23 UTC",
+  "current_week": 48,
+  "last_updated": "15.11.2026 klo 08:30 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1355.5,
+      "points_for": 1404.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 3,
+      "standing": 4,
       "positions": {
         "C": 6,
         "LW": 5,
@@ -51,11 +51,11 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1353.0,
+      "points_for": 1413.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
-      "standing": 4,
+      "standing": 3,
       "positions": {
         "C": 7,
         "LW": 3,
@@ -95,13 +95,13 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1501.0,
+      "points_for": 1562.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 6,
+        "C": 7,
         "LW": 4,
         "RW": 4,
         "D": 6,
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1763.4,
+      "points_for": 1800.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -206,14 +206,6 @@
       "injuryStatus": "OUT"
     },
     {
-      "name": "Elias Pettersson",
-      "position": "Center",
-      "proTeam": "Vancouver Canucks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Mika Zibanejad",
       "position": "Center",
       "proTeam": "New York Rangers",
@@ -222,17 +214,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jeremy Swayman",
-      "position": "Goalie",
-      "proTeam": "Boston Bruins",
+      "name": "MacKenzie Weegar",
+      "position": "Defense",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "MacKenzie Weegar",
-      "position": "Defense",
-      "proTeam": "Utah Hockey Club",
+      "name": "Jeremy Swayman",
+      "position": "Goalie",
+      "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -262,17 +254,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Sidney Crosby",
+      "name": "Nico Hischier",
       "position": "Center",
-      "proTeam": "Pittsburgh Penguins",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nico Hischier",
+      "name": "Sidney Crosby",
       "position": "Center",
-      "proTeam": "New Jersey Devils",
+      "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -350,17 +342,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Thompson",
-      "position": "Goalie",
-      "proTeam": "Washington Capitals",
+      "name": "Filip Hronek",
+      "position": "Defense",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Filip Hronek",
-      "position": "Defense",
-      "proTeam": "Vancouver Canucks",
+      "name": "Logan Thompson",
+      "position": "Goalie",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -406,6 +398,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Joel Hofer",
+      "position": "Goalie",
+      "proTeam": "St. Louis Blues",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Vasily Podkolzin",
       "position": "Right Wing",
       "proTeam": "Edmonton Oilers",
@@ -414,15 +414,55 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Joel Hofer",
-      "position": "Goalie",
-      "proTeam": "St. Louis Blues",
+      "name": "Lucas Raymond",
+      "position": "Left Wing",
+      "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1794723447030,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Elias Pettersson"
+        }
+      ]
+    },
+    {
+      "date": 1794723115204,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Shane Pinto"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Anton Lundell"
+        }
+      ]
+    },
+    {
+      "date": 1794723049822,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Rasmus Ristolainen"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Charle-Edouard D'Astous"
+        }
+      ]
+    },
     {
       "date": 1794678379716,
       "actions": [
@@ -745,41 +785,6 @@
           "team": "Fridge Raiders",
           "action": "DROPPED",
           "player": "Adrian Kempe"
-        }
-      ]
-    },
-    {
-      "date": 1794372971012,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Nico Hischier"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Tomas Hertl"
-        }
-      ]
-    },
-    {
-      "date": 1794343432546,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Shane Pinto"
-        }
-      ]
-    },
-    {
-      "date": 1794343334745,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Kirill Marchenko"
         }
       ]
     }
