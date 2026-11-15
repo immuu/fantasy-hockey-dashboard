@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 47,
-  "last_updated": "14.11.2026 klo 21:43 UTC",
+  "last_updated": "15.11.2026 klo 01:23 UTC",
   "teams": [
     {
       "id": 1,
@@ -262,17 +262,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nico Hischier",
+      "name": "Sidney Crosby",
       "position": "Center",
-      "proTeam": "New Jersey Devils",
+      "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Sidney Crosby",
+      "name": "Nico Hischier",
       "position": "Center",
-      "proTeam": "Pittsburgh Penguins",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
