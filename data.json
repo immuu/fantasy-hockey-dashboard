@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 48,
-  "last_updated": "15.11.2026 klo 15:55 UTC",
+  "last_updated": "15.11.2026 klo 20:38 UTC",
   "teams": [
     {
       "id": 1,
@@ -80,13 +80,13 @@
           "points": 0.0
         },
         {
-          "name": "Alex DeBrincat",
+          "name": "Brady Tkachuk",
           "position": "Left Wing",
           "points": 0.0
         },
         {
-          "name": "Brady Tkachuk",
-          "position": "Left Wing",
+          "name": "Matthew Schaefer",
+          "position": "Defense",
           "points": 0.0
         }
       ]
@@ -198,6 +198,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Alex DeBrincat",
+      "position": "Left Wing",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Mika Zibanejad",
       "position": "Center",
       "proTeam": "New York Rangers",
@@ -222,17 +230,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jeremy Swayman",
-      "position": "Goalie",
-      "proTeam": "Boston Bruins",
+      "name": "Mark Scheifele",
+      "position": "Center",
+      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mark Scheifele",
-      "position": "Center",
-      "proTeam": "Winnipeg Jets",
+      "name": "Jeremy Swayman",
+      "position": "Goalie",
+      "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -310,17 +318,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Juraj Slafkovsky",
-      "position": "Left Wing",
-      "proTeam": "Montréal Canadiens",
+      "name": "Drake Batherson",
+      "position": "Right Wing",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Drake Batherson",
-      "position": "Right Wing",
-      "proTeam": "Ottawa Senators",
+      "name": "Juraj Slafkovsky",
+      "position": "Left Wing",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -412,17 +420,39 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Zach Hyman",
-      "position": "Right Wing",
-      "proTeam": "Edmonton Oilers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1794760735810,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Zach Hyman"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Viktor Arvidsson"
+        }
+      ]
+    },
+    {
+      "date": 1794760570669,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Alex DeBrincat"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Ivan Barbashev"
+        }
+      ]
+    },
     {
       "date": 1794745057690,
       "actions": [
@@ -755,36 +785,6 @@
           "team": "Underdogs",
           "action": "FA ADDED",
           "player": "Vasily Podkolzin"
-        }
-      ]
-    },
-    {
-      "date": 1794386872486,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Mattias Ekholm"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Shane Pinto"
-        }
-      ]
-    },
-    {
-      "date": 1794378625545,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Luke Hughes"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Erik Karlsson"
         }
       ]
     }
