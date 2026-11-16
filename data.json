@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 48,
-  "last_updated": "16.11.2026 klo 00:27 UTC",
+  "last_updated": "16.11.2026 klo 07:24 UTC",
   "teams": [
     {
       "id": 1,
@@ -206,14 +206,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mika Zibanejad",
-      "position": "Center",
-      "proTeam": "New York Rangers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Artemi Panarin",
       "position": "Left Wing",
       "proTeam": "Los Angeles Kings",
@@ -225,14 +217,6 @@
       "name": "MacKenzie Weegar",
       "position": "Defense",
       "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Mark Scheifele",
-      "position": "Center",
-      "proTeam": "Winnipeg Jets",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -270,20 +254,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Sidney Crosby",
-      "position": "Center",
-      "proTeam": "Pittsburgh Penguins",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Kirill Marchenko",
       "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
+    },
+    {
+      "name": "Sidney Crosby",
+      "position": "Center",
+      "proTeam": "Pittsburgh Penguins",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Darren Raddysh",
@@ -390,17 +374,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Alexis Lafreniere",
-      "position": "Left Wing",
-      "proTeam": "New York Rangers",
+      "name": "Mackenzie Blackwood",
+      "position": "Goalie",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mackenzie Blackwood",
-      "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "name": "Tomas Hertl",
+      "position": "Center",
+      "proTeam": "Vegas Golden Knights",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Vasily Podkolzin",
+      "position": "Right Wing",
+      "proTeam": "Edmonton Oilers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -420,9 +412,72 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Rasmus Andersson",
+      "position": "Defense",
+      "proTeam": "Vegas Golden Knights",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1794810720992,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Mark Scheifele"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Vasily Podkolzin"
+        }
+      ]
+    },
+    {
+      "date": 1794806917223,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Mattias Ekholm"
+        }
+      ]
+    },
+    {
+      "date": 1794806635919,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Alexis Lafreniere"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Tomas Hertl"
+        }
+      ]
+    },
+    {
+      "date": 1794804129706,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Mika Zibanejad"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Anton Lundell"
+        }
+      ]
+    },
     {
       "date": 1794760735810,
       "actions": [
@@ -725,66 +780,6 @@
           "team": "Fridge Raiders",
           "action": "FA ADDED",
           "player": "Mika Zibanejad"
-        }
-      ]
-    },
-    {
-      "date": 1794465106711,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "John Carlson"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Erik Karlsson"
-        }
-      ]
-    },
-    {
-      "date": 1794460931618,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Roope Hintz"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Tomas Hertl"
-        }
-      ]
-    },
-    {
-      "date": 1794459387542,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Ryan O'Reilly"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Thomas Chabot"
-        }
-      ]
-    },
-    {
-      "date": 1794388319632,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Jesper Bratt"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Vasily Podkolzin"
         }
       ]
     }
