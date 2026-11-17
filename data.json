@@ -1,22 +1,22 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 49,
-  "last_updated": "17.11.2026 klo 01:10 UTC",
+  "current_week": 50,
+  "last_updated": "17.11.2026 klo 09:48 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1433.4,
+      "points_for": 1430.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 4,
       "positions": {
-        "C": 6,
+        "C": 5,
         "LW": 5,
         "RW": 5,
-        "D": 5,
+        "D": 6,
         "G": 2
       },
       "top_players": [
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1437.9,
+      "points_for": 1439.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,16 +95,16 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1584.8,
+      "points_for": 1598.5,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 8,
+        "C": 7,
         "LW": 4,
         "RW": 3,
-        "D": 6,
+        "D": 7,
         "G": 2
       },
       "top_players": [
@@ -139,14 +139,14 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1863.5,
+      "points_for": 1868.7,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 5,
-        "LW": 4,
+        "C": 6,
+        "LW": 3,
         "RW": 5,
         "D": 6,
         "G": 2
@@ -182,14 +182,6 @@
   ],
   "free_agents": [
     {
-      "name": "Rasmus Dahlin",
-      "position": "Defense",
-      "proTeam": "Buffalo Sabres",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Jakob Chychrun",
       "position": "Defense",
       "proTeam": "Washington Capitals",
@@ -201,6 +193,22 @@
       "name": "Alex DeBrincat",
       "position": "Left Wing",
       "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Elias Pettersson",
+      "position": "Center",
+      "proTeam": "Vancouver Canucks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Mika Zibanejad",
+      "position": "Center",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -241,14 +249,6 @@
       "name": "Erik Karlsson",
       "position": "Defense",
       "proTeam": "Pittsburgh Penguins",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Nico Hischier",
-      "position": "Center",
-      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -350,17 +350,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Josh Morrissey",
-      "position": "Defense",
-      "proTeam": "Winnipeg Jets",
+      "name": "Logan Thompson",
+      "position": "Goalie",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Thompson",
-      "position": "Goalie",
-      "proTeam": "Washington Capitals",
+      "name": "Alexis Lafreniere",
+      "position": "Left Wing",
+      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,51 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1794895081194,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Nico Hischier"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Alexis Lafreniere"
+        }
+      ]
+    },
+    {
+      "date": 1794892907133,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Mika Zibanejad"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Josh Morrissey"
+        }
+      ]
+    },
+    {
+      "date": 1794891583569,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Rasmus Dahlin"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Elias Pettersson"
+        }
+      ]
+    },
     {
       "date": 1794810720992,
       "actions": [
@@ -735,51 +780,6 @@
           "team": "Moron Losers",
           "action": "DROPPED",
           "player": "Jakob Chychrun"
-        }
-      ]
-    },
-    {
-      "date": 1794550109731,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Alexis Lafreniere"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Vasily Podkolzin"
-        }
-      ]
-    },
-    {
-      "date": 1794550049075,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Tye Kartye"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Nick Schmaltz"
-        }
-      ]
-    },
-    {
-      "date": 1794549724801,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Kent Johnson"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Mika Zibanejad"
         }
       ]
     }
