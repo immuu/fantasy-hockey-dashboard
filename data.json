@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 49,
-  "last_updated": "16.11.2026 klo 17:33 UTC",
+  "last_updated": "17.11.2026 klo 01:10 UTC",
   "teams": [
     {
       "id": 1,
@@ -206,20 +206,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Artemi Panarin",
-      "position": "Left Wing",
-      "proTeam": "Los Angeles Kings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
-    },
-    {
       "name": "MacKenzie Weegar",
       "position": "Defense",
       "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Artemi Panarin",
+      "position": "Left Wing",
+      "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "OUT"
     },
     {
       "name": "Jeremy Swayman",
@@ -294,17 +294,17 @@
       "injuryStatus": "OUT"
     },
     {
-      "name": "Charlie McAvoy",
-      "position": "Defense",
-      "proTeam": "Boston Bruins",
+      "name": "Juraj Slafkovsky",
+      "position": "Left Wing",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Juraj Slafkovsky",
-      "position": "Left Wing",
-      "proTeam": "Montréal Canadiens",
+      "name": "Charlie McAvoy",
+      "position": "Defense",
+      "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
