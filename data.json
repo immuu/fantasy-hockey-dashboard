@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 50,
-  "last_updated": "17.11.2026 klo 09:48 UTC",
+  "last_updated": "17.11.2026 klo 18:48 UTC",
   "teams": [
     {
       "id": 1,
@@ -262,14 +262,6 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Sidney Crosby",
-      "position": "Center",
-      "proTeam": "Pittsburgh Penguins",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Darren Raddysh",
       "position": "Defense",
       "proTeam": "Toronto Maple Leafs",
@@ -278,9 +270,25 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Sidney Crosby",
+      "position": "Center",
+      "proTeam": "Pittsburgh Penguins",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Adrian Kempe",
       "position": "Right Wing",
       "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Charlie McAvoy",
+      "position": "Defense",
+      "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -297,14 +305,6 @@
       "name": "Juraj Slafkovsky",
       "position": "Left Wing",
       "proTeam": "Montréal Canadiens",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Charlie McAvoy",
-      "position": "Defense",
-      "proTeam": "Boston Bruins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -390,17 +390,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Tomas Hertl",
-      "position": "Center",
-      "proTeam": "Vegas Golden Knights",
+      "name": "Joel Hofer",
+      "position": "Goalie",
+      "proTeam": "St. Louis Blues",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Joel Hofer",
-      "position": "Goalie",
-      "proTeam": "St. Louis Blues",
+      "name": "Tomas Hertl",
+      "position": "Center",
+      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
