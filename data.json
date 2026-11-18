@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 51,
-  "last_updated": "18.11.2026 klo 09:19 UTC",
+  "last_updated": "18.11.2026 klo 18:27 UTC",
   "teams": [
     {
       "id": 1,
@@ -58,8 +58,8 @@
       "standing": 3,
       "positions": {
         "C": 7,
-        "LW": 3,
-        "RW": 3,
+        "LW": 2,
+        "RW": 4,
         "D": 7,
         "G": 2
       },
@@ -235,14 +235,6 @@
       "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
-    },
-    {
-      "name": "Connor Bedard",
-      "position": "Center",
-      "proTeam": "Chicago Blackhawks",
-      "total_points": 0.0,
-      "avg_points": 0,
       "injuryStatus": "DAY_TO_DAY"
     },
     {
@@ -252,6 +244,14 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Connor Bedard",
+      "position": "Center",
+      "proTeam": "Chicago Blackhawks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Erik Karlsson",
@@ -294,6 +294,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Juraj Slafkovsky",
+      "position": "Left Wing",
+      "proTeam": "Montréal Canadiens",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Charlie McAvoy",
       "position": "Defense",
       "proTeam": "Boston Bruins",
@@ -302,9 +310,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Juraj Slafkovsky",
-      "position": "Left Wing",
-      "proTeam": "Montréal Canadiens",
+      "name": "Drake Batherson",
+      "position": "Right Wing",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -316,14 +324,6 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "INJURY_RESERVE"
-    },
-    {
-      "name": "Drake Batherson",
-      "position": "Right Wing",
-      "proTeam": "Ottawa Senators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Dylan Guenther",
@@ -374,9 +374,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Thompson",
+      "name": "Mackenzie Blackwood",
       "position": "Goalie",
-      "proTeam": "Washington Capitals",
+      "proTeam": "Colorado Avalanche",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -390,9 +390,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Mackenzie Blackwood",
+      "name": "Logan Thompson",
       "position": "Goalie",
-      "proTeam": "Colorado Avalanche",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,36 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1795019284989,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Ivan Barbashev"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Morgan Geekie"
+        }
+      ]
+    },
+    {
+      "date": 1795019122966,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Jonas Brodin"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Sam Malinski"
+        }
+      ]
+    },
     {
       "date": 1794983739139,
       "actions": [
@@ -745,36 +775,6 @@
           "team": "Fridge Raiders",
           "action": "DROPPED",
           "player": "Mika Zibanejad"
-        }
-      ]
-    },
-    {
-      "date": 1794638868368,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Tye Kartye"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Mark Scheifele"
-        }
-      ]
-    },
-    {
-      "date": 1794638802223,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Jesper Bratt"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Alexis Lafreniere"
         }
       ]
     }
