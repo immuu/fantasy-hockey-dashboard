@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 51,
-  "last_updated": "18.11.2026 klo 18:27 UTC",
+  "last_updated": "19.11.2026 klo 00:48 UTC",
   "teams": [
     {
       "id": 1,
@@ -382,6 +382,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Vasily Podkolzin",
+      "position": "Right Wing",
+      "proTeam": "Edmonton Oilers",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Jacob Trouba",
       "position": "Defense",
       "proTeam": "San Jose Sharks",
@@ -393,14 +401,6 @@
       "name": "Logan Thompson",
       "position": "Goalie",
       "proTeam": "Washington Capitals",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Vasily Podkolzin",
-      "position": "Right Wing",
-      "proTeam": "Edmonton Oilers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
