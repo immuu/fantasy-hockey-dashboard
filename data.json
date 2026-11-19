@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 52,
-  "last_updated": "19.11.2026 klo 08:03 UTC",
+  "last_updated": "19.11.2026 klo 17:46 UTC",
   "teams": [
     {
       "id": 1,
@@ -235,7 +235,7 @@
       "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Jeremy Swayman",
@@ -251,7 +251,7 @@
       "proTeam": "Chicago Blackhawks",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Erik Karlsson",
@@ -342,17 +342,17 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Noah Dobson",
+      "name": "Filip Hronek",
       "position": "Defense",
-      "proTeam": "Montréal Canadiens",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Filip Hronek",
+      "name": "Noah Dobson",
       "position": "Defense",
-      "proTeam": "Vancouver Canucks",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
