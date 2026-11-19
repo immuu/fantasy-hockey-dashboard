@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 52,
-  "last_updated": "19.11.2026 klo 17:46 UTC",
+  "last_updated": "19.11.2026 klo 23:56 UTC",
   "teams": [
     {
       "id": 1,
@@ -58,8 +58,8 @@
       "standing": 3,
       "positions": {
         "C": 7,
-        "LW": 2,
-        "RW": 4,
+        "LW": 3,
+        "RW": 3,
         "D": 7,
         "G": 2
       },
@@ -146,7 +146,7 @@
       "standing": 1,
       "positions": {
         "C": 5,
-        "LW": 4,
+        "LW": 3,
         "RW": 6,
         "D": 6,
         "G": 2
@@ -181,6 +181,14 @@
     }
   ],
   "free_agents": [
+    {
+      "name": "Moritz Seider",
+      "position": "Defense",
+      "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
     {
       "name": "Rasmus Dahlin",
       "position": "Defense",
@@ -302,9 +310,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Juraj Slafkovsky",
-      "position": "Left Wing",
-      "proTeam": "Montréal Canadiens",
+      "name": "Drake Batherson",
+      "position": "Right Wing",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -313,14 +321,6 @@
       "name": "Charlie McAvoy",
       "position": "Defense",
       "proTeam": "Boston Bruins",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Drake Batherson",
-      "position": "Right Wing",
-      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -382,14 +382,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jacob Trouba",
-      "position": "Defense",
-      "proTeam": "San Jose Sharks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Logan Thompson",
       "position": "Goalie",
       "proTeam": "Washington Capitals",
@@ -398,9 +390,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Lucas Raymond",
-      "position": "Left Wing",
-      "proTeam": "Detroit Red Wings",
+      "name": "Jacob Trouba",
+      "position": "Defense",
+      "proTeam": "San Jose Sharks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -409,6 +401,14 @@
       "name": "Joel Hofer",
       "position": "Goalie",
       "proTeam": "St. Louis Blues",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Lucas Raymond",
+      "position": "Left Wing",
+      "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,46 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1795121272740,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Nikolaj Ehlers"
+        }
+      ]
+    },
+    {
+      "date": 1795113166068,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Alexander Nikishin"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Moritz Seider"
+        }
+      ]
+    },
+    {
+      "date": 1795113092713,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Juraj Slafkovsky"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Morgan Geekie"
+        }
+      ]
+    },
     {
       "date": 1795068680838,
       "actions": [
@@ -735,46 +775,6 @@
           "team": "Julmat",
           "action": "FA ADDED",
           "player": "Ivan Barbashev"
-        }
-      ]
-    },
-    {
-      "date": 1794745057690,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Brayden McNabb"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Sean Walker"
-        }
-      ]
-    },
-    {
-      "date": 1794731772684,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Jesper Bratt"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Vasily Podkolzin"
-        }
-      ]
-    },
-    {
-      "date": 1794723447030,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Elias Pettersson"
         }
       ]
     }
