@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 51,
-  "last_updated": "19.11.2026 klo 00:48 UTC",
+  "current_week": 52,
+  "last_updated": "19.11.2026 klo 08:03 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1461.1,
+      "points_for": 1467.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1490.5,
+      "points_for": 1494.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,14 +95,14 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1647.3,
+      "points_for": 1679.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 6,
-        "LW": 5,
+        "C": 7,
+        "LW": 4,
         "RW": 3,
         "D": 7,
         "G": 2
@@ -139,14 +139,14 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1986.4,
+      "points_for": 1992.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 6,
-        "LW": 3,
+        "C": 5,
+        "LW": 4,
         "RW": 6,
         "D": 6,
         "G": 2
@@ -262,6 +262,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Kirill Marchenko",
       "position": "Left Wing",
       "proTeam": "Toronto Maple Leafs",
@@ -334,14 +342,6 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Noah Dobson",
       "position": "Defense",
       "proTeam": "Montréal Canadiens",
@@ -382,14 +382,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Vasily Podkolzin",
-      "position": "Right Wing",
-      "proTeam": "Edmonton Oilers",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Jacob Trouba",
       "position": "Defense",
       "proTeam": "San Jose Sharks",
@@ -401,6 +393,14 @@
       "name": "Logan Thompson",
       "position": "Goalie",
       "proTeam": "Washington Capitals",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Lucas Raymond",
+      "position": "Left Wing",
+      "proTeam": "Detroit Red Wings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,96 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1795068680838,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Brandt Clarke"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Luke Hughes"
+        }
+      ]
+    },
+    {
+      "date": 1795068172439,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Joel Eriksson Ek"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Lucas Raymond"
+        }
+      ]
+    },
+    {
+      "date": 1795067176304,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Nikolaj Ehlers"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Nico Hischier"
+        }
+      ]
+    },
+    {
+      "date": 1795067085678,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Jesper Bratt"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Vasily Podkolzin"
+        }
+      ]
+    },
+    {
+      "date": 1795065570182,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "K'Andre Miller"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Brayden McNabb"
+        }
+      ]
+    },
+    {
+      "date": 1795065313690,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Sean Walker"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Rasmus Ristolainen"
+        }
+      ]
+    },
     {
       "date": 1795019284989,
       "actions": [
@@ -685,96 +775,6 @@
           "team": "Underdogs",
           "action": "FA ADDED",
           "player": "Elias Pettersson"
-        }
-      ]
-    },
-    {
-      "date": 1794723115204,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Shane Pinto"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Anton Lundell"
-        }
-      ]
-    },
-    {
-      "date": 1794723049822,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Rasmus Ristolainen"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Charle-Edouard D'Astous"
-        }
-      ]
-    },
-    {
-      "date": 1794678379716,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Mark Scheifele"
-        },
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Ryan O'Reilly"
-        }
-      ]
-    },
-    {
-      "date": 1794639130260,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Sean Walker"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Charlie McAvoy"
-        }
-      ]
-    },
-    {
-      "date": 1794639034173,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Rasmus Dahlin"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Charle-Edouard D'Astous"
-        }
-      ]
-    },
-    {
-      "date": 1794638898673,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Shane Pinto"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Mika Zibanejad"
         }
       ]
     }
