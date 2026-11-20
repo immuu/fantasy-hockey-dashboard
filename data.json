@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 52,
-  "last_updated": "20.11.2026 klo 05:00 UTC",
+  "current_week": 53,
+  "last_updated": "20.11.2026 klo 13:51 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1467.2,
+      "points_for": 1512.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1494.9,
+      "points_for": 1531.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,7 +95,7 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1679.4,
+      "points_for": 1766.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -139,7 +139,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 1992.0,
+      "points_for": 2031.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -406,17 +406,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Logan Thompson",
-      "position": "Goalie",
-      "proTeam": "Washington Capitals",
+      "name": "Tomas Hertl",
+      "position": "Center",
+      "proTeam": "Vegas Golden Knights",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Tomas Hertl",
-      "position": "Center",
-      "proTeam": "Vegas Golden Knights",
+      "name": "Logan Thompson",
+      "position": "Goalie",
+      "proTeam": "Washington Capitals",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
