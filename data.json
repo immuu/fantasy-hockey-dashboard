@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 53,
-  "last_updated": "20.11.2026 klo 13:51 UTC",
+  "last_updated": "20.11.2026 klo 21:35 UTC",
   "teams": [
     {
       "id": 1,
@@ -243,7 +243,7 @@
       "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Jeremy Swayman",
