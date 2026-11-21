@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 53,
-  "last_updated": "21.11.2026 klo 02:53 UTC",
+  "current_week": 54,
+  "last_updated": "21.11.2026 klo 10:21 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1512.8,
+      "points_for": 1513.0,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1531.2,
+      "points_for": 1530.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -382,17 +382,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jacob Trouba",
-      "position": "Defense",
-      "proTeam": "San Jose Sharks",
+      "name": "Joel Hofer",
+      "position": "Goalie",
+      "proTeam": "St. Louis Blues",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Joel Hofer",
-      "position": "Goalie",
-      "proTeam": "St. Louis Blues",
+      "name": "Jacob Trouba",
+      "position": "Defense",
+      "proTeam": "San Jose Sharks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
