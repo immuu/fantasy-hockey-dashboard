@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 54,
-  "last_updated": "21.11.2026 klo 17:48 UTC",
+  "last_updated": "21.11.2026 klo 22:29 UTC",
   "teams": [
     {
       "id": 1,
@@ -219,7 +219,7 @@
       "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Mika Zibanejad",
@@ -243,7 +243,7 @@
       "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Jeremy Swayman",
@@ -355,7 +355,7 @@
       "proTeam": "Nashville Predators",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "ACTIVE"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Noah Dobson",
