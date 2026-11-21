@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 54,
-  "last_updated": "21.11.2026 klo 10:21 UTC",
+  "last_updated": "21.11.2026 klo 17:48 UTC",
   "teams": [
     {
       "id": 1,
@@ -278,20 +278,20 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Kirill Marchenko",
-      "position": "Left Wing",
-      "proTeam": "Toronto Maple Leafs",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Darren Raddysh",
       "position": "Defense",
       "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Kirill Marchenko",
+      "position": "Left Wing",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Sidney Crosby",
@@ -350,17 +350,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Noah Dobson",
-      "position": "Defense",
-      "proTeam": "Montréal Canadiens",
+      "name": "Ryan O'Reilly",
+      "position": "Center",
+      "proTeam": "Nashville Predators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Ryan O'Reilly",
-      "position": "Center",
-      "proTeam": "Nashville Predators",
+      "name": "Noah Dobson",
+      "position": "Defense",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
