@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 55,
-  "last_updated": "22.11.2026 klo 10:25 UTC",
+  "last_updated": "22.11.2026 klo 18:06 UTC",
   "teams": [
     {
       "id": 1,
@@ -58,8 +58,8 @@
       "standing": 4,
       "positions": {
         "C": 7,
-        "LW": 3,
-        "RW": 3,
+        "LW": 5,
+        "RW": 2,
         "D": 7,
         "G": 2
       },
@@ -145,10 +145,10 @@
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 5,
+        "C": 4,
         "LW": 3,
         "RW": 7,
-        "D": 6,
+        "D": 7,
         "G": 2
       },
       "top_players": [
@@ -243,7 +243,7 @@
       "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Jeremy Swayman",
@@ -286,20 +286,20 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
+      "name": "Leo Carlsson",
+      "position": "Center",
+      "proTeam": "Anaheim Ducks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "DAY_TO_DAY"
+    },
+    {
       "name": "Sidney Crosby",
       "position": "Center",
       "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Connor Bedard",
-      "position": "Center",
-      "proTeam": "Chicago Blackhawks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "OUT"
     },
     {
       "name": "Adrian Kempe",
@@ -316,6 +316,14 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Connor Bedard",
+      "position": "Center",
+      "proTeam": "Chicago Blackhawks",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "INJURY_RESERVE"
     },
     {
       "name": "Charlie McAvoy",
@@ -342,17 +350,17 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Brandt Clarke",
+      "name": "Filip Hronek",
       "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Filip Hronek",
+      "name": "Brandt Clarke",
       "position": "Defense",
-      "proTeam": "Vancouver Canucks",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -369,14 +377,6 @@
       "name": "Noah Dobson",
       "position": "Defense",
       "proTeam": "Montréal Canadiens",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Alexis Lafreniere",
-      "position": "Left Wing",
-      "proTeam": "New York Rangers",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -423,6 +423,61 @@
     }
   ],
   "recent_activity": [
+    {
+      "date": 1795365587662,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Sam Rinzel"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Leo Carlsson"
+        }
+      ]
+    },
+    {
+      "date": 1795365540208,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Shea Theodore"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Erik Cernak"
+        }
+      ]
+    },
+    {
+      "date": 1795365359760,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Jordan Martinook"
+        },
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Arseny Gritsyuk"
+        }
+      ]
+    },
+    {
+      "date": 1795365285621,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Alexis Lafreniere"
+        }
+      ]
+    },
     {
       "date": 1795333507096,
       "actions": [
@@ -715,61 +770,6 @@
           "team": "Fridge Raiders",
           "action": "FA ADDED",
           "player": "Josh Morrissey"
-        }
-      ]
-    },
-    {
-      "date": 1794891583569,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Rasmus Dahlin"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Elias Pettersson"
-        }
-      ]
-    },
-    {
-      "date": 1794810720992,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Mark Scheifele"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Vasily Podkolzin"
-        }
-      ]
-    },
-    {
-      "date": 1794806917223,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Mattias Ekholm"
-        }
-      ]
-    },
-    {
-      "date": 1794806635919,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Alexis Lafreniere"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Tomas Hertl"
         }
       ]
     }
