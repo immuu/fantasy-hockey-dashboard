@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 55,
-  "last_updated": "22.11.2026 klo 23:55 UTC",
+  "last_updated": "23.11.2026 klo 04:17 UTC",
   "teams": [
     {
       "id": 1,
@@ -286,20 +286,20 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Sidney Crosby",
-      "position": "Center",
-      "proTeam": "Pittsburgh Penguins",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Leo Carlsson",
       "position": "Center",
       "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "DAY_TO_DAY"
+    },
+    {
+      "name": "Sidney Crosby",
+      "position": "Center",
+      "proTeam": "Pittsburgh Penguins",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Adrian Kempe",
@@ -406,17 +406,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jacob Trouba",
-      "position": "Defense",
-      "proTeam": "San Jose Sharks",
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Tomas Hertl",
-      "position": "Center",
-      "proTeam": "Vegas Golden Knights",
+      "name": "Jacob Trouba",
+      "position": "Defense",
+      "proTeam": "San Jose Sharks",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
