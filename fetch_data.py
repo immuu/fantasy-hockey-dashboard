@@ -256,6 +256,49 @@ def build_highlights():
 
 highlights = build_highlights()
 
+def build_recent_days(n=7):
+    """Build detailed per-team, per-player breakdown for the last n scoring periods."""
+    today = datetime.now(timezone.utc).date()
+    start_p = max(1, last_period - n + 1)
+    team_ids = list(daily_points.keys())
+    days_out = []
+    for p in range(start_p, last_period + 1):
+        d_str = (today - timedelta(days=last_period - p)).isoformat()
+        teams_list = []
+        for tid in team_ids:
+            t_pts = daily_points[tid][p - 1] if p - 1 < len(daily_points[tid]) else 0.0
+            roster = []
+            for (rtid, pid), rec in records.items():
+                if rtid != tid or p not in rec["days"]:
+                    continue
+                pts, active = rec["days"][p]
+                roster.append({
+                    "player": rec["name"],
+                    "pos": rec["pos"],
+                    "points": pts,
+                    "active": active
+                })
+            roster.sort(key=lambda x: (not x["active"], -x["points"], x["player"]))
+            teams_list.append({
+                "team": team_names[tid],
+                "points": t_pts,
+                "roster": roster
+            })
+        teams_list.sort(key=lambda x: -x["points"])
+        has_scores = any(t["points"] != 0 for t in teams_list) or any(
+            pl["points"] != 0 for t in teams_list for pl in t["roster"]
+        )
+        days_out.append({
+            "day": p,
+            "date": d_str,
+            "has_scores": has_scores,
+            "teams": teams_list
+        })
+    return days_out
+
+
+recent_days = build_recent_days(7)
+
 def calculate_player_points(player):
     return round(getattr(player, 'total_points', 0.0), 1)
 
@@ -365,7 +408,8 @@ output = {
     "teams": teams_data,
     "free_agents": fa_data,
     "recent_activity": recent_activities,
-    "highlights": highlights
+    "highlights": highlights,
+    "recent_days": recent_days
 }
 
 with open("data.json", "w", encoding="utf-8") as f:

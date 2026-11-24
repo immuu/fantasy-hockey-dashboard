@@ -98,6 +98,14 @@
             <!-- Controls: Range, Search & Status -->
             <div class="flex flex-wrap items-center gap-3">
 
+                <!-- View Tabs -->
+                <div class="bg-slate-900/90 p-1 rounded-lg border border-slate-800 flex items-center text-xs font-medium">
+                    <button onclick="switchTab('overview')" id="tab-btn-overview"
+                        class="px-3 py-1.5 rounded-md bg-ice-500 text-white shadow-sm transition">Yleiskatsaus</button>
+                    <button onclick="switchTab('latestDay')" id="tab-btn-latestDay"
+                        class="px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition">📅 Viimeisin pelipäivä</button>
+                </div>
+
                 <!-- Time Range Filter -->
                 <div
                     class="bg-slate-900/90 p-1 rounded-lg border border-slate-800 flex items-center text-xs font-medium">
@@ -130,6 +138,7 @@
 
     <!-- MAIN CONTAINER -->
     <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 space-y-6">
+        <div id="overviewTab" class="space-y-6">
 
         <!-- STATS HIGHLIGHT OVERVIEW -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -373,6 +382,43 @@
             </div>
         </section>
 
+        </div>
+
+        <!-- LATEST DAY RESULTS TAB -->
+        <div id="latestDayTab" class="space-y-6 hidden">
+            <div class="glass-card rounded-2xl p-5 border border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-2xl">📅</span>
+                        <h2 class="text-lg font-bold text-white" id="latestDayTitle">Viimeisin pelipäivä</h2>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1" id="latestDaySubtitle">Ladataan päivän tuloksia...</p>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <button onclick="stepRecentDay(-1)" id="btnPrevDay"
+                        class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 hover:text-white hover:border-slate-700 disabled:opacity-40 transition">← Edellinen</button>
+                    <select id="recentDaySelect" onchange="selectRecentDay(this.value)"
+                        class="bg-slate-900 border border-slate-800 text-slate-200 text-xs rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-ice-500"></select>
+                    <button onclick="stepRecentDay(1)" id="btnNextDay"
+                        class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 hover:text-white hover:border-slate-700 disabled:opacity-40 transition">Seuraava →</button>
+                </div>
+            </div>
+
+            <!-- Daily Fun Summary Banner -->
+            <div id="latestDayBanner" class="glass-card rounded-2xl p-4 border border-ice-500/30 bg-ice-500/5 text-sm text-slate-200"></div>
+
+            <!-- Daily Podium (4 Team Cards) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="latestDayTeamsGrid"></div>
+
+            <!-- Daily Player Awards (4 Cards) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4" id="latestDayAwardsGrid"></div>
+
+            <!-- Full Lineup & Bench Breakdown per Team -->
+            <div>
+                <h3 class="text-base font-bold text-white mb-3">🏒 Joukkueiden kokoonpanot &amp; pisteet</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4" id="latestDayRostersGrid"></div>
+            </div>
+        </div>
     </main>
 
     <script>
@@ -419,7 +465,8 @@
                 teams: {},
                 free_agents: data.free_agents || [],
                 recent_activity: data.recent_activity || [],
-                highlights: data.highlights || null
+                highlights: data.highlights || null,
+                recent_days: data.recent_days || []
             };
 
             teams.forEach((t, i) => {
@@ -551,6 +598,191 @@
             });
         }
 
+
+        // ---------- LATEST DAY TAB ----------
+        let activeTab = 'overview';
+        let selectedRecentDayIdx = 0;
+
+        function switchTab(tab) {
+            activeTab = tab;
+            const ov = document.getElementById('overviewTab');
+            const ld = document.getElementById('latestDayTab');
+            const btnOv = document.getElementById('tab-btn-overview');
+            const btnLd = document.getElementById('tab-btn-latestDay');
+            const activeCls = 'px-3 py-1.5 rounded-md bg-ice-500 text-white shadow-sm transition';
+            const idleCls = 'px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition';
+            if (tab === 'latestDay') {
+                ov.classList.add('hidden');
+                ld.classList.remove('hidden');
+                btnOv.className = idleCls;
+                btnLd.className = activeCls;
+            } else {
+                ld.classList.add('hidden');
+                ov.classList.remove('hidden');
+                btnLd.className = idleCls;
+                btnOv.className = activeCls;
+            }
+        }
+
+        function initLatestDayTab() {
+            const days = leagueData.recent_days || [];
+            if (!days.length) return;
+            // Default to the latest day that actually has scores
+            let defIdx = days.length - 1;
+            for (let i = days.length - 1; i >= 0; i--) {
+                if (days[i].has_scores) { defIdx = i; break; }
+            }
+            selectedRecentDayIdx = defIdx;
+            const sel = document.getElementById('recentDaySelect');
+            sel.innerHTML = days.map((d, i) =>
+                `<option value="${i}">Pv ${d.day} (${fdate(d.date)})${d.has_scores ? '' : ' · ei pisteitä'}</option>`
+            ).join('');
+            sel.value = String(defIdx);
+            renderLatestDay();
+        }
+
+        function selectRecentDay(idx) {
+            selectedRecentDayIdx = parseInt(idx, 10) || 0;
+            renderLatestDay();
+        }
+
+        function stepRecentDay(delta) {
+            const days = leagueData.recent_days || [];
+            const next = selectedRecentDayIdx + delta;
+            if (next < 0 || next >= days.length) return;
+            selectedRecentDayIdx = next;
+            document.getElementById('recentDaySelect').value = String(next);
+            renderLatestDay();
+        }
+
+        function renderLatestDay() {
+            const days = leagueData.recent_days || [];
+            if (!days.length) return;
+            const dayObj = days[selectedRecentDayIdx] || days[days.length - 1];
+            document.getElementById('btnPrevDay').disabled = selectedRecentDayIdx <= 0;
+            document.getElementById('btnNextDay').disabled = selectedRecentDayIdx >= days.length - 1;
+            document.getElementById('latestDayTitle').innerText = `Pelipäivä ${dayObj.day} — ${fdate(dayObj.date)}`;
+            document.getElementById('latestDaySubtitle').innerText = dayObj.has_scores
+                ? 'Yksittäisen pelipäivän joukkuepisteet, tähdet, flopit ja täydet kokoonpanot'
+                : 'Tälle päivälle ei ole vielä kirjautunut pisteitä (valitse edellinen päivä ylhäältä)';
+
+            const teams = [...(dayObj.teams || [])].sort((a, b) => b.points - a.points);
+            const topScore = teams.length ? teams[0].points : 0;
+
+            // Collect all player performances for this day
+            const activePlayers = [];
+            const benchPlayers = [];
+            const goalies = [];
+            teams.forEach(t => {
+                (t.roster || []).forEach(pl => {
+                    const item = { ...pl, team: t.team };
+                    if (pl.active) {
+                        activePlayers.push(item);
+                        if (pl.pos === 'G') goalies.push(item);
+                    } else if (pl.points !== 0) {
+                        benchPlayers.push(item);
+                    }
+                });
+            });
+
+            // Fun Summary Banner
+            const banner = document.getElementById('latestDayBanner');
+            if (!dayObj.has_scores) {
+                banner.innerHTML = `⏳ Päivän <strong>${dayObj.day}</strong> (${fdate(dayObj.date)}) otteluista ei ole vielä pisteitä.`;
+            } else {
+                const winner = teams[0];
+                const runnerUp = teams[1];
+                const margin = runnerUp ? (winner.points - runnerUp.points).toFixed(1) : '0.0';
+                const bestPl = [...activePlayers].sort((a, b) => b.points - a.points)[0];
+                const worstPl = [...activePlayers].sort((a, b) => a.points - b.points)[0];
+                const wActive = (winner.roster || []).filter(p => p.active).sort((a, b) => b.points - a.points);
+                const carrier = wActive[0];
+                const carrierPct = (carrier && winner.points > 0) ? Math.round((carrier.points / winner.points) * 100) : 0;
+                banner.innerHTML = `<div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+                    <span>🏆 Päivän voittaja: ${tn(winner.team)} (${pts(winner.points)} p, ero toiseen +${margin})</span>
+                    ${bestPl ? `<span>⭐ Päivän ykköstähti: <strong>${esc(bestPl.player)}</strong> (${tn(bestPl.team)}, ${pts(bestPl.points)})</span>` : ''}
+                    ${worstPl && worstPl.points < 0 ? `<span>💀 Päivän miinuskuningas: <strong>${esc(worstPl.player)}</strong> (${tn(worstPl.team)}, ${pts(worstPl.points)})</span>` : ''}
+                    ${carrier && carrierPct > 0 ? `<span class="text-slate-400 text-xs">(${esc(carrier.player)} toi ${carrierPct}% voittajan pisteistä)</span>` : ''}
+                </div>`;
+            }
+
+            // 1. Daily Team Podium Cards
+            document.getElementById('latestDayTeamsGrid').innerHTML = teams.map((t, i) => {
+                const activeList = (t.roster || []).filter(p => p.active);
+                const playedCount = activeList.filter(p => p.points !== 0).length;
+                const sortedAct = [...activeList].sort((a, b) => b.points - a.points);
+                const tBest = sortedAct[0];
+                const tWorst = sortedAct[sortedAct.length - 1];
+                const gap = i === 0 ? 'Päivän paras' : `${(t.points - topScore).toFixed(1)} p kärkeen`;
+                const badge = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '🐌';
+                return `<div class="glass-card rounded-2xl p-4 border ${i === 0 ? 'border-emerald-500/40' : 'border-slate-800'}">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-bold">${badge} ${tn(t.team)}</span>
+                        <span class="text-lg font-extrabold font-mono ${t.points < 0 ? 'text-rose-400' : 'text-emerald-400'}">${t.points.toFixed(1)}</span>
+                    </div>
+                    <div class="flex justify-between text-xs text-slate-400 mb-3">
+                        <span>${gap}</span>
+                        <span>${playedCount} / ${activeList.length} pelasi</span>
+                    </div>
+                    <div class="space-y-1 text-xs border-t border-slate-800 pt-2">
+                        ${tBest ? `<div class="flex justify-between"><span>🔥 ${esc(tBest.player)}</span>${pts(tBest.points)}</div>` : ''}
+                        ${tWorst && tWorst !== tBest ? `<div class="flex justify-between"><span>🧊 ${esc(tWorst.player)}</span>${pts(tWorst.points)}</div>` : ''}
+                    </div>
+                </div>`;
+            }).join('');
+
+            // 2. Player Awards of the Day (4 Cards)
+            const top3Best = [...activePlayers].filter(p => p.points > 0).sort((a, b) => b.points - a.points).slice(0, 3);
+            const top3Worst = [...activePlayers].filter(p => p.points !== 0).sort((a, b) => a.points - b.points).slice(0, 3);
+            const bestGoalies = [...goalies].filter(p => p.points !== 0).sort((a, b) => b.points - a.points).slice(0, 2);
+            const worstGoalies = [...goalies].filter(p => p.points !== 0).sort((a, b) => a.points - b.points).slice(0, 2);
+            const topBench = [...benchPlayers].filter(p => p.points > 0).sort((a, b) => b.points - a.points).slice(0, 3);
+
+            const awards = [];
+            awards.push(hlCard('⭐', 'Päivän parhaat (Top 3)', 'Aktiivikokoonpanon kovimmat pisteet',
+                top3Best.length ? top3Best.map((p, i) => row(`${MEDALS[i]} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · ${tn(p.team)}</span>`, pts(p.points))).join('')
+                    : '<p class="text-xs text-slate-500">Ei vielä pisteitä.</p>'));
+
+            awards.push(hlCard('💀', 'Päivän pahimmat (Top 3)', 'Eniten miinusta tai heikoimmat suoritukset',
+                top3Worst.length ? top3Worst.map((p, i) => row(`${MEDALS[i]} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · ${tn(p.team)}</span>`, pts(p.points))).join('')
+                    : '<p class="text-xs text-slate-500">Ei suorituksia.</p>'));
+
+            awards.push(hlCard('🥅', 'Maalivahtivahti', 'Päivän parhaat ja pahimmat veskarit',
+                (bestGoalies.length || worstGoalies.length)
+                    ? bestGoalies.map(p => row(`🧤 ${esc(p.player)} <span class="text-slate-500 text-xs">${tn(p.team)}</span>`, pts(p.points))).join('') +
+                      (worstGoalies.length ? '<div class="border-t border-slate-800 my-1.5"></div>' +
+                        worstGoalies.map(p => row(`🚨 ${esc(p.player)} <span class="text-slate-500 text-xs">${tn(p.team)}</span>`, pts(p.points))).join('') : '')
+                    : '<p class="text-xs text-slate-500">Ei maalivahtipelejä tänä päivänä.</p>'));
+
+            awards.push(hlCard('🪑', 'Päivän penkkikatu', 'Penkille / IR:lle jääneet pisteet',
+                topBench.length ? topBench.map((p, i) => row(`${MEDALS[i]} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · ${tn(p.team)}</span>`,
+                    `<span class="text-amber-400 font-bold tabular-nums">+${p.points.toFixed(1)}</span>`)).join('')
+                    : '<p class="text-xs text-slate-500">Ei menetettyjä penkkipisteitä!</p>'));
+
+            document.getElementById('latestDayAwardsGrid').innerHTML = awards.join('');
+
+            // 3. Full Active & Bench Roster Breakdown per Team
+            document.getElementById('latestDayRostersGrid').innerHTML = teams.map(t => {
+                const act = (t.roster || []).filter(p => p.active);
+                const ben = (t.roster || []).filter(p => !p.active);
+                const fmtRow = (p, isBench) => `<div class="flex items-center justify-between text-xs py-0.5 ${isBench ? 'text-slate-500' : (p.points === 0 ? 'text-slate-400' : 'text-slate-200')}">
+                    <span class="truncate pr-2"><span class="inline-block w-6 text-[10px] text-slate-500">${esc(p.pos)}</span>${esc(p.player)}</span>
+                    <span class="font-mono shrink-0 ${p.points > 0 ? (isBench ? 'text-amber-400' : 'text-emerald-400') : (p.points < 0 ? 'text-rose-400' : 'text-slate-500')}">${p.points > 0 ? '+' : ''}${p.points.toFixed(1)}</span>
+                </div>`;
+                return `<div class="glass-card rounded-2xl p-4 border border-slate-800">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-2">
+                        <span class="text-sm font-bold">${tn(t.team)}</span>
+                        <span class="text-sm font-bold font-mono text-white">${t.points.toFixed(1)} p</span>
+                    </div>
+                    <div class="space-y-0.5">${act.map(p => fmtRow(p, false)).join('')}</div>
+                    ${ben.length ? `<div class="border-t border-slate-800/80 mt-2 pt-2">
+                        <div class="text-[10px] uppercase tracking-wider text-slate-500 mb-1">Penkki / IR</div>
+                        ${ben.map(p => fmtRow(p, true)).join('')}
+                    </div>` : ''}
+                </div>`;
+            }).join('');
+        }
+
         function renderDashboard() {
             renderLegendButtons();
             initChart();
@@ -560,6 +792,7 @@
             renderTradesAndActivity();
             renderFreeAgents();
             renderHighlights();
+            initLatestDayTab();
         }
 
         function getFilteredWeeks() {
