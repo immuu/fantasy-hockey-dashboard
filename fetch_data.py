@@ -7,8 +7,12 @@ from espn_api.hockey import League
 
 # Load and clean environment variables
 league_id_env = os.environ.get("ESPN_LEAGUE_ID", "1122471427").strip()
-espn_s2 = os.environ.get("ESPN_S2", "AEC3XRcxe24PSvCsPtXTTxhLMSH%2FAQlyihNkcYivzTw04RsB4k3xPqm7wQbh0EoBMDIOp8Am3c6IKhDZK%2FLsY4un4EPIg9%2B5L8uFW7ikfKDizFCVi4H0TIREd4gSOqDnGfcSGmq5n%2Fspfwx%2BJnOOn4pU209JXNNyVsO2Ig1JPWol3DxBoQzcvVK8LhTcXBIIjTLlE1vR9pQ6Cu9sxyUEjNUyU5mCNZ2jvXCfa6lDMHJrZClFIUI8KTvgEk0RBG1BqlAQ1mjz6NiPDccRDk%2B%2BCGqIjBg5Q%2FfTzj8IEc8wWw8x4QrHW9b4cHz79qIPpoVpv9Gnoh%2B0J3kGMbsmCE%2BplwFJ").strip()
-swid = os.environ.get("SWID", "{FE1A61DC-440B-4FE9-A568-B4CBED877FB2}").strip()
+espn_s2 = os.environ.get("ESPN_S2", "").strip()
+swid = os.environ.get("SWID", "").strip()
+
+if not espn_s2 or not swid:
+    print("VIRHE: ESPN_S2 tai SWID puuttuu! Aseta ne ympäristömuuttujina / GitHub-secreteinä.")
+    sys.exit(1)
 
 if not league_id_env:
     print("VIRHE: ESPN_LEAGUE_ID puuttuu tai on tyhjä!")
