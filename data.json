@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 56,
-  "last_updated": "23.11.2026 klo 15:28 UTC",
+  "last_updated": "24.11.2026 klo 02:38 UTC",
   "teams": [
     {
       "id": 1,
@@ -57,9 +57,9 @@
       "ties": 0,
       "standing": 3,
       "positions": {
-        "C": 7,
+        "C": 8,
         "LW": 4,
-        "RW": 3,
+        "RW": 2,
         "D": 7,
         "G": 2
       },
@@ -222,6 +222,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "MacKenzie Weegar",
+      "position": "Defense",
+      "proTeam": "Utah Hockey Club",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Elias Pettersson",
       "position": "Center",
       "proTeam": "Vancouver Canucks",
@@ -230,9 +238,9 @@
       "injuryStatus": "DAY_TO_DAY"
     },
     {
-      "name": "MacKenzie Weegar",
-      "position": "Defense",
-      "proTeam": "Utah Hockey Club",
+      "name": "Artemi Panarin",
+      "position": "Left Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -244,14 +252,6 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Artemi Panarin",
-      "position": "Left Wing",
-      "proTeam": "Los Angeles Kings",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Erik Karlsson",
@@ -291,7 +291,7 @@
       "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Sidney Crosby",
@@ -318,6 +318,14 @@
       "injuryStatus": "ACTIVE"
     },
     {
+      "name": "Dylan Larkin",
+      "position": "Center",
+      "proTeam": "Montréal Canadiens",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
       "name": "Nick Schmaltz",
       "position": "Center",
       "proTeam": "Utah Hockey Club",
@@ -331,7 +339,15 @@
       "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Brandt Clarke",
+      "position": "Defense",
+      "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
     },
     {
       "name": "Filip Hronek",
@@ -342,9 +358,9 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Brandt Clarke",
-      "position": "Defense",
-      "proTeam": "Los Angeles Kings",
+      "name": "Ryan O'Reilly",
+      "position": "Center",
+      "proTeam": "Nashville Predators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -358,22 +374,6 @@
       "injuryStatus": "INJURY_RESERVE"
     },
     {
-      "name": "Ryan O'Reilly",
-      "position": "Center",
-      "proTeam": "Nashville Predators",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Dylan Larkin",
-      "position": "Center",
-      "proTeam": "Montréal Canadiens",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
       "name": "Mackenzie Blackwood",
       "position": "Goalie",
       "proTeam": "Colorado Avalanche",
@@ -382,17 +382,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Noah Dobson",
-      "position": "Defense",
-      "proTeam": "Montréal Canadiens",
+      "name": "Joel Hofer",
+      "position": "Goalie",
+      "proTeam": "St. Louis Blues",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Joel Hofer",
-      "position": "Goalie",
-      "proTeam": "St. Louis Blues",
+      "name": "Noah Dobson",
+      "position": "Defense",
+      "proTeam": "Montréal Canadiens",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -414,15 +414,30 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Jacob Trouba",
-      "position": "Defense",
-      "proTeam": "San Jose Sharks",
+      "name": "Vincent Trocheck",
+      "position": "Center",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1795447707668,
+      "actions": [
+        {
+          "team": "Julmat",
+          "action": "DROPPED",
+          "player": "Zach Hyman"
+        },
+        {
+          "team": "Julmat",
+          "action": "FA ADDED",
+          "player": "Dylan Cozens"
+        }
+      ]
+    },
     {
       "date": 1795447614237,
       "actions": [
@@ -765,21 +780,6 @@
           "team": "Fridge Raiders",
           "action": "DROPPED",
           "player": "Rasmus Ristolainen"
-        }
-      ]
-    },
-    {
-      "date": 1795019284989,
-      "actions": [
-        {
-          "team": "Julmat",
-          "action": "DROPPED",
-          "player": "Ivan Barbashev"
-        },
-        {
-          "team": "Julmat",
-          "action": "FA ADDED",
-          "player": "Morgan Geekie"
         }
       ]
     }
