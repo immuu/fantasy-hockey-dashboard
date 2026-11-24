@@ -1,21 +1,21 @@
 {
   "league_name": "NHL mestarit 2026",
-  "current_week": 56,
-  "last_updated": "24.11.2026 klo 02:38 UTC",
+  "current_week": 57,
+  "last_updated": "24.11.2026 klo 12:59 UTC",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1582.7,
+      "points_for": 1601.2,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 4,
       "positions": {
         "C": 4,
-        "LW": 5,
-        "RW": 6,
+        "LW": 4,
+        "RW": 7,
         "D": 6,
         "G": 2
       },
@@ -51,7 +51,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1604.8,
+      "points_for": 1607.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -95,15 +95,15 @@
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1849.4,
+      "points_for": 1870.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 2,
       "positions": {
-        "C": 7,
-        "LW": 4,
-        "RW": 4,
+        "C": 8,
+        "LW": 5,
+        "RW": 2,
         "D": 6,
         "G": 2
       },
@@ -139,14 +139,14 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 2111.0,
+      "points_for": 2166.4,
       "wins": 0,
       "losses": 0,
       "ties": 0,
       "standing": 1,
       "positions": {
-        "C": 4,
-        "LW": 5,
+        "C": 5,
+        "LW": 4,
         "RW": 6,
         "D": 6,
         "G": 2
@@ -185,6 +185,22 @@
       "name": "Moritz Seider",
       "position": "Defense",
       "proTeam": "Detroit Red Wings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "William Nylander",
+      "position": "Right Wing",
+      "proTeam": "Toronto Maple Leafs",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Mikhail Sergachev",
+      "position": "Defense",
+      "proTeam": "Utah Hockey Club",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -262,17 +278,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Nico Hischier",
-      "position": "Center",
-      "proTeam": "New Jersey Devils",
+      "name": "Darren Raddysh",
+      "position": "Defense",
+      "proTeam": "Toronto Maple Leafs",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Darren Raddysh",
-      "position": "Defense",
-      "proTeam": "Toronto Maple Leafs",
+      "name": "Nico Hischier",
+      "position": "Center",
+      "proTeam": "New Jersey Devils",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -305,6 +321,14 @@
       "name": "Adrian Kempe",
       "position": "Right Wing",
       "proTeam": "Los Angeles Kings",
+      "total_points": 0.0,
+      "avg_points": 0,
+      "injuryStatus": "ACTIVE"
+    },
+    {
+      "name": "Drake Batherson",
+      "position": "Right Wing",
+      "proTeam": "Ottawa Senators",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
@@ -366,14 +390,6 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Connor Bedard",
-      "position": "Center",
-      "proTeam": "Chicago Blackhawks",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "INJURY_RESERVE"
-    },
-    {
       "name": "Mackenzie Blackwood",
       "position": "Goalie",
       "proTeam": "Colorado Avalanche",
@@ -404,25 +420,99 @@
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Tomas Hertl",
-      "position": "Center",
-      "proTeam": "Vegas Golden Knights",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
-    },
-    {
-      "name": "Vincent Trocheck",
-      "position": "Center",
-      "proTeam": "Utah Hockey Club",
-      "total_points": 0.0,
-      "avg_points": 0,
-      "injuryStatus": "ACTIVE"
     }
   ],
   "recent_activity": [
+    {
+      "date": 1795499134119,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "Mathieu Joseph"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Matthew Knies"
+        }
+      ]
+    },
+    {
+      "date": 1795499099222,
+      "actions": [
+        {
+          "team": "Moron Losers",
+          "action": "FA ADDED",
+          "player": "William Karlsson"
+        },
+        {
+          "team": "Moron Losers",
+          "action": "DROPPED",
+          "player": "Kent Johnson"
+        }
+      ]
+    },
+    {
+      "date": 1795497679853,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Mikhail Sergachev"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Mattias Ekholm"
+        }
+      ]
+    },
+    {
+      "date": 1795497134009,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Ivan Barbashev"
+        },
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "Drake Batherson"
+        }
+      ]
+    },
+    {
+      "date": 1795496563329,
+      "actions": [
+        {
+          "team": "Underdogs",
+          "action": "DROPPED",
+          "player": "William Nylander"
+        },
+        {
+          "team": "Underdogs",
+          "action": "FA ADDED",
+          "player": "Tomas Hertl"
+        }
+      ]
+    },
+    {
+      "date": 1795495062069,
+      "actions": [
+        {
+          "team": "Fridge Raiders",
+          "action": "FA ADDED",
+          "player": "Kasperi Kapanen"
+        },
+        {
+          "team": "Fridge Raiders",
+          "action": "DROPPED",
+          "player": "Cole Perfetti"
+        }
+      ]
+    },
     {
       "date": 1795447707668,
       "actions": [
@@ -690,96 +780,6 @@
           "team": "Julmat",
           "action": "DROPPED",
           "player": "Morgan Geekie"
-        }
-      ]
-    },
-    {
-      "date": 1795068680838,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Brandt Clarke"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Luke Hughes"
-        }
-      ]
-    },
-    {
-      "date": 1795068172439,
-      "actions": [
-        {
-          "team": "Underdogs",
-          "action": "FA ADDED",
-          "player": "Joel Eriksson Ek"
-        },
-        {
-          "team": "Underdogs",
-          "action": "DROPPED",
-          "player": "Lucas Raymond"
-        }
-      ]
-    },
-    {
-      "date": 1795067176304,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Nikolaj Ehlers"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Nico Hischier"
-        }
-      ]
-    },
-    {
-      "date": 1795067085678,
-      "actions": [
-        {
-          "team": "Moron Losers",
-          "action": "DROPPED",
-          "player": "Jesper Bratt"
-        },
-        {
-          "team": "Moron Losers",
-          "action": "FA ADDED",
-          "player": "Vasily Podkolzin"
-        }
-      ]
-    },
-    {
-      "date": 1795065570182,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "K'Andre Miller"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Brayden McNabb"
-        }
-      ]
-    },
-    {
-      "date": 1795065313690,
-      "actions": [
-        {
-          "team": "Fridge Raiders",
-          "action": "FA ADDED",
-          "player": "Sean Walker"
-        },
-        {
-          "team": "Fridge Raiders",
-          "action": "DROPPED",
-          "player": "Rasmus Ristolainen"
         }
       ]
     }
