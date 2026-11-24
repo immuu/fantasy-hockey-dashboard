@@ -355,6 +355,24 @@
             </div>
         </div>
 
+
+        <!-- HIGHLIGHTS SECTION -->
+        <section id="highlightsSection" class="space-y-4 hidden">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl">🏆</span>
+                <div>
+                    <h2 class="text-lg font-bold text-white">GM Challenge – Kohokohdat &amp; Hupitilastot</h2>
+                    <p class="text-xs text-slate-400" id="highlightsSubtitle"></p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4" id="highlightsGrid"></div>
+            <div class="glass-card rounded-2xl p-5 border border-slate-800">
+                <h3 class="text-base font-bold text-white mb-1">📉 Johtajan etumatka</h3>
+                <p class="text-xs text-slate-400 mb-3" id="leadSummary"></p>
+                <div class="relative h-56"><canvas id="gapChart"></canvas></div>
+            </div>
+        </section>
+
     </main>
 
     <script>
@@ -400,7 +418,8 @@
                 current_week: data.current_week || 1,
                 teams: {},
                 free_agents: data.free_agents || [],
-                recent_activity: data.recent_activity || []
+                recent_activity: data.recent_activity || [],
+                highlights: data.highlights || null
             };
 
             teams.forEach((t, i) => {
@@ -432,6 +451,106 @@
             });
         }
 
+
+        // ---------- HIGHLIGHTS ----------
+        let gapChartInstance = null;
+        function esc(x) { return String(x).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+        function teamColor(name) {
+            const t = Object.values(leagueData.teams || {}).find(t => t.name === name);
+            return t ? t.color : '#94a3b8';
+        }
+        function tn(name) { return `<span class="font-semibold" style="color:${teamColor(name)}">${esc(name)}</span>`; }
+        function fdate(iso) { const d = new Date(iso + 'T12:00:00'); return d.toLocaleDateString('fi-FI', { day: 'numeric', month: 'numeric' }); }
+        function pts(v) { const c = v < 0 ? 'text-rose-400' : 'text-emerald-400'; return `<span class="${c} font-bold tabular-nums">${v > 0 ? '+' : ''}${(+v).toFixed(1)}</span>`; }
+        function hlCard(icon, title, subtitle, body) {
+            return `<div class="glass-card rounded-2xl p-5 border border-slate-800">
+                <div class="mb-3"><h3 class="text-base font-bold text-white">${icon} ${title}</h3>
+                ${subtitle ? `<p class="text-xs text-slate-400">${subtitle}</p>` : ''}</div>
+                <div class="space-y-2 text-sm text-slate-200">${body}</div></div>`;
+        }
+        function row(left, right) { return `<div class="flex items-center justify-between gap-3"><div class="min-w-0">${left}</div><div class="shrink-0">${right}</div></div>`; }
+        const MEDALS = ['🥇', '🥈', '🥉', '4.', '5.'];
+
+        function renderHighlights() {
+            const h = leagueData.highlights;
+            const sec = document.getElementById('highlightsSection');
+            if (!h || !h.best_days) { sec.classList.add('hidden'); return; }
+            sec.classList.remove('hidden');
+            document.getElementById('highlightsSubtitle').innerText =
+                `Laskettu takautuvasti ${h.days} päivältä (${fdate(h.first_date)} – ${fdate(h.last_date)})`;
+            const cards = [];
+
+            cards.push(hlCard('🚀', 'Parhaat päivät', 'Eniten pisteitä yhdessä päivässä',
+                h.best_days.map((d, i) => row(`${MEDALS[i]} ${tn(d.team)} <span class="text-slate-500 text-xs">${fdate(d.date)} (pv ${d.day})</span>`, pts(d.points))).join('')));
+
+            cards.push(hlCard('💀', 'Pahimmat päivät', 'Vähiten (tai eniten miinusta) yhdessä päivässä',
+                h.worst_days.map((d, i) => row(`${MEDALS[i]} ${tn(d.team)} <span class="text-slate-500 text-xs">${fdate(d.date)} (pv ${d.day})</span>`, pts(d.points))).join('')));
+
+            cards.push(hlCard('🎢', 'Tasaisuus', 'Keskihajonta päivittäisissä pisteissä (pienin = tasaisin)',
+                h.consistency.map((c, i) => row(`${tn(c.team)} <span class="text-slate-500 text-xs">ka ${c.avg} · 50+ pv: ${c.days_over_50}</span>`,
+                    `<span class="text-ice-400 font-bold tabular-nums">σ ${c.std}</span>`)).join('') +
+                `<p class="text-xs text-slate-500 pt-1">Tasaisin: ${esc(h.consistency[0].team)} · Vuoristorata: ${esc(h.consistency[h.consistency.length - 1].team)}</p>`));
+
+            cards.push(hlCard('🔥', 'Putket', 'Päiviä peräkkäin oman keskiarvon ylä-/alapuolella',
+                h.streaks.map(s => row(`${tn(s.team)} <span class="text-slate-500 text-xs">nyt: ${s.current_type === 'up' ? '🔥' : '🧊'} ${s.current_len} pv</span>`,
+                    `<span class="text-xs"><span class="text-emerald-400">🔥 ${s.longest_hot}</span> · <span class="text-sky-400">🧊 ${s.longest_cold}</span></span>`)).join('')));
+
+            cards.push(hlCard('⭐', 'Pelaajien päivän ennätykset', 'Parhaat ja pahimmat yksittäiset päivät (aktiivikokoonpano)',
+                h.player_best_days.map((d, i) => row(`${MEDALS[i]} ${esc(d.player)} <span class="text-slate-500 text-xs">${esc(d.pos)} · ${tn(d.team)} · ${fdate(d.date)}</span>`, pts(d.points))).join('') +
+                '<div class="border-t border-slate-800 my-2"></div>' +
+                h.player_worst_days.map(d => row(`💩 ${esc(d.player)} <span class="text-slate-500 text-xs">${esc(d.pos)} · ${tn(d.team)} · ${fdate(d.date)}</span>`, pts(d.points))).join('')));
+
+            cards.push(hlCard('👑', 'MVP & Floppi joukkueittain', 'Eniten pisteitä / vähiten pisteitä aktiivikokoonpanossa',
+                h.mvp_bust.map(m => `<div>${tn(m.team)}
+                    <div class="flex justify-between text-xs mt-0.5"><span>👑 ${esc(m.mvp.player)} <span class="text-slate-500">(${esc(m.mvp.pos)})</span></span>${pts(m.mvp.points)}</div>
+                    <div class="flex justify-between text-xs"><span>🤡 ${esc(m.bust.player)} <span class="text-slate-500">(${esc(m.bust.pos)}, ${m.bust.days_active} pv)</span></span>${pts(m.bust.points)}</div></div>`).join('')));
+
+            cards.push(hlCard('🪑', 'Penkkikatu', 'Penkillä / IR:llä menetetyt pisteet',
+                h.bench_regret.map((b, i) => row(`${MEDALS[i]} ${tn(b.team)}` + (b.worst ? `<div class="text-xs text-slate-500">Pahin: ${esc(b.worst.player)} ${fdate(b.worst.date)} (+${b.worst.points})</div>` : ''),
+                    `<span class="text-amber-400 font-bold tabular-nums">${b.points_on_bench}</span>`)).join('')));
+
+            cards.push(hlCard('📅', 'Päivävoitot', 'Kuinka monta päivää joukkue on ollut päivän paras / viimeinen',
+                h.daily_wins.map((d, i) => row(`${MEDALS[i]} ${tn(d.team)}`,
+                    `<span class="text-xs"><span class="text-emerald-400">🏅 ${d.days_won}</span> · <span class="text-rose-400">🐌 ${d.days_last}</span></span>`)).join('') +
+                (h.latest_daily_winner ? `<p class="text-xs text-slate-500 pt-1">Viimeisin päivän voittaja: ${tn(h.latest_daily_winner.team)} (${fdate(h.latest_daily_winner.date)}, ${h.latest_daily_winner.points} p)</p>` : '')));
+
+            cards.push(hlCard('🔄', 'Johtajanvaihdokset', 'Kuka on johtanut ja milloin',
+                h.lead_changes.map(c => row(`${tn(c.leader)}`, `<span class="text-xs text-slate-400">alkaen ${fdate(c.date)} (pv ${c.day})</span>`)).join('') +
+                `<p class="text-xs text-slate-500 pt-1">Suurin etumatka: ${tn(h.biggest_lead.team)} ${h.biggest_lead.gap} p (${fdate(h.biggest_lead.date)})</p>`));
+
+            cards.push(hlCard('🕵️', 'Parhaat poiminnat', 'Vapailta pelaajilta haetut pelaajat – pisteet uudessa joukkueessa',
+                h.best_pickups.map((p, i) => row(`${MEDALS[i]} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · ${tn(p.team)} · ${fdate(p.date)}</span>`, pts(p.points))).join('')));
+
+            cards.push(hlCard('🤦', 'Pahimmat pudotukset', 'Pudotettu pelaaja, joka teki pisteitä muualla pudotuksen jälkeen',
+                h.worst_drops.map((p, i) => row(`${MEDALS[i]} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · pudotti ${tn(p.team)} ${fdate(p.date)}</span>`, pts(p.points_after))).join('')));
+
+            cards.push(hlCard('🔁', 'Siirtoaktiivisuus', 'Lisäykset ja pudotukset kauden aikana',
+                h.transactions.map((t, i) => row(`${MEDALS[i]} ${tn(t.team)}`, `<span class="text-xs"><span class="text-emerald-400">+${t.adds}</span> · <span class="text-rose-400">−${t.drops}</span></span>`)).join('')));
+
+            document.getElementById('highlightsGrid').innerHTML = cards.join('');
+            renderGapChart(h);
+        }
+
+        function renderGapChart(h) {
+            const ctx = document.getElementById('gapChart').getContext('2d');
+            if (gapChartInstance) gapChartInstance.destroy();
+            const labels = h.gap_series.map((_, i) => `Pv ${i + 1}`);
+            document.getElementById('leadSummary').innerText =
+                `Ero 1. ja viimeisen välillä päivittäin. Nyt johtaa ${h.leader_series[h.leader_series.length - 1]}.`;
+            gapChartInstance = new Chart(ctx, {
+                type: 'line',
+                data: { labels, datasets: [{ label: 'Ero 1. ja viimeisen välillä (p)', data: h.gap_series,
+                    borderColor: '#38bdf8', backgroundColor: '#38bdf820', fill: true, tension: 0.25, pointRadius: 0, borderWidth: 2.5 }] },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false },
+                        tooltip: { callbacks: { afterLabel: ctx => `Johtaja: ${h.leader_series[ctx.dataIndex]}` } } },
+                    scales: { x: { ticks: { color: '#94a3b8', maxTicksLimit: 12 }, grid: { display: false } },
+                        y: { ticks: { color: '#94a3b8' }, grid: { color: '#1e293b' } } }
+                }
+            });
+        }
+
         function renderDashboard() {
             renderLegendButtons();
             initChart();
@@ -440,6 +559,7 @@
             renderPowerRankings();
             renderTradesAndActivity();
             renderFreeAgents();
+            renderHighlights();
         }
 
         function getFilteredWeeks() {

@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 57,
-  "last_updated": "24.11.2026 klo 17:56 UTC",
+  "last_updated": "24.11.2026 klo 18:09 UTC",
   "teams": [
     {
       "id": 1,
@@ -1255,5 +1255,582 @@
         }
       ]
     }
-  ]
+  ],
+  "highlights": {
+    "days": 57,
+    "first_date": "2026-09-29",
+    "last_date": "2026-11-24",
+    "best_days": [
+      {
+        "team": "Moron Losers",
+        "day": 50,
+        "date": "2026-11-17",
+        "points": 117.9
+      },
+      {
+        "team": "Moron Losers",
+        "day": 5,
+        "date": "2026-10-03",
+        "points": 101.9
+      },
+      {
+        "team": "Julmat",
+        "day": 19,
+        "date": "2026-10-17",
+        "points": 97.7
+      }
+    ],
+    "worst_days": [
+      {
+        "team": "Julmat",
+        "day": 18,
+        "date": "2026-10-16",
+        "points": -2.5
+      },
+      {
+        "team": "Fridge Raiders",
+        "day": 23,
+        "date": "2026-10-21",
+        "points": -2.3
+      },
+      {
+        "team": "Fridge Raiders",
+        "day": 49,
+        "date": "2026-11-16",
+        "points": -2.2
+      }
+    ],
+    "consistency": [
+      {
+        "team": "Fridge Raiders",
+        "avg": 28.1,
+        "std": 21.5,
+        "best": 71.1,
+        "worst": -2.3,
+        "days_over_50": 12
+      },
+      {
+        "team": "Underdogs",
+        "avg": 32.8,
+        "std": 22.6,
+        "best": 87.7,
+        "worst": 0.0,
+        "days_over_50": 13
+      },
+      {
+        "team": "Julmat",
+        "avg": 28.2,
+        "std": 23.4,
+        "best": 97.7,
+        "worst": -2.5,
+        "days_over_50": 11
+      },
+      {
+        "team": "Moron Losers",
+        "avg": 38.0,
+        "std": 27.4,
+        "best": 117.9,
+        "worst": 0.0,
+        "days_over_50": 20
+      }
+    ],
+    "streaks": [
+      {
+        "team": "Fridge Raiders",
+        "longest_hot": 4,
+        "longest_cold": 4,
+        "current_type": "down",
+        "current_len": 3
+      },
+      {
+        "team": "Julmat",
+        "longest_hot": 3,
+        "longest_cold": 3,
+        "current_type": "down",
+        "current_len": 2
+      },
+      {
+        "team": "Underdogs",
+        "longest_hot": 3,
+        "longest_cold": 6,
+        "current_type": "down",
+        "current_len": 3
+      },
+      {
+        "team": "Moron Losers",
+        "longest_hot": 4,
+        "longest_cold": 4,
+        "current_type": "down",
+        "current_len": 1
+      }
+    ],
+    "player_best_days": [
+      {
+        "player": "Elias Lindholm",
+        "pos": "C",
+        "team": "Fridge Raiders",
+        "day": 54,
+        "date": "2026-11-21",
+        "points": 24.6
+      },
+      {
+        "player": "Evan Bouchard",
+        "pos": "D",
+        "team": "Moron Losers",
+        "day": 1,
+        "date": "2026-09-29",
+        "points": 23.4
+      },
+      {
+        "player": "Brandon Hagel",
+        "pos": "LW",
+        "team": "Julmat",
+        "day": 12,
+        "date": "2026-10-10",
+        "points": 23.3
+      },
+      {
+        "player": "Tage Thompson",
+        "pos": "C",
+        "team": "Underdogs",
+        "day": 31,
+        "date": "2026-10-29",
+        "points": 22.4
+      },
+      {
+        "player": "Kirill Kaprizov",
+        "pos": "LW",
+        "team": "Moron Losers",
+        "day": 12,
+        "date": "2026-10-10",
+        "points": 21.3
+      }
+    ],
+    "player_worst_days": [
+      {
+        "player": "Vasily Podkolzin",
+        "pos": "RW",
+        "team": "Moron Losers",
+        "day": 38,
+        "date": "2026-11-05",
+        "points": -13.1
+      },
+      {
+        "player": "Mattias Samuelsson",
+        "pos": "D",
+        "team": "Julmat",
+        "day": 23,
+        "date": "2026-10-21",
+        "points": -9.0
+      },
+      {
+        "player": "Brady Tkachuk",
+        "pos": "LW",
+        "team": "Julmat",
+        "day": 41,
+        "date": "2026-11-08",
+        "points": -8.4
+      },
+      {
+        "player": "Jake Oettinger",
+        "pos": "G",
+        "team": "Julmat",
+        "day": 45,
+        "date": "2026-11-12",
+        "points": -7.8
+      },
+      {
+        "player": "Karel Vejmelka",
+        "pos": "G",
+        "team": "Underdogs",
+        "day": 19,
+        "date": "2026-10-17",
+        "points": -7.6
+      }
+    ],
+    "mvp_bust": [
+      {
+        "team": "Fridge Raiders",
+        "mvp": {
+          "player": "Kyle Connor",
+          "pos": "LW",
+          "points": 121.1,
+          "days_active": 39
+        },
+        "bust": {
+          "player": "Adin Hill",
+          "pos": "G",
+          "points": -7.0,
+          "days_active": 1
+        }
+      },
+      {
+        "team": "Julmat",
+        "mvp": {
+          "player": "Connor McDavid",
+          "pos": "C",
+          "points": 189.4,
+          "days_active": 55
+        },
+        "bust": {
+          "player": "Mattias Samuelsson",
+          "pos": "D",
+          "points": -9.0,
+          "days_active": 1
+        }
+      },
+      {
+        "team": "Underdogs",
+        "mvp": {
+          "player": "Tim Stutzle",
+          "pos": "C",
+          "points": 131.2,
+          "days_active": 46
+        },
+        "bust": {
+          "player": "Brock Nelson",
+          "pos": "C",
+          "points": -3.0,
+          "days_active": 3
+        }
+      },
+      {
+        "team": "Moron Losers",
+        "mvp": {
+          "player": "Leon Draisaitl",
+          "pos": "C",
+          "points": 187.3,
+          "days_active": 55
+        },
+        "bust": {
+          "player": "Dennis Hildeby",
+          "pos": "G",
+          "points": -4.4,
+          "days_active": 1
+        }
+      }
+    ],
+    "bench_regret": [
+      {
+        "team": "Julmat",
+        "points_on_bench": 95.4,
+        "worst": {
+          "player": "Brady Tkachuk",
+          "day": 15,
+          "date": "2026-10-13",
+          "points": 17.9
+        }
+      },
+      {
+        "team": "Fridge Raiders",
+        "points_on_bench": 93.5,
+        "worst": {
+          "player": "Mikko Rantanen",
+          "day": 50,
+          "date": "2026-11-17",
+          "points": 13.0
+        }
+      },
+      {
+        "team": "Moron Losers",
+        "points_on_bench": 85.1,
+        "worst": {
+          "player": "Andrei Svechnikov",
+          "day": 15,
+          "date": "2026-10-13",
+          "points": 11.7
+        }
+      },
+      {
+        "team": "Underdogs",
+        "points_on_bench": 72.7,
+        "worst": {
+          "player": "William Nylander",
+          "day": 12,
+          "date": "2026-10-10",
+          "points": 15.0
+        }
+      }
+    ],
+    "daily_wins": [
+      {
+        "team": "Moron Losers",
+        "days_won": 20,
+        "days_last": 8
+      },
+      {
+        "team": "Underdogs",
+        "days_won": 19,
+        "days_last": 12
+      },
+      {
+        "team": "Fridge Raiders",
+        "days_won": 10,
+        "days_last": 19
+      },
+      {
+        "team": "Julmat",
+        "days_won": 6,
+        "days_last": 16
+      }
+    ],
+    "latest_daily_winner": {
+      "team": "Moron Losers",
+      "day": 56,
+      "date": "2026-11-23",
+      "points": 55.2
+    },
+    "lead_changes": [
+      {
+        "day": 1,
+        "date": "2026-09-29",
+        "leader": "Moron Losers"
+      },
+      {
+        "day": 8,
+        "date": "2026-10-06",
+        "leader": "Underdogs"
+      },
+      {
+        "day": 9,
+        "date": "2026-10-07",
+        "leader": "Moron Losers"
+      }
+    ],
+    "biggest_lead": {
+      "gap": 339.8,
+      "team": "Moron Losers",
+      "day": 50,
+      "date": "2026-11-17"
+    },
+    "gap_series": [
+      29.8,
+      34.4,
+      73.9,
+      56.7,
+      99.3,
+      87.2,
+      82.8,
+      103.4,
+      105.2,
+      101.2,
+      104.9,
+      145.7,
+      168.0,
+      180.9,
+      202.4,
+      199.4,
+      197.0,
+      199.5,
+      196.6,
+      204.4,
+      217.8,
+      233.6,
+      239.5,
+      246.8,
+      249.8,
+      279.5,
+      275.3,
+      290.1,
+      280.8,
+      296.1,
+      284.4,
+      264.0,
+      249.5,
+      313.2,
+      286.6,
+      302.8,
+      285.6,
+      302.0,
+      341.2,
+      377.0,
+      388.1,
+      405.1,
+      389.9,
+      416.5,
+      420.8,
+      410.4,
+      395.9,
+      431.1,
+      438.3,
+      525.5,
+      525.2,
+      518.4,
+      518.4,
+      517.9,
+      528.5,
+      565.2,
+      565.2
+    ],
+    "leader_series": [
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Underdogs",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers",
+      "Moron Losers"
+    ],
+    "best_pickups": [
+      {
+        "player": "Cutter Gauthier",
+        "pos": "LW",
+        "team": "Moron Losers",
+        "day": 21,
+        "date": "2026-10-19",
+        "points": 111.5
+      },
+      {
+        "player": "Artturi Lehkonen",
+        "pos": "LW",
+        "team": "Fridge Raiders",
+        "day": 4,
+        "date": "2026-10-02",
+        "points": 86.8
+      },
+      {
+        "player": "Steven Stamkos",
+        "pos": "C",
+        "team": "Julmat",
+        "day": 3,
+        "date": "2026-10-01",
+        "points": 84.0
+      },
+      {
+        "player": "Seth Jones",
+        "pos": "D",
+        "team": "Fridge Raiders",
+        "day": 17,
+        "date": "2026-10-15",
+        "points": 70.3
+      },
+      {
+        "player": "Adam Fox",
+        "pos": "D",
+        "team": "Underdogs",
+        "day": 10,
+        "date": "2026-10-08",
+        "points": 69.3
+      }
+    ],
+    "worst_drops": [
+      {
+        "player": "Cutter Gauthier",
+        "pos": "LW",
+        "team": "Julmat",
+        "day": 16,
+        "date": "2026-10-14",
+        "points_after": 111.5,
+        "points_with_team": 12.4
+      },
+      {
+        "player": "Adam Fox",
+        "pos": "D",
+        "team": "Fridge Raiders",
+        "day": 2,
+        "date": "2026-09-30",
+        "points_after": 69.3,
+        "points_with_team": -1.5
+      },
+      {
+        "player": "Wyatt Johnston",
+        "pos": "C",
+        "team": "Julmat",
+        "day": 21,
+        "date": "2026-10-19",
+        "points_after": 61.5,
+        "points_with_team": 17.3
+      },
+      {
+        "player": "Jake Sanderson",
+        "pos": "D",
+        "team": "Fridge Raiders",
+        "day": 7,
+        "date": "2026-10-05",
+        "points_after": 44.7,
+        "points_with_team": 0.7
+      },
+      {
+        "player": "Andrei Svechnikov",
+        "pos": "LW",
+        "team": "Moron Losers",
+        "day": 32,
+        "date": "2026-10-30",
+        "points_after": 44.3,
+        "points_with_team": 10.4
+      }
+    ],
+    "transactions": [
+      {
+        "team": "Moron Losers",
+        "adds": 64,
+        "drops": 64
+      },
+      {
+        "team": "Underdogs",
+        "adds": 56,
+        "drops": 55
+      },
+      {
+        "team": "Fridge Raiders",
+        "adds": 49,
+        "drops": 49
+      },
+      {
+        "team": "Julmat",
+        "adds": 38,
+        "drops": 38
+      }
+    ]
+  }
 }
