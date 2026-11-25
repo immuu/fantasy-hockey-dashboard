@@ -78,17 +78,42 @@ for period in range(1, last_period + 1):
             player = entry['playerPoolEntry']['player']
             active = entry.get('lineupSlotId') not in BENCH_SLOTS
             pts = 0.0
+            stat_map = {}
             for st in player.get('stats', []):
                 if (st.get('statSplitTypeId') == 5 and st.get('scoringPeriodId') == period
                         and st.get('seasonId') == YEAR_USED):
                     pts += st.get('appliedTotal', 0.0)
+                    raw_stats = st.get('stats', {})
+                    for sid, pval in st.get('appliedStats', {}).items():
+                        if pval:
+                            sname = c.STATS_MAP.get(str(sid), str(sid))
+                            rval = raw_stats.get(str(sid), 0)
+                            cur = stat_map.get(sname, [0.0, 0.0])
+                            cur[0] += rval
+                            cur[1] += pval
+                            stat_map[sname] = cur
             if active:
                 s += pts
             rec = records.setdefault((raw_team['id'], player['id']), {
                 "name": player.get('fullName', 'Unknown'),
                 "pos": POS_MAP.get(player.get('defaultPositionId'), '?'),
-                "days": {}})
+                "days": {},
+                "stats": {}})
             rec["days"][period] = (round(pts, 1), active)
+            if stat_map:
+                order = {k: i for i, k in enumerate(
+                    ['G', 'A', '+/-', 'PPG', 'PPA', 'SHG', 'SHA', 'GWG', 'HAT',
+                     'SOG', 'HIT', 'BLK', 'FOW', 'FOL', 'PIM', 'W', 'OTL', 'SO', 'SV', 'GA']
+                )}
+                rec["stats"][period] = [
+                    {
+                        "s": k,
+                        "v": int(round(v[0])) if abs(v[0] - round(v[0])) < 1e-6 else round(v[0], 1),
+                        "p": round(v[1], 1)
+                    }
+                    for k, v in sorted(stat_map.items(), key=lambda kv: order.get(kv[0], 99))
+                    if round(v[1], 1) != 0
+                ]
         day_totals[raw_team['id']] = round(s, 1)
     for tid in daily_points:
         daily_points[tid].append(day_totals.get(tid, 0.0))
@@ -279,7 +304,8 @@ def build_recent_days(n=7):
                     "player": rec["name"],
                     "pos": rec["pos"],
                     "points": pts,
-                    "active": active
+                    "active": active,
+                    "stats": rec.get("stats", {}).get(p, [])
                 })
             roster.sort(key=lambda x: (not x["active"], -x["points"], x["player"]))
             teams_list.append({
