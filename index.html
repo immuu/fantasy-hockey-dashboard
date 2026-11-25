@@ -374,6 +374,7 @@
                     <p class="text-xs text-slate-400" id="highlightsSubtitle"></p>
                 </div>
             </div>
+            <div id="newRecordsBanner" class="hidden glass-card rounded-2xl p-4 border border-amber-500/40 bg-amber-500/10 text-sm text-slate-100"></div>
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4" id="highlightsGrid"></div>
             <div class="glass-card rounded-2xl p-5 border border-slate-800">
                 <h3 class="text-base font-bold text-white mb-1">📉 Johtajan etumatka</h3>
@@ -509,14 +510,48 @@
         function tn(name) { return `<span class="font-semibold" style="color:${teamColor(name)}">${esc(name)}</span>`; }
         function fdate(iso) { const d = new Date(iso + 'T12:00:00'); return d.toLocaleDateString('fi-FI', { day: 'numeric', month: 'numeric' }); }
         function pts(v) { const c = v < 0 ? 'text-rose-400' : 'text-emerald-400'; return `<span class="${c} font-bold tabular-nums">${v > 0 ? '+' : ''}${(+v).toFixed(1)}</span>`; }
-        function hlCard(icon, title, subtitle, body) {
-            return `<div class="glass-card rounded-2xl p-5 border border-slate-800">
+        function hlCard(icon, title, subtitle, body, highlightBorder = false) {
+            const borderCls = highlightBorder ? 'border-amber-500/50 ring-1 ring-amber-500/20' : 'border-slate-800';
+            return `<div class="glass-card rounded-2xl p-5 border ${borderCls}">
                 <div class="mb-3"><h3 class="text-base font-bold text-white">${icon} ${title}</h3>
                 ${subtitle ? `<p class="text-xs text-slate-400">${subtitle}</p>` : ''}</div>
                 <div class="space-y-2 text-sm text-slate-200">${body}</div></div>`;
         }
         function row(left, right) { return `<div class="flex items-center justify-between gap-3"><div class="min-w-0">${left}</div><div class="shrink-0">${right}</div></div>`; }
         const MEDALS = ['🥇', '🥈', '🥉', '4.', '5.'];
+
+        function getLatestScoredDay() {
+            const rdays = leagueData.recent_days || [];
+            for (let i = rdays.length - 1; i >= 0; i--) {
+                if (rdays[i].has_scores) return rdays[i].day;
+            }
+            const h = leagueData.highlights;
+            return (h && h.latest_daily_winner && h.latest_daily_winner.day) || (h && h.days) || 0;
+        }
+
+        function getNewRecordEvents(h, latestDay) {
+            if (!h || !latestDay) return [];
+            const ev = [];
+            (h.best_days || []).forEach((d, i) => {
+                if (d.day === latestDay) ev.push(`${i === 0 ? '🚨 <strong>Uusi ennätys!</strong>' : '✨'} ${tn(d.team)} sijalle #${i + 1} tilastossa <em>Parhaat päivät</em> (${pts(d.points)} p)`);
+            });
+            (h.worst_days || []).forEach((d, i) => {
+                if (d.day === latestDay) ev.push(`${i === 0 ? '🚨 <strong>Uusi ennätys!</strong>' : '✨'} ${tn(d.team)} sijalle #${i + 1} tilastossa <em>Pahimmat päivät</em> (${pts(d.points)} p)`);
+            });
+            (h.player_best_days || []).forEach((d, i) => {
+                if (d.day === latestDay) ev.push(`${i === 0 ? '🚨 <strong>Uusi ennätys!</strong>' : '✨'} <strong>${esc(d.player)}</strong> (${tn(d.team)}) sijalle #${i + 1} tilastossa <em>Pelaajien parhaat päivät</em> (${pts(d.points)} p)`);
+            });
+            (h.player_worst_days || []).forEach((d, i) => {
+                if (d.day === latestDay) ev.push(`${i === 0 ? '🚨 <strong>Uusi ennätys!</strong>' : '✨'} <strong>${esc(d.player)}</strong> (${tn(d.team)}) sijalle #${i + 1} tilastossa <em>Pelaajien pahimmat päivät</em> (${pts(d.points)} p)`);
+            });
+            if (h.biggest_lead && h.biggest_lead.day === latestDay) {
+                ev.push(`🚨 <strong>Uusi ennätys!</strong> ${tn(h.biggest_lead.team)} teki kauden suurimman etumatkan (${h.biggest_lead.gap} p)`);
+            }
+            (h.lead_changes || []).forEach(c => {
+                if (c.day === latestDay) ev.push(`🔄 <strong>Johtaja vaihtui!</strong> ${tn(c.leader)} nousi kärkeen`);
+            });
+            return ev;
+        }
 
         function renderHighlights() {
             const h = leagueData.highlights;
@@ -525,13 +560,33 @@
             sec.classList.remove('hidden');
             document.getElementById('highlightsSubtitle').innerText =
                 `Laskettu takautuvasti ${h.days} päivältä (${fdate(h.first_date)} – ${fdate(h.last_date)})`;
+
+            const latestDay = getLatestScoredDay();
+            const badge = (day, isLeader) => day === latestDay
+                ? (isLeader
+                    ? '<span class="ml-1.5 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 animate-pulse">UUSI ENNÄTYS!</span>'
+                    : '<span class="ml-1.5 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-sky-500/20 text-sky-300 border border-sky-500/40">UUSI!</span>')
+                : '';
+
+            const recEvents = getNewRecordEvents(h, latestDay);
+            const bannerEl = document.getElementById('newRecordsBanner');
+            if (recEvents.length) {
+                bannerEl.classList.remove('hidden');
+                bannerEl.innerHTML = `<div class="font-bold text-amber-300 mb-1">🚨 Uusia ennätyksiä / huippusuorituksia (Pelipäivä ${latestDay}):</div>
+                    <ul class="space-y-1 text-xs sm:text-sm">${recEvents.map(e => `<li>${e}</li>`).join('')}</ul>`;
+            } else {
+                bannerEl.classList.add('hidden');
+            }
+
             const cards = [];
 
             cards.push(hlCard('🚀', 'Parhaat päivät', 'Eniten pisteitä yhdessä päivässä',
-                h.best_days.map((d, i) => row(`${MEDALS[i]} ${tn(d.team)} <span class="text-slate-500 text-xs">${fdate(d.date)} (pv ${d.day})</span>`, pts(d.points))).join('')));
+                h.best_days.map((d, i) => row(`${MEDALS[i]} ${tn(d.team)} <span class="text-slate-500 text-xs">${fdate(d.date)} (pv ${d.day})</span>${badge(d.day, i === 0)}`, pts(d.points))).join(''),
+                h.best_days.some(d => d.day === latestDay)));
 
             cards.push(hlCard('💀', 'Pahimmat päivät', 'Vähiten (tai eniten miinusta) yhdessä päivässä',
-                h.worst_days.map((d, i) => row(`${MEDALS[i]} ${tn(d.team)} <span class="text-slate-500 text-xs">${fdate(d.date)} (pv ${d.day})</span>`, pts(d.points))).join('')));
+                h.worst_days.map((d, i) => row(`${MEDALS[i]} ${tn(d.team)} <span class="text-slate-500 text-xs">${fdate(d.date)} (pv ${d.day})</span>${badge(d.day, i === 0)}`, pts(d.points))).join(''),
+                h.worst_days.some(d => d.day === latestDay)));
 
             cards.push(hlCard('🎢', 'Tasaisuus', 'Keskihajonta päivittäisissä pisteissä (pienin = tasaisin)',
                 h.consistency.map((c, i) => row(`${tn(c.team)} <span class="text-slate-500 text-xs">ka ${c.avg} · 50+ pv: ${c.days_over_50}</span>`,
@@ -543,9 +598,10 @@
                     `<span class="text-xs"><span class="text-emerald-400">🔥 ${s.longest_hot}</span> · <span class="text-sky-400">🧊 ${s.longest_cold}</span></span>`)).join('')));
 
             cards.push(hlCard('⭐', 'Pelaajien päivän ennätykset', 'Parhaat ja pahimmat yksittäiset päivät (aktiivikokoonpano)',
-                h.player_best_days.map((d, i) => row(`${MEDALS[i]} ${esc(d.player)} <span class="text-slate-500 text-xs">${esc(d.pos)} · ${tn(d.team)} · ${fdate(d.date)}</span>`, pts(d.points))).join('') +
+                h.player_best_days.map((d, i) => row(`${MEDALS[i]} ${esc(d.player)} <span class="text-slate-500 text-xs">${esc(d.pos)} · ${tn(d.team)} · ${fdate(d.date)}</span>${badge(d.day, i === 0)}`, pts(d.points))).join('') +
                 '<div class="border-t border-slate-800 my-2"></div>' +
-                h.player_worst_days.map(d => row(`💩 ${esc(d.player)} <span class="text-slate-500 text-xs">${esc(d.pos)} · ${tn(d.team)} · ${fdate(d.date)}</span>`, pts(d.points))).join('')));
+                h.player_worst_days.map((d, i) => row(`💩 ${esc(d.player)} <span class="text-slate-500 text-xs">${esc(d.pos)} · ${tn(d.team)} · ${fdate(d.date)}</span>${badge(d.day, i === 0)}`, pts(d.points))).join(''),
+                h.player_best_days.some(d => d.day === latestDay) || h.player_worst_days.some(d => d.day === latestDay)));
 
             cards.push(hlCard('👑', 'MVP & Floppi joukkueittain', 'Eniten pisteitä / vähiten pisteitä aktiivikokoonpanossa',
                 h.mvp_bust.map(m => `<div>${tn(m.team)}
@@ -553,8 +609,9 @@
                     <div class="flex justify-between text-xs"><span>🤡 ${esc(m.bust.player)} <span class="text-slate-500">(${esc(m.bust.pos)}, ${m.bust.days_active} pv)</span></span>${pts(m.bust.points)}</div></div>`).join('')));
 
             cards.push(hlCard('🪑', 'Penkkikatu', 'Penkillä / IR:llä menetetyt pisteet',
-                h.bench_regret.map((b, i) => row(`${MEDALS[i]} ${tn(b.team)}` + (b.worst ? `<div class="text-xs text-slate-500">Pahin: ${esc(b.worst.player)} ${fdate(b.worst.date)} (+${b.worst.points})</div>` : ''),
-                    `<span class="text-amber-400 font-bold tabular-nums">${b.points_on_bench}</span>`)).join('')));
+                h.bench_regret.map((b, i) => row(`${MEDALS[i]} ${tn(b.team)}` + (b.worst ? `<div class="text-xs text-slate-500">Pahin: ${esc(b.worst.player)} ${fdate(b.worst.date)} (+${b.worst.points})${badge(b.worst.day, false)}</div>` : ''),
+                    `<span class="text-amber-400 font-bold tabular-nums">${b.points_on_bench}</span>`)).join(''),
+                h.bench_regret.some(b => b.worst && b.worst.day === latestDay)));
 
             cards.push(hlCard('📅', 'Päivävoitot', 'Kuinka monta päivää joukkue on ollut päivän paras / viimeinen',
                 h.daily_wins.map((d, i) => row(`${MEDALS[i]} ${tn(d.team)}`,
@@ -562,8 +619,9 @@
                 (h.latest_daily_winner ? `<p class="text-xs text-slate-500 pt-1">Viimeisin päivän voittaja: ${tn(h.latest_daily_winner.team)} (${fdate(h.latest_daily_winner.date)}, ${h.latest_daily_winner.points} p)</p>` : '')));
 
             cards.push(hlCard('🔄', 'Johtajanvaihdokset', 'Kuka on johtanut ja milloin',
-                h.lead_changes.map(c => row(`${tn(c.leader)}`, `<span class="text-xs text-slate-400">alkaen ${fdate(c.date)} (pv ${c.day})</span>`)).join('') +
-                `<p class="text-xs text-slate-500 pt-1">Suurin etumatka: ${tn(h.biggest_lead.team)} ${h.biggest_lead.gap} p (${fdate(h.biggest_lead.date)})</p>`));
+                h.lead_changes.map(c => row(`${tn(c.leader)}${badge(c.day, true)}`, `<span class="text-xs text-slate-400">alkaen ${fdate(c.date)} (pv ${c.day})</span>`)).join('') +
+                `<p class="text-xs text-slate-500 pt-1">Suurin etumatka: ${tn(h.biggest_lead.team)} ${h.biggest_lead.gap} p (${fdate(h.biggest_lead.date)})${badge(h.biggest_lead.day, true)}</p>`,
+                h.lead_changes.some(c => c.day === latestDay) || (h.biggest_lead && h.biggest_lead.day === latestDay)));
 
             cards.push(hlCard('🕵️', 'Parhaat poiminnat', 'Vapailta pelaajilta haetut pelaajat – pisteet uudessa joukkueessa',
                 h.best_pickups.map((p, i) => row(`${MEDALS[i]} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · ${tn(p.team)} · ${fdate(p.date)}</span>`, pts(p.points))).join('')));
@@ -703,7 +761,10 @@
                     ${bestPl ? `<span>⭐ Päivän ykköstähti: <strong>${esc(bestPl.player)}</strong> (${tn(bestPl.team)}, ${pts(bestPl.points)})</span>` : ''}
                     ${worstPl && worstPl.points < 0 ? `<span>💀 Päivän miinuskuningas: <strong>${esc(worstPl.player)}</strong> (${tn(worstPl.team)}, ${pts(worstPl.points)})</span>` : ''}
                     ${carrier && carrierPct > 0 ? `<span class="text-slate-400 text-xs">(${esc(carrier.player)} toi ${carrierPct}% voittajan pisteistä)</span>` : ''}
-                </div>`;
+                </div>${(() => {
+                    const ev = getNewRecordEvents(leagueData.highlights, dayObj.day);
+                    return ev.length ? `<div class="mt-2 pt-2 border-t border-ice-500/20 text-xs space-y-0.5 text-amber-200">${ev.join('<br>')}</div>` : '';
+                })()}`;
             }
 
             // 1. Daily Team Podium Cards
