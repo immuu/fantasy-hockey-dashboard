@@ -271,12 +271,11 @@
                                 <th class="py-2.5 px-2 text-right">Pisteet</th>
                                 <th class="py-2.5 px-2 text-right">Kärkeen</th>
                                 <th class="py-2.5 px-2 text-right hidden sm:table-cell">Seuraavaan</th>
-                                <th class="py-2.5 px-2 text-center hidden sm:table-cell">V - H - T</th>
                             </tr>
                         </thead>
                         <tbody id="standingsTableBody" class="divide-y divide-slate-800/60">
                             <tr>
-                                <td colspan="6" class="text-center py-6 text-slate-500">Ladataan tietoja...</td>
+                                <td colspan="5" class="text-center py-6 text-slate-500">Ladataan tietoja...</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1348,9 +1347,6 @@
                     </td>
                     <td class="py-3 px-2 text-right font-medium font-mono text-slate-400 hidden sm:table-cell">
                         ${behindNext === '-' ? '-' : `-${behindNext}`}
-                    </td>
-                    <td class="py-3 px-2 text-center font-medium text-slate-300 hidden sm:table-cell">
-                        ${team.wins} - ${team.losses} - ${team.ties}
                     </td>
                 `;
                 tbody.appendChild(tr);
