@@ -78,14 +78,18 @@ for period in range(1, last_period + 1):
             player = entry['playerPoolEntry']['player']
             active = entry.get('lineupSlotId') not in BENCH_SLOTS
             pts = 0.0
+            played = False
             stat_map = {}
             for st in player.get('stats', []):
                 if (st.get('statSplitTypeId') == 5 and st.get('scoringPeriodId') == period
                         and st.get('seasonId') == YEAR_USED):
                     pts += st.get('appliedTotal', 0.0)
                     raw_stats = st.get('stats', {})
+                    if raw_stats and any(v != 0 for v in raw_stats.values()):
+                        played = True
                     for sid, pval in st.get('appliedStats', {}).items():
                         if pval:
+                            played = True
                             sname = c.STATS_MAP.get(str(sid), str(sid))
                             rval = raw_stats.get(str(sid), 0)
                             cur = stat_map.get(sname, [0.0, 0.0])
@@ -98,8 +102,10 @@ for period in range(1, last_period + 1):
                 "name": player.get('fullName', 'Unknown'),
                 "pos": POS_MAP.get(player.get('defaultPositionId'), '?'),
                 "days": {},
-                "stats": {}})
+                "stats": {},
+                "played": {}})
             rec["days"][period] = (round(pts, 1), active)
+            rec["played"][period] = played
             if stat_map:
                 order = {k: i for i, k in enumerate(
                     ['G', 'A', '+/-', 'PPG', 'PPA', 'SHG', 'SHA', 'GWG', 'HAT',
@@ -279,6 +285,19 @@ def build_highlights():
     hl["transactions"] = sorted(
         [{"team": team_names[t], "adds": adds[t], "drops": drop_counts[t]} for t in team_ids],
         key=lambda x: -x["adds"])
+    # 11: position breakdown (active points per position C/LW/RW/D/G)
+    pos_totals = []
+    for t in team_ids:
+        by_pos = {"C": 0.0, "LW": 0.0, "RW": 0.0, "D": 0.0, "G": 0.0}
+        for (tid, pid), rec in records.items():
+            if tid != t:
+                continue
+            pos_key = rec["pos"] if rec["pos"] in by_pos else None
+            if pos_key:
+                by_pos[pos_key] += sum(pt for pt, act in rec["days"].values() if act)
+        by_pos = {k: round(v, 1) for k, v in by_pos.items()}
+        pos_totals.append({"team": team_names[t], "positions": by_pos, "total": round(sum(by_pos.values()), 1)})
+    hl["position_breakdown"] = sorted(pos_totals, key=lambda x: -x["total"])
     return hl
 
 
@@ -305,6 +324,7 @@ def build_recent_days(n=7):
                     "pos": rec["pos"],
                     "points": pts,
                     "active": active,
+                    "played": rec.get("played", {}).get(p, pts != 0),
                     "stats": rec.get("stats", {}).get(p, [])
                 })
             roster.sort(key=lambda x: (not x["active"], -x["points"], x["player"]))

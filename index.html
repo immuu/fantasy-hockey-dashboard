@@ -147,7 +147,11 @@
             <div class="space-y-3">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                     <h3 class="text-base font-bold text-white">🏒 Joukkueiden kokoonpanot &amp; pisteet</h3>
-                    <div id="latestDayRosterFilter" class="flex flex-wrap gap-1.5"></div>
+                    <div class="flex flex-wrap items-center gap-1.5">
+                        <div id="latestDayRosterFilter" class="flex flex-wrap gap-1.5"></div>
+                        <button onclick="toggleHideDidNotPlay()" id="btnToggleDnp"
+                            class="px-2.5 py-1 rounded-lg border text-xs font-medium bg-slate-900 text-slate-300 border-slate-700 hover:text-white transition">Näytä kaikki</button>
+                    </div>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4" id="latestDayRostersGrid"></div>
             </div>
@@ -610,6 +614,15 @@
             cards.push(hlCard('🤦', 'Pahimmat pudotukset', 'Pudotettu pelaaja, joka teki pisteitä muualla pudotuksen jälkeen',
                 h.worst_drops.map((p, i) => row(`${MEDALS[i]} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · pudotti ${tn(p.team)} ${fdate(p.date)}</span>`, pts(p.points_after))).join('')));
 
+            if (h.position_breakdown && h.position_breakdown.length) {
+                const posKeys = ['C', 'LW', 'RW', 'D', 'G'];
+                cards.push(hlCard('📊', 'Pelipaikkajakauma', 'Aktiivipisteet pelipaikoittain (koko kausi)',
+                    `<div class="grid grid-cols-6 text-[10px] text-slate-500 uppercase pb-1 border-b border-slate-800"><span>Joukkue</span>${posKeys.map(k => `<span class="text-right">${k}</span>`).join('')}</div>` +
+                    h.position_breakdown.map(pb =>
+                        `<div class="grid grid-cols-6 items-center text-xs py-0.5"><span class="truncate pr-1">${tn(pb.team)}</span>${posKeys.map(k => `<span class="text-right font-mono tabular-nums text-slate-300">${Math.round(pb.positions[k] || 0)}</span>`).join('')}</div>`
+                    ).join('')));
+            }
+
             cards.push(hlCard('🔁', 'Siirtoaktiivisuus', 'Lisäykset ja pudotukset kauden aikana',
                 h.transactions.map((t, i) => row(`${MEDALS[i]} ${tn(t.team)}`, `<span class="text-xs"><span class="text-emerald-400">+${t.adds}</span> · <span class="text-rose-400">−${t.drops}</span></span>`)).join('')));
 
@@ -639,9 +652,22 @@
 
 
         // ---------- LATEST DAY & MULTI-TAB NAVIGATION ----------
+        const VALID_TABS = ['latestDay', 'overview', 'highlights', 'transfers'];
         let activeTab = 'latestDay';
         let selectedRecentDayIdx = 0;
         let selectedDayTeamFilter = 'all';
+        let hideDidNotPlay = true;
+
+        function getCompletedDailyScores(team) {
+            const scores = team.weeklyScores || [];
+            const lastDay = getLatestScoredDay();
+            return lastDay > 0 ? scores.slice(0, lastDay) : scores;
+        }
+
+        function toggleHideDidNotPlay() {
+            hideDidNotPlay = !hideDidNotPlay;
+            renderLatestDay();
+        }
 
         function switchTab(tab) {
             activeTab = tab;
@@ -667,6 +693,9 @@
 
             if (tab === 'overview' && chartInstance) chartInstance.resize();
             if (tab === 'highlights' && gapChartInstance) gapChartInstance.resize();
+            if (typeof window !== 'undefined' && window.history && window.history.replaceState) {
+                window.history.replaceState(null, '', '#' + tab);
+            }
             if (typeof window !== 'undefined' && window.scrollTo) window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
@@ -763,7 +792,7 @@
             // 1. Daily Team Podium Cards
             document.getElementById('latestDayTeamsGrid').innerHTML = teams.map((t, i) => {
                 const activeList = (t.roster || []).filter(p => p.active);
-                const playedCount = activeList.filter(p => p.points !== 0).length;
+                const playedCount = activeList.filter(p => p.played !== undefined ? p.played : p.points !== 0).length;
                 const sortedAct = [...activeList].sort((a, b) => b.points - a.points);
                 const tBest = sortedAct[0];
                 const tWorst = sortedAct[sortedAct.length - 1];
@@ -837,9 +866,14 @@
                 }).join('');
             }
             const visibleTeams = selectedDayTeamFilter === 'all' ? teams : teams.filter(t => t.team === selectedDayTeamFilter);
+            const dnpBtn = document.getElementById('btnToggleDnp');
+            if (dnpBtn) dnpBtn.innerText = hideDidNotPlay ? 'Näytä ei-pelanneet' : 'Piilota ei-pelanneet';
+            const didPlay = p => (p.played !== undefined ? p.played : p.points !== 0);
             document.getElementById('latestDayRostersGrid').innerHTML = visibleTeams.map(t => {
-                const act = (t.roster || []).filter(p => p.active);
-                const ben = (t.roster || []).filter(p => !p.active);
+                const actAll = (t.roster || []).filter(p => p.active);
+                const benAll = (t.roster || []).filter(p => !p.active);
+                const act = hideDidNotPlay ? actAll.filter(didPlay) : actAll;
+                const ben = hideDidNotPlay ? benAll.filter(didPlay) : benAll;
                 const fmtRow = (p, isBench) => `<div class="py-1 border-b border-slate-800/40 last:border-0">
                     <div class="flex items-center justify-between text-xs ${isBench ? 'text-slate-500' : (p.points === 0 ? 'text-slate-400' : 'text-slate-200')}">
                         <span class="truncate pr-2 font-medium"><span class="inline-block w-6 text-[10px] text-slate-500">${esc(p.pos)}</span>${esc(p.player)}</span>
@@ -871,6 +905,9 @@
             renderFreeAgents();
             renderHighlights();
             initLatestDayTab();
+            const hashTab = (typeof window !== 'undefined' && window.location && window.location.hash)
+                ? window.location.hash.replace('#', '') : '';
+            if (VALID_TABS.includes(hashTab)) switchTab(hashTab);
         }
 
         function getFilteredWeeks() {
@@ -903,7 +940,7 @@
 
                 let fullData = [...visibleData];
                 if (showProjections && selectedTimeRange === 'all') {
-                    const recentScores = team.weeklyScores.slice(-3);
+                    const recentScores = getCompletedDailyScores(team).slice(-14);
                     const recentAvg = recentScores.length ? (recentScores.reduce((a, b) => a + b, 0) / recentScores.length) : 50;
                     let lastVal = visibleData[visibleData.length - 1] || 0;
                     for (let p = 0; p < FUTURE_WEEKS; p++) {
@@ -985,7 +1022,7 @@
                 let visibleData = team.pointsHistory.slice(startWeek - 1);
 
                 if (showProjections && selectedTimeRange === 'all') {
-                    const recentScores = team.weeklyScores.slice(-3);
+                    const recentScores = getCompletedDailyScores(team).slice(-14);
                     const recentAvg = recentScores.length ? (recentScores.reduce((a, b) => a + b, 0) / recentScores.length) : 50;
                     let lastVal = visibleData[visibleData.length - 1] || 0;
                     const projected = [...visibleData];
@@ -1158,8 +1195,8 @@
             const teamsArray = Object.values(leagueData.teams);
 
             const powerList = teamsArray.map(t => {
-                const last3 = t.weeklyScores.slice(-3);
-                const avg = last3.length ? (last3.reduce((a, b) => a + b, 0) / last3.length) : t.totalPoints;
+                const last14 = getCompletedDailyScores(t).slice(-14);
+                const avg = last14.length ? (last14.reduce((a, b) => a + b, 0) / last14.length) : t.totalPoints;
                 return { ...t, powerScore: avg };
             });
 
@@ -1167,7 +1204,7 @@
 
             if (powerList.length > 0) {
                 document.getElementById('statPowerRankLeader').innerText = powerList[0].name;
-                document.getElementById('statPowerRankScore').innerText = `${powerList[0].powerScore.toFixed(1)} pt keskiarvo`;
+                document.getElementById('statPowerRankScore').innerText = `${powerList[0].powerScore.toFixed(1)} p/pv (14 pv)`;
             }
 
             powerList.forEach((team, index) => {
@@ -1260,25 +1297,24 @@
             document.getElementById('statLeaderName').innerText = leader.name;
             document.getElementById('statLeaderPts').innerText = `${leader.totalPoints.toLocaleString()} pts (+${leadGap} kaula)`;
 
-            // Pursuit Chaser
-            let maxClosingGap = -999;
+            // Pursuit Chaser (14 completed days)
+            let maxClosingGap = -9999;
             let primeChaser = runnerUp;
+            const leaderRecent14 = getCompletedDailyScores(leader).slice(-14).reduce((a, b) => a + b, 0);
             teamsArray.forEach(t => {
                 if (t.id === leader.id) return;
-                const teamRecent2w = t.weeklyScores.slice(-2).reduce((a, b) => a + b, 0);
-                const leaderRecent2w = leader.weeklyScores.slice(-2).reduce((a, b) => a + b, 0);
-                const gained = teamRecent2w - leaderRecent2w;
+                const teamRecent14 = getCompletedDailyScores(t).slice(-14).reduce((a, b) => a + b, 0);
+                const gained = teamRecent14 - leaderRecent14;
                 if (gained > maxClosingGap) {
                     maxClosingGap = gained;
                     primeChaser = t;
                 }
             });
 
-            const pacePerWeek = (maxClosingGap / 2).toFixed(1);
             document.getElementById('statChaserName').innerText = primeChaser.name;
             document.getElementById('statChaserPace').innerText = maxClosingGap > 0
-                ? `Kuroo ${pacePerWeek} pt kärkeä`
-                : `Piste-ero ${Math.abs(leadGap)} pt`;
+                ? `Kuroo +${maxClosingGap.toFixed(1)} p (14 pv)`
+                : `Ero -${(leader.totalPoints - primeChaser.totalPoints).toFixed(1)} p`;
 
             // Standings table
             const tbody = document.getElementById('standingsTableBody');
@@ -1310,10 +1346,10 @@
                     <td class="py-3 px-2 text-right font-medium font-mono ${rank === 1 ? 'text-emerald-400 font-bold' : 'text-slate-400'}">
                         ${rank === 1 ? 'Kärjessä' : `-${behindLeader}`}
                     </td>
-                    <td class="py-3 px-2 text-right font-medium font-mono text-slate-400">
+                    <td class="py-3 px-2 text-right font-medium font-mono text-slate-400 hidden sm:table-cell">
                         ${behindNext === '-' ? '-' : `-${behindNext}`}
                     </td>
-                    <td class="py-3 px-2 text-center font-medium text-slate-300">
+                    <td class="py-3 px-2 text-center font-medium text-slate-300 hidden sm:table-cell">
                         ${team.wins} - ${team.losses} - ${team.ties}
                     </td>
                 `;

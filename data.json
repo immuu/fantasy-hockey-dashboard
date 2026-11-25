@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 58,
-  "last_updated": "25.11.2026 klo 21:48",
+  "last_updated": "25.11.2026 klo 22:09",
   "teams": [
     {
       "id": 1,
@@ -1851,6 +1851,52 @@
         "adds": 39,
         "drops": 39
       }
+    ],
+    "position_breakdown": [
+      {
+        "team": "Moron Losers",
+        "positions": {
+          "C": 591.7,
+          "LW": 540.0,
+          "RW": 427.5,
+          "D": 519.1,
+          "G": 101.6
+        },
+        "total": 2179.9
+      },
+      {
+        "team": "Underdogs",
+        "positions": {
+          "C": 673.4,
+          "LW": 307.3,
+          "RW": 292.0,
+          "D": 472.1,
+          "G": 121.8
+        },
+        "total": 1866.6
+      },
+      {
+        "team": "Fridge Raiders",
+        "positions": {
+          "C": 351.8,
+          "LW": 418.2,
+          "RW": 366.5,
+          "D": 410.7,
+          "G": 73.0
+        },
+        "total": 1620.2
+      },
+      {
+        "team": "Julmat",
+        "positions": {
+          "C": 697.2,
+          "LW": 271.1,
+          "RW": 106.1,
+          "D": 433.6,
+          "G": 109.4
+        },
+        "total": 1617.4
+      }
     ]
   },
   "recent_days": [
@@ -1868,6 +1914,7 @@
               "pos": "C",
               "points": 9.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -1916,6 +1963,7 @@
               "pos": "D",
               "points": 9.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -1959,6 +2007,7 @@
               "pos": "D",
               "points": 8.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -1992,6 +2041,7 @@
               "pos": "C",
               "points": 8.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -2040,6 +2090,7 @@
               "pos": "C",
               "points": 7.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -2083,6 +2134,7 @@
               "pos": "C",
               "points": 7.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -2126,6 +2178,7 @@
               "pos": "G",
               "points": 6.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "W",
@@ -2149,6 +2202,7 @@
               "pos": "C",
               "points": 6.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -2187,6 +2241,7 @@
               "pos": "RW",
               "points": 6.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -2230,6 +2285,7 @@
               "pos": "D",
               "points": 4.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -2258,6 +2314,7 @@
               "pos": "RW",
               "points": 4.7,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -2291,6 +2348,7 @@
               "pos": "LW",
               "points": 4.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -2329,6 +2387,7 @@
               "pos": "G",
               "points": 1.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "OTL",
@@ -2352,6 +2411,7 @@
               "pos": "C",
               "points": 1.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -2395,6 +2455,7 @@
               "pos": "D",
               "points": 1.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -2413,6 +2474,7 @@
               "pos": "D",
               "points": 0.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -2436,6 +2498,7 @@
               "pos": "LW",
               "points": -0.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -2459,6 +2522,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -2466,6 +2530,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -2473,6 +2538,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -2480,6 +2546,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -2487,6 +2554,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -2494,6 +2562,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -2507,6 +2576,7 @@
               "pos": "D",
               "points": 7.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -2555,6 +2625,7 @@
               "pos": "D",
               "points": 7.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -2593,6 +2664,7 @@
               "pos": "LW",
               "points": 6.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -2626,6 +2698,7 @@
               "pos": "LW",
               "points": 6.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -2649,6 +2722,7 @@
               "pos": "RW",
               "points": 5.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -2687,6 +2761,7 @@
               "pos": "RW",
               "points": 4.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -2720,6 +2795,7 @@
               "pos": "C",
               "points": 3.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -2763,6 +2839,7 @@
               "pos": "LW",
               "points": 2.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -2786,6 +2863,7 @@
               "pos": "C",
               "points": 1.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -2829,6 +2907,7 @@
               "pos": "RW",
               "points": 0.5,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -2852,6 +2931,7 @@
               "pos": "D",
               "points": 0.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -2870,6 +2950,7 @@
               "pos": "D",
               "points": 0.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "HIT",
@@ -2893,6 +2974,7 @@
               "pos": "RW",
               "points": 0.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -2921,6 +3003,7 @@
               "pos": "C",
               "points": 0.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -2954,6 +3037,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -2961,6 +3045,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -2968,6 +3053,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -2975,6 +3061,7 @@
               "pos": "LW",
               "points": 5.4,
               "active": false,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -3003,6 +3090,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -3010,6 +3098,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -3017,6 +3106,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -3024,6 +3114,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -3031,6 +3122,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -3044,6 +3136,7 @@
               "pos": "LW",
               "points": 11.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -3087,6 +3180,7 @@
               "pos": "LW",
               "points": 11.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -3125,6 +3219,7 @@
               "pos": "C",
               "points": 9.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -3168,6 +3263,7 @@
               "pos": "RW",
               "points": 6.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -3191,6 +3287,7 @@
               "pos": "RW",
               "points": 4.5,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -3214,6 +3311,7 @@
               "pos": "D",
               "points": 0.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -3237,6 +3335,7 @@
               "pos": "D",
               "points": 0.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -3255,6 +3354,7 @@
               "pos": "RW",
               "points": 0.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -3273,6 +3373,7 @@
               "pos": "D",
               "points": 0.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -3286,6 +3387,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -3293,6 +3395,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -3316,6 +3419,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -3323,6 +3427,7 @@
               "pos": "LW",
               "points": -0.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -3351,6 +3456,7 @@
               "pos": "D",
               "points": -0.7,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -3379,6 +3485,7 @@
               "pos": "C",
               "points": -1.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -3417,6 +3524,7 @@
               "pos": "D",
               "points": -1.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -3440,6 +3548,7 @@
               "pos": "RW",
               "points": -2.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -3458,6 +3567,7 @@
               "pos": "D",
               "points": 5.1,
               "active": false,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -3486,6 +3596,7 @@
               "pos": "RW",
               "points": 4.1,
               "active": false,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -3519,6 +3630,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -3526,6 +3638,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -3533,6 +3646,7 @@
               "pos": "C",
               "points": -1.2,
               "active": false,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -3572,6 +3686,7 @@
               "pos": "D",
               "points": 8.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -3610,6 +3725,7 @@
               "pos": "G",
               "points": 6.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "W",
@@ -3633,6 +3749,7 @@
               "pos": "C",
               "points": 5.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -3666,6 +3783,7 @@
               "pos": "D",
               "points": 4.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -3689,6 +3807,7 @@
               "pos": "LW",
               "points": 3.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -3707,6 +3826,7 @@
               "pos": "D",
               "points": 3.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -3730,6 +3850,7 @@
               "pos": "G",
               "points": 3.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "W",
@@ -3753,6 +3874,7 @@
               "pos": "D",
               "points": 3.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -3776,6 +3898,7 @@
               "pos": "RW",
               "points": 0.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -3799,6 +3922,7 @@
               "pos": "D",
               "points": 0.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -3827,6 +3951,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -3834,6 +3959,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -3841,6 +3967,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -3874,6 +4001,7 @@
               "pos": "C",
               "points": -0.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -3907,6 +4035,7 @@
               "pos": "D",
               "points": -0.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -3930,6 +4059,7 @@
               "pos": "RW",
               "points": -1.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -3953,6 +4083,7 @@
               "pos": "C",
               "points": -2.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "FOW",
@@ -3976,6 +4107,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -3983,6 +4115,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -3990,6 +4123,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -3997,6 +4131,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4004,6 +4139,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -4024,6 +4160,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4031,6 +4168,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4038,6 +4176,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4045,6 +4184,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4052,6 +4192,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4059,6 +4200,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4066,6 +4208,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4073,6 +4216,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4080,6 +4224,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4087,6 +4232,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4094,6 +4240,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4101,6 +4248,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4108,6 +4256,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4115,6 +4264,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4122,6 +4272,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4129,6 +4280,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4136,6 +4288,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4143,6 +4296,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4150,6 +4304,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4157,6 +4312,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4164,6 +4320,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4171,6 +4328,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4178,6 +4336,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -4191,6 +4350,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4198,6 +4358,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4205,6 +4366,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4212,6 +4374,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4219,6 +4382,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4226,6 +4390,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4233,6 +4398,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4240,6 +4406,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4247,6 +4414,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4254,6 +4422,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4261,6 +4430,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4268,6 +4438,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4275,6 +4446,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4282,6 +4454,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4289,6 +4462,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4296,6 +4470,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4303,6 +4478,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4310,6 +4486,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4317,6 +4494,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4324,6 +4502,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4331,6 +4510,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4338,6 +4518,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -4351,6 +4532,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4358,6 +4540,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4365,6 +4548,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4372,6 +4556,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4379,6 +4564,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4386,6 +4572,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4393,6 +4580,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4400,6 +4588,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4407,6 +4596,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4414,6 +4604,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4421,6 +4612,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4428,6 +4620,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4435,6 +4628,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4442,6 +4636,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4449,6 +4644,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4456,6 +4652,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4463,6 +4660,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4470,6 +4668,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4477,6 +4676,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4484,6 +4684,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4491,6 +4692,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4498,6 +4700,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4505,6 +4708,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -4518,6 +4722,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4525,6 +4730,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4532,6 +4738,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4539,6 +4746,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4546,6 +4754,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4553,6 +4762,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4560,6 +4770,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4567,6 +4778,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4574,6 +4786,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4581,6 +4794,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4588,6 +4802,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4595,6 +4810,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4602,6 +4818,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4609,6 +4826,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4616,6 +4834,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4623,6 +4842,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4630,6 +4850,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -4637,6 +4858,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4644,6 +4866,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4651,6 +4874,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4658,6 +4882,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -4665,6 +4890,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -4685,6 +4911,7 @@
               "pos": "C",
               "points": 12.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -4743,6 +4970,7 @@
               "pos": "D",
               "points": 12.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -4796,6 +5024,7 @@
               "pos": "RW",
               "points": 10.7,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -4839,6 +5068,7 @@
               "pos": "D",
               "points": 7.5,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -4867,6 +5097,7 @@
               "pos": "LW",
               "points": 6.5,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -4900,6 +5131,7 @@
               "pos": "C",
               "points": 6.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -4943,6 +5175,7 @@
               "pos": "RW",
               "points": 4.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -4986,6 +5219,7 @@
               "pos": "RW",
               "points": 3.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -5014,6 +5248,7 @@
               "pos": "LW",
               "points": 3.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -5047,6 +5282,7 @@
               "pos": "D",
               "points": 2.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -5070,6 +5306,7 @@
               "pos": "C",
               "points": 2.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -5108,6 +5345,7 @@
               "pos": "D",
               "points": 0.7,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -5126,6 +5364,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -5133,6 +5372,7 @@
               "pos": "G",
               "points": -0.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "OTL",
@@ -5156,6 +5396,7 @@
               "pos": "D",
               "points": -1.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -5179,6 +5420,7 @@
               "pos": "C",
               "points": -1.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -5217,6 +5459,7 @@
               "pos": "G",
               "points": -1.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "W",
@@ -5240,6 +5483,7 @@
               "pos": "C",
               "points": 4.2,
               "active": false,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -5273,6 +5517,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -5280,6 +5525,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -5287,6 +5533,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -5294,6 +5541,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -5301,6 +5549,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -5314,6 +5563,7 @@
               "pos": "C",
               "points": 24.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -5372,6 +5622,7 @@
               "pos": "D",
               "points": 7.5,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -5405,6 +5656,7 @@
               "pos": "D",
               "points": 7.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -5438,6 +5690,7 @@
               "pos": "D",
               "points": 6.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -5471,6 +5724,7 @@
               "pos": "C",
               "points": 6.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -5509,6 +5763,7 @@
               "pos": "LW",
               "points": 5.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -5542,6 +5797,7 @@
               "pos": "C",
               "points": 3.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -5590,6 +5846,7 @@
               "pos": "RW",
               "points": 2.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -5618,6 +5875,7 @@
               "pos": "RW",
               "points": 2.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -5666,6 +5924,7 @@
               "pos": "RW",
               "points": 0.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -5694,6 +5953,7 @@
               "pos": "LW",
               "points": 0.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -5717,6 +5977,7 @@
               "pos": "RW",
               "points": 0.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -5730,6 +5991,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -5758,6 +6020,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -5765,6 +6028,7 @@
               "pos": "LW",
               "points": -0.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -5788,6 +6052,7 @@
               "pos": "G",
               "points": -4.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SV",
@@ -5806,6 +6071,7 @@
               "pos": "G",
               "points": -7.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SV",
@@ -5824,6 +6090,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -5831,6 +6098,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -5838,6 +6106,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -5845,6 +6114,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -5852,6 +6122,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -5859,6 +6130,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -5872,6 +6144,7 @@
               "pos": "C",
               "points": 9.7,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -5910,6 +6183,7 @@
               "pos": "LW",
               "points": 6.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -5943,6 +6217,7 @@
               "pos": "C",
               "points": 5.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -5986,6 +6261,7 @@
               "pos": "LW",
               "points": 4.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -6019,6 +6295,7 @@
               "pos": "C",
               "points": 4.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -6077,6 +6354,7 @@
               "pos": "G",
               "points": 3.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "W",
@@ -6100,6 +6378,7 @@
               "pos": "G",
               "points": 3.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "W",
@@ -6123,6 +6402,7 @@
               "pos": "LW",
               "points": 3.7,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -6156,6 +6436,7 @@
               "pos": "RW",
               "points": 3.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -6184,6 +6465,7 @@
               "pos": "RW",
               "points": 3.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -6222,6 +6504,7 @@
               "pos": "D",
               "points": 2.7,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -6255,6 +6538,7 @@
               "pos": "RW",
               "points": 2.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -6278,6 +6562,7 @@
               "pos": "D",
               "points": 0.7,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -6311,6 +6596,7 @@
               "pos": "D",
               "points": 0.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -6339,6 +6625,7 @@
               "pos": "D",
               "points": -0.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -6367,6 +6654,7 @@
               "pos": "D",
               "points": -1.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -6390,6 +6678,7 @@
               "pos": "C",
               "points": -2.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -6423,6 +6712,7 @@
               "pos": "C",
               "points": 3.2,
               "active": false,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -6451,6 +6741,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -6458,6 +6749,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -6465,6 +6757,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -6472,6 +6765,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -6485,6 +6779,7 @@
               "pos": "C",
               "points": 9.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -6533,6 +6828,7 @@
               "pos": "D",
               "points": 7.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -6566,6 +6862,7 @@
               "pos": "C",
               "points": 3.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -6599,6 +6896,7 @@
               "pos": "C",
               "points": 3.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -6637,6 +6935,7 @@
               "pos": "C",
               "points": 3.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -6670,6 +6969,7 @@
               "pos": "D",
               "points": 2.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -6713,6 +7013,7 @@
               "pos": "C",
               "points": 2.5,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -6761,6 +7062,7 @@
               "pos": "RW",
               "points": 1.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -6784,6 +7086,7 @@
               "pos": "C",
               "points": 1.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -6812,6 +7115,7 @@
               "pos": "LW",
               "points": 0.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -6845,6 +7149,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -6852,6 +7157,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -6859,6 +7165,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -6866,6 +7173,7 @@
               "pos": "D",
               "points": -0.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -6889,6 +7197,7 @@
               "pos": "RW",
               "points": -0.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -6927,6 +7236,7 @@
               "pos": "LW",
               "points": -0.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -6945,6 +7255,7 @@
               "pos": "D",
               "points": -0.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -6973,6 +7284,7 @@
               "pos": "C",
               "points": 4.6,
               "active": false,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -7031,6 +7343,7 @@
               "pos": "RW",
               "points": 0.3,
               "active": false,
+              "played": true,
               "stats": [
                 {
                   "s": "BLK",
@@ -7049,6 +7362,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -7056,6 +7370,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -7063,6 +7378,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -7083,6 +7399,7 @@
               "pos": "G",
               "points": 15.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "W",
@@ -7106,6 +7423,7 @@
               "pos": "D",
               "points": 6.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -7139,6 +7457,7 @@
               "pos": "LW",
               "points": 4.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -7162,6 +7481,7 @@
               "pos": "C",
               "points": 4.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -7195,6 +7515,7 @@
               "pos": "RW",
               "points": 3.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -7233,6 +7554,7 @@
               "pos": "C",
               "points": 3.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -7261,6 +7583,7 @@
               "pos": "D",
               "points": 1.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -7279,6 +7602,7 @@
               "pos": "D",
               "points": 1.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -7317,6 +7641,7 @@
               "pos": "LW",
               "points": 0.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -7345,6 +7670,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7352,6 +7678,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7359,6 +7686,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7366,6 +7694,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7373,6 +7702,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7380,6 +7710,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7387,6 +7718,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7394,6 +7726,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7401,6 +7734,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -7408,6 +7742,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -7415,6 +7750,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -7422,6 +7758,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -7429,6 +7766,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -7436,6 +7774,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -7449,6 +7788,7 @@
               "pos": "RW",
               "points": 5.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -7472,6 +7812,7 @@
               "pos": "RW",
               "points": 4.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -7510,6 +7851,7 @@
               "pos": "D",
               "points": 4.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -7533,6 +7875,7 @@
               "pos": "C",
               "points": 3.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -7566,6 +7909,7 @@
               "pos": "D",
               "points": 3.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -7589,6 +7933,7 @@
               "pos": "RW",
               "points": 3.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -7622,6 +7967,7 @@
               "pos": "D",
               "points": 2.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -7650,6 +7996,7 @@
               "pos": "D",
               "points": 1.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -7673,6 +8020,7 @@
               "pos": "RW",
               "points": 1.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -7701,6 +8049,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7708,6 +8057,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7715,6 +8065,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7722,6 +8073,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7729,6 +8081,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7736,6 +8089,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7743,6 +8097,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7750,6 +8105,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7757,6 +8113,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -7764,6 +8121,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -7771,6 +8129,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -7778,6 +8137,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -7785,6 +8145,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -7792,6 +8153,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -7805,6 +8167,7 @@
               "pos": "C",
               "points": 11.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -7848,6 +8211,7 @@
               "pos": "C",
               "points": 4.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -7881,6 +8245,7 @@
               "pos": "D",
               "points": 2.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -7919,6 +8284,7 @@
               "pos": "LW",
               "points": 1.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -7942,6 +8308,7 @@
               "pos": "LW",
               "points": 0.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -7980,6 +8347,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7987,6 +8355,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -7994,6 +8363,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8001,6 +8371,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8008,6 +8379,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8015,6 +8387,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8022,6 +8395,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8029,6 +8403,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8036,6 +8411,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8043,6 +8419,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8050,6 +8427,7 @@
               "pos": "D",
               "points": -0.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -8083,6 +8461,7 @@
               "pos": "C",
               "points": -4.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -8116,6 +8495,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8123,6 +8503,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8130,6 +8511,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8137,6 +8519,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8144,6 +8527,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8151,6 +8535,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -8164,6 +8549,7 @@
               "pos": "D",
               "points": 6.5,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -8197,6 +8583,7 @@
               "pos": "C",
               "points": 5.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -8240,6 +8627,7 @@
               "pos": "RW",
               "points": 4.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -8273,6 +8661,7 @@
               "pos": "LW",
               "points": 0.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -8291,6 +8680,7 @@
               "pos": "C",
               "points": 0.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -8324,6 +8714,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8331,6 +8722,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8338,6 +8730,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8345,6 +8738,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8352,6 +8746,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8359,6 +8754,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8366,6 +8762,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8373,6 +8770,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8380,6 +8778,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8387,6 +8786,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8394,6 +8794,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8401,6 +8802,7 @@
               "pos": "D",
               "points": -2.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -8414,6 +8816,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8421,6 +8824,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8428,6 +8832,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8435,6 +8840,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8442,6 +8848,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8449,6 +8856,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -8469,6 +8877,7 @@
               "pos": "LW",
               "points": 12.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -8502,6 +8911,7 @@
               "pos": "LW",
               "points": 10.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -8535,6 +8945,7 @@
               "pos": "G",
               "points": 8.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "W",
@@ -8558,6 +8969,7 @@
               "pos": "C",
               "points": 6.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -8596,6 +9008,7 @@
               "pos": "D",
               "points": 5.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -8619,6 +9032,7 @@
               "pos": "LW",
               "points": 4.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -8647,6 +9061,7 @@
               "pos": "D",
               "points": 3.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -8670,6 +9085,7 @@
               "pos": "D",
               "points": 1.7,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -8698,6 +9114,7 @@
               "pos": "C",
               "points": 1.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -8726,6 +9143,7 @@
               "pos": "LW",
               "points": 0.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -8744,6 +9162,7 @@
               "pos": "LW",
               "points": 0.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -8757,6 +9176,7 @@
               "pos": "C",
               "points": 0.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -8780,6 +9200,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8787,6 +9208,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8794,6 +9216,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8801,6 +9224,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -8808,6 +9232,7 @@
               "pos": "G",
               "points": -0.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SV",
@@ -8826,6 +9251,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8833,6 +9259,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8840,6 +9267,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8847,6 +9275,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8854,6 +9283,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -8861,6 +9291,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -8874,6 +9305,7 @@
               "pos": "C",
               "points": 14.5,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -8927,6 +9359,7 @@
               "pos": "D",
               "points": 4.7,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -8955,6 +9388,7 @@
               "pos": "D",
               "points": 3.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -8973,6 +9407,7 @@
               "pos": "RW",
               "points": 2.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -8996,6 +9431,7 @@
               "pos": "RW",
               "points": 2.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -9014,6 +9450,7 @@
               "pos": "C",
               "points": 1.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -9042,6 +9479,7 @@
               "pos": "D",
               "points": 1.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -9070,6 +9508,7 @@
               "pos": "C",
               "points": 0.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -9098,6 +9537,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9105,6 +9545,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9112,6 +9553,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9119,6 +9561,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9126,6 +9569,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9133,6 +9577,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9140,6 +9585,7 @@
               "pos": "C",
               "points": -0.5,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -9183,6 +9629,7 @@
               "pos": "LW",
               "points": -3.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -9201,6 +9648,7 @@
               "pos": "D",
               "points": -4.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -9229,6 +9677,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9236,6 +9685,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9243,6 +9693,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9250,6 +9701,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9257,6 +9709,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9264,6 +9717,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -9277,6 +9731,7 @@
               "pos": "LW",
               "points": 7.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -9300,6 +9755,7 @@
               "pos": "D",
               "points": 5.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -9328,6 +9784,7 @@
               "pos": "G",
               "points": 3.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "W",
@@ -9351,6 +9808,7 @@
               "pos": "D",
               "points": 3.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -9374,6 +9832,7 @@
               "pos": "LW",
               "points": 0.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -9387,6 +9846,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9394,6 +9854,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9401,6 +9862,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9408,6 +9870,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9415,6 +9878,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9422,6 +9886,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9429,6 +9894,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9436,6 +9902,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9443,6 +9910,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9450,6 +9918,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9457,6 +9926,7 @@
               "pos": "LW",
               "points": -0.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -9475,6 +9945,7 @@
               "pos": "RW",
               "points": -0.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -9498,6 +9969,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9505,6 +9977,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9512,6 +9985,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9519,6 +9993,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9526,6 +10001,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9533,6 +10009,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -9546,6 +10023,7 @@
               "pos": "C",
               "points": 3.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -9579,6 +10057,7 @@
               "pos": "LW",
               "points": 1.6,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -9607,6 +10086,7 @@
               "pos": "C",
               "points": 0.5,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -9645,6 +10125,7 @@
               "pos": "C",
               "points": 0.5,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -9688,6 +10169,7 @@
               "pos": "D",
               "points": 0.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -9711,6 +10193,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9718,6 +10201,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9725,6 +10209,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9732,6 +10217,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -9760,6 +10246,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9767,6 +10254,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9774,6 +10262,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9781,6 +10270,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9788,6 +10278,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -9795,6 +10286,7 @@
               "pos": "C",
               "points": -0.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -9818,6 +10310,7 @@
               "pos": "RW",
               "points": -1.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -9841,6 +10334,7 @@
               "pos": "D",
               "points": -2.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -9864,6 +10358,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9871,6 +10366,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9878,6 +10374,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9885,6 +10382,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9892,6 +10390,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -9899,6 +10398,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -9919,6 +10419,7 @@
               "pos": "C",
               "points": 8.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -9957,6 +10458,7 @@
               "pos": "RW",
               "points": 6.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -9990,6 +10492,7 @@
               "pos": "RW",
               "points": 2.4,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -10008,6 +10511,7 @@
               "pos": "RW",
               "points": 1.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -10041,6 +10545,7 @@
               "pos": "RW",
               "points": 0.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -10054,6 +10559,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10061,6 +10567,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10068,6 +10575,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10075,6 +10583,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10082,6 +10591,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10089,6 +10599,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10096,6 +10607,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10103,6 +10615,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10110,6 +10623,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10117,6 +10631,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10124,6 +10639,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10131,6 +10647,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10138,6 +10655,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10145,6 +10663,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10152,6 +10671,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10159,6 +10679,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10166,6 +10687,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10173,6 +10695,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -10186,6 +10709,7 @@
               "pos": "D",
               "points": 4.1,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -10214,6 +10738,7 @@
               "pos": "LW",
               "points": 4.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -10237,6 +10762,7 @@
               "pos": "C",
               "points": 3.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -10280,6 +10806,7 @@
               "pos": "RW",
               "points": 3.0,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -10313,6 +10840,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10320,6 +10848,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10327,6 +10856,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10334,6 +10864,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10341,6 +10872,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10348,6 +10880,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10355,6 +10888,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10362,6 +10896,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10369,6 +10904,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10376,6 +10912,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10383,6 +10920,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10390,6 +10928,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10397,6 +10936,7 @@
               "pos": "C",
               "points": -1.5,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -10430,6 +10970,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10437,6 +10978,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10444,6 +10986,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10451,6 +10994,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10458,6 +11002,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10465,6 +11010,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -10478,6 +11024,7 @@
               "pos": "D",
               "points": 5.5,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "A",
@@ -10501,6 +11048,7 @@
               "pos": "C",
               "points": 3.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "G",
@@ -10544,6 +11092,7 @@
               "pos": "C",
               "points": 0.9,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -10567,6 +11116,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10574,6 +11124,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10581,6 +11132,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10588,6 +11140,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10595,6 +11148,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10602,6 +11156,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10609,6 +11164,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10616,6 +11172,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10623,6 +11180,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10630,6 +11188,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10637,6 +11196,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10644,6 +11204,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10651,6 +11212,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10658,6 +11220,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10665,6 +11228,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10672,6 +11236,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10679,6 +11244,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10686,6 +11252,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10693,6 +11260,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10700,6 +11268,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -10713,6 +11282,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10720,6 +11290,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10727,6 +11298,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10734,6 +11306,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10741,6 +11314,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10748,6 +11322,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10755,6 +11330,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10762,6 +11338,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10769,6 +11346,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10776,6 +11354,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10783,6 +11362,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10790,6 +11370,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10797,6 +11378,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10804,6 +11386,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10811,6 +11394,7 @@
               "pos": "C",
               "points": -1.2,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -10844,6 +11428,7 @@
               "pos": "LW",
               "points": -1.3,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "+/-",
@@ -10877,6 +11462,7 @@
               "pos": "D",
               "points": -1.8,
               "active": true,
+              "played": true,
               "stats": [
                 {
                   "s": "SOG",
@@ -10895,6 +11481,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10902,6 +11489,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10909,6 +11497,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10916,6 +11505,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10923,6 +11513,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -10930,6 +11521,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -10950,6 +11542,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10957,6 +11550,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10964,6 +11558,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10971,6 +11566,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10978,6 +11574,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10985,6 +11582,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10992,6 +11590,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -10999,6 +11598,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11006,6 +11606,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11013,6 +11614,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11020,6 +11622,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11027,6 +11630,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11034,6 +11638,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11041,6 +11646,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11048,6 +11654,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11055,6 +11662,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11062,6 +11670,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11069,6 +11678,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11076,6 +11686,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11083,6 +11694,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11090,6 +11702,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11097,6 +11710,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11104,6 +11718,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -11117,6 +11732,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11124,6 +11740,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11131,6 +11748,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11138,6 +11756,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11145,6 +11764,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11152,6 +11772,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11159,6 +11780,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11166,6 +11788,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11173,6 +11796,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11180,6 +11804,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11187,6 +11812,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11194,6 +11820,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11201,6 +11828,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11208,6 +11836,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11215,6 +11844,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11222,6 +11852,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11229,6 +11860,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11236,6 +11868,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11243,6 +11876,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11250,6 +11884,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11257,6 +11892,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11264,6 +11900,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11271,6 +11908,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -11284,6 +11922,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11291,6 +11930,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11298,6 +11938,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11305,6 +11946,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11312,6 +11954,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11319,6 +11962,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11326,6 +11970,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11333,6 +11978,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11340,6 +11986,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11347,6 +11994,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11354,6 +12002,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11361,6 +12010,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11368,6 +12018,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11375,6 +12026,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11382,6 +12034,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11389,6 +12042,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11396,6 +12050,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11403,6 +12058,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11410,6 +12066,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11417,6 +12074,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11424,6 +12082,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11431,6 +12090,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11438,6 +12098,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
@@ -11451,6 +12112,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11458,6 +12120,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11465,6 +12128,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11472,6 +12136,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11479,6 +12144,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11486,6 +12152,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11493,6 +12160,7 @@
               "pos": "G",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11500,6 +12168,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11507,6 +12176,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11514,6 +12184,7 @@
               "pos": "LW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11521,6 +12192,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11528,6 +12200,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11535,6 +12208,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11542,6 +12216,7 @@
               "pos": "C",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11549,6 +12224,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11556,6 +12232,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11563,6 +12240,7 @@
               "pos": "D",
               "points": 0.0,
               "active": true,
+              "played": false,
               "stats": []
             },
             {
@@ -11570,6 +12248,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11577,6 +12256,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11584,6 +12264,7 @@
               "pos": "D",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11591,6 +12272,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11598,6 +12280,7 @@
               "pos": "RW",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             },
             {
@@ -11605,6 +12288,7 @@
               "pos": "C",
               "points": 0.0,
               "active": false,
+              "played": false,
               "stats": []
             }
           ]
