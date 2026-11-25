@@ -1,9 +1,6 @@
 name: Update ESPN Fantasy Data
 
 on:
-  schedule:
-    # Aja automaattisesti aamulla & päivällä (UTC 2,3,4,5,6,10 = 04:23–08:23 ja 12:23 GMT+2)
-    - cron: '23 2,3,4,5,6,10 * * *'
   # Mahdollistaa skriptin ajamisen käsin GitHubin käyttöliittymästä
   workflow_dispatch:
 
