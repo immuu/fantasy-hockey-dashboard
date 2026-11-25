@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 58,
-  "last_updated": "25.11.2026 klo 16:16 UTC",
+  "last_updated": "25.11.2026 klo 19:38 UTC",
   "teams": [
     {
       "id": 1,
@@ -731,7 +731,7 @@
       "proTeam": "Vancouver Canucks",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Artemi Panarin",
@@ -787,7 +787,7 @@
       "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "DAY_TO_DAY"
+      "injuryStatus": "OUT"
     },
     {
       "name": "Sidney Crosby",
