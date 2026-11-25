@@ -2,6 +2,9 @@ import json
 import os
 import sys
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
+
+HELSINKI_TZ = ZoneInfo("Europe/Helsinki")
 import espn_api.hockey.constant as c
 from espn_api.hockey import League
 
@@ -96,7 +99,7 @@ def build_highlights():
     from statistics import mean, pstdev
     n_days = last_period
     # scoring period 1 .. last_period; the latest period is "today"
-    today = datetime.now(timezone.utc).date()
+    today = datetime.now(HELSINKI_TZ).date()
     def date_of(p):
         return (today - timedelta(days=n_days - p)).isoformat()
 
@@ -258,7 +261,7 @@ highlights = build_highlights()
 
 def build_recent_days(n=7):
     """Build detailed per-team, per-player breakdown for the last n scoring periods."""
-    today = datetime.now(timezone.utc).date()
+    today = datetime.now(HELSINKI_TZ).date()
     start_p = max(1, last_period - n + 1)
     team_ids = list(daily_points.keys())
     days_out = []
@@ -398,8 +401,8 @@ try:
 except Exception as e:
     print(f"Aktiviteettien haku epäonnistui: {e}")
 
-now_utc = datetime.now(timezone.utc)
-last_updated_str = now_utc.strftime("%d.%m.%Y klo %H:%M UTC")
+now_fi = datetime.now(HELSINKI_TZ)
+last_updated_str = now_fi.strftime("%d.%m.%Y klo %H:%M")
 
 output = {
     "league_name": getattr(league.settings, 'name', 'ESPN Fantasy League'),
