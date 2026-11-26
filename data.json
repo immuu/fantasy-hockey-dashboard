@@ -1,13 +1,13 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 58,
-  "last_updated": "26.11.2026 klo 04:31",
+  "last_updated": "26.11.2026 klo 05:00",
   "teams": [
     {
       "id": 1,
       "name": "Fridge Raiders",
       "abbrev": "FRI",
-      "points_for": 1650.2,
+      "points_for": 1659.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -104,7 +104,7 @@
         1582.7,
         1601.2,
         1620.2,
-        1650.2
+        1659.6
       ],
       "weeklyScores": [
         15.3,
@@ -164,14 +164,14 @@
         15.4,
         18.5,
         19.0,
-        30.0
+        39.4
       ]
     },
     {
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1637.9,
+      "points_for": 1645.3,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -268,7 +268,7 @@
         1604.8,
         1607.1,
         1617.4,
-        1637.9
+        1645.3
       ],
       "weeklyScores": [
         9.9,
@@ -328,14 +328,14 @@
         41.1,
         2.3,
         10.3,
-        20.5
+        27.9
       ]
     },
     {
       "id": 3,
       "name": "Underdogs",
       "abbrev": "UND",
-      "points_for": 1885.1,
+      "points_for": 1882.9,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -432,7 +432,7 @@
         1850.0,
         1870.9,
         1866.6,
-        1885.1
+        1882.9
       ],
       "weeklyScores": [
         26.3,
@@ -492,14 +492,14 @@
         15.8,
         20.9,
         -4.3,
-        18.5
+        16.3
       ]
     },
     {
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 2196.8,
+      "points_for": 2201.1,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -596,7 +596,7 @@
         2111.2,
         2166.4,
         2179.9,
-        2196.8
+        2201.1
       ],
       "weeklyScores": [
         39.7,
@@ -656,7 +656,7 @@
         29.6,
         55.2,
         13.5,
-        16.9
+        21.2
       ]
     }
   ],
@@ -1316,7 +1316,7 @@
     "consistency": [
       {
         "team": "Fridge Raiders",
-        "avg": 28.5,
+        "avg": 28.6,
         "std": 21.0,
         "best": 71.1,
         "worst": -2.3,
@@ -1332,16 +1332,16 @@
       },
       {
         "team": "Julmat",
-        "avg": 28.2,
-        "std": 23.1,
+        "avg": 28.4,
+        "std": 23.0,
         "best": 97.7,
         "worst": -2.5,
         "days_over_50": 11
       },
       {
         "team": "Moron Losers",
-        "avg": 37.9,
-        "std": 27.1,
+        "avg": 38.0,
+        "std": 27.0,
         "best": 117.9,
         "worst": 0.0,
         "days_over_50": 20
@@ -1467,7 +1467,7 @@
         "mvp": {
           "player": "Kyle Connor",
           "pos": "LW",
-          "points": 128.2,
+          "points": 130.7,
           "days_active": 40
         },
         "bust": {
@@ -1497,7 +1497,7 @@
         "mvp": {
           "player": "Tim Stutzle",
           "pos": "C",
-          "points": 132.6,
+          "points": 131.2,
           "days_active": 47
         },
         "bust": {
@@ -1526,7 +1526,7 @@
     "bench_regret": [
       {
         "team": "Julmat",
-        "points_on_bench": 95.4,
+        "points_on_bench": 97.4,
         "worst": {
           "player": "Brady Tkachuk",
           "day": 15,
@@ -1556,7 +1556,7 @@
       },
       {
         "team": "Underdogs",
-        "points_on_bench": 78.8,
+        "points_on_bench": 83.0,
         "worst": {
           "player": "William Nylander",
           "day": 12,
@@ -1569,12 +1569,12 @@
       {
         "team": "Moron Losers",
         "days_won": 20,
-        "days_last": 9
+        "days_last": 8
       },
       {
         "team": "Underdogs",
         "days_won": 19,
-        "days_last": 13
+        "days_last": 14
       },
       {
         "team": "Fridge Raiders",
@@ -1591,7 +1591,7 @@
       "team": "Fridge Raiders",
       "day": 58,
       "date": "2026-11-26",
-      "points": 30.0
+      "points": 39.4
     },
     "lead_changes": [
       {
@@ -1674,7 +1674,7 @@
       528.5,
       565.2,
       562.5,
-      558.9
+      555.8
     ],
     "leader_series": [
       "Moron Losers",
@@ -1767,7 +1767,7 @@
         "team": "Fridge Raiders",
         "day": 17,
         "date": "2026-10-16",
-        "points": 75.7
+        "points": 75.9
       },
       {
         "player": "Adam Fox",
@@ -1775,7 +1775,7 @@
         "team": "Underdogs",
         "day": 10,
         "date": "2026-10-09",
-        "points": 70.5
+        "points": 70.7
       }
     ],
     "worst_drops": [
@@ -1794,7 +1794,7 @@
         "team": "Fridge Raiders",
         "day": 2,
         "date": "2026-10-01",
-        "points_after": 70.5,
+        "points_after": 70.7,
         "points_with_team": -1.5
       },
       {
@@ -1803,7 +1803,7 @@
         "team": "Julmat",
         "day": 21,
         "date": "2026-10-20",
-        "points_after": 61.9,
+        "points_after": 61.7,
         "points_with_team": 17.3
       },
       {
@@ -1812,17 +1812,17 @@
         "team": "Fridge Raiders",
         "day": 7,
         "date": "2026-10-06",
-        "points_after": 48.7,
+        "points_after": 48.2,
         "points_with_team": 0.7
       },
       {
-        "player": "Andrei Svechnikov",
-        "pos": "LW",
-        "team": "Moron Losers",
-        "day": 32,
-        "date": "2026-10-31",
-        "points_after": 43.9,
-        "points_with_team": 10.4
+        "player": "Jackson Blake",
+        "pos": "RW",
+        "team": "Underdogs",
+        "day": 21,
+        "date": "2026-10-20",
+        "points_after": 45.0,
+        "points_with_team": -1.0
       }
     ],
     "transactions": [
@@ -1851,46 +1851,46 @@
       {
         "team": "Moron Losers",
         "positions": {
-          "C": 599.1,
-          "LW": 540.7,
-          "RW": 433.0,
-          "D": 524.0,
-          "G": 100.0
+          "C": 601.7,
+          "LW": 539.2,
+          "RW": 436.6,
+          "D": 524.4,
+          "G": 99.2
         },
-        "total": 2196.8
+        "total": 2201.1
       },
       {
         "team": "Underdogs",
         "positions": {
-          "C": 681.3,
-          "LW": 310.8,
-          "RW": 298.5,
-          "D": 477.1,
-          "G": 117.4
+          "C": 678.3,
+          "LW": 309.8,
+          "RW": 302.3,
+          "D": 476.5,
+          "G": 116.0
         },
-        "total": 1885.1
+        "total": 1882.9
       },
       {
         "team": "Fridge Raiders",
         "positions": {
-          "C": 351.1,
-          "LW": 434.8,
-          "RW": 369.3,
-          "D": 422.4,
-          "G": 72.6
+          "C": 357.4,
+          "LW": 436.5,
+          "RW": 370.1,
+          "D": 422.8,
+          "G": 72.8
         },
-        "total": 1650.2
+        "total": 1659.6
       },
       {
         "team": "Julmat",
         "positions": {
-          "C": 703.7,
-          "LW": 271.1,
+          "C": 707.1,
+          "LW": 271.5,
           "RW": 114.0,
-          "D": 436.9,
-          "G": 112.2
+          "D": 439.7,
+          "G": 113.0
         },
-        "total": 1637.9
+        "total": 1645.3
       }
     ]
   },
@@ -11530,12 +11530,46 @@
       "teams": [
         {
           "team": "Fridge Raiders",
-          "points": 30.0,
+          "points": 39.4,
           "roster": [
+            {
+              "player": "Kyle Connor",
+              "pos": "LW",
+              "points": 9.6,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "G",
+                  "v": 1,
+                  "p": 3.0
+                },
+                {
+                  "s": "A",
+                  "v": 2,
+                  "p": 4.0
+                },
+                {
+                  "s": "+/-",
+                  "v": 2,
+                  "p": 2.0
+                },
+                {
+                  "s": "SOG",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "HIT",
+                  "v": 1,
+                  "p": 0.2
+                }
+              ]
+            },
             {
               "player": "Brad Marchand",
               "pos": "LW",
-              "points": 8.9,
+              "points": 9.1,
               "active": true,
               "played": true,
               "stats": [
@@ -11556,8 +11590,8 @@
                 },
                 {
                   "s": "SOG",
-                  "v": 5,
-                  "p": 1.0
+                  "v": 6,
+                  "p": 1.2
                 },
                 {
                   "s": "HIT",
@@ -11568,45 +11602,6 @@
                   "s": "PIM",
                   "v": 2,
                   "p": -1.0
-                }
-              ]
-            },
-            {
-              "player": "Kyle Connor",
-              "pos": "LW",
-              "points": 7.1,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "G",
-                  "v": 1,
-                  "p": 3.0
-                },
-                {
-                  "s": "A",
-                  "v": 1,
-                  "p": 2.0
-                },
-                {
-                  "s": "+/-",
-                  "v": 1,
-                  "p": 1.0
-                },
-                {
-                  "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "HIT",
-                  "v": 1,
-                  "p": 0.2
-                },
-                {
-                  "s": "BLK",
-                  "v": 1,
-                  "p": 0.5
                 }
               ]
             },
@@ -11640,9 +11635,53 @@
               ]
             },
             {
+              "player": "Aleksander Barkov",
+              "pos": "C",
+              "points": 5.7,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "G",
+                  "v": 1,
+                  "p": 3.0
+                },
+                {
+                  "s": "+/-",
+                  "v": 1,
+                  "p": 1.0
+                },
+                {
+                  "s": "SOG",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "BLK",
+                  "v": 1,
+                  "p": 0.5
+                },
+                {
+                  "s": "FOW",
+                  "v": 16,
+                  "p": 3.2
+                },
+                {
+                  "s": "FOL",
+                  "v": 7,
+                  "p": -1.4
+                },
+                {
+                  "s": "PIM",
+                  "v": 2,
+                  "p": -1.0
+                }
+              ]
+            },
+            {
               "player": "Seth Jones",
               "pos": "D",
-              "points": 5.4,
+              "points": 5.6,
               "active": true,
               "played": true,
               "stats": [
@@ -11658,8 +11697,8 @@
                 },
                 {
                   "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
+                  "v": 3,
+                  "p": 0.6
                 },
                 {
                   "s": "BLK",
@@ -11671,10 +11710,15 @@
             {
               "player": "Sam Reinhart",
               "pos": "RW",
-              "points": 1.7,
+              "points": 2.5,
               "active": true,
               "played": true,
               "stats": [
+                {
+                  "s": "+/-",
+                  "v": 1,
+                  "p": 1.0
+                },
                 {
                   "s": "SOG",
                   "v": 6,
@@ -11697,8 +11741,71 @@
                 },
                 {
                   "s": "FOL",
-                  "v": 3,
-                  "p": -0.6
+                  "v": 4,
+                  "p": -0.8
+                }
+              ]
+            },
+            {
+              "player": "Logan Stankoven",
+              "pos": "C",
+              "points": 1.3,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "+/-",
+                  "v": 1,
+                  "p": 1.0
+                },
+                {
+                  "s": "HIT",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "BLK",
+                  "v": 1,
+                  "p": 0.5
+                },
+                {
+                  "s": "FOW",
+                  "v": 5,
+                  "p": 1.0
+                },
+                {
+                  "s": "FOL",
+                  "v": 8,
+                  "p": -1.6
+                }
+              ]
+            },
+            {
+              "player": "Sean Walker",
+              "pos": "D",
+              "points": 1.2,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "SOG",
+                  "v": 4,
+                  "p": 0.8
+                },
+                {
+                  "s": "HIT",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "BLK",
+                  "v": 2,
+                  "p": 1.0
+                },
+                {
+                  "s": "PIM",
+                  "v": 2,
+                  "p": -1.0
                 }
               ]
             },
@@ -11716,8 +11823,8 @@
                 },
                 {
                   "s": "SOG",
-                  "v": 1,
-                  "p": 0.2
+                  "v": 2,
+                  "p": 0.4
                 },
                 {
                   "s": "HIT",
@@ -11728,35 +11835,11 @@
                   "s": "BLK",
                   "v": 3,
                   "p": 1.5
-                }
-              ]
-            },
-            {
-              "player": "Sean Walker",
-              "pos": "D",
-              "points": 0.7,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "SOG",
-                  "v": 4,
-                  "p": 0.8
                 },
                 {
-                  "s": "HIT",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "BLK",
+                  "s": "FOL",
                   "v": 1,
-                  "p": 0.5
-                },
-                {
-                  "s": "PIM",
-                  "v": 2,
-                  "p": -1.0
+                  "p": -0.2
                 }
               ]
             },
@@ -11775,77 +11858,16 @@
               ]
             },
             {
-              "player": "Aleksander Barkov",
-              "pos": "C",
-              "points": 0.5,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "BLK",
-                  "v": 1,
-                  "p": 0.5
-                },
-                {
-                  "s": "FOW",
-                  "v": 10,
-                  "p": 2.0
-                },
-                {
-                  "s": "FOL",
-                  "v": 5,
-                  "p": -1.0
-                },
-                {
-                  "s": "PIM",
-                  "v": 2,
-                  "p": -1.0
-                }
-              ]
-            },
-            {
-              "player": "Artturi Lehkonen",
-              "pos": "LW",
-              "points": 0.0,
-              "active": true,
-              "played": false,
-              "stats": []
-            },
-            {
-              "player": "Cale Makar",
-              "pos": "D",
-              "points": 0.0,
-              "active": true,
-              "played": false,
-              "stats": []
-            },
-            {
-              "player": "Cole Caufield",
-              "pos": "LW",
-              "points": 0.0,
-              "active": true,
-              "played": false,
-              "stats": []
-            },
-            {
-              "player": "Jacob Fowler",
-              "pos": "G",
-              "points": 0.0,
-              "active": true,
-              "played": false,
-              "stats": []
-            },
-            {
               "player": "Connor Hellebuyck",
               "pos": "G",
-              "points": -0.4,
+              "points": 0.4,
               "active": true,
               "played": true,
               "stats": [
                 {
                   "s": "SV",
-                  "v": 18,
-                  "p": 3.6
+                  "v": 22,
+                  "p": 4.4
                 },
                 {
                   "s": "GA",
@@ -11855,62 +11877,44 @@
               ]
             },
             {
-              "player": "Logan Stankoven",
-              "pos": "C",
-              "points": -0.4,
+              "player": "Artturi Lehkonen",
+              "pos": "LW",
+              "points": 0.0,
               "active": true,
               "played": true,
-              "stats": [
-                {
-                  "s": "HIT",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "FOW",
-                  "v": 4,
-                  "p": 0.8
-                },
-                {
-                  "s": "FOL",
-                  "v": 8,
-                  "p": -1.6
-                }
-              ]
+              "stats": []
             },
             {
-              "player": "Elias Lindholm",
-              "pos": "C",
-              "points": -0.8,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "+/-",
-                  "v": -3,
-                  "p": -3.0
-                },
-                {
-                  "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "FOW",
-                  "v": 12,
-                  "p": 2.4
-                },
-                {
-                  "s": "FOL",
-                  "v": 3,
-                  "p": -0.6
-                }
-              ]
-            },
-            {
-              "player": "Jared Spurgeon",
+              "player": "Cale Makar",
               "pos": "D",
-              "points": -0.8,
+              "points": 0.0,
+              "active": true,
+              "played": true,
+              "stats": []
+            },
+            {
+              "player": "Jacob Fowler",
+              "pos": "G",
+              "points": -0.6,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "SV",
+                  "v": 7,
+                  "p": 1.4
+                },
+                {
+                  "s": "GA",
+                  "v": 1,
+                  "p": -2.0
+                }
+              ]
+            },
+            {
+              "player": "Cole Caufield",
+              "pos": "LW",
+              "points": -1.0,
               "active": true,
               "played": true,
               "stats": [
@@ -11918,11 +11922,59 @@
                   "s": "+/-",
                   "v": -1,
                   "p": -1.0
+                }
+              ]
+            },
+            {
+              "player": "Jared Spurgeon",
+              "pos": "D",
+              "points": -1.1,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "+/-",
+                  "v": -2,
+                  "p": -2.0
                 },
                 {
                   "s": "HIT",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "BLK",
                   "v": 1,
-                  "p": 0.2
+                  "p": 0.5
+                }
+              ]
+            },
+            {
+              "player": "Elias Lindholm",
+              "pos": "C",
+              "points": -1.4,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "+/-",
+                  "v": -4,
+                  "p": -4.0
+                },
+                {
+                  "s": "SOG",
+                  "v": 3,
+                  "p": 0.6
+                },
+                {
+                  "s": "FOW",
+                  "v": 13,
+                  "p": 2.6
+                },
+                {
+                  "s": "FOL",
+                  "v": 3,
+                  "p": -0.6
                 }
               ]
             },
@@ -11984,7 +12036,7 @@
         },
         {
           "team": "Julmat",
-          "points": 20.5,
+          "points": 27.9,
           "roster": [
             {
               "player": "Seth Jarvis",
@@ -12017,6 +12069,50 @@
                   "s": "BLK",
                   "v": 1,
                   "p": 0.5
+                }
+              ]
+            },
+            {
+              "player": "Bo Horvat",
+              "pos": "C",
+              "points": 4.6,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "A",
+                  "v": 1,
+                  "p": 2.0
+                },
+                {
+                  "s": "+/-",
+                  "v": 1,
+                  "p": 1.0
+                },
+                {
+                  "s": "SOG",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "HIT",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "BLK",
+                  "v": 2,
+                  "p": 1.0
+                },
+                {
+                  "s": "FOW",
+                  "v": 8,
+                  "p": 1.6
+                },
+                {
+                  "s": "FOL",
+                  "v": 8,
+                  "p": -1.6
                 }
               ]
             },
@@ -12113,50 +12209,40 @@
               ]
             },
             {
-              "player": "Bo Horvat",
-              "pos": "C",
-              "points": 1.6,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "BLK",
-                  "v": 2,
-                  "p": 1.0
-                },
-                {
-                  "s": "FOW",
-                  "v": 8,
-                  "p": 1.6
-                },
-                {
-                  "s": "FOL",
-                  "v": 7,
-                  "p": -1.4
-                }
-              ]
-            },
-            {
               "player": "Jake Oettinger",
               "pos": "G",
-              "points": 1.6,
+              "points": 2.2,
               "active": true,
               "played": true,
               "stats": [
                 {
                   "s": "SV",
-                  "v": 18,
-                  "p": 3.6
+                  "v": 21,
+                  "p": 4.2
                 },
                 {
                   "s": "GA",
                   "v": 1,
                   "p": -2.0
+                }
+              ]
+            },
+            {
+              "player": "Matthew Schaefer",
+              "pos": "D",
+              "points": 2.0,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "SOG",
+                  "v": 5,
+                  "p": 1.0
+                },
+                {
+                  "s": "BLK",
+                  "v": 2,
+                  "p": 1.0
                 }
               ]
             },
@@ -12173,33 +12259,38 @@
                   "p": 1.0
                 },
                 {
+                  "s": "SOG",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
                   "s": "HIT",
                   "v": 1,
                   "p": 0.2
                 },
                 {
                   "s": "FOW",
-                  "v": 3,
-                  "p": 0.6
+                  "v": 4,
+                  "p": 0.8
                 },
                 {
                   "s": "FOL",
-                  "v": 1,
-                  "p": -0.2
+                  "v": 3,
+                  "p": -0.6
                 }
               ]
             },
             {
               "player": "Andrei Vasilevskiy",
               "pos": "G",
-              "points": 1.2,
+              "points": 1.4,
               "active": true,
               "played": true,
               "stats": [
                 {
                   "s": "SV",
-                  "v": 26,
-                  "p": 5.2
+                  "v": 27,
+                  "p": 5.4
                 },
                 {
                   "s": "GA",
@@ -12217,8 +12308,8 @@
               "stats": [
                 {
                   "s": "+/-",
-                  "v": -1,
-                  "p": -1.0
+                  "v": -2,
+                  "p": -2.0
                 },
                 {
                   "s": "SOG",
@@ -12227,8 +12318,32 @@
                 },
                 {
                   "s": "BLK",
-                  "v": 2,
+                  "v": 4,
+                  "p": 2.0
+                }
+              ]
+            },
+            {
+              "player": "Jack Hughes",
+              "pos": "C",
+              "points": 0.6,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "SOG",
+                  "v": 5,
                   "p": 1.0
+                },
+                {
+                  "s": "FOW",
+                  "v": 3,
+                  "p": 0.6
+                },
+                {
+                  "s": "FOL",
+                  "v": 5,
+                  "p": -1.0
                 }
               ]
             },
@@ -12247,50 +12362,32 @@
               ]
             },
             {
-              "player": "Jack Hughes",
-              "pos": "C",
-              "points": 0.2,
+              "player": "Devon Toews",
+              "pos": "D",
+              "points": 0.5,
               "active": true,
               "played": true,
               "stats": [
                 {
-                  "s": "SOG",
-                  "v": 3,
-                  "p": 0.6
-                },
-                {
-                  "s": "FOW",
-                  "v": 3,
-                  "p": 0.6
-                },
-                {
-                  "s": "FOL",
-                  "v": 5,
-                  "p": -1.0
+                  "s": "BLK",
+                  "v": 1,
+                  "p": 0.5
                 }
               ]
             },
             {
               "player": "Miro Heiskanen",
               "pos": "D",
-              "points": 0.2,
+              "points": 0.4,
               "active": true,
               "played": true,
               "stats": [
                 {
                   "s": "SOG",
-                  "v": 1,
-                  "p": 0.2
+                  "v": 2,
+                  "p": 0.4
                 }
               ]
-            },
-            {
-              "player": "Devon Toews",
-              "pos": "D",
-              "points": 0.0,
-              "active": true,
-              "played": false,
-              "stats": []
             },
             {
               "player": "Macklin Celebrini",
@@ -12301,40 +12398,21 @@
               "stats": []
             },
             {
-              "player": "Matthew Schaefer",
-              "pos": "D",
-              "points": -0.1,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "+/-",
-                  "v": -1,
-                  "p": -1.0
-                },
-                {
-                  "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "BLK",
-                  "v": 1,
-                  "p": 0.5
-                }
-              ]
-            },
-            {
               "player": "Brady Tkachuk",
               "pos": "LW",
-              "points": -0.6,
+              "points": -0.2,
               "active": true,
               "played": true,
               "stats": [
                 {
                   "s": "HIT",
-                  "v": 2,
-                  "p": 0.4
+                  "v": 3,
+                  "p": 0.6
+                },
+                {
+                  "s": "FOW",
+                  "v": 1,
+                  "p": 0.2
                 },
                 {
                   "s": "PIM",
@@ -12357,8 +12435,8 @@
                 },
                 {
                   "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
+                  "v": 3,
+                  "p": 0.6
                 },
                 {
                   "s": "FOW",
@@ -12367,22 +12445,28 @@
                 },
                 {
                   "s": "FOL",
-                  "v": 4,
-                  "p": -0.8
+                  "v": 5,
+                  "p": -1.0
+                }
+              ]
+            },
+            {
+              "player": "Sam Malinski",
+              "pos": "D",
+              "points": 2.0,
+              "active": false,
+              "played": true,
+              "stats": [
+                {
+                  "s": "A",
+                  "v": 1,
+                  "p": 2.0
                 }
               ]
             },
             {
               "player": "Connor McDavid",
               "pos": "C",
-              "points": 0.0,
-              "active": false,
-              "played": false,
-              "stats": []
-            },
-            {
-              "player": "Juraj Slafkovsky",
-              "pos": "LW",
               "points": 0.0,
               "active": false,
               "played": false,
@@ -12397,312 +12481,18 @@
               "stats": []
             },
             {
-              "player": "Sam Malinski",
-              "pos": "D",
-              "points": 0.0,
-              "active": false,
-              "played": false,
-              "stats": []
-            },
-            {
               "player": "Shea Theodore",
               "pos": "D",
               "points": 0.0,
               "active": false,
               "played": false,
               "stats": []
-            }
-          ]
-        },
-        {
-          "team": "Underdogs",
-          "points": 18.5,
-          "roster": [
-            {
-              "player": "Tage Thompson",
-              "pos": "C",
-              "points": 7.2,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "A",
-                  "v": 2,
-                  "p": 4.0
-                },
-                {
-                  "s": "+/-",
-                  "v": 3,
-                  "p": 3.0
-                },
-                {
-                  "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "FOW",
-                  "v": 1,
-                  "p": 0.2
-                },
-                {
-                  "s": "FOL",
-                  "v": 2,
-                  "p": -0.4
-                }
-              ]
             },
             {
-              "player": "Alex Tuch",
-              "pos": "RW",
-              "points": 6.4,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "A",
-                  "v": 2,
-                  "p": 4.0
-                },
-                {
-                  "s": "+/-",
-                  "v": 1,
-                  "p": 1.0
-                },
-                {
-                  "s": "PPA",
-                  "v": 1,
-                  "p": 0.5
-                },
-                {
-                  "s": "SOG",
-                  "v": 1,
-                  "p": 0.2
-                },
-                {
-                  "s": "BLK",
-                  "v": 1,
-                  "p": 0.5
-                },
-                {
-                  "s": "FOW",
-                  "v": 1,
-                  "p": 0.2
-                }
-              ]
-            },
-            {
-              "player": "Jake Sanderson",
-              "pos": "D",
-              "points": 4.0,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "A",
-                  "v": 2,
-                  "p": 4.0
-                }
-              ]
-            },
-            {
-              "player": "Jake Guentzel",
+              "player": "Juraj Slafkovsky",
               "pos": "LW",
-              "points": 3.1,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "A",
-                  "v": 1,
-                  "p": 2.0
-                },
-                {
-                  "s": "PPA",
-                  "v": 1,
-                  "p": 0.5
-                },
-                {
-                  "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "FOW",
-                  "v": 3,
-                  "p": 0.6
-                },
-                {
-                  "s": "FOL",
-                  "v": 2,
-                  "p": -0.4
-                }
-              ]
-            },
-            {
-              "player": "Tim Stutzle",
-              "pos": "C",
-              "points": 1.4,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "+/-",
-                  "v": 1,
-                  "p": 1.0
-                },
-                {
-                  "s": "HIT",
-                  "v": 1,
-                  "p": 0.2
-                },
-                {
-                  "s": "FOW",
-                  "v": 6,
-                  "p": 1.2
-                },
-                {
-                  "s": "FOL",
-                  "v": 5,
-                  "p": -1.0
-                }
-              ]
-            },
-            {
-              "player": "Adam Fox",
-              "pos": "D",
-              "points": 1.2,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "A",
-                  "v": 1,
-                  "p": 2.0
-                },
-                {
-                  "s": "+/-",
-                  "v": -1,
-                  "p": -1.0
-                },
-                {
-                  "s": "SOG",
-                  "v": 1,
-                  "p": 0.2
-                }
-              ]
-            },
-            {
-              "player": "Filip Forsberg",
-              "pos": "LW",
-              "points": 0.8,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "HIT",
-                  "v": 2,
-                  "p": 0.4
-                }
-              ]
-            },
-            {
-              "player": "Wyatt Johnston",
-              "pos": "C",
-              "points": 0.4,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "SOG",
-                  "v": 1,
-                  "p": 0.2
-                },
-                {
-                  "s": "HIT",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "FOW",
-                  "v": 3,
-                  "p": 0.6
-                },
-                {
-                  "s": "FOL",
-                  "v": 4,
-                  "p": -0.8
-                }
-              ]
-            },
-            {
-              "player": "David Pastrnak",
-              "pos": "RW",
-              "points": 0.1,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "A",
-                  "v": 1,
-                  "p": 2.0
-                },
-                {
-                  "s": "+/-",
-                  "v": -3,
-                  "p": -3.0
-                },
-                {
-                  "s": "PPA",
-                  "v": 1,
-                  "p": 0.5
-                },
-                {
-                  "s": "SOG",
-                  "v": 1,
-                  "p": 0.2
-                },
-                {
-                  "s": "HIT",
-                  "v": 2,
-                  "p": 0.4
-                }
-              ]
-            },
-            {
-              "player": "Lane Hutson",
-              "pos": "D",
-              "points": 0.0,
-              "active": true,
-              "played": false,
-              "stats": []
-            },
-            {
-              "player": "Nick Suzuki",
-              "pos": "C",
-              "points": 0.0,
-              "active": true,
-              "played": false,
-              "stats": []
-            },
-            {
-              "player": "Pyotr Kochetkov",
-              "pos": "G",
-              "points": 0.0,
-              "active": true,
-              "played": false,
-              "stats": []
-            },
-            {
-              "player": "John Carlson",
-              "pos": "D",
-              "points": -0.1,
-              "active": true,
+              "points": -0.6,
+              "active": false,
               "played": true,
               "stats": [
                 {
@@ -12711,218 +12501,22 @@
                   "p": -1.0
                 },
                 {
-                  "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "BLK",
-                  "v": 1,
-                  "p": 0.5
-                }
-              ]
-            },
-            {
-              "player": "Zach Werenski",
-              "pos": "D",
-              "points": -0.1,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "BLK",
-                  "v": 1,
-                  "p": 0.5
-                },
-                {
-                  "s": "PIM",
-                  "v": 2,
-                  "p": -1.0
-                }
-              ]
-            },
-            {
-              "player": "Andrei Svechnikov",
-              "pos": "LW",
-              "points": -0.4,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "SOG",
-                  "v": 1,
-                  "p": 0.2
-                },
-                {
                   "s": "HIT",
                   "v": 2,
                   "p": 0.4
-                },
-                {
-                  "s": "PIM",
-                  "v": 2,
-                  "p": -1.0
                 }
               ]
-            },
-            {
-              "player": "Joel Eriksson Ek",
-              "pos": "C",
-              "points": -1.1,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "HIT",
-                  "v": 1,
-                  "p": 0.2
-                },
-                {
-                  "s": "BLK",
-                  "v": 1,
-                  "p": 0.5
-                },
-                {
-                  "s": "FOW",
-                  "v": 5,
-                  "p": 1.0
-                },
-                {
-                  "s": "FOL",
-                  "v": 6,
-                  "p": -1.2
-                },
-                {
-                  "s": "PIM",
-                  "v": 4,
-                  "p": -2.0
-                }
-              ]
-            },
-            {
-              "player": "Jesper Wallstedt",
-              "pos": "G",
-              "points": -4.4,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "SV",
-                  "v": 8,
-                  "p": 1.6
-                },
-                {
-                  "s": "GA",
-                  "v": 3,
-                  "p": -6.0
-                }
-              ]
-            },
-            {
-              "player": "Mark Scheifele",
-              "pos": "C",
-              "points": 3.9,
-              "active": false,
-              "played": true,
-              "stats": [
-                {
-                  "s": "A",
-                  "v": 1,
-                  "p": 2.0
-                },
-                {
-                  "s": "+/-",
-                  "v": 2,
-                  "p": 2.0
-                },
-                {
-                  "s": "BLK",
-                  "v": 1,
-                  "p": 0.5
-                },
-                {
-                  "s": "FOW",
-                  "v": 5,
-                  "p": 1.0
-                },
-                {
-                  "s": "FOL",
-                  "v": 8,
-                  "p": -1.6
-                }
-              ]
-            },
-            {
-              "player": "Clayton Keller",
-              "pos": "LW",
-              "points": 2.2,
-              "active": false,
-              "played": true,
-              "stats": [
-                {
-                  "s": "+/-",
-                  "v": 2,
-                  "p": 2.0
-                },
-                {
-                  "s": "HIT",
-                  "v": 1,
-                  "p": 0.2
-                }
-              ]
-            },
-            {
-              "player": "Dylan Larkin",
-              "pos": "C",
-              "points": 0.0,
-              "active": false,
-              "played": false,
-              "stats": []
-            },
-            {
-              "player": "Ivan Barbashev",
-              "pos": "LW",
-              "points": 0.0,
-              "active": false,
-              "played": false,
-              "stats": []
-            },
-            {
-              "player": "Mattias Ekholm",
-              "pos": "D",
-              "points": 0.0,
-              "active": false,
-              "played": false,
-              "stats": []
-            },
-            {
-              "player": "Nathan MacKinnon",
-              "pos": "C",
-              "points": 0.0,
-              "active": false,
-              "played": false,
-              "stats": []
             }
           ]
         },
         {
           "team": "Moron Losers",
-          "points": 16.9,
+          "points": 21.2,
           "roster": [
             {
               "player": "Logan Cooley",
               "pos": "C",
-              "points": 4.1,
+              "points": 7.3,
               "active": true,
               "played": true,
               "stats": [
@@ -12930,6 +12524,16 @@
                   "s": "G",
                   "v": 1,
                   "p": 3.0
+                },
+                {
+                  "s": "A",
+                  "v": 1,
+                  "p": 2.0
+                },
+                {
+                  "s": "+/-",
+                  "v": 1,
+                  "p": 1.0
                 },
                 {
                   "s": "PPG",
@@ -12948,13 +12552,42 @@
                 },
                 {
                   "s": "FOW",
-                  "v": 4,
-                  "p": 0.8
+                  "v": 7,
+                  "p": 1.4
                 },
                 {
                   "s": "FOL",
+                  "v": 5,
+                  "p": -1.0
+                }
+              ]
+            },
+            {
+              "player": "Jackson Blake",
+              "pos": "RW",
+              "points": 5.1,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "G",
+                  "v": 1,
+                  "p": 3.0
+                },
+                {
+                  "s": "+/-",
+                  "v": 1,
+                  "p": 1.0
+                },
+                {
+                  "s": "SOG",
                   "v": 3,
-                  "p": -0.6
+                  "p": 0.6
+                },
+                {
+                  "s": "BLK",
+                  "v": 1,
+                  "p": 0.5
                 }
               ]
             },
@@ -12985,7 +12618,7 @@
             {
               "player": "Robert Thomas",
               "pos": "C",
-              "points": 3.3,
+              "points": 2.7,
               "active": true,
               "played": true,
               "stats": [
@@ -12995,14 +12628,9 @@
                   "p": 2.0
                 },
                 {
-                  "s": "+/-",
-                  "v": 1,
-                  "p": 1.0
-                },
-                {
                   "s": "SOG",
-                  "v": 1,
-                  "p": 0.2
+                  "v": 2,
+                  "p": 0.4
                 },
                 {
                   "s": "BLK",
@@ -13011,8 +12639,8 @@
                 },
                 {
                   "s": "FOW",
-                  "v": 9,
-                  "p": 1.8
+                  "v": 10,
+                  "p": 2.0
                 },
                 {
                   "s": "FOL",
@@ -13027,9 +12655,9 @@
               ]
             },
             {
-              "player": "Brock Faber",
-              "pos": "D",
-              "points": 3.2,
+              "player": "Matthew Tkachuk",
+              "pos": "RW",
+              "points": 2.2,
               "active": true,
               "played": true,
               "stats": [
@@ -13039,9 +12667,33 @@
                   "p": 2.0
                 },
                 {
-                  "s": "PPA",
+                  "s": "SOG",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "HIT",
+                  "v": 4,
+                  "p": 0.8
+                },
+                {
+                  "s": "PIM",
+                  "v": 2,
+                  "p": -1.0
+                }
+              ]
+            },
+            {
+              "player": "Brock Faber",
+              "pos": "D",
+              "points": 1.7,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "+/-",
                   "v": 1,
-                  "p": 0.5
+                  "p": 1.0
                 },
                 {
                   "s": "SOG",
@@ -13058,7 +12710,7 @@
             {
               "player": "Nikita Kucherov",
               "pos": "RW",
-              "points": 2.6,
+              "points": 1.6,
               "active": true,
               "played": true,
               "stats": [
@@ -13069,8 +12721,8 @@
                 },
                 {
                   "s": "+/-",
-                  "v": -1,
-                  "p": -1.0
+                  "v": -2,
+                  "p": -2.0
                 },
                 {
                   "s": "PPA",
@@ -13090,122 +12742,59 @@
               ]
             },
             {
-              "player": "Matthew Tkachuk",
-              "pos": "RW",
-              "points": 2.0,
+              "player": "Thomas Chabot",
+              "pos": "D",
+              "points": 0.3,
               "active": true,
               "played": true,
               "stats": [
                 {
-                  "s": "A",
-                  "v": 1,
-                  "p": 2.0
+                  "s": "+/-",
+                  "v": -1,
+                  "p": -1.0
                 },
                 {
                   "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
+                  "v": 4,
+                  "p": 0.8
                 },
                 {
-                  "s": "HIT",
-                  "v": 3,
-                  "p": 0.6
-                },
-                {
-                  "s": "PIM",
-                  "v": 2,
-                  "p": -1.0
+                  "s": "BLK",
+                  "v": 1,
+                  "p": 0.5
                 }
               ]
             },
             {
               "player": "Ilya Sorokin",
               "pos": "G",
-              "points": 1.8,
+              "points": 0.2,
               "active": true,
               "played": true,
               "stats": [
                 {
                   "s": "SV",
-                  "v": 19,
-                  "p": 3.8
+                  "v": 21,
+                  "p": 4.2
                 },
                 {
                   "s": "GA",
-                  "v": 1,
-                  "p": -2.0
+                  "v": 2,
+                  "p": -4.0
                 }
               ]
             },
             {
-              "player": "Jackson Blake",
+              "player": "Martin Necas",
               "pos": "RW",
-              "points": 0.9,
+              "points": 0.2,
               "active": true,
               "played": true,
               "stats": [
-                {
-                  "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "BLK",
-                  "v": 1,
-                  "p": 0.5
-                }
-              ]
-            },
-            {
-              "player": "Kirill Kaprizov",
-              "pos": "LW",
-              "points": 0.6,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
-                },
                 {
                   "s": "HIT",
                   "v": 1,
                   "p": 0.2
-                }
-              ]
-            },
-            {
-              "player": "Matt Boldy",
-              "pos": "LW",
-              "points": 0.1,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "SOG",
-                  "v": 3,
-                  "p": 0.6
-                },
-                {
-                  "s": "BLK",
-                  "v": 1,
-                  "p": 0.5
-                },
-                {
-                  "s": "FOW",
-                  "v": 1,
-                  "p": 0.2
-                },
-                {
-                  "s": "FOL",
-                  "v": 1,
-                  "p": -0.2
-                },
-                {
-                  "s": "PIM",
-                  "v": 2,
-                  "p": -1.0
                 }
               ]
             },
@@ -13226,14 +12815,6 @@
               "stats": []
             },
             {
-              "player": "Martin Necas",
-              "pos": "RW",
-              "points": 0.0,
-              "active": true,
-              "played": false,
-              "stats": []
-            },
-            {
               "player": "Mikael Granlund",
               "pos": "C",
               "points": 0.0,
@@ -13244,7 +12825,7 @@
             {
               "player": "Thomas Harley",
               "pos": "D",
-              "points": -0.8,
+              "points": -0.1,
               "active": true,
               "played": true,
               "stats": [
@@ -13257,25 +12838,11 @@
                   "s": "SOG",
                   "v": 1,
                   "p": 0.2
-                }
-              ]
-            },
-            {
-              "player": "Thomas Chabot",
-              "pos": "D",
-              "points": -0.9,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "+/-",
-                  "v": -2,
-                  "p": -2.0
                 },
                 {
-                  "s": "SOG",
-                  "v": 3,
-                  "p": 0.6
+                  "s": "HIT",
+                  "v": 1,
+                  "p": 0.2
                 },
                 {
                   "s": "BLK",
@@ -13285,16 +12852,79 @@
               ]
             },
             {
+              "player": "Kirill Kaprizov",
+              "pos": "LW",
+              "points": -0.2,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "+/-",
+                  "v": -1,
+                  "p": -1.0
+                },
+                {
+                  "s": "SOG",
+                  "v": 3,
+                  "p": 0.6
+                },
+                {
+                  "s": "HIT",
+                  "v": 1,
+                  "p": 0.2
+                }
+              ]
+            },
+            {
+              "player": "Matt Boldy",
+              "pos": "LW",
+              "points": -0.6,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "+/-",
+                  "v": -1,
+                  "p": -1.0
+                },
+                {
+                  "s": "SOG",
+                  "v": 3,
+                  "p": 0.6
+                },
+                {
+                  "s": "BLK",
+                  "v": 2,
+                  "p": 1.0
+                },
+                {
+                  "s": "FOW",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "FOL",
+                  "v": 2,
+                  "p": -0.4
+                },
+                {
+                  "s": "PIM",
+                  "v": 2,
+                  "p": -1.0
+                }
+              ]
+            },
+            {
               "player": "Linus Ullmark",
               "pos": "G",
-              "points": -3.4,
+              "points": -2.6,
               "active": true,
               "played": true,
               "stats": [
                 {
                   "s": "SV",
-                  "v": 23,
-                  "p": 4.6
+                  "v": 27,
+                  "p": 5.4
                 },
                 {
                   "s": "GA",
@@ -13350,6 +12980,585 @@
               "active": false,
               "played": false,
               "stats": []
+            }
+          ]
+        },
+        {
+          "team": "Underdogs",
+          "points": 16.3,
+          "roster": [
+            {
+              "player": "Alex Tuch",
+              "pos": "RW",
+              "points": 11.2,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "G",
+                  "v": 1,
+                  "p": 3.0
+                },
+                {
+                  "s": "A",
+                  "v": 2,
+                  "p": 4.0
+                },
+                {
+                  "s": "+/-",
+                  "v": 2,
+                  "p": 2.0
+                },
+                {
+                  "s": "PPA",
+                  "v": 1,
+                  "p": 0.5
+                },
+                {
+                  "s": "GWG",
+                  "v": 1,
+                  "p": 1.0
+                },
+                {
+                  "s": "SOG",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "BLK",
+                  "v": 1,
+                  "p": 0.5
+                },
+                {
+                  "s": "FOW",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "FOL",
+                  "v": 2,
+                  "p": -0.4
+                }
+              ]
+            },
+            {
+              "player": "Tage Thompson",
+              "pos": "C",
+              "points": 7.2,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "A",
+                  "v": 2,
+                  "p": 4.0
+                },
+                {
+                  "s": "+/-",
+                  "v": 3,
+                  "p": 3.0
+                },
+                {
+                  "s": "SOG",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "FOW",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "FOL",
+                  "v": 2,
+                  "p": -0.4
+                }
+              ]
+            },
+            {
+              "player": "Jake Sanderson",
+              "pos": "D",
+              "points": 3.5,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "A",
+                  "v": 2,
+                  "p": 4.0
+                },
+                {
+                  "s": "+/-",
+                  "v": -1,
+                  "p": -1.0
+                },
+                {
+                  "s": "BLK",
+                  "v": 1,
+                  "p": 0.5
+                }
+              ]
+            },
+            {
+              "player": "Jake Guentzel",
+              "pos": "LW",
+              "points": 1.9,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "A",
+                  "v": 1,
+                  "p": 2.0
+                },
+                {
+                  "s": "+/-",
+                  "v": -1,
+                  "p": -1.0
+                },
+                {
+                  "s": "PPA",
+                  "v": 1,
+                  "p": 0.5
+                },
+                {
+                  "s": "SOG",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "FOW",
+                  "v": 3,
+                  "p": 0.6
+                },
+                {
+                  "s": "FOL",
+                  "v": 3,
+                  "p": -0.6
+                }
+              ]
+            },
+            {
+              "player": "Adam Fox",
+              "pos": "D",
+              "points": 1.4,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "A",
+                  "v": 1,
+                  "p": 2.0
+                },
+                {
+                  "s": "+/-",
+                  "v": -1,
+                  "p": -1.0
+                },
+                {
+                  "s": "SOG",
+                  "v": 2,
+                  "p": 0.4
+                }
+              ]
+            },
+            {
+              "player": "Filip Forsberg",
+              "pos": "LW",
+              "points": 1.0,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "SOG",
+                  "v": 3,
+                  "p": 0.6
+                },
+                {
+                  "s": "HIT",
+                  "v": 2,
+                  "p": 0.4
+                }
+              ]
+            },
+            {
+              "player": "Lane Hutson",
+              "pos": "D",
+              "points": 0.2,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "HIT",
+                  "v": 1,
+                  "p": 0.2
+                }
+              ]
+            },
+            {
+              "player": "Wyatt Johnston",
+              "pos": "C",
+              "points": 0.2,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "SOG",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "HIT",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "FOW",
+                  "v": 3,
+                  "p": 0.6
+                },
+                {
+                  "s": "FOL",
+                  "v": 5,
+                  "p": -1.0
+                }
+              ]
+            },
+            {
+              "player": "Pyotr Kochetkov",
+              "pos": "G",
+              "points": 0.0,
+              "active": true,
+              "played": false,
+              "stats": []
+            },
+            {
+              "player": "Tim Stutzle",
+              "pos": "C",
+              "points": 0.0,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "HIT",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "FOW",
+                  "v": 6,
+                  "p": 1.2
+                },
+                {
+                  "s": "FOL",
+                  "v": 7,
+                  "p": -1.4
+                }
+              ]
+            },
+            {
+              "player": "Zach Werenski",
+              "pos": "D",
+              "points": -0.1,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "SOG",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "BLK",
+                  "v": 1,
+                  "p": 0.5
+                },
+                {
+                  "s": "PIM",
+                  "v": 2,
+                  "p": -1.0
+                }
+              ]
+            },
+            {
+              "player": "Nick Suzuki",
+              "pos": "C",
+              "points": -0.2,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "SOG",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "FOL",
+                  "v": 2,
+                  "p": -0.4
+                }
+              ]
+            },
+            {
+              "player": "Andrei Svechnikov",
+              "pos": "LW",
+              "points": -0.4,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "SOG",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "HIT",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "PIM",
+                  "v": 2,
+                  "p": -1.0
+                }
+              ]
+            },
+            {
+              "player": "John Carlson",
+              "pos": "D",
+              "points": -0.6,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "+/-",
+                  "v": -2,
+                  "p": -2.0
+                },
+                {
+                  "s": "SOG",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "BLK",
+                  "v": 2,
+                  "p": 1.0
+                }
+              ]
+            },
+            {
+              "player": "David Pastrnak",
+              "pos": "RW",
+              "points": -0.9,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "A",
+                  "v": 1,
+                  "p": 2.0
+                },
+                {
+                  "s": "+/-",
+                  "v": -4,
+                  "p": -4.0
+                },
+                {
+                  "s": "PPA",
+                  "v": 1,
+                  "p": 0.5
+                },
+                {
+                  "s": "SOG",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "HIT",
+                  "v": 2,
+                  "p": 0.4
+                }
+              ]
+            },
+            {
+              "player": "Joel Eriksson Ek",
+              "pos": "C",
+              "points": -2.3,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "+/-",
+                  "v": -1,
+                  "p": -1.0
+                },
+                {
+                  "s": "SOG",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "HIT",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "BLK",
+                  "v": 1,
+                  "p": 0.5
+                },
+                {
+                  "s": "FOW",
+                  "v": 8,
+                  "p": 1.6
+                },
+                {
+                  "s": "FOL",
+                  "v": 6,
+                  "p": -1.2
+                },
+                {
+                  "s": "PIM",
+                  "v": 6,
+                  "p": -3.0
+                }
+              ]
+            },
+            {
+              "player": "Jesper Wallstedt",
+              "pos": "G",
+              "points": -5.8,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "SV",
+                  "v": 11,
+                  "p": 2.2
+                },
+                {
+                  "s": "GA",
+                  "v": 4,
+                  "p": -8.0
+                }
+              ]
+            },
+            {
+              "player": "Mark Scheifele",
+              "pos": "C",
+              "points": 8.1,
+              "active": false,
+              "played": true,
+              "stats": [
+                {
+                  "s": "G",
+                  "v": 1,
+                  "p": 3.0
+                },
+                {
+                  "s": "A",
+                  "v": 1,
+                  "p": 2.0
+                },
+                {
+                  "s": "+/-",
+                  "v": 3,
+                  "p": 3.0
+                },
+                {
+                  "s": "SOG",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "BLK",
+                  "v": 1,
+                  "p": 0.5
+                },
+                {
+                  "s": "FOW",
+                  "v": 5,
+                  "p": 1.0
+                },
+                {
+                  "s": "FOL",
+                  "v": 8,
+                  "p": -1.6
+                }
+              ]
+            },
+            {
+              "player": "Clayton Keller",
+              "pos": "LW",
+              "points": 2.2,
+              "active": false,
+              "played": true,
+              "stats": [
+                {
+                  "s": "+/-",
+                  "v": 2,
+                  "p": 2.0
+                },
+                {
+                  "s": "HIT",
+                  "v": 1,
+                  "p": 0.2
+                }
+              ]
+            },
+            {
+              "player": "Ivan Barbashev",
+              "pos": "LW",
+              "points": 0.0,
+              "active": false,
+              "played": false,
+              "stats": []
+            },
+            {
+              "player": "Mattias Ekholm",
+              "pos": "D",
+              "points": 0.0,
+              "active": false,
+              "played": false,
+              "stats": []
+            },
+            {
+              "player": "Nathan MacKinnon",
+              "pos": "C",
+              "points": 0.0,
+              "active": false,
+              "played": false,
+              "stats": []
+            },
+            {
+              "player": "Dylan Larkin",
+              "pos": "C",
+              "points": -1.0,
+              "active": false,
+              "played": true,
+              "stats": [
+                {
+                  "s": "+/-",
+                  "v": -1,
+                  "p": -1.0
+                },
+                {
+                  "s": "HIT",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "FOW",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "FOL",
+                  "v": 2,
+                  "p": -0.4
+                }
+              ]
             }
           ]
         }
