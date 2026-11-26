@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 58,
-  "last_updated": "26.11.2026 klo 08:00",
+  "last_updated": "26.11.2026 klo 08:30",
   "teams": [
     {
       "id": 1,
@@ -171,7 +171,7 @@
       "id": 2,
       "name": "Julmat",
       "abbrev": "JUL",
-      "points_for": 1654.9,
+      "points_for": 1654.7,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -268,7 +268,7 @@
         1604.8,
         1607.1,
         1617.4,
-        1654.9
+        1654.7
       ],
       "weeklyScores": [
         9.9,
@@ -328,7 +328,7 @@
         41.1,
         2.3,
         10.3,
-        37.5
+        37.3
       ]
     },
     {
@@ -499,7 +499,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 2234.8,
+      "points_for": 2234.6,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -596,7 +596,7 @@
         2111.2,
         2166.4,
         2179.9,
-        2234.8
+        2234.6
       ],
       "weeklyScores": [
         39.7,
@@ -656,7 +656,7 @@
         29.6,
         55.2,
         13.5,
-        54.9
+        54.7
       ]
     }
   ],
@@ -1591,7 +1591,7 @@
       "team": "Moron Losers",
       "day": 58,
       "date": "2026-11-26",
-      "points": 54.9
+      "points": 54.7
     },
     "lead_changes": [
       {
@@ -1611,7 +1611,7 @@
       }
     ],
     "biggest_lead": {
-      "gap": 346.9,
+      "gap": 346.7,
       "team": "Moron Losers",
       "day": 58,
       "date": "2026-11-26"
@@ -1759,7 +1759,7 @@
         "team": "Julmat",
         "day": 3,
         "date": "2026-10-02",
-        "points": 84.8
+        "points": 84.6
       },
       {
         "player": "Seth Jones",
@@ -1851,13 +1851,13 @@
       {
         "team": "Moron Losers",
         "positions": {
-          "C": 609.2,
+          "C": 609.0,
           "LW": 544.3,
           "RW": 448.1,
           "D": 530.0,
           "G": 103.2
         },
-        "total": 2234.8
+        "total": 2234.6
       },
       {
         "team": "Underdogs",
@@ -1884,13 +1884,13 @@
       {
         "team": "Julmat",
         "positions": {
-          "C": 705.5,
+          "C": 705.3,
           "LW": 271.5,
           "RW": 114.0,
           "D": 450.3,
           "G": 113.6
         },
-        "total": 1654.9
+        "total": 1654.7
       }
     ]
   },
@@ -11530,7 +11530,7 @@
       "teams": [
         {
           "team": "Moron Losers",
-          "points": 54.9,
+          "points": 54.7,
           "roster": [
             {
               "player": "Martin Necas",
@@ -11618,7 +11618,7 @@
             {
               "player": "Logan Cooley",
               "pos": "C",
-              "points": 6.3,
+              "points": 6.1,
               "active": true,
               "played": true,
               "stats": [
@@ -11654,8 +11654,8 @@
                 },
                 {
                   "s": "FOL",
-                  "v": 6,
-                  "p": -1.2
+                  "v": 7,
+                  "p": -1.4
                 }
               ]
             },
@@ -12730,7 +12730,7 @@
         },
         {
           "team": "Julmat",
-          "points": 37.5,
+          "points": 37.3,
           "roster": [
             {
               "player": "Devon Toews",
@@ -13018,35 +13018,6 @@
               ]
             },
             {
-              "player": "Steven Stamkos",
-              "pos": "C",
-              "points": 0.8,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "SOG",
-                  "v": 1,
-                  "p": 0.2
-                },
-                {
-                  "s": "HIT",
-                  "v": 1,
-                  "p": 0.2
-                },
-                {
-                  "s": "FOW",
-                  "v": 5,
-                  "p": 1.0
-                },
-                {
-                  "s": "FOL",
-                  "v": 3,
-                  "p": -0.6
-                }
-              ]
-            },
-            {
               "player": "Brandon Hagel",
               "pos": "LW",
               "points": 0.6,
@@ -13091,6 +13062,35 @@
                   "s": "FOL",
                   "v": 5,
                   "p": -1.0
+                }
+              ]
+            },
+            {
+              "player": "Steven Stamkos",
+              "pos": "C",
+              "points": 0.6,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "SOG",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "HIT",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "FOW",
+                  "v": 4,
+                  "p": 0.8
+                },
+                {
+                  "s": "FOL",
+                  "v": 3,
+                  "p": -0.6
                 }
               ]
             },
