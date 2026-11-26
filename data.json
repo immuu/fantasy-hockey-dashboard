@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 58,
-  "last_updated": "26.11.2026 klo 07:30",
+  "last_updated": "26.11.2026 klo 08:00",
   "teams": [
     {
       "id": 1,
@@ -499,7 +499,7 @@
       "id": 4,
       "name": "Moron Losers",
       "abbrev": "MOR",
-      "points_for": 2234.2,
+      "points_for": 2234.8,
       "wins": 0,
       "losses": 0,
       "ties": 0,
@@ -596,7 +596,7 @@
         2111.2,
         2166.4,
         2179.9,
-        2234.2
+        2234.8
       ],
       "weeklyScores": [
         39.7,
@@ -656,7 +656,7 @@
         29.6,
         55.2,
         13.5,
-        54.3
+        54.9
       ]
     }
   ],
@@ -1591,7 +1591,7 @@
       "team": "Moron Losers",
       "day": 58,
       "date": "2026-11-26",
-      "points": 54.3
+      "points": 54.9
     },
     "lead_changes": [
       {
@@ -1611,7 +1611,7 @@
       }
     ],
     "biggest_lead": {
-      "gap": 346.3,
+      "gap": 346.9,
       "team": "Moron Losers",
       "day": 58,
       "date": "2026-11-26"
@@ -1674,7 +1674,7 @@
       528.5,
       565.2,
       562.5,
-      579.3
+      579.9
     ],
     "leader_series": [
       "Moron Losers",
@@ -1743,7 +1743,7 @@
         "team": "Moron Losers",
         "day": 21,
         "date": "2026-10-20",
-        "points": 116.4
+        "points": 116.6
       },
       {
         "player": "Artturi Lehkonen",
@@ -1785,7 +1785,7 @@
         "team": "Julmat",
         "day": 16,
         "date": "2026-10-15",
-        "points_after": 116.4,
+        "points_after": 116.6,
         "points_with_team": 12.4
       },
       {
@@ -1821,7 +1821,7 @@
         "team": "Fridge Raiders",
         "day": 25,
         "date": "2026-10-24",
-        "points_after": 46.7,
+        "points_after": 47.1,
         "points_with_team": -0.3
       }
     ],
@@ -1851,13 +1851,13 @@
       {
         "team": "Moron Losers",
         "positions": {
-          "C": 608.8,
-          "LW": 544.1,
+          "C": 609.2,
+          "LW": 544.3,
           "RW": 448.1,
           "D": 530.0,
           "G": 103.2
         },
-        "total": 2234.2
+        "total": 2234.8
       },
       {
         "team": "Underdogs",
@@ -11530,7 +11530,7 @@
       "teams": [
         {
           "team": "Moron Losers",
-          "points": 54.3,
+          "points": 54.9,
           "roster": [
             {
               "player": "Martin Necas",
@@ -11574,7 +11574,7 @@
             {
               "player": "Mikael Granlund",
               "pos": "C",
-              "points": 8.1,
+              "points": 8.5,
               "active": true,
               "played": true,
               "stats": [
@@ -11600,13 +11600,13 @@
                 },
                 {
                   "s": "FOW",
-                  "v": 7,
-                  "p": 1.4
+                  "v": 10,
+                  "p": 2.0
                 },
                 {
                   "s": "FOL",
-                  "v": 8,
-                  "p": -1.6
+                  "v": 9,
+                  "p": -1.8
                 },
                 {
                   "s": "PIM",
@@ -11699,6 +11699,50 @@
               ]
             },
             {
+              "player": "Cutter Gauthier",
+              "pos": "LW",
+              "points": 5.1,
+              "active": true,
+              "played": true,
+              "stats": [
+                {
+                  "s": "G",
+                  "v": 1,
+                  "p": 3.0
+                },
+                {
+                  "s": "+/-",
+                  "v": 1,
+                  "p": 1.0
+                },
+                {
+                  "s": "PPG",
+                  "v": 1,
+                  "p": 0.5
+                },
+                {
+                  "s": "SOG",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "HIT",
+                  "v": 1,
+                  "p": 0.2
+                },
+                {
+                  "s": "FOW",
+                  "v": 2,
+                  "p": 0.4
+                },
+                {
+                  "s": "FOL",
+                  "v": 2,
+                  "p": -0.4
+                }
+              ]
+            },
+            {
               "player": "Jackson Blake",
               "pos": "RW",
               "points": 5.1,
@@ -11724,45 +11768,6 @@
                   "s": "BLK",
                   "v": 1,
                   "p": 0.5
-                }
-              ]
-            },
-            {
-              "player": "Cutter Gauthier",
-              "pos": "LW",
-              "points": 4.9,
-              "active": true,
-              "played": true,
-              "stats": [
-                {
-                  "s": "G",
-                  "v": 1,
-                  "p": 3.0
-                },
-                {
-                  "s": "+/-",
-                  "v": 1,
-                  "p": 1.0
-                },
-                {
-                  "s": "PPG",
-                  "v": 1,
-                  "p": 0.5
-                },
-                {
-                  "s": "SOG",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "FOW",
-                  "v": 2,
-                  "p": 0.4
-                },
-                {
-                  "s": "FOL",
-                  "v": 2,
-                  "p": -0.4
                 }
               ]
             },
@@ -13185,13 +13190,13 @@
                 },
                 {
                   "s": "FOW",
-                  "v": 10,
-                  "p": 2.0
+                  "v": 11,
+                  "p": 2.2
                 },
                 {
                   "s": "FOL",
-                  "v": 7,
-                  "p": -1.4
+                  "v": 8,
+                  "p": -1.6
                 }
               ]
             },
