@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 58,
-  "last_updated": "26.11.2026 klo 08:30",
+  "last_updated": "26.11.2026 klo 09:00",
   "teams": [
     {
       "id": 1,
@@ -798,17 +798,17 @@
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Sidney Crosby",
-      "position": "Center",
-      "proTeam": "Pittsburgh Penguins",
+      "name": "Adrian Kempe",
+      "position": "Right Wing",
+      "proTeam": "Los Angeles Kings",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
     },
     {
-      "name": "Adrian Kempe",
-      "position": "Right Wing",
-      "proTeam": "Los Angeles Kings",
+      "name": "Sidney Crosby",
+      "position": "Center",
+      "proTeam": "Pittsburgh Penguins",
       "total_points": 0.0,
       "avg_points": 0,
       "injuryStatus": "ACTIVE"
