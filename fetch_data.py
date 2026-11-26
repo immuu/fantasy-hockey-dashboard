@@ -56,6 +56,43 @@ name_to_stat_id = {v: int(k) for k, v in c.STATS_MAP.items()}
 # The sum over all days equals the official ESPN season total.
 # While doing so we also collect per-player daily records for the highlights/stats section.
 from datetime import timedelta
+STAT_ORDER = {k: i for i, k in enumerate(
+    ['G', 'A', '+/-', 'PPG', 'PPA', 'SHG', 'SHA', 'GWG', 'HAT',
+     'SOG', 'HIT', 'BLK', 'FOW', 'FOL', 'PIM', 'W', 'OTL', 'SO', 'SV', 'GA']
+)}
+
+def extract_day_stats(player_dict, period, season_year):
+    """Return (points, played, stat_breakdown) for a player in a single scoring period."""
+    pts = 0.0
+    played = False
+    stat_map = {}
+    for st in player_dict.get('stats', []):
+        if (st.get('statSplitTypeId') == 5 and st.get('scoringPeriodId') == period
+                and st.get('seasonId') == season_year):
+            pts += st.get('appliedTotal', 0.0)
+            raw_stats = st.get('stats', {})
+            if raw_stats and any(v != 0 for v in raw_stats.values()):
+                played = True
+            for sid, pval in st.get('appliedStats', {}).items():
+                if pval:
+                    played = True
+                    sname = c.STATS_MAP.get(str(sid), str(sid))
+                    rval = raw_stats.get(str(sid), 0)
+                    cur = stat_map.get(sname, [0.0, 0.0])
+                    cur[0] += rval
+                    cur[1] += pval
+                    stat_map[sname] = cur
+    breakdown = [
+        {
+            "s": k,
+            "v": int(round(v[0])) if abs(v[0] - round(v[0])) < 1e-6 else round(v[0], 1),
+            "p": round(v[1], 1)
+        }
+        for k, v in sorted(stat_map.items(), key=lambda kv: STAT_ORDER.get(kv[0], 99))
+        if round(v[1], 1) != 0
+    ]
+    return round(pts, 1), played, breakdown
+
 BENCH_SLOTS = (7, 8)
 POS_MAP = {1: 'C', 2: 'LW', 3: 'RW', 4: 'D', 5: 'G'}
 team_names = {t.team_id: getattr(t, 'team_name', f"Team {t.team_id}") for t in league.teams}
@@ -77,25 +114,7 @@ for period in range(1, last_period + 1):
         for entry in raw_team.get('roster', {}).get('entries', []):
             player = entry['playerPoolEntry']['player']
             active = entry.get('lineupSlotId') not in BENCH_SLOTS
-            pts = 0.0
-            played = False
-            stat_map = {}
-            for st in player.get('stats', []):
-                if (st.get('statSplitTypeId') == 5 and st.get('scoringPeriodId') == period
-                        and st.get('seasonId') == YEAR_USED):
-                    pts += st.get('appliedTotal', 0.0)
-                    raw_stats = st.get('stats', {})
-                    if raw_stats and any(v != 0 for v in raw_stats.values()):
-                        played = True
-                    for sid, pval in st.get('appliedStats', {}).items():
-                        if pval:
-                            played = True
-                            sname = c.STATS_MAP.get(str(sid), str(sid))
-                            rval = raw_stats.get(str(sid), 0)
-                            cur = stat_map.get(sname, [0.0, 0.0])
-                            cur[0] += rval
-                            cur[1] += pval
-                            stat_map[sname] = cur
+            pts, played, breakdown = extract_day_stats(player, period, YEAR_USED)
             if active:
                 s += pts
             rec = records.setdefault((raw_team['id'], player['id']), {
@@ -104,22 +123,10 @@ for period in range(1, last_period + 1):
                 "days": {},
                 "stats": {},
                 "played": {}})
-            rec["days"][period] = (round(pts, 1), active)
+            rec["days"][period] = (pts, active)
             rec["played"][period] = played
-            if stat_map:
-                order = {k: i for i, k in enumerate(
-                    ['G', 'A', '+/-', 'PPG', 'PPA', 'SHG', 'SHA', 'GWG', 'HAT',
-                     'SOG', 'HIT', 'BLK', 'FOW', 'FOL', 'PIM', 'W', 'OTL', 'SO', 'SV', 'GA']
-                )}
-                rec["stats"][period] = [
-                    {
-                        "s": k,
-                        "v": int(round(v[0])) if abs(v[0] - round(v[0])) < 1e-6 else round(v[0], 1),
-                        "p": round(v[1], 1)
-                    }
-                    for k, v in sorted(stat_map.items(), key=lambda kv: order.get(kv[0], 99))
-                    if round(v[1], 1) != 0
-                ]
+            if breakdown:
+                rec["stats"][period] = breakdown
         day_totals[raw_team['id']] = round(s, 1)
     for tid in daily_points:
         daily_points[tid].append(day_totals.get(tid, 0.0))
@@ -337,11 +344,39 @@ def build_recent_days(n=7):
         has_scores = any(t["points"] != 0 for t in teams_list) or any(
             pl["points"] != 0 for t in teams_list for pl in t["roster"]
         )
+        fa_top3, fa_bottom3 = [], []
+        if has_scores:
+            try:
+                fa_filter = {"players": {"filterStatus": {"value": ["FREEAGENT", "WAIVERS"]},
+                                         "limit": 500,
+                                         "sortPercOwned": {"sortAsc": False, "sortPriority": 1}}}
+                fa_raw = league.espn_request.league_get(
+                    params={'view': 'kona_player_info', 'scoringPeriodId': p},
+                    headers={'x-fantasy-filter': json.dumps(fa_filter)}
+                )
+                fa_played = []
+                for fp in fa_raw.get('players', []):
+                    fpl = fp.get('player', {})
+                    f_pts, f_played, f_stats = extract_day_stats(fpl, p, YEAR_USED)
+                    if f_played:
+                        fa_played.append({
+                            "player": fpl.get('fullName', 'Unknown'),
+                            "pos": POS_MAP.get(fpl.get('defaultPositionId'), '?'),
+                            "points": f_pts,
+                            "stats": f_stats
+                        })
+                fa_top3 = sorted(fa_played, key=lambda x: -x["points"])[:3]
+                fa_bottom3 = sorted(fa_played, key=lambda x: x["points"])[:3]
+            except Exception as e:
+                print(f"Vapaiden agenttien haku päivälle {p} epäonnistui: {e}")
+
         days_out.append({
             "day": p,
             "date": d_str,
             "has_scores": has_scores,
-            "teams": teams_list
+            "teams": teams_list,
+            "fa_top3": fa_top3,
+            "fa_bottom3": fa_bottom3
         })
     return days_out
 

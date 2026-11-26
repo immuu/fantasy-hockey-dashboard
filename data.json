@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 59,
-  "last_updated": "26.11.2026 klo 12:00",
+  "last_updated": "26.11.2026 klo 17:16",
   "teams": [
     {
       "id": 1,
@@ -795,7 +795,7 @@
       "proTeam": "Anaheim Ducks",
       "total_points": 0.0,
       "avg_points": 0,
-      "injuryStatus": "OUT"
+      "injuryStatus": "DAY_TO_DAY"
     },
     {
       "name": "Drake Batherson",
@@ -2654,7 +2654,9 @@
             }
           ]
         }
-      ]
+      ],
+      "fa_top3": [],
+      "fa_bottom3": []
     },
     {
       "day": 54,
@@ -5142,6 +5144,46 @@
             }
           ]
         }
+      ],
+      "fa_top3": [
+        {
+          "player": "Sam Bennett",
+          "pos": "C",
+          "points": 21.8,
+          "stats": []
+        },
+        {
+          "player": "Sam Rinzel",
+          "pos": "D",
+          "points": 13.4,
+          "stats": []
+        },
+        {
+          "player": "Jake Neighbours",
+          "pos": "LW",
+          "points": 13.2,
+          "stats": []
+        }
+      ],
+      "fa_bottom3": [
+        {
+          "player": "Charlie Lindgren",
+          "pos": "G",
+          "points": -8.8,
+          "stats": []
+        },
+        {
+          "player": "Devon Levi",
+          "pos": "G",
+          "points": -8.2,
+          "stats": []
+        },
+        {
+          "player": "Wyatt Kaiser",
+          "pos": "D",
+          "points": -8.1,
+          "stats": []
+        }
       ]
     },
     {
@@ -6619,6 +6661,46 @@
               "stats": []
             }
           ]
+        }
+      ],
+      "fa_top3": [
+        {
+          "player": "Roman Kantserov",
+          "pos": "RW",
+          "points": 18.3,
+          "stats": []
+        },
+        {
+          "player": "Zach Benson",
+          "pos": "LW",
+          "points": 10.5,
+          "stats": []
+        },
+        {
+          "player": "Tyler Bertuzzi",
+          "pos": "LW",
+          "points": 10.5,
+          "stats": []
+        }
+      ],
+      "fa_bottom3": [
+        {
+          "player": "Nikita Tolopilo",
+          "pos": "G",
+          "points": -6.6,
+          "stats": []
+        },
+        {
+          "player": "Dennis Hildeby",
+          "pos": "G",
+          "points": -5.6,
+          "stats": []
+        },
+        {
+          "player": "Brayden Point",
+          "pos": "C",
+          "points": -4.0,
+          "stats": []
         }
       ]
     },
@@ -8162,6 +8244,46 @@
             }
           ]
         }
+      ],
+      "fa_top3": [
+        {
+          "player": "Gabriel Vilardi",
+          "pos": "RW",
+          "points": 17.6,
+          "stats": []
+        },
+        {
+          "player": "Connor Brown",
+          "pos": "RW",
+          "points": 8.8,
+          "stats": []
+        },
+        {
+          "player": "Darren Raddysh",
+          "pos": "D",
+          "points": 8.6,
+          "stats": []
+        }
+      ],
+      "fa_bottom3": [
+        {
+          "player": "Mikhail Sergachev",
+          "pos": "D",
+          "points": -4.9,
+          "stats": []
+        },
+        {
+          "player": "Will Smith",
+          "pos": "RW",
+          "points": -4.2,
+          "stats": []
+        },
+        {
+          "player": "Sebastian Cossa",
+          "pos": "G",
+          "points": -3.8,
+          "stats": []
+        }
       ]
     },
     {
@@ -9284,6 +9406,46 @@
               "stats": []
             }
           ]
+        }
+      ],
+      "fa_top3": [
+        {
+          "player": "Trevor Connelly",
+          "pos": "LW",
+          "points": 11.2,
+          "stats": []
+        },
+        {
+          "player": "Colton Dach",
+          "pos": "C",
+          "points": 5.0,
+          "stats": []
+        },
+        {
+          "player": "Jeremy Lauzon",
+          "pos": "D",
+          "points": 4.7,
+          "stats": []
+        }
+      ],
+      "fa_bottom3": [
+        {
+          "player": "Devon Levi",
+          "pos": "G",
+          "points": -3.6,
+          "stats": []
+        },
+        {
+          "player": "Tomas Hertl",
+          "pos": "C",
+          "points": -1.2,
+          "stats": []
+        },
+        {
+          "player": "Jake Walman",
+          "pos": "D",
+          "points": -0.3,
+          "stats": []
         }
       ]
     },
@@ -11667,6 +11829,46 @@
             }
           ]
         }
+      ],
+      "fa_top3": [
+        {
+          "player": "Mackenzie Blackwood",
+          "pos": "G",
+          "points": 14.6,
+          "stats": []
+        },
+        {
+          "player": "Laurent Brossoit",
+          "pos": "G",
+          "points": 13.6,
+          "stats": []
+        },
+        {
+          "player": "Emmitt Finnie",
+          "pos": "LW",
+          "points": 12.9,
+          "stats": []
+        }
+      ],
+      "fa_bottom3": [
+        {
+          "player": "Florian Xhekaj",
+          "pos": "LW",
+          "points": -12.9,
+          "stats": []
+        },
+        {
+          "player": "Alex Nedeljkovic",
+          "pos": "G",
+          "points": -9.4,
+          "stats": []
+        },
+        {
+          "player": "Arber Xhekaj",
+          "pos": "D",
+          "points": -7.5,
+          "stats": []
+        }
       ]
     },
     {
@@ -12426,7 +12628,9 @@
             }
           ]
         }
-      ]
+      ],
+      "fa_top3": [],
+      "fa_bottom3": []
     }
   ]
 }

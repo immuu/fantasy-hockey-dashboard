@@ -143,6 +143,9 @@
             <!-- Daily Player Awards (4 Cards) -->
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4" id="latestDayAwardsGrid"></div>
 
+            <!-- Missed Free Agents ("Miksi et poiminut heitä?") -->
+            <div id="latestDayFaCard"></div>
+
             <!-- Full Lineup & Bench Breakdown per Team -->
             <div class="space-y-3">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
@@ -851,6 +854,36 @@
                     : '<p class="text-xs text-slate-500">Ei menetettyjä penkkipisteitä!</p>'));
 
             document.getElementById('latestDayAwardsGrid').innerHTML = awards.join('');
+
+            // 2b. "Miksi et poiminut heitä?" (Top 3 & Bottom 3 free agents who played)
+            const faTop = dayObj.fa_top3 || [];
+            const faBot = dayObj.fa_bottom3 || [];
+            const faEl = document.getElementById('latestDayFaCard');
+            if (faEl) {
+                if (!faTop.length && !faBot.length) {
+                    faEl.innerHTML = '';
+                } else {
+                    const renderFaList = (list, isTop) => list.map((p, i) =>
+                        `<div>${row(`${isTop ? MEDALS[i] : '💩'} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · Vapaa</span>`, pts(p.points))}${fmtStatChips(p.stats)}</div>`
+                    ).join('');
+                    faEl.innerHTML = `<div class="glass-card rounded-2xl p-4 sm:p-5 border border-slate-800">
+                        <div class="mb-3">
+                            <h3 class="text-base font-bold text-white">🕵️ Miksi et poiminut heitä?</h3>
+                            <p class="text-xs text-slate-400">Pelipäivän parhaat ja pahimmat vapaat agentit (pelanneet)</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="space-y-2 text-sm text-slate-200">
+                                <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">🔥 Top 3</div>
+                                ${renderFaList(faTop, true)}
+                            </div>
+                            <div class="space-y-2 text-sm text-slate-200 md:border-l md:border-slate-800 md:pl-4">
+                                <div class="text-xs font-semibold text-rose-400 uppercase tracking-wider">🧊 Bottom 3</div>
+                                ${renderFaList(faBot, false)}
+                            </div>
+                        </div>
+                    </div>`;
+                }
+            }
 
             // 3. Team Filter Pills + Full Active & Bench Roster Breakdown per Team
             const filterEl = document.getElementById('latestDayRosterFilter');
