@@ -93,12 +93,45 @@ def extract_day_stats(player_dict, period, season_year):
     ]
     return round(pts, 1), played, breakdown
 
+
+def extract_season_profile(player_dict, season_year):
+    """Extract season totals, 7d/15d/30d averages, and season stat breakdown."""
+    prof = {"total_points": 0.0, "avg_points": 0.0, "avg_7d": None, "avg_15d": None, "avg_30d": None, "season_stats": []}
+    for st in player_dict.get('stats', []):
+        if st.get('seasonId') != season_year or st.get('statSourceId', 0) != 0:
+            continue
+        split = st.get('statSplitTypeId')
+        if split == 0:
+            prof["total_points"] = round(st.get('appliedTotal', 0.0), 1)
+            prof["avg_points"] = round(st.get('appliedAverage', 0.0), 2)
+            raw_stats = st.get('stats', {})
+            items = []
+            for sid, pval in st.get('appliedStats', {}).items():
+                if round(pval, 1) != 0:
+                    sname = c.STATS_MAP.get(str(sid), str(sid))
+                    rval = raw_stats.get(str(sid), 0)
+                    items.append({
+                        "s": sname,
+                        "v": int(round(rval)) if abs(rval - round(rval)) < 1e-6 else round(rval, 1),
+                        "p": round(pval, 1)
+                    })
+            items.sort(key=lambda x: STAT_ORDER.get(x["s"], 99))
+            prof["season_stats"] = items
+        elif split == 1:
+            prof["avg_7d"] = round(st.get('appliedAverage', 0.0), 2)
+        elif split == 2:
+            prof["avg_15d"] = round(st.get('appliedAverage', 0.0), 2)
+        elif split == 3:
+            prof["avg_30d"] = round(st.get('appliedAverage', 0.0), 2)
+    return prof
+
 BENCH_SLOTS = (7, 8)
 POS_MAP = {1: 'C', 2: 'LW', 3: 'RW', 4: 'D', 5: 'G'}
 team_names = {t.team_id: getattr(t, 'team_name', f"Team {t.team_id}") for t in league.teams}
 daily_points = {team.team_id: [] for team in league.teams}
 # records[(team_id, player_id)] = {"name", "pos", "days": {period: (points, active)}}
 records = {}
+latest_roster_players = {}  # player_name -> (team_id, player_dict, injury_status)
 last_period = getattr(league, 'scoringPeriodId', None) or getattr(league, 'current_week', 1)
 for period in range(1, last_period + 1):
     try:
@@ -127,6 +160,10 @@ for period in range(1, last_period + 1):
             rec["played"][period] = played
             if breakdown:
                 rec["stats"][period] = breakdown
+            if period == last_period:
+                latest_roster_players[player.get('fullName', 'Unknown')] = (
+                    raw_team['id'], player, entry.get('injuryStatus', 'NORMAL')
+                )
         day_totals[raw_team['id']] = round(s, 1)
     for tid in daily_points:
         daily_points[tid].append(day_totals.get(tid, 0.0))
@@ -316,6 +353,8 @@ def build_recent_days(n=7):
     start_p = max(1, last_period - n + 1)
     team_ids = list(daily_points.keys())
     days_out = []
+    fa_games_by_name = {}
+    fa_raw_by_name = {}
     for p in range(start_p, last_period + 1):
         d_str = (today - timedelta(days=last_period - p)).isoformat()
         teams_list = []
@@ -358,12 +397,18 @@ def build_recent_days(n=7):
                 for fp in fa_raw.get('players', []):
                     fpl = fp.get('player', {})
                     f_pts, f_played, f_stats = extract_day_stats(fpl, p, YEAR_USED)
+                    fname = fpl.get('fullName', 'Unknown')
+                    fa_raw_by_name[fname] = fpl
                     if f_played:
+                        fpos = POS_MAP.get(fpl.get('defaultPositionId'), '?')
                         fa_played.append({
-                            "player": fpl.get('fullName', 'Unknown'),
-                            "pos": POS_MAP.get(fpl.get('defaultPositionId'), '?'),
+                            "player": fname,
+                            "pos": fpos,
                             "points": f_pts,
                             "stats": f_stats
+                        })
+                        fa_games_by_name.setdefault(fname, []).append({
+                            "day": p, "date": d_str, "points": f_pts, "stats": f_stats
                         })
                 fa_top3 = sorted(fa_played, key=lambda x: -x["points"])[:3]
                 fa_bottom3 = sorted(fa_played, key=lambda x: x["points"])[:3]
@@ -378,10 +423,10 @@ def build_recent_days(n=7):
             "fa_top3": fa_top3,
             "fa_bottom3": fa_bottom3
         })
-    return days_out
+    return days_out, fa_games_by_name, fa_raw_by_name
 
 
-recent_days = build_recent_days(7)
+recent_days, fa_games_by_name, fa_raw_by_name = build_recent_days(7)
 
 def calculate_player_points(player):
     return round(getattr(player, 'total_points', 0.0), 1)
@@ -482,6 +527,75 @@ try:
 except Exception as e:
     print(f"Aktiviteettien haku epäonnistui: {e}")
 
+
+def build_player_profiles():
+    """Build compact season + last-5-games profile for all rostered & featured free-agent players."""
+    today = datetime.now(HELSINKI_TZ).date()
+    def date_of(p):
+        return (today - timedelta(days=last_period - p)).isoformat()
+
+    # Pre-index all played games from records by player name (sorted ascending by day)
+    rostered_games_by_name = {}
+    for (tid, pid), rec in records.items():
+        nm = rec["name"]
+        gmap = rostered_games_by_name.setdefault(nm, {})
+        for p, (pts, act) in rec["days"].items():
+            if rec.get("played", {}).get(p, pts != 0):
+                gmap[p] = {"day": p, "date": date_of(p), "points": pts, "stats": rec.get("stats", {}).get(p, [])}
+
+    profiles = {}
+    # All current rostered players
+    for pname, (tid, pdict, inj) in latest_roster_players.items():
+        sp = extract_season_profile(pdict, YEAR_USED)
+        games = sorted(rostered_games_by_name.get(pname, {}).values(), key=lambda x: x["day"])[-5:]
+        games.reverse()
+        profiles[pname] = {
+            "name": pname,
+            "pos": POS_MAP.get(pdict.get('defaultPositionId'), '?'),
+            "proTeam": c.PRO_TEAM_MAP.get(pdict.get('proTeamId'), ''),
+            "owner": team_names.get(tid, ''),
+            "injuryStatus": inj,
+            **sp,
+            "last_games": games
+        }
+
+    # Featured free agents (Top 30 FA + recent_days fa_top3/fa_bottom3 + highlights)
+    featured_names = {fa["name"] for fa in fa_data}
+    for rd in recent_days:
+        for item in rd.get("fa_top3", []) + rd.get("fa_bottom3", []):
+            featured_names.add(item["player"])
+    for key in ("player_best_days", "player_worst_days", "best_pickups", "worst_drops"):
+        for item in highlights.get(key, []):
+            featured_names.add(item["player"])
+
+    for pname in featured_names:
+        if pname in profiles:
+            continue
+        fdict = fa_raw_by_name.get(pname)
+        sp = extract_season_profile(fdict, YEAR_USED) if fdict else {
+            "total_points": 0.0, "avg_points": 0.0, "avg_7d": None, "avg_15d": None, "avg_30d": None, "season_stats": []
+        }
+        # Combine any rostered games earlier in season + FA games from recent 7 days
+        gmap = dict(rostered_games_by_name.get(pname, {}))
+        for g in fa_games_by_name.get(pname, []):
+            gmap[g["day"]] = g
+        games = sorted(gmap.values(), key=lambda x: x["day"])[-5:]
+        games.reverse()
+        fa_meta = next((fa for fa in fa_data if fa["name"] == pname), None)
+        profiles[pname] = {
+            "name": pname,
+            "pos": POS_MAP.get(fdict.get('defaultPositionId'), '?') if fdict else (fa_meta["position"] if fa_meta else '?'),
+            "proTeam": c.PRO_TEAM_MAP.get(fdict.get('proTeamId'), '') if fdict else (fa_meta["proTeam"] if fa_meta else ''),
+            "owner": "Vapaa agentti",
+            "injuryStatus": fa_meta["injuryStatus"] if fa_meta else (fdict.get("injuryStatus", "NORMAL") if fdict else "NORMAL"),
+            **sp,
+            "last_games": games
+        }
+    return profiles
+
+
+player_profiles = build_player_profiles()
+
 now_fi = datetime.now(HELSINKI_TZ)
 last_updated_str = now_fi.strftime("%d.%m.%Y klo %H:%M")
 
@@ -493,7 +607,8 @@ output = {
     "free_agents": fa_data,
     "recent_activity": recent_activities,
     "highlights": highlights,
-    "recent_days": recent_days
+    "recent_days": recent_days,
+    "player_profiles": player_profiles
 }
 
 with open("data.json", "w", encoding="utf-8") as f:

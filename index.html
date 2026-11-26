@@ -409,6 +409,22 @@
         </div>
     </nav>
 
+    <!-- PLAYER DETAIL MODAL / BOTTOM SHEET -->
+    <div id="playerModal" onclick="if (event.target === this) closePlayerModal()"
+        class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4">
+        <div class="w-full sm:max-w-lg bg-slate-900 border border-slate-700/80 rounded-t-2xl sm:rounded-2xl shadow-2xl max-h-[88vh] flex flex-col overflow-hidden">
+            <div class="flex items-start justify-between gap-3 p-4 border-b border-slate-800">
+                <div class="min-w-0">
+                    <h3 class="text-base sm:text-lg font-bold text-white truncate" id="pmName">-</h3>
+                    <p class="text-xs text-slate-400 mt-0.5" id="pmMeta">-</p>
+                </div>
+                <button onclick="closePlayerModal()" aria-label="Sulje"
+                    class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white text-sm leading-none shrink-0">✕</button>
+            </div>
+            <div id="pmBody" class="p-4 space-y-4 overflow-y-auto text-sm text-slate-200"></div>
+        </div>
+    </div>
+
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
@@ -454,7 +470,8 @@
                 free_agents: data.free_agents || [],
                 recent_activity: data.recent_activity || [],
                 highlights: data.highlights || null,
-                recent_days: data.recent_days || []
+                recent_days: data.recent_days || [],
+                player_profiles: data.player_profiles || {}
             };
 
             teams.forEach((t, i) => {
@@ -497,6 +514,95 @@
         function tn(name) { return `<span class="font-semibold" style="color:${teamColor(name)}">${esc(name)}</span>`; }
         function fdate(iso) { const d = new Date(iso + 'T12:00:00'); return d.toLocaleDateString('fi-FI', { day: 'numeric', month: 'numeric' }); }
         function pts(v) { const c = v < 0 ? 'text-rose-400' : 'text-emerald-400'; return `<span class="${c} font-bold tabular-nums">${v > 0 ? '+' : ''}${(+v).toFixed(1)}</span>`; }
+        function plLink(name, extraCls = '') {
+            const safe = esc(name).replace(/'/g, "\\'");
+            return `<button type="button" onclick="openPlayerModal('${safe}')" class="hover:text-ice-400 hover:underline decoration-ice-400/60 underline-offset-2 text-left transition ${extraCls}">${esc(name)}</button>`;
+        }
+
+        function fmtStatChips(stats) {
+            if (!stats || !stats.length) return '';
+            return `<div class="flex flex-wrap gap-1 mt-0.5">${stats.map(st => {
+                const cls = st.p > 0 ? 'bg-emerald-500/10 text-emerald-300 border-emerald-500/20' : 'bg-rose-500/10 text-rose-300 border-rose-500/20';
+                const pStr = (st.p > 0 ? '+' : '') + st.p.toFixed(1);
+                return `<span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] border ${cls}">${esc(st.v)} ${esc(st.s)} <span class="ml-1 opacity-75">(${pStr})</span></span>`;
+            }).join('')}</div>`;
+        }
+
+        function openPlayerModal(name) {
+            const modal = document.getElementById('playerModal');
+            if (!modal) return;
+            const p = (leagueData.player_profiles || {})[name];
+            document.getElementById('pmName').innerText = name;
+            const bodyEl = document.getElementById('pmBody');
+            if (!p) {
+                document.getElementById('pmMeta').innerText = 'Kausitietoja ei saatavilla';
+                bodyEl.innerHTML = '<p class="text-xs text-slate-400">Pelaajan profiilitiedot puuttuvat tältä kierrokselta.</p>';
+                modal.classList.remove('hidden');
+                return;
+            }
+            const inj = (p.injuryStatus && p.injuryStatus !== 'NORMAL' && p.injuryStatus !== 'ACTIVE')
+                ? ` · <span class="text-amber-400 font-semibold">${esc(p.injuryStatus)}</span>` : '';
+            const ownerHtml = p.owner === 'Vapaa agentti'
+                ? '<span class="text-slate-400">Vapaa agentti</span>'
+                : tn(p.owner);
+            document.getElementById('pmMeta').innerHTML =
+                `${esc(p.pos)}${p.proTeam ? ' · ' + esc(p.proTeam) : ''} · ${ownerHtml}${inj}`;
+
+            const avgPill = (lbl, val) => val !== null && val !== undefined
+                ? `<div class="bg-slate-800/70 rounded-xl p-2 text-center border border-slate-700/60">
+                    <div class="text-[10px] text-slate-400 uppercase">${lbl}</div>
+                    <div class="text-xs sm:text-sm font-bold text-white font-mono">${Number(val).toFixed(2)}</div>
+                </div>` : '';
+
+            const seasonStatsHtml = (p.season_stats && p.season_stats.length)
+                ? `<div>
+                    <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5">Kauden tilastot</div>
+                    ${fmtStatChips(p.season_stats)}
+                </div>` : '';
+
+            const gamesHtml = (p.last_games && p.last_games.length)
+                ? `<div>
+                    <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Viimeiset ${p.last_games.length} peliä</div>
+                    <div class="space-y-2">${p.last_games.map(g =>
+                        `<div class="p-2.5 rounded-xl bg-slate-800/50 border border-slate-800">
+                            <div class="flex items-center justify-between text-xs">
+                                <span class="text-slate-300 font-medium">${fdate(g.date)} <span class="text-slate-500">(pv ${g.day})</span></span>
+                                ${pts(g.points)}
+                            </div>
+                            ${fmtStatChips(g.stats)}
+                        </div>`
+                    ).join('')}</div>
+                </div>`
+                : '<p class="text-xs text-slate-500">Ei pelattuja pelejä viimeisen 7 päivän aikana.</p>';
+
+            bodyEl.innerHTML = `
+                <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+                    <div class="bg-slate-800/70 rounded-xl p-2 text-center border border-slate-700/60">
+                        <div class="text-[10px] text-slate-400 uppercase">Kausi yht.</div>
+                        <div class="text-xs sm:text-sm font-bold text-emerald-400 font-mono">${Number(p.total_points || 0).toFixed(1)}</div>
+                    </div>
+                    <div class="bg-slate-800/70 rounded-xl p-2 text-center border border-slate-700/60">
+                        <div class="text-[10px] text-slate-400 uppercase">Ka / peli</div>
+                        <div class="text-xs sm:text-sm font-bold text-ice-400 font-mono">${Number(p.avg_points || 0).toFixed(2)}</div>
+                    </div>
+                    ${avgPill('7 pv ka', p.avg_7d)}
+                    ${avgPill('15 pv ka', p.avg_15d)}
+                    ${avgPill('30 pv ka', p.avg_30d)}
+                </div>
+                ${seasonStatsHtml}
+                ${gamesHtml}
+            `;
+            modal.classList.remove('hidden');
+        }
+
+        function closePlayerModal() {
+            const modal = document.getElementById('playerModal');
+            if (modal) modal.classList.add('hidden');
+        }
+        if (typeof document !== 'undefined' && document.addEventListener) {
+            document.addEventListener('keydown', e => { if (e.key === 'Escape') closePlayerModal(); });
+        }
+
         function hlCard(icon, title, subtitle, body, highlightBorder = false) {
             const borderCls = highlightBorder ? 'border-amber-500/50 ring-1 ring-amber-500/20' : 'border-slate-800';
             return `<div class="glass-card rounded-2xl p-5 border ${borderCls}">
@@ -585,18 +691,18 @@
                     `<span class="text-xs"><span class="text-emerald-400">🔥 ${s.longest_hot}</span> · <span class="text-sky-400">🧊 ${s.longest_cold}</span></span>`)).join('')));
 
             cards.push(hlCard('⭐', 'Pelaajien päivän ennätykset', 'Parhaat ja pahimmat yksittäiset päivät (aktiivikokoonpano)',
-                h.player_best_days.map((d, i) => row(`${MEDALS[i]} ${esc(d.player)} <span class="text-slate-500 text-xs">${esc(d.pos)} · ${tn(d.team)} · ${fdate(d.date)}</span>${badge(d.day, i === 0)}`, pts(d.points))).join('') +
+                h.player_best_days.map((d, i) => row(`${MEDALS[i]} ${plLink(d.player)} <span class="text-slate-500 text-xs">${esc(d.pos)} · ${tn(d.team)} · ${fdate(d.date)}</span>${badge(d.day, i === 0)}`, pts(d.points))).join('') +
                 '<div class="border-t border-slate-800 my-2"></div>' +
-                h.player_worst_days.map((d, i) => row(`💩 ${esc(d.player)} <span class="text-slate-500 text-xs">${esc(d.pos)} · ${tn(d.team)} · ${fdate(d.date)}</span>${badge(d.day, i === 0)}`, pts(d.points))).join(''),
+                h.player_worst_days.map((d, i) => row(`💩 ${plLink(d.player)} <span class="text-slate-500 text-xs">${esc(d.pos)} · ${tn(d.team)} · ${fdate(d.date)}</span>${badge(d.day, i === 0)}`, pts(d.points))).join(''),
                 h.player_best_days.some(d => d.day === latestDay) || h.player_worst_days.some(d => d.day === latestDay)));
 
             cards.push(hlCard('👑', 'MVP & Floppi joukkueittain', 'Eniten pisteitä / vähiten pisteitä aktiivikokoonpanossa',
                 h.mvp_bust.map(m => `<div>${tn(m.team)}
-                    <div class="flex justify-between text-xs mt-0.5"><span>👑 ${esc(m.mvp.player)} <span class="text-slate-500">(${esc(m.mvp.pos)})</span></span>${pts(m.mvp.points)}</div>
-                    <div class="flex justify-between text-xs"><span>🤡 ${esc(m.bust.player)} <span class="text-slate-500">(${esc(m.bust.pos)}, ${m.bust.days_active} pv)</span></span>${pts(m.bust.points)}</div></div>`).join('')));
+                    <div class="flex justify-between text-xs mt-0.5"><span>👑 ${plLink(m.mvp.player)} <span class="text-slate-500">(${esc(m.mvp.pos)})</span></span>${pts(m.mvp.points)}</div>
+                    <div class="flex justify-between text-xs"><span>🤡 ${plLink(m.bust.player)} <span class="text-slate-500">(${esc(m.bust.pos)}, ${m.bust.days_active} pv)</span></span>${pts(m.bust.points)}</div></div>`).join('')));
 
             cards.push(hlCard('🪑', 'Penkkikatu', 'Penkillä / IR:llä menetetyt pisteet',
-                h.bench_regret.map((b, i) => row(`${MEDALS[i]} ${tn(b.team)}` + (b.worst ? `<div class="text-xs text-slate-500">Pahin: ${esc(b.worst.player)} ${fdate(b.worst.date)} (+${b.worst.points})${badge(b.worst.day, false)}</div>` : ''),
+                h.bench_regret.map((b, i) => row(`${MEDALS[i]} ${tn(b.team)}` + (b.worst ? `<div class="text-xs text-slate-500">Pahin: ${plLink(b.worst.player)} ${fdate(b.worst.date)} (+${b.worst.points})${badge(b.worst.day, false)}</div>` : ''),
                     `<span class="text-amber-400 font-bold tabular-nums">${b.points_on_bench}</span>`)).join(''),
                 h.bench_regret.some(b => b.worst && b.worst.day === latestDay)));
 
@@ -611,10 +717,10 @@
                 h.lead_changes.some(c => c.day === latestDay) || (h.biggest_lead && h.biggest_lead.day === latestDay)));
 
             cards.push(hlCard('🕵️', 'Parhaat poiminnat', 'Vapailta pelaajilta haetut pelaajat – pisteet uudessa joukkueessa',
-                h.best_pickups.map((p, i) => row(`${MEDALS[i]} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · ${tn(p.team)} · ${fdate(p.date)}</span>`, pts(p.points))).join('')));
+                h.best_pickups.map((p, i) => row(`${MEDALS[i]} ${plLink(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · ${tn(p.team)} · ${fdate(p.date)}</span>`, pts(p.points))).join('')));
 
             cards.push(hlCard('🤦', 'Pahimmat pudotukset', 'Pudotettu pelaaja, joka teki pisteitä muualla pudotuksen jälkeen',
-                h.worst_drops.map((p, i) => row(`${MEDALS[i]} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · pudotti ${tn(p.team)} ${fdate(p.date)}</span>`, pts(p.points_after))).join('')));
+                h.worst_drops.map((p, i) => row(`${MEDALS[i]} ${plLink(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · pudotti ${tn(p.team)} ${fdate(p.date)}</span>`, pts(p.points_after))).join('')));
 
             if (h.position_breakdown && h.position_breakdown.length) {
                 const posKeys = ['C', 'LW', 'RW', 'D', 'G'];
@@ -810,8 +916,8 @@
                         <span>${playedCount} / ${activeList.length} pelasi</span>
                     </div>
                     <div class="space-y-1 text-xs border-t border-slate-800 pt-2">
-                        ${tBest ? `<div class="flex justify-between"><span>🔥 ${esc(tBest.player)}</span>${pts(tBest.points)}</div>` : ''}
-                        ${tWorst && tWorst !== tBest ? `<div class="flex justify-between"><span>🧊 ${esc(tWorst.player)}</span>${pts(tWorst.points)}</div>` : ''}
+                        ${tBest ? `<div class="flex justify-between"><span>🔥 ${plLink(tBest.player)}</span>${pts(tBest.points)}</div>` : ''}
+                        ${tWorst && tWorst !== tBest ? `<div class="flex justify-between"><span>🧊 ${plLink(tWorst.player)}</span>${pts(tWorst.points)}</div>` : ''}
                     </div>
                 </div>`;
             }).join('');
@@ -823,33 +929,26 @@
             const worstGoalies = [...goalies].filter(p => p.points !== 0).sort((a, b) => a.points - b.points).slice(0, 2);
             const topBench = [...benchPlayers].filter(p => p.points > 0).sort((a, b) => b.points - a.points).slice(0, 3);
 
-            const fmtStatChips = (stats) => {
-                if (!stats || !stats.length) return '';
-                return `<div class="flex flex-wrap gap-1 mt-0.5">${stats.map(st => {
-                    const cls = st.p > 0 ? 'bg-emerald-500/10 text-emerald-300 border-emerald-500/20' : 'bg-rose-500/10 text-rose-300 border-rose-500/20';
-                    const pStr = (st.p > 0 ? '+' : '') + st.p.toFixed(1);
-                    return `<span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] border ${cls}">${esc(st.v)} ${esc(st.s)} <span class="ml-1 opacity-75">(${pStr})</span></span>`;
-                }).join('')}</div>`;
-            };
+
 
             const awards = [];
             awards.push(hlCard('⭐', 'Päivän parhaat (Top 3)', 'Aktiivikokoonpanon kovimmat pisteet',
-                top3Best.length ? top3Best.map((p, i) => `<div>${row(`${MEDALS[i]} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · ${tn(p.team)}</span>`, pts(p.points))}${fmtStatChips(p.stats)}</div>`).join('')
+                top3Best.length ? top3Best.map((p, i) => `<div>${row(`${MEDALS[i]} ${plLink(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · ${tn(p.team)}</span>`, pts(p.points))}${fmtStatChips(p.stats)}</div>`).join('')
                     : '<p class="text-xs text-slate-500">Ei vielä pisteitä.</p>'));
 
             awards.push(hlCard('💀', 'Päivän pahimmat (Top 3)', 'Eniten miinusta tai heikoimmat suoritukset',
-                top3Worst.length ? top3Worst.map((p, i) => `<div>${row(`${MEDALS[i]} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · ${tn(p.team)}</span>`, pts(p.points))}${fmtStatChips(p.stats)}</div>`).join('')
+                top3Worst.length ? top3Worst.map((p, i) => `<div>${row(`${MEDALS[i]} ${plLink(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · ${tn(p.team)}</span>`, pts(p.points))}${fmtStatChips(p.stats)}</div>`).join('')
                     : '<p class="text-xs text-slate-500">Ei suorituksia.</p>'));
 
             awards.push(hlCard('🥅', 'Maalivahtivahti', 'Päivän parhaat ja pahimmat veskarit',
                 (bestGoalies.length || worstGoalies.length)
-                    ? bestGoalies.map(p => `<div>${row(`🧤 ${esc(p.player)} <span class="text-slate-500 text-xs">${tn(p.team)}</span>`, pts(p.points))}${fmtStatChips(p.stats)}</div>`).join('') +
+                    ? bestGoalies.map(p => `<div>${row(`🧤 ${plLink(p.player)} <span class="text-slate-500 text-xs">${tn(p.team)}</span>`, pts(p.points))}${fmtStatChips(p.stats)}</div>`).join('') +
                       (worstGoalies.length ? '<div class="border-t border-slate-800 my-1.5"></div>' +
-                        worstGoalies.map(p => `<div>${row(`🚨 ${esc(p.player)} <span class="text-slate-500 text-xs">${tn(p.team)}</span>`, pts(p.points))}${fmtStatChips(p.stats)}</div>`).join('') : '')
+                        worstGoalies.map(p => `<div>${row(`🚨 ${plLink(p.player)} <span class="text-slate-500 text-xs">${tn(p.team)}</span>`, pts(p.points))}${fmtStatChips(p.stats)}</div>`).join('') : '')
                     : '<p class="text-xs text-slate-500">Ei maalivahtipelejä tänä päivänä.</p>'));
 
             awards.push(hlCard('🪑', 'Päivän penkkikatu', 'Penkille / IR:lle jääneet pisteet',
-                topBench.length ? topBench.map((p, i) => `<div>${row(`${MEDALS[i]} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · ${tn(p.team)}</span>`,
+                topBench.length ? topBench.map((p, i) => `<div>${row(`${MEDALS[i]} ${plLink(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · ${tn(p.team)}</span>`,
                     `<span class="text-amber-400 font-bold tabular-nums">+${p.points.toFixed(1)}</span>`)}${fmtStatChips(p.stats)}</div>`).join('')
                     : '<p class="text-xs text-slate-500">Ei menetettyjä penkkipisteitä!</p>'));
 
@@ -864,7 +963,7 @@
                     faEl.innerHTML = '';
                 } else {
                     const renderFaList = (list, isTop) => list.map((p, i) =>
-                        `<div>${row(`${isTop ? MEDALS[i] : '💩'} ${esc(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · Vapaa</span>`, pts(p.points))}${fmtStatChips(p.stats)}</div>`
+                        `<div>${row(`${isTop ? MEDALS[i] : '💩'} ${plLink(p.player)} <span class="text-slate-500 text-xs">${esc(p.pos)} · Vapaa</span>`, pts(p.points))}${fmtStatChips(p.stats)}</div>`
                     ).join('');
                     faEl.innerHTML = `<div class="glass-card rounded-2xl p-4 sm:p-5 border border-slate-800">
                         <div class="mb-3">
@@ -908,7 +1007,7 @@
                 const ben = hideDidNotPlay ? benAll.filter(didPlay) : benAll;
                 const fmtRow = (p, isBench) => `<div class="py-1 border-b border-slate-800/40 last:border-0">
                     <div class="flex items-center justify-between text-xs ${isBench ? 'text-slate-500' : (p.points === 0 ? 'text-slate-400' : 'text-slate-200')}">
-                        <span class="truncate pr-2 font-medium"><span class="inline-block w-6 text-[10px] text-slate-500">${esc(p.pos)}</span>${esc(p.player)}</span>
+                        <span class="truncate pr-2 font-medium"><span class="inline-block w-6 text-[10px] text-slate-500">${esc(p.pos)}</span>${plLink(p.player)}</span>
                         <span class="font-mono shrink-0 font-semibold ${p.points > 0 ? (isBench ? 'text-amber-400' : 'text-emerald-400') : (p.points < 0 ? 'text-rose-400' : 'text-slate-500')}">${p.points > 0 ? '+' : ''}${p.points.toFixed(1)}</span>
                     </div>
                     ${fmtStatChips(p.stats)}
@@ -1301,7 +1400,7 @@
                                 ${actionLabel}
                             </span>
                             <div>
-                                <div class="text-xs font-bold text-white">${action.player}</div>
+                                <div class="text-xs font-bold text-white">${plLink(action.player)}</div>
                                 <div class="text-[10px] text-slate-400">${action.team}</div>
                             </div>
                         </div>
@@ -1402,7 +1501,7 @@
                         </div>
                         <div>
                             <div class="text-xs font-bold text-white flex items-center space-x-1">
-                                <span>${player.name}</span>
+                                <span>${plLink(player.name)}</span>
                             </div>
                             <div class="text-[10px] text-slate-400">${player.position} • Keskiarvo ${player.avg_points} pt</div>
                         </div>
