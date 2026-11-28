@@ -1,7 +1,7 @@
 {
   "league_name": "NHL mestarit 2026",
   "current_week": 60,
-  "last_updated": "28.11.2026 klo 08:30",
+  "last_updated": "28.11.2026 klo 09:00",
   "teams": [
     {
       "id": 1,
@@ -33066,1829 +33066,6 @@
         }
       ]
     },
-    "Dennis Hildeby": {
-      "name": "Dennis Hildeby",
-      "pos": "G",
-      "proTeam": "Tampa Bay Lightning",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": -0.4,
-      "avg_points": -0.06,
-      "avg_7d": -7.3,
-      "avg_15d": -2.33,
-      "avg_30d": -1.3,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": -9.0,
-          "stats": []
-        },
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": -5.6,
-          "stats": []
-        },
-        {
-          "day": 26,
-          "date": "2026-10-25",
-          "points": -4.4,
-          "stats": [
-            {
-              "s": "OTL",
-              "v": 1,
-              "p": 1.0
-            },
-            {
-              "s": "SV",
-              "v": 23,
-              "p": 4.6
-            },
-            {
-              "s": "GA",
-              "v": 5,
-              "p": -10.0
-            }
-          ]
-        }
-      ]
-    },
-    "Colton Dach": {
-      "name": "Colton Dach",
-      "pos": "C",
-      "proTeam": "Edmonton Oilers",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 32.8,
-      "avg_points": 1.49,
-      "avg_7d": 2.12,
-      "avg_15d": 1.41,
-      "avg_30d": 1.79,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 0.2,
-          "stats": []
-        },
-        {
-          "day": 57,
-          "date": "2026-11-25",
-          "points": 5.0,
-          "stats": []
-        },
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": 4.6,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": -1.3,
-          "stats": []
-        }
-      ]
-    },
-    "Devon Levi": {
-      "name": "Devon Levi",
-      "pos": "G",
-      "proTeam": "Edmonton Oilers",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 29.2,
-      "avg_points": 2.09,
-      "avg_7d": -5.9,
-      "avg_15d": 0.52,
-      "avg_30d": 2.11,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 57,
-          "date": "2026-11-25",
-          "points": -3.6,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": -8.2,
-          "stats": []
-        }
-      ]
-    },
-    "Mattias Samuelsson": {
-      "name": "Mattias Samuelsson",
-      "pos": "D",
-      "proTeam": "Buffalo Sabres",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 63.8,
-      "avg_points": 2.45,
-      "avg_7d": 3.02,
-      "avg_15d": 2.7,
-      "avg_30d": 3.3,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 3.5,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 4.8,
-          "stats": []
-        },
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": 3.8,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 0.0,
-          "stats": []
-        },
-        {
-          "day": 23,
-          "date": "2026-10-22",
-          "points": -9.0,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -1,
-              "p": -1.0
-            },
-            {
-              "s": "BLK",
-              "v": 1,
-              "p": 0.5
-            },
-            {
-              "s": "PIM",
-              "v": 17,
-              "p": -8.5
-            }
-          ]
-        }
-      ]
-    },
-    "Dylan Holloway": {
-      "name": "Dylan Holloway",
-      "pos": "LW",
-      "proTeam": "St. Louis Blues",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 84.6,
-      "avg_points": 3.25,
-      "avg_7d": 5.08,
-      "avg_15d": 4.31,
-      "avg_30d": 3.56,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 11.9,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 5.7,
-          "stats": []
-        },
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": -0.8,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 3.5,
-          "stats": []
-        },
-        {
-          "day": 29,
-          "date": "2026-10-28",
-          "points": 1.5,
-          "stats": [
-            {
-              "s": "SOG",
-              "v": 5,
-              "p": 1.0
-            },
-            {
-              "s": "BLK",
-              "v": 1,
-              "p": 0.5
-            }
-          ]
-        }
-      ]
-    },
-    "Drake Batherson": {
-      "name": "Drake Batherson",
-      "pos": "RW",
-      "proTeam": "Ottawa Senators",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 88.6,
-      "avg_points": 3.28,
-      "avg_7d": 0.43,
-      "avg_15d": 2.58,
-      "avg_30d": 2.69,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 1.0,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": -1.5,
-          "stats": []
-        },
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": 2.2,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 0.0,
-          "stats": []
-        },
-        {
-          "day": 43,
-          "date": "2026-11-11",
-          "points": -0.4,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -1,
-              "p": -1.0
-            },
-            {
-              "s": "SOG",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "HIT",
-              "v": 2,
-              "p": 0.4
-            }
-          ]
-        }
-      ]
-    },
-    "Sidney Crosby": {
-      "name": "Sidney Crosby",
-      "pos": "C",
-      "proTeam": "Pittsburgh Penguins",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 43.6,
-      "avg_points": 1.74,
-      "avg_7d": 0.35,
-      "avg_15d": 0.42,
-      "avg_30d": 1.78,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": -0.5,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": -2.1,
-          "stats": []
-        },
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": 1.0,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 3.0,
-          "stats": []
-        },
-        {
-          "day": 12,
-          "date": "2026-10-11",
-          "points": 1.9,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -1,
-              "p": -1.0
-            },
-            {
-              "s": "SOG",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "HIT",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "BLK",
-              "v": 3,
-              "p": 1.5
-            },
-            {
-              "s": "FOW",
-              "v": 14,
-              "p": 2.8
-            },
-            {
-              "s": "FOL",
-              "v": 9,
-              "p": -1.8
-            }
-          ]
-        }
-      ]
-    },
-    "Mikhail Sergachev": {
-      "name": "Mikhail Sergachev",
-      "pos": "D",
-      "proTeam": "Utah Hockey Club",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 85.9,
-      "avg_points": 3.18,
-      "avg_7d": 1.7,
-      "avg_15d": 2.32,
-      "avg_30d": 2.69,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 5.4,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 3.4,
-          "stats": []
-        },
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": -4.9,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 2.9,
-          "stats": []
-        },
-        {
-          "day": 51,
-          "date": "2026-11-19",
-          "points": 1.4,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": 1,
-              "p": 1.0
-            },
-            {
-              "s": "SOG",
-              "v": 2,
-              "p": 0.4
-            }
-          ]
-        }
-      ]
-    },
-    "Mackenzie Blackwood": {
-      "name": "Mackenzie Blackwood",
-      "pos": "G",
-      "proTeam": "Colorado Avalanche",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 61.6,
-      "avg_points": 3.24,
-      "avg_7d": 8.2,
-      "avg_15d": 5.6,
-      "avg_30d": 4.49,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 1.8,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 14.6,
-          "stats": []
-        },
-        {
-          "day": 9,
-          "date": "2026-10-08",
-          "points": -2.8,
-          "stats": [
-            {
-              "s": "SV",
-              "v": 16,
-              "p": 3.2
-            },
-            {
-              "s": "GA",
-              "v": 3,
-              "p": -6.0
-            }
-          ]
-        },
-        {
-          "day": 5,
-          "date": "2026-10-04",
-          "points": 7.0,
-          "stats": [
-            {
-              "s": "W",
-              "v": 1,
-              "p": 4.0
-            },
-            {
-              "s": "SV",
-              "v": 25,
-              "p": 5.0
-            },
-            {
-              "s": "GA",
-              "v": 1,
-              "p": -2.0
-            }
-          ]
-        },
-        {
-          "day": 2,
-          "date": "2026-10-01",
-          "points": 1.4,
-          "stats": [
-            {
-              "s": "W",
-              "v": 1,
-              "p": 4.0
-            },
-            {
-              "s": "SV",
-              "v": 27,
-              "p": 5.4
-            },
-            {
-              "s": "GA",
-              "v": 4,
-              "p": -8.0
-            }
-          ]
-        }
-      ]
-    },
-    "MacKenzie Weegar": {
-      "name": "MacKenzie Weegar",
-      "pos": "D",
-      "proTeam": "Utah Hockey Club",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 65.8,
-      "avg_points": 2.44,
-      "avg_7d": 3.75,
-      "avg_15d": 3.09,
-      "avg_30d": 2.24,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 9.9,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 2.0,
-          "stats": []
-        },
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": 1.5,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 1.6,
-          "stats": []
-        },
-        {
-          "day": 21,
-          "date": "2026-10-20",
-          "points": 2.5,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": 1,
-              "p": 1.0
-            },
-            {
-              "s": "SOG",
-              "v": 3,
-              "p": 0.6
-            },
-            {
-              "s": "HIT",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "BLK",
-              "v": 1,
-              "p": 0.5
-            }
-          ]
-        }
-      ]
-    },
-    "Leo Carlsson": {
-      "name": "Leo Carlsson",
-      "pos": "C",
-      "proTeam": "Anaheim Ducks",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "INJURY_RESERVE",
-      "total_points": 75.3,
-      "avg_points": 3.14,
-      "avg_7d": 3.2,
-      "avg_15d": 1.38,
-      "avg_30d": 3.13,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 3.2,
-          "stats": []
-        },
-        {
-          "day": 52,
-          "date": "2026-11-20",
-          "points": -1.2,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -1,
-              "p": -1.0
-            },
-            {
-              "s": "SOG",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "HIT",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "FOW",
-              "v": 3,
-              "p": 0.6
-            },
-            {
-              "s": "FOL",
-              "v": 6,
-              "p": -1.2
-            }
-          ]
-        },
-        {
-          "day": 50,
-          "date": "2026-11-18",
-          "points": 1.3,
-          "stats": [
-            {
-              "s": "A",
-              "v": 1,
-              "p": 2.0
-            },
-            {
-              "s": "+/-",
-              "v": -2,
-              "p": -2.0
-            },
-            {
-              "s": "PPA",
-              "v": 1,
-              "p": 0.5
-            },
-            {
-              "s": "SOG",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "FOW",
-              "v": 7,
-              "p": 1.4
-            },
-            {
-              "s": "FOL",
-              "v": 5,
-              "p": -1.0
-            }
-          ]
-        },
-        {
-          "day": 48,
-          "date": "2026-11-16",
-          "points": 2.4,
-          "stats": [
-            {
-              "s": "SOG",
-              "v": 3,
-              "p": 0.6
-            },
-            {
-              "s": "FOW",
-              "v": 11,
-              "p": 2.2
-            },
-            {
-              "s": "FOL",
-              "v": 2,
-              "p": -0.4
-            }
-          ]
-        },
-        {
-          "day": 47,
-          "date": "2026-11-15",
-          "points": 1.2,
-          "stats": [
-            {
-              "s": "A",
-              "v": 1,
-              "p": 2.0
-            },
-            {
-              "s": "SOG",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "FOW",
-              "v": 5,
-              "p": 1.0
-            },
-            {
-              "s": "FOL",
-              "v": 10,
-              "p": -2.0
-            }
-          ]
-        }
-      ]
-    },
-    "Tomas Hertl": {
-      "name": "Tomas Hertl",
-      "pos": "C",
-      "proTeam": "Vegas Golden Knights",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 98.2,
-      "avg_points": 3.64,
-      "avg_7d": 3.3,
-      "avg_15d": 2.53,
-      "avg_30d": 4.11,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 3.2,
-          "stats": []
-        },
-        {
-          "day": 57,
-          "date": "2026-11-25",
-          "points": -1.2,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 7.9,
-          "stats": []
-        },
-        {
-          "day": 48,
-          "date": "2026-11-16",
-          "points": 1.5,
-          "stats": [
-            {
-              "s": "A",
-              "v": 1,
-              "p": 2.0
-            },
-            {
-              "s": "+/-",
-              "v": -3,
-              "p": -3.0
-            },
-            {
-              "s": "PPA",
-              "v": 1,
-              "p": 0.5
-            },
-            {
-              "s": "SOG",
-              "v": 3,
-              "p": 0.6
-            },
-            {
-              "s": "HIT",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "FOW",
-              "v": 12,
-              "p": 2.4
-            },
-            {
-              "s": "FOL",
-              "v": 6,
-              "p": -1.2
-            }
-          ]
-        },
-        {
-          "day": 46,
-          "date": "2026-11-14",
-          "points": 2.4,
-          "stats": [
-            {
-              "s": "A",
-              "v": 1,
-              "p": 2.0
-            },
-            {
-              "s": "SOG",
-              "v": 3,
-              "p": 0.6
-            },
-            {
-              "s": "HIT",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "FOW",
-              "v": 7,
-              "p": 1.4
-            },
-            {
-              "s": "FOL",
-              "v": 4,
-              "p": -0.8
-            },
-            {
-              "s": "PIM",
-              "v": 2,
-              "p": -1.0
-            }
-          ]
-        }
-      ]
-    },
-    "Jakob Chychrun": {
-      "name": "Jakob Chychrun",
-      "pos": "D",
-      "proTeam": "Washington Capitals",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 57.0,
-      "avg_points": 2.48,
-      "avg_7d": 2.67,
-      "avg_15d": 1.13,
-      "avg_30d": 2.55,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": -1.7,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 4.4,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 5.3,
-          "stats": []
-        },
-        {
-          "day": 45,
-          "date": "2026-11-13",
-          "points": 1.4,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -1,
-              "p": -1.0
-            },
-            {
-              "s": "SOG",
-              "v": 4,
-              "p": 0.8
-            },
-            {
-              "s": "HIT",
-              "v": 3,
-              "p": 0.6
-            },
-            {
-              "s": "BLK",
-              "v": 2,
-              "p": 1.0
-            }
-          ]
-        },
-        {
-          "day": 43,
-          "date": "2026-11-11",
-          "points": 4.3,
-          "stats": [
-            {
-              "s": "A",
-              "v": 1,
-              "p": 2.0
-            },
-            {
-              "s": "+/-",
-              "v": 1,
-              "p": 1.0
-            },
-            {
-              "s": "SOG",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "HIT",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "BLK",
-              "v": 3,
-              "p": 1.5
-            },
-            {
-              "s": "PIM",
-              "v": 2,
-              "p": -1.0
-            }
-          ]
-        }
-      ]
-    },
-    "Charlie McAvoy": {
-      "name": "Charlie McAvoy",
-      "pos": "D",
-      "proTeam": "Boston Bruins",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 33.4,
-      "avg_points": 1.76,
-      "avg_7d": 0.33,
-      "avg_15d": -0.87,
-      "avg_30d": 0.71,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": -3.8,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": -2.8,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 7.6,
-          "stats": []
-        },
-        {
-          "day": 45,
-          "date": "2026-11-13",
-          "points": -1.8,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -2,
-              "p": -2.0
-            },
-            {
-              "s": "HIT",
-              "v": 1,
-              "p": 0.2
-            }
-          ]
-        },
-        {
-          "day": 41,
-          "date": "2026-11-09",
-          "points": 3.0,
-          "stats": [
-            {
-              "s": "A",
-              "v": 1,
-              "p": 2.0
-            },
-            {
-              "s": "+/-",
-              "v": 1,
-              "p": 1.0
-            },
-            {
-              "s": "SOG",
-              "v": 3,
-              "p": 0.6
-            },
-            {
-              "s": "HIT",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "PIM",
-              "v": 2,
-              "p": -1.0
-            }
-          ]
-        }
-      ]
-    },
-    "Will Smith": {
-      "name": "Will Smith",
-      "pos": "RW",
-      "proTeam": "San Jose Sharks",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 46.4,
-      "avg_points": 1.66,
-      "avg_7d": -1.9,
-      "avg_15d": 0.97,
-      "avg_30d": 1.53,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 0.4,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": -3.0,
-          "stats": []
-        },
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": -4.2,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": -0.8,
-          "stats": []
-        },
-        {
-          "day": 7,
-          "date": "2026-10-06",
-          "points": -3.0,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -3,
-              "p": -3.0
-            },
-            {
-              "s": "FOW",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "FOL",
-              "v": 1,
-              "p": -0.2
-            }
-          ]
-        }
-      ]
-    },
-    "Artemi Panarin": {
-      "name": "Artemi Panarin",
-      "pos": "LW",
-      "proTeam": "Los Angeles Kings",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 57.0,
-      "avg_points": 3.0,
-      "avg_7d": 2.8,
-      "avg_15d": 2.37,
-      "avg_30d": 3.08,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 2.4,
-          "stats": []
-        },
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": 3.2,
-          "stats": []
-        },
-        {
-          "day": 33,
-          "date": "2026-11-01",
-          "points": 0.6,
-          "stats": [
-            {
-              "s": "SOG",
-              "v": 3,
-              "p": 0.6
-            }
-          ]
-        },
-        {
-          "day": 31,
-          "date": "2026-10-30",
-          "points": 6.9,
-          "stats": [
-            {
-              "s": "G",
-              "v": 1,
-              "p": 3.0
-            },
-            {
-              "s": "A",
-              "v": 1,
-              "p": 2.0
-            },
-            {
-              "s": "PPG",
-              "v": 1,
-              "p": 0.5
-            },
-            {
-              "s": "SOG",
-              "v": 7,
-              "p": 1.4
-            }
-          ]
-        },
-        {
-          "day": 29,
-          "date": "2026-10-28",
-          "points": -1.5,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -1,
-              "p": -1.0
-            },
-            {
-              "s": "BLK",
-              "v": 1,
-              "p": 0.5
-            },
-            {
-              "s": "PIM",
-              "v": 2,
-              "p": -1.0
-            }
-          ]
-        }
-      ]
-    },
-    "Sebastian Cossa": {
-      "name": "Sebastian Cossa",
-      "pos": "G",
-      "proTeam": "Utah Hockey Club",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 9.2,
-      "avg_points": 0.84,
-      "avg_7d": 1.0,
-      "avg_15d": 3.33,
-      "avg_30d": 1.57,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": -3.8,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 5.8,
-          "stats": []
-        }
-      ]
-    },
-    "Casey DeSmith": {
-      "name": "Casey DeSmith",
-      "pos": "G",
-      "proTeam": "Dallas Stars",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 3.2,
-      "avg_points": 0.46,
-      "avg_7d": -5.0,
-      "avg_15d": -0.6,
-      "avg_30d": 0.75,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": -5.0,
-          "stats": []
-        }
-      ]
-    },
-    "Nikita Tolopilo": {
-      "name": "Nikita Tolopilo",
-      "pos": "G",
-      "proTeam": "Vancouver Canucks",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 0.4,
-      "avg_points": 0.2,
-      "avg_7d": -6.6,
-      "avg_15d": 0.2,
-      "avg_30d": 0.2,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": -6.6,
-          "stats": []
-        }
-      ]
-    },
-    "Alex DeBrincat": {
-      "name": "Alex DeBrincat",
-      "pos": "LW",
-      "proTeam": "Detroit Red Wings",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 76.0,
-      "avg_points": 3.04,
-      "avg_7d": 3.8,
-      "avg_15d": 1.65,
-      "avg_30d": 1.79,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 5.4,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 0.2,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 5.8,
-          "stats": []
-        },
-        {
-          "day": 47,
-          "date": "2026-11-15",
-          "points": 0.6,
-          "stats": [
-            {
-              "s": "SOG",
-              "v": 3,
-              "p": 0.6
-            }
-          ]
-        },
-        {
-          "day": 45,
-          "date": "2026-11-13",
-          "points": -2.1,
-          "stats": [
-            {
-              "s": "SOG",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "PIM",
-              "v": 5,
-              "p": -2.5
-            }
-          ]
-        }
-      ]
-    },
-    "Brayden Point": {
-      "name": "Brayden Point",
-      "pos": "C",
-      "proTeam": "Tampa Bay Lightning",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 58.8,
-      "avg_points": 2.67,
-      "avg_7d": -1.87,
-      "avg_15d": 0.34,
-      "avg_30d": 2.81,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": -2.0,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 0.4,
-          "stats": []
-        },
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": -4.0,
-          "stats": []
-        },
-        {
-          "day": 41,
-          "date": "2026-11-09",
-          "points": 0.6,
-          "stats": [
-            {
-              "s": "SOG",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "FOW",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "FOL",
-              "v": 1,
-              "p": -0.2
-            }
-          ]
-        },
-        {
-          "day": 38,
-          "date": "2026-11-06",
-          "points": 3.0,
-          "stats": [
-            {
-              "s": "A",
-              "v": 1,
-              "p": 2.0
-            },
-            {
-              "s": "FOW",
-              "v": 12,
-              "p": 2.4
-            },
-            {
-              "s": "FOL",
-              "v": 7,
-              "p": -1.4
-            }
-          ]
-        }
-      ]
-    },
-    "Dylan Guenther": {
-      "name": "Dylan Guenther",
-      "pos": "RW",
-      "proTeam": "Utah Hockey Club",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 44.1,
-      "avg_points": 2.1,
-      "avg_7d": 2.9,
-      "avg_15d": 2.9,
-      "avg_30d": 1.07,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 3.8,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 7.3,
-          "stats": []
-        },
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": -2.4,
-          "stats": []
-        },
-        {
-          "day": 24,
-          "date": "2026-10-23",
-          "points": -0.1,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -1,
-              "p": -1.0
-            },
-            {
-              "s": "SOG",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "BLK",
-              "v": 1,
-              "p": 0.5
-            }
-          ]
-        },
-        {
-          "day": 21,
-          "date": "2026-10-20",
-          "points": 0.4,
-          "stats": [
-            {
-              "s": "SOG",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "BLK",
-              "v": 2,
-              "p": 1.0
-            },
-            {
-              "s": "PIM",
-              "v": 2,
-              "p": -1.0
-            }
-          ]
-        }
-      ]
-    },
-    "Trevor Connelly": {
-      "name": "Trevor Connelly",
-      "pos": "LW",
-      "proTeam": "Vegas Golden Knights",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 69.8,
-      "avg_points": 2.59,
-      "avg_7d": 3.93,
-      "avg_15d": 3.37,
-      "avg_30d": 2.93,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": -1.0,
-          "stats": []
-        },
-        {
-          "day": 57,
-          "date": "2026-11-25",
-          "points": 11.2,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 1.6,
-          "stats": []
-        }
-      ]
-    },
-    "Connor Brown": {
-      "name": "Connor Brown",
-      "pos": "RW",
-      "proTeam": "New Jersey Devils",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 66.2,
-      "avg_points": 3.68,
-      "avg_7d": 5.57,
-      "avg_15d": 5.61,
-      "avg_30d": 4.34,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 9.3,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 1.6,
-          "stats": []
-        },
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": 8.8,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 2.6,
-          "stats": []
-        }
-      ]
-    },
-    "Alex Nedeljkovic": {
-      "name": "Alex Nedeljkovic",
-      "pos": "G",
-      "proTeam": "San Jose Sharks",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 7.0,
-      "avg_points": 0.7,
-      "avg_7d": -3.0,
-      "avg_15d": 0.2,
-      "avg_30d": -0.8,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": -9.4,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 3.4,
-          "stats": []
-        }
-      ]
-    },
-    "Darren Raddysh": {
-      "name": "Darren Raddysh",
-      "pos": "D",
-      "proTeam": "Toronto Maple Leafs",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 62.6,
-      "avg_points": 2.32,
-      "avg_7d": 4.9,
-      "avg_15d": 3.47,
-      "avg_30d": 2.65,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 0.4,
-          "stats": []
-        },
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": 8.6,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 5.7,
-          "stats": []
-        },
-        {
-          "day": 24,
-          "date": "2026-10-23",
-          "points": 0.4,
-          "stats": [
-            {
-              "s": "SOG",
-              "v": 2,
-              "p": 0.4
-            }
-          ]
-        },
-        {
-          "day": 5,
-          "date": "2026-10-04",
-          "points": 2.9,
-          "stats": [
-            {
-              "s": "A",
-              "v": 1,
-              "p": 2.0
-            },
-            {
-              "s": "PPA",
-              "v": 1,
-              "p": 0.5
-            },
-            {
-              "s": "SOG",
-              "v": 2,
-              "p": 0.4
-            }
-          ]
-        }
-      ]
-    },
-    "Brandt Clarke": {
-      "name": "Brandt Clarke",
-      "pos": "D",
-      "proTeam": "Los Angeles Kings",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 51.9,
-      "avg_points": 2.26,
-      "avg_7d": 1.1,
-      "avg_15d": 1.69,
-      "avg_30d": 2.3,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 1.7,
-          "stats": []
-        },
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": 0.9,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 0.7,
-          "stats": []
-        },
-        {
-          "day": 52,
-          "date": "2026-11-20",
-          "points": 0.9,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -1,
-              "p": -1.0
-            },
-            {
-              "s": "SOG",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "BLK",
-              "v": 3,
-              "p": 1.5
-            }
-          ]
-        }
-      ]
-    },
-    "Jeremy Swayman": {
-      "name": "Jeremy Swayman",
-      "pos": "G",
-      "proTeam": "Boston Bruins",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 39.2,
-      "avg_points": 2.06,
-      "avg_7d": -2.0,
-      "avg_15d": -1.9,
-      "avg_30d": -0.24,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": -3.0,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": -3.2,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 0.2,
-          "stats": []
-        },
-        {
-          "day": 31,
-          "date": "2026-10-30",
-          "points": -5.2,
-          "stats": [
-            {
-              "s": "SV",
-              "v": 14,
-              "p": 2.8
-            },
-            {
-              "s": "GA",
-              "v": 4,
-              "p": -8.0
-            }
-          ]
-        },
-        {
-          "day": 29,
-          "date": "2026-10-28",
-          "points": 1.6,
-          "stats": [
-            {
-              "s": "SV",
-              "v": 28,
-              "p": 5.6
-            },
-            {
-              "s": "GA",
-              "v": 2,
-              "p": -4.0
-            }
-          ]
-        }
-      ]
-    },
-    "Zach Benson": {
-      "name": "Zach Benson",
-      "pos": "LW",
-      "proTeam": "Buffalo Sabres",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "OUT",
-      "total_points": 83.8,
-      "avg_points": 3.35,
-      "avg_7d": 7.7,
-      "avg_15d": 4.23,
-      "avg_30d": 4.12,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 7.4,
-          "stats": []
-        },
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": 10.5,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 5.2,
-          "stats": []
-        },
-        {
-          "day": 41,
-          "date": "2026-11-09",
-          "points": -0.9,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -2,
-              "p": -2.0
-            },
-            {
-              "s": "SOG",
-              "v": 3,
-              "p": 0.6
-            },
-            {
-              "s": "BLK",
-              "v": 1,
-              "p": 0.5
-            }
-          ]
-        },
-        {
-          "day": 39,
-          "date": "2026-11-07",
-          "points": 4.5,
-          "stats": [
-            {
-              "s": "A",
-              "v": 1,
-              "p": 2.0
-            },
-            {
-              "s": "+/-",
-              "v": 2,
-              "p": 2.0
-            },
-            {
-              "s": "SOG",
-              "v": 3,
-              "p": 0.6
-            },
-            {
-              "s": "HIT",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "BLK",
-              "v": 1,
-              "p": 0.5
-            },
-            {
-              "s": "PIM",
-              "v": 2,
-              "p": -1.0
-            }
-          ]
-        }
-      ]
-    },
     "Alexis Lafreniere": {
       "name": "Alexis Lafreniere",
       "pos": "LW",
@@ -34971,82 +33148,6 @@
         }
       ]
     },
-    "Nico Hischier": {
-      "name": "Nico Hischier",
-      "pos": "C",
-      "proTeam": "New Jersey Devils",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 86.9,
-      "avg_points": 3.34,
-      "avg_7d": 2.45,
-      "avg_15d": 2.6,
-      "avg_30d": 2.32,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 4.6,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 5.7,
-          "stats": []
-        },
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": -0.4,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": -0.1,
-          "stats": []
-        },
-        {
-          "day": 51,
-          "date": "2026-11-19",
-          "points": 1.6,
-          "stats": [
-            {
-              "s": "A",
-              "v": 1,
-              "p": 2.0
-            },
-            {
-              "s": "+/-",
-              "v": 1,
-              "p": 1.0
-            },
-            {
-              "s": "SOG",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "HIT",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "FOW",
-              "v": 5,
-              "p": 1.0
-            },
-            {
-              "s": "FOL",
-              "v": 15,
-              "p": -3.0
-            }
-          ]
-        }
-      ]
-    },
     "Laurent Brossoit": {
       "name": "Laurent Brossoit",
       "pos": "G",
@@ -35071,524 +33172,6 @@
           "date": "2026-11-26",
           "points": 13.6,
           "stats": []
-        }
-      ]
-    },
-    "Sam Rinzel": {
-      "name": "Sam Rinzel",
-      "pos": "D",
-      "proTeam": "Chicago Blackhawks",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 59.2,
-      "avg_points": 2.37,
-      "avg_7d": 4.83,
-      "avg_15d": 5.34,
-      "avg_30d": 3.57,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 0.2,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 3.8,
-          "stats": []
-        },
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": 1.9,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 13.4,
-          "stats": []
-        }
-      ]
-    },
-    "Erik Karlsson": {
-      "name": "Erik Karlsson",
-      "pos": "D",
-      "proTeam": "Pittsburgh Penguins",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 53.0,
-      "avg_points": 2.12,
-      "avg_7d": 2.08,
-      "avg_15d": 0.65,
-      "avg_30d": 1.39,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 6.2,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": -2.1,
-          "stats": []
-        },
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": 1.4,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 2.8,
-          "stats": []
-        },
-        {
-          "day": 44,
-          "date": "2026-11-12",
-          "points": 1.7,
-          "stats": [
-            {
-              "s": "A",
-              "v": 1,
-              "p": 2.0
-            },
-            {
-              "s": "+/-",
-              "v": -2,
-              "p": -2.0
-            },
-            {
-              "s": "PPA",
-              "v": 1,
-              "p": 0.5
-            },
-            {
-              "s": "SOG",
-              "v": 5,
-              "p": 1.0
-            },
-            {
-              "s": "HIT",
-              "v": 1,
-              "p": 0.2
-            }
-          ]
-        }
-      ]
-    },
-    "Tyler Bertuzzi": {
-      "name": "Tyler Bertuzzi",
-      "pos": "LW",
-      "proTeam": "Chicago Blackhawks",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "OUT",
-      "total_points": 35.5,
-      "avg_points": 1.48,
-      "avg_7d": 6.85,
-      "avg_15d": 4.93,
-      "avg_30d": 2.36,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": 10.5,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 3.2,
-          "stats": []
-        }
-      ]
-    },
-    "Mattias Ekholm": {
-      "name": "Mattias Ekholm",
-      "pos": "D",
-      "proTeam": "Edmonton Oilers",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 56.7,
-      "avg_points": 2.18,
-      "avg_7d": -0.93,
-      "avg_15d": 0.59,
-      "avg_30d": 2.24,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 1.5,
-          "stats": []
-        },
-        {
-          "day": 57,
-          "date": "2026-11-25",
-          "points": -1.8,
-          "stats": []
-        },
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": -1.6,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": -1.8,
-          "stats": []
-        },
-        {
-          "day": 48,
-          "date": "2026-11-16",
-          "points": 0.5,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": 1,
-              "p": 1.0
-            },
-            {
-              "s": "BLK",
-              "v": 1,
-              "p": 0.5
-            },
-            {
-              "s": "PIM",
-              "v": 2,
-              "p": -1.0
-            }
-          ]
-        }
-      ]
-    },
-    "John Gibson": {
-      "name": "John Gibson",
-      "pos": "G",
-      "proTeam": "Detroit Red Wings",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": -3.4,
-      "avg_points": -0.23,
-      "avg_7d": 5.2,
-      "avg_15d": 1.73,
-      "avg_30d": 0.14,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 12.6,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": -2.2,
-          "stats": []
-        }
-      ]
-    },
-    "Joel Hofer": {
-      "name": "Joel Hofer",
-      "pos": "G",
-      "proTeam": "St. Louis Blues",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 67.6,
-      "avg_points": 3.56,
-      "avg_7d": 2.27,
-      "avg_15d": 4.1,
-      "avg_30d": 3.8,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 3.0,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 2.4,
-          "stats": []
-        },
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": 1.4,
-          "stats": []
-        },
-        {
-          "day": 36,
-          "date": "2026-11-04",
-          "points": 1.6,
-          "stats": [
-            {
-              "s": "SV",
-              "v": 28,
-              "p": 5.6
-            },
-            {
-              "s": "GA",
-              "v": 2,
-              "p": -4.0
-            }
-          ]
-        }
-      ]
-    },
-    "Wyatt Kaiser": {
-      "name": "Wyatt Kaiser",
-      "pos": "D",
-      "proTeam": "Chicago Blackhawks",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "SUSPENSION",
-      "total_points": 9.3,
-      "avg_points": 0.4,
-      "avg_7d": -8.1,
-      "avg_15d": -0.52,
-      "avg_30d": -0.22,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": -8.1,
-          "stats": []
-        }
-      ]
-    },
-    "Arber Xhekaj": {
-      "name": "Arber Xhekaj",
-      "pos": "D",
-      "proTeam": "Montréal Canadiens",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 11.3,
-      "avg_points": 0.45,
-      "avg_7d": -1.5,
-      "avg_15d": 0.64,
-      "avg_30d": 0.92,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": -7.5,
-          "stats": []
-        },
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": -0.6,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 3.6,
-          "stats": []
-        }
-      ]
-    },
-    "Florian Xhekaj": {
-      "name": "Florian Xhekaj",
-      "pos": "LW",
-      "proTeam": "Montréal Canadiens",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": -2.5,
-      "avg_points": -0.21,
-      "avg_7d": -5.65,
-      "avg_15d": -1.9,
-      "avg_30d": -0.76,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": -12.9,
-          "stats": []
-        },
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": 1.6,
-          "stats": []
-        }
-      ]
-    },
-    "Charlie Lindgren": {
-      "name": "Charlie Lindgren",
-      "pos": "G",
-      "proTeam": "Washington Capitals",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": -12.6,
-      "avg_points": -1.57,
-      "avg_7d": -8.8,
-      "avg_15d": -5.8,
-      "avg_30d": -3.32,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": -8.8,
-          "stats": []
-        }
-      ]
-    },
-    "Michael Amadio": {
-      "name": "Michael Amadio",
-      "pos": "RW",
-      "proTeam": "Ottawa Senators",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 73.7,
-      "avg_points": 2.73,
-      "avg_7d": 5.02,
-      "avg_15d": 3.95,
-      "avg_30d": 3.91,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 12.6,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 2.2,
-          "stats": []
-        },
-        {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": 5.1,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 0.2,
-          "stats": []
-        }
-      ]
-    },
-    "Emmitt Finnie": {
-      "name": "Emmitt Finnie",
-      "pos": "LW",
-      "proTeam": "Detroit Red Wings",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 68.7,
-      "avg_points": 2.75,
-      "avg_7d": 5.53,
-      "avg_15d": 2.62,
-      "avg_30d": 2.37,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 1.0,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 12.9,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 2.7,
-          "stats": []
-        },
-        {
-          "day": 36,
-          "date": "2026-11-04",
-          "points": 0.1,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -1,
-              "p": -1.0
-            },
-            {
-              "s": "HIT",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "BLK",
-              "v": 1,
-              "p": 0.5
-            },
-            {
-              "s": "FOW",
-              "v": 8,
-              "p": 1.6
-            },
-            {
-              "s": "FOL",
-              "v": 6,
-              "p": -1.2
-            }
-          ]
-        },
-        {
-          "day": 35,
-          "date": "2026-11-03",
-          "points": 5.4,
-          "stats": [
-            {
-              "s": "G",
-              "v": 1,
-              "p": 3.0
-            },
-            {
-              "s": "+/-",
-              "v": 2,
-              "p": 2.0
-            },
-            {
-              "s": "SOG",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "HIT",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "FOW",
-              "v": 5,
-              "p": 1.0
-            },
-            {
-              "s": "FOL",
-              "v": 6,
-              "p": -1.2
-            }
-          ]
         }
       ]
     },
@@ -35797,80 +33380,268 @@
         }
       ]
     },
-    "Roman Kantserov": {
-      "name": "Roman Kantserov",
-      "pos": "RW",
-      "proTeam": "Chicago Blackhawks",
+    "Leo Carlsson": {
+      "name": "Leo Carlsson",
+      "pos": "C",
+      "proTeam": "Anaheim Ducks",
       "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 68.0,
-      "avg_points": 2.62,
-      "avg_7d": 9.48,
-      "avg_15d": 5.29,
-      "avg_30d": 4.0,
+      "injuryStatus": "INJURY_RESERVE",
+      "total_points": 75.3,
+      "avg_points": 3.14,
+      "avg_7d": 3.2,
+      "avg_15d": 1.38,
+      "avg_30d": 3.13,
       "season_stats": [],
       "last_games": [
         {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 1.5,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 9.9,
-          "stats": []
-        },
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": 18.3,
-          "stats": []
-        },
-        {
           "day": 54,
           "date": "2026-11-22",
-          "points": 8.2,
+          "points": 3.2,
           "stats": []
+        },
+        {
+          "day": 52,
+          "date": "2026-11-20",
+          "points": -1.2,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": -1,
+              "p": -1.0
+            },
+            {
+              "s": "SOG",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "HIT",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "FOW",
+              "v": 3,
+              "p": 0.6
+            },
+            {
+              "s": "FOL",
+              "v": 6,
+              "p": -1.2
+            }
+          ]
+        },
+        {
+          "day": 50,
+          "date": "2026-11-18",
+          "points": 1.3,
+          "stats": [
+            {
+              "s": "A",
+              "v": 1,
+              "p": 2.0
+            },
+            {
+              "s": "+/-",
+              "v": -2,
+              "p": -2.0
+            },
+            {
+              "s": "PPA",
+              "v": 1,
+              "p": 0.5
+            },
+            {
+              "s": "SOG",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "FOW",
+              "v": 7,
+              "p": 1.4
+            },
+            {
+              "s": "FOL",
+              "v": 5,
+              "p": -1.0
+            }
+          ]
+        },
+        {
+          "day": 48,
+          "date": "2026-11-16",
+          "points": 2.4,
+          "stats": [
+            {
+              "s": "SOG",
+              "v": 3,
+              "p": 0.6
+            },
+            {
+              "s": "FOW",
+              "v": 11,
+              "p": 2.2
+            },
+            {
+              "s": "FOL",
+              "v": 2,
+              "p": -0.4
+            }
+          ]
+        },
+        {
+          "day": 47,
+          "date": "2026-11-15",
+          "points": 1.2,
+          "stats": [
+            {
+              "s": "A",
+              "v": 1,
+              "p": 2.0
+            },
+            {
+              "s": "SOG",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "FOW",
+              "v": 5,
+              "p": 1.0
+            },
+            {
+              "s": "FOL",
+              "v": 10,
+              "p": -2.0
+            }
+          ]
         }
       ]
     },
-    "Moritz Seider": {
-      "name": "Moritz Seider",
-      "pos": "D",
-      "proTeam": "Detroit Red Wings",
+    "Mackenzie Blackwood": {
+      "name": "Mackenzie Blackwood",
+      "pos": "G",
+      "proTeam": "Colorado Avalanche",
       "owner": "Vapaa agentti",
       "injuryStatus": "ACTIVE",
-      "total_points": 71.1,
-      "avg_points": 2.84,
-      "avg_7d": 3.97,
-      "avg_15d": 2.88,
-      "avg_30d": 2.62,
+      "total_points": 61.6,
+      "avg_points": 3.24,
+      "avg_7d": 8.2,
+      "avg_15d": 5.6,
+      "avg_30d": 4.49,
       "season_stats": [],
       "last_games": [
         {
           "day": 60,
           "date": "2026-11-28",
-          "points": 3.7,
+          "points": 1.8,
           "stats": []
         },
         {
           "day": 58,
           "date": "2026-11-26",
-          "points": 8.0,
+          "points": 14.6,
+          "stats": []
+        },
+        {
+          "day": 9,
+          "date": "2026-10-08",
+          "points": -2.8,
+          "stats": [
+            {
+              "s": "SV",
+              "v": 16,
+              "p": 3.2
+            },
+            {
+              "s": "GA",
+              "v": 3,
+              "p": -6.0
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2026-10-04",
+          "points": 7.0,
+          "stats": [
+            {
+              "s": "W",
+              "v": 1,
+              "p": 4.0
+            },
+            {
+              "s": "SV",
+              "v": 25,
+              "p": 5.0
+            },
+            {
+              "s": "GA",
+              "v": 1,
+              "p": -2.0
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "date": "2026-10-01",
+          "points": 1.4,
+          "stats": [
+            {
+              "s": "W",
+              "v": 1,
+              "p": 4.0
+            },
+            {
+              "s": "SV",
+              "v": 27,
+              "p": 5.4
+            },
+            {
+              "s": "GA",
+              "v": 4,
+              "p": -8.0
+            }
+          ]
+        }
+      ]
+    },
+    "Ryan O'Reilly": {
+      "name": "Ryan O'Reilly",
+      "pos": "C",
+      "proTeam": "Nashville Predators",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 84.0,
+      "avg_points": 3.36,
+      "avg_7d": 2.73,
+      "avg_15d": 2.52,
+      "avg_30d": 2.38,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": -0.3,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 5.6,
           "stats": []
         },
         {
           "day": 54,
           "date": "2026-11-22",
-          "points": 0.2,
+          "points": 2.9,
           "stats": []
         },
         {
-          "day": 51,
-          "date": "2026-11-19",
-          "points": -3.0,
+          "day": 50,
+          "date": "2026-11-18",
+          "points": -2.0,
           "stats": [
             {
               "s": "+/-",
@@ -35878,31 +33649,61 @@
               "p": -3.0
             },
             {
-              "s": "BLK",
+              "s": "SOG",
               "v": 2,
-              "p": 1.0
+              "p": 0.4
             },
             {
-              "s": "PIM",
-              "v": 2,
-              "p": -1.0
+              "s": "FOW",
+              "v": 10,
+              "p": 2.0
+            },
+            {
+              "s": "FOL",
+              "v": 7,
+              "p": -1.4
             }
           ]
         },
         {
-          "day": 47,
-          "date": "2026-11-15",
-          "points": 3.0,
+          "day": 48,
+          "date": "2026-11-16",
+          "points": 0.9,
           "stats": [
             {
-              "s": "+/-",
-              "v": 2,
+              "s": "A",
+              "v": 1,
               "p": 2.0
             },
             {
-              "s": "BLK",
-              "v": 2,
-              "p": 1.0
+              "s": "+/-",
+              "v": -3,
+              "p": -3.0
+            },
+            {
+              "s": "PPA",
+              "v": 1,
+              "p": 0.5
+            },
+            {
+              "s": "SOG",
+              "v": 4,
+              "p": 0.8
+            },
+            {
+              "s": "HIT",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "FOW",
+              "v": 7,
+              "p": 1.4
+            },
+            {
+              "s": "FOL",
+              "v": 5,
+              "p": -1.0
             }
           ]
         }
@@ -35958,92 +33759,121 @@
         }
       ]
     },
-    "Jeremy Lauzon": {
-      "name": "Jeremy Lauzon",
-      "pos": "D",
-      "proTeam": "Vegas Golden Knights",
+    "John Gibson": {
+      "name": "John Gibson",
+      "pos": "G",
+      "proTeam": "Detroit Red Wings",
       "owner": "Vapaa agentti",
       "injuryStatus": "ACTIVE",
-      "total_points": 32.4,
-      "avg_points": 1.2,
-      "avg_7d": 1.77,
-      "avg_15d": 1.16,
-      "avg_30d": 1.19,
+      "total_points": -3.4,
+      "avg_points": -0.23,
+      "avg_7d": 5.2,
+      "avg_15d": 1.73,
+      "avg_30d": 0.14,
       "season_stats": [],
       "last_games": [
         {
           "day": 60,
           "date": "2026-11-28",
-          "points": -0.2,
-          "stats": []
-        },
-        {
-          "day": 57,
-          "date": "2026-11-25",
-          "points": 4.7,
+          "points": 12.6,
           "stats": []
         },
         {
           "day": 54,
           "date": "2026-11-22",
-          "points": 0.8,
+          "points": -2.2,
           "stats": []
         }
       ]
     },
-    "William Nylander": {
-      "name": "William Nylander",
-      "pos": "RW",
-      "proTeam": "Toronto Maple Leafs",
+    "Sam Rinzel": {
+      "name": "Sam Rinzel",
+      "pos": "D",
+      "proTeam": "Chicago Blackhawks",
       "owner": "Vapaa agentti",
       "injuryStatus": "ACTIVE",
-      "total_points": 75.4,
-      "avg_points": 2.79,
-      "avg_7d": 2.23,
-      "avg_15d": 1.6,
-      "avg_30d": 1.35,
+      "total_points": 59.2,
+      "avg_points": 2.37,
+      "avg_7d": 4.83,
+      "avg_15d": 5.34,
+      "avg_30d": 3.57,
       "season_stats": [],
       "last_games": [
         {
           "day": 60,
           "date": "2026-11-28",
-          "points": 1.4,
+          "points": 0.2,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 3.8,
+          "stats": []
+        },
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": 1.9,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 13.4,
+          "stats": []
+        }
+      ]
+    },
+    "Will Smith": {
+      "name": "Will Smith",
+      "pos": "RW",
+      "proTeam": "San Jose Sharks",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 46.4,
+      "avg_points": 1.66,
+      "avg_7d": -1.9,
+      "avg_15d": 0.97,
+      "avg_30d": 1.53,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 0.4,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": -3.0,
           "stats": []
         },
         {
           "day": 56,
           "date": "2026-11-24",
-          "points": 2.2,
+          "points": -4.2,
           "stats": []
         },
         {
           "day": 54,
           "date": "2026-11-22",
-          "points": 3.1,
+          "points": -0.8,
           "stats": []
         },
         {
-          "day": 52,
-          "date": "2026-11-20",
-          "points": 4.7,
+          "day": 7,
+          "date": "2026-10-06",
+          "points": -3.0,
           "stats": [
             {
-              "s": "A",
-              "v": 2,
-              "p": 4.0
+              "s": "+/-",
+              "v": -3,
+              "p": -3.0
             },
             {
-              "s": "PPA",
-              "v": 1,
-              "p": 0.5
-            },
-            {
-              "s": "SOG",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "HIT",
+              "s": "FOW",
               "v": 1,
               "p": 0.2
             },
@@ -36053,11 +33883,111 @@
               "p": -0.2
             }
           ]
+        }
+      ]
+    },
+    "Jeremy Swayman": {
+      "name": "Jeremy Swayman",
+      "pos": "G",
+      "proTeam": "Boston Bruins",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 39.2,
+      "avg_points": 2.06,
+      "avg_7d": -2.0,
+      "avg_15d": -1.9,
+      "avg_30d": -0.24,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": -3.0,
+          "stats": []
         },
         {
-          "day": 50,
-          "date": "2026-11-18",
-          "points": -0.8,
+          "day": 58,
+          "date": "2026-11-26",
+          "points": -3.2,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 0.2,
+          "stats": []
+        },
+        {
+          "day": 31,
+          "date": "2026-10-30",
+          "points": -5.2,
+          "stats": [
+            {
+              "s": "SV",
+              "v": 14,
+              "p": 2.8
+            },
+            {
+              "s": "GA",
+              "v": 4,
+              "p": -8.0
+            }
+          ]
+        },
+        {
+          "day": 29,
+          "date": "2026-10-28",
+          "points": 1.6,
+          "stats": [
+            {
+              "s": "SV",
+              "v": 28,
+              "p": 5.6
+            },
+            {
+              "s": "GA",
+              "v": 2,
+              "p": -4.0
+            }
+          ]
+        }
+      ]
+    },
+    "Brandt Clarke": {
+      "name": "Brandt Clarke",
+      "pos": "D",
+      "proTeam": "Los Angeles Kings",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 51.9,
+      "avg_points": 2.26,
+      "avg_7d": 1.1,
+      "avg_15d": 1.69,
+      "avg_30d": 2.3,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 1.7,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": 0.9,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 0.7,
+          "stats": []
+        },
+        {
+          "day": 52,
+          "date": "2026-11-20",
+          "points": 0.9,
           "stats": [
             {
               "s": "+/-",
@@ -36070,71 +34000,55 @@
               "p": 0.4
             },
             {
-              "s": "FOL",
-              "v": 1,
-              "p": -0.2
+              "s": "BLK",
+              "v": 3,
+              "p": 1.5
             }
           ]
         }
       ]
     },
-    "Adrian Kempe": {
-      "name": "Adrian Kempe",
-      "pos": "RW",
-      "proTeam": "Los Angeles Kings",
+    "Mattias Samuelsson": {
+      "name": "Mattias Samuelsson",
+      "pos": "D",
+      "proTeam": "Buffalo Sabres",
       "owner": "Vapaa agentti",
       "injuryStatus": "ACTIVE",
-      "total_points": 53.0,
-      "avg_points": 2.41,
-      "avg_7d": 1.13,
-      "avg_15d": 0.56,
-      "avg_30d": 2.02,
+      "total_points": 63.8,
+      "avg_points": 2.45,
+      "avg_7d": 3.02,
+      "avg_15d": 2.7,
+      "avg_30d": 3.3,
       "season_stats": [],
       "last_games": [
         {
           "day": 60,
           "date": "2026-11-28",
-          "points": 5.5,
+          "points": 3.5,
           "stats": []
         },
         {
-          "day": 56,
-          "date": "2026-11-24",
-          "points": -0.9,
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 4.8,
+          "stats": []
+        },
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": 3.8,
           "stats": []
         },
         {
           "day": 54,
           "date": "2026-11-22",
-          "points": -1.2,
+          "points": 0.0,
           "stats": []
         },
         {
-          "day": 43,
-          "date": "2026-11-11",
-          "points": -1.6,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -2,
-              "p": -2.0
-            },
-            {
-              "s": "SOG",
-              "v": 3,
-              "p": 0.6
-            },
-            {
-              "s": "FOL",
-              "v": 1,
-              "p": -0.2
-            }
-          ]
-        },
-        {
-          "day": 29,
-          "date": "2026-10-28",
-          "points": -0.1,
+          "day": 23,
+          "date": "2026-10-22",
+          "points": -9.0,
           "stats": [
             {
               "s": "+/-",
@@ -36142,225 +34056,16 @@
               "p": -1.0
             },
             {
-              "s": "SOG",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "HIT",
-              "v": 1,
-              "p": 0.2
-            },
-            {
               "s": "BLK",
               "v": 1,
               "p": 0.5
             },
             {
-              "s": "FOW",
-              "v": 3,
-              "p": 0.6
-            },
-            {
-              "s": "FOL",
-              "v": 3,
-              "p": -0.6
-            }
-          ]
-        }
-      ]
-    },
-    "Lucas Raymond": {
-      "name": "Lucas Raymond",
-      "pos": "LW",
-      "proTeam": "Detroit Red Wings",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 81.9,
-      "avg_points": 3.28,
-      "avg_7d": 1.77,
-      "avg_15d": 3.57,
-      "avg_30d": 3.45,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 3.0,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 3.1,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": -0.8,
-          "stats": []
-        },
-        {
-          "day": 51,
-          "date": "2026-11-19",
-          "points": 3.4,
-          "stats": [
-            {
-              "s": "G",
-              "v": 1,
-              "p": 3.0
-            },
-            {
-              "s": "SOG",
-              "v": 1,
-              "p": 0.2
-            },
-            {
-              "s": "HIT",
-              "v": 1,
-              "p": 0.2
-            }
-          ]
-        },
-        {
-          "day": 38,
-          "date": "2026-11-06",
-          "points": -0.4,
-          "stats": [
-            {
-              "s": "SOG",
-              "v": 3,
-              "p": 0.6
-            },
-            {
               "s": "PIM",
-              "v": 2,
-              "p": -1.0
+              "v": 17,
+              "p": -8.5
             }
           ]
-        }
-      ]
-    },
-    "Karel Vejmelka": {
-      "name": "Karel Vejmelka",
-      "pos": "G",
-      "proTeam": "Utah Hockey Club",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 3.8,
-      "avg_points": 0.21,
-      "avg_7d": -0.2,
-      "avg_15d": 0.48,
-      "avg_30d": -1.03,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": -2.8,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 2.4,
-          "stats": []
-        },
-        {
-          "day": 24,
-          "date": "2026-10-23",
-          "points": -4.0,
-          "stats": [
-            {
-              "s": "SV",
-              "v": 20,
-              "p": 4.0
-            },
-            {
-              "s": "GA",
-              "v": 4,
-              "p": -8.0
-            }
-          ]
-        },
-        {
-          "day": 19,
-          "date": "2026-10-18",
-          "points": -7.6,
-          "stats": [
-            {
-              "s": "SV",
-              "v": 12,
-              "p": 2.4
-            },
-            {
-              "s": "GA",
-              "v": 5,
-              "p": -10.0
-            }
-          ]
-        },
-        {
-          "day": 17,
-          "date": "2026-10-16",
-          "points": 4.4,
-          "stats": [
-            {
-              "s": "W",
-              "v": 1,
-              "p": 4.0
-            },
-            {
-              "s": "SV",
-              "v": 22,
-              "p": 4.4
-            },
-            {
-              "s": "GA",
-              "v": 2,
-              "p": -4.0
-            }
-          ]
-        }
-      ]
-    },
-    "Jake Neighbours": {
-      "name": "Jake Neighbours",
-      "pos": "LW",
-      "proTeam": "St. Louis Blues",
-      "owner": "Vapaa agentti",
-      "injuryStatus": "ACTIVE",
-      "total_points": 81.2,
-      "avg_points": 3.12,
-      "avg_7d": 6.4,
-      "avg_15d": 5.36,
-      "avg_30d": 3.86,
-      "season_stats": [],
-      "last_games": [
-        {
-          "day": 60,
-          "date": "2026-11-28",
-          "points": 9.6,
-          "stats": []
-        },
-        {
-          "day": 58,
-          "date": "2026-11-26",
-          "points": 1.6,
-          "stats": []
-        },
-        {
-          "day": 55,
-          "date": "2026-11-23",
-          "points": 1.2,
-          "stats": []
-        },
-        {
-          "day": 54,
-          "date": "2026-11-22",
-          "points": 13.2,
-          "stats": []
         }
       ]
     },
@@ -36569,68 +34274,47 @@
         }
       ]
     },
-    "Ryan O'Reilly": {
-      "name": "Ryan O'Reilly",
-      "pos": "C",
-      "proTeam": "Nashville Predators",
+    "Erik Karlsson": {
+      "name": "Erik Karlsson",
+      "pos": "D",
+      "proTeam": "Pittsburgh Penguins",
       "owner": "Vapaa agentti",
       "injuryStatus": "ACTIVE",
-      "total_points": 84.0,
-      "avg_points": 3.36,
-      "avg_7d": 2.73,
-      "avg_15d": 2.52,
-      "avg_30d": 2.38,
+      "total_points": 53.0,
+      "avg_points": 2.12,
+      "avg_7d": 2.08,
+      "avg_15d": 0.65,
+      "avg_30d": 1.39,
       "season_stats": [],
       "last_games": [
         {
           "day": 60,
           "date": "2026-11-28",
-          "points": -0.3,
+          "points": 6.2,
           "stats": []
         },
         {
           "day": 58,
           "date": "2026-11-26",
-          "points": 5.6,
+          "points": -2.1,
+          "stats": []
+        },
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": 1.4,
           "stats": []
         },
         {
           "day": 54,
           "date": "2026-11-22",
-          "points": 2.9,
+          "points": 2.8,
           "stats": []
         },
         {
-          "day": 50,
-          "date": "2026-11-18",
-          "points": -2.0,
-          "stats": [
-            {
-              "s": "+/-",
-              "v": -3,
-              "p": -3.0
-            },
-            {
-              "s": "SOG",
-              "v": 2,
-              "p": 0.4
-            },
-            {
-              "s": "FOW",
-              "v": 10,
-              "p": 2.0
-            },
-            {
-              "s": "FOL",
-              "v": 7,
-              "p": -1.4
-            }
-          ]
-        },
-        {
-          "day": 48,
-          "date": "2026-11-16",
-          "points": 0.9,
+          "day": 44,
+          "date": "2026-11-12",
+          "points": 1.7,
           "stats": [
             {
               "s": "A",
@@ -36639,8 +34323,8 @@
             },
             {
               "s": "+/-",
-              "v": -3,
-              "p": -3.0
+              "v": -2,
+              "p": -2.0
             },
             {
               "s": "PPA",
@@ -36649,57 +34333,256 @@
             },
             {
               "s": "SOG",
-              "v": 4,
-              "p": 0.8
+              "v": 5,
+              "p": 1.0
             },
             {
               "s": "HIT",
               "v": 1,
               "p": 0.2
-            },
-            {
-              "s": "FOW",
-              "v": 7,
-              "p": 1.4
-            },
-            {
-              "s": "FOL",
-              "v": 5,
-              "p": -1.0
             }
           ]
         }
       ]
     },
-    "Gabriel Vilardi": {
-      "name": "Gabriel Vilardi",
-      "pos": "RW",
-      "proTeam": "Winnipeg Jets",
+    "Moritz Seider": {
+      "name": "Moritz Seider",
+      "pos": "D",
+      "proTeam": "Detroit Red Wings",
       "owner": "Vapaa agentti",
       "injuryStatus": "ACTIVE",
-      "total_points": 76.2,
-      "avg_points": 2.82,
-      "avg_7d": 7.33,
-      "avg_15d": 6.47,
-      "avg_30d": 4.08,
+      "total_points": 71.1,
+      "avg_points": 2.84,
+      "avg_7d": 3.97,
+      "avg_15d": 2.88,
+      "avg_30d": 2.62,
       "season_stats": [],
       "last_games": [
         {
           "day": 60,
           "date": "2026-11-28",
-          "points": 7.7,
+          "points": 3.7,
           "stats": []
         },
         {
           "day": 58,
           "date": "2026-11-26",
-          "points": 1.0,
+          "points": 8.0,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 0.2,
+          "stats": []
+        },
+        {
+          "day": 51,
+          "date": "2026-11-19",
+          "points": -3.0,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": -3,
+              "p": -3.0
+            },
+            {
+              "s": "BLK",
+              "v": 2,
+              "p": 1.0
+            },
+            {
+              "s": "PIM",
+              "v": 2,
+              "p": -1.0
+            }
+          ]
+        },
+        {
+          "day": 47,
+          "date": "2026-11-15",
+          "points": 3.0,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": 2,
+              "p": 2.0
+            },
+            {
+              "s": "BLK",
+              "v": 2,
+              "p": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    "Florian Xhekaj": {
+      "name": "Florian Xhekaj",
+      "pos": "LW",
+      "proTeam": "Montréal Canadiens",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": -2.5,
+      "avg_points": -0.21,
+      "avg_7d": -5.65,
+      "avg_15d": -1.9,
+      "avg_30d": -0.76,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": -12.9,
           "stats": []
         },
         {
           "day": 56,
           "date": "2026-11-24",
-          "points": 17.6,
+          "points": 1.6,
+          "stats": []
+        }
+      ]
+    },
+    "Casey DeSmith": {
+      "name": "Casey DeSmith",
+      "pos": "G",
+      "proTeam": "Dallas Stars",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 3.2,
+      "avg_points": 0.46,
+      "avg_7d": -5.0,
+      "avg_15d": -0.6,
+      "avg_30d": 0.75,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": -5.0,
+          "stats": []
+        }
+      ]
+    },
+    "Alex DeBrincat": {
+      "name": "Alex DeBrincat",
+      "pos": "LW",
+      "proTeam": "Detroit Red Wings",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 76.0,
+      "avg_points": 3.04,
+      "avg_7d": 3.8,
+      "avg_15d": 1.65,
+      "avg_30d": 1.79,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 5.4,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 0.2,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 5.8,
+          "stats": []
+        },
+        {
+          "day": 47,
+          "date": "2026-11-15",
+          "points": 0.6,
+          "stats": [
+            {
+              "s": "SOG",
+              "v": 3,
+              "p": 0.6
+            }
+          ]
+        },
+        {
+          "day": 45,
+          "date": "2026-11-13",
+          "points": -2.1,
+          "stats": [
+            {
+              "s": "SOG",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "PIM",
+              "v": 5,
+              "p": -2.5
+            }
+          ]
+        }
+      ]
+    },
+    "Devon Levi": {
+      "name": "Devon Levi",
+      "pos": "G",
+      "proTeam": "Edmonton Oilers",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 29.2,
+      "avg_points": 2.09,
+      "avg_7d": -5.9,
+      "avg_15d": 0.52,
+      "avg_30d": 2.11,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 57,
+          "date": "2026-11-25",
+          "points": -3.6,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": -8.2,
+          "stats": []
+        }
+      ]
+    },
+    "Sidney Crosby": {
+      "name": "Sidney Crosby",
+      "pos": "C",
+      "proTeam": "Pittsburgh Penguins",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 43.6,
+      "avg_points": 1.74,
+      "avg_7d": 0.35,
+      "avg_15d": 0.42,
+      "avg_30d": 1.78,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": -0.5,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": -2.1,
+          "stats": []
+        },
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": 1.0,
           "stats": []
         },
         {
@@ -36707,6 +34590,104 @@
           "date": "2026-11-22",
           "points": 3.0,
           "stats": []
+        },
+        {
+          "day": 12,
+          "date": "2026-10-11",
+          "points": 1.9,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": -1,
+              "p": -1.0
+            },
+            {
+              "s": "SOG",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "HIT",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "BLK",
+              "v": 3,
+              "p": 1.5
+            },
+            {
+              "s": "FOW",
+              "v": 14,
+              "p": 2.8
+            },
+            {
+              "s": "FOL",
+              "v": 9,
+              "p": -1.8
+            }
+          ]
+        }
+      ]
+    },
+    "Mattias Ekholm": {
+      "name": "Mattias Ekholm",
+      "pos": "D",
+      "proTeam": "Edmonton Oilers",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 56.7,
+      "avg_points": 2.18,
+      "avg_7d": -0.93,
+      "avg_15d": 0.59,
+      "avg_30d": 2.24,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 1.5,
+          "stats": []
+        },
+        {
+          "day": 57,
+          "date": "2026-11-25",
+          "points": -1.8,
+          "stats": []
+        },
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": -1.6,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": -1.8,
+          "stats": []
+        },
+        {
+          "day": 48,
+          "date": "2026-11-16",
+          "points": 0.5,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": 1,
+              "p": 1.0
+            },
+            {
+              "s": "BLK",
+              "v": 1,
+              "p": 0.5
+            },
+            {
+              "s": "PIM",
+              "v": 2,
+              "p": -1.0
+            }
+          ]
         }
       ]
     },
@@ -36812,6 +34793,272 @@
         }
       ]
     },
+    "Joel Hofer": {
+      "name": "Joel Hofer",
+      "pos": "G",
+      "proTeam": "St. Louis Blues",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 67.6,
+      "avg_points": 3.56,
+      "avg_7d": 2.27,
+      "avg_15d": 4.1,
+      "avg_30d": 3.8,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 3.0,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 2.4,
+          "stats": []
+        },
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": 1.4,
+          "stats": []
+        },
+        {
+          "day": 36,
+          "date": "2026-11-04",
+          "points": 1.6,
+          "stats": [
+            {
+              "s": "SV",
+              "v": 28,
+              "p": 5.6
+            },
+            {
+              "s": "GA",
+              "v": 2,
+              "p": -4.0
+            }
+          ]
+        }
+      ]
+    },
+    "Charlie Lindgren": {
+      "name": "Charlie Lindgren",
+      "pos": "G",
+      "proTeam": "Washington Capitals",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": -12.6,
+      "avg_points": -1.57,
+      "avg_7d": -8.8,
+      "avg_15d": -5.8,
+      "avg_30d": -3.32,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": -8.8,
+          "stats": []
+        }
+      ]
+    },
+    "Mikhail Sergachev": {
+      "name": "Mikhail Sergachev",
+      "pos": "D",
+      "proTeam": "Utah Hockey Club",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 85.9,
+      "avg_points": 3.18,
+      "avg_7d": 1.7,
+      "avg_15d": 2.32,
+      "avg_30d": 2.69,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 5.4,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 3.4,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": -4.9,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 2.9,
+          "stats": []
+        },
+        {
+          "day": 51,
+          "date": "2026-11-19",
+          "points": 1.4,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": 1,
+              "p": 1.0
+            },
+            {
+              "s": "SOG",
+              "v": 2,
+              "p": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    "Lucas Raymond": {
+      "name": "Lucas Raymond",
+      "pos": "LW",
+      "proTeam": "Detroit Red Wings",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 81.9,
+      "avg_points": 3.28,
+      "avg_7d": 1.77,
+      "avg_15d": 3.57,
+      "avg_30d": 3.45,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 3.0,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 3.1,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": -0.8,
+          "stats": []
+        },
+        {
+          "day": 51,
+          "date": "2026-11-19",
+          "points": 3.4,
+          "stats": [
+            {
+              "s": "G",
+              "v": 1,
+              "p": 3.0
+            },
+            {
+              "s": "SOG",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "HIT",
+              "v": 1,
+              "p": 0.2
+            }
+          ]
+        },
+        {
+          "day": 38,
+          "date": "2026-11-06",
+          "points": -0.4,
+          "stats": [
+            {
+              "s": "SOG",
+              "v": 3,
+              "p": 0.6
+            },
+            {
+              "s": "PIM",
+              "v": 2,
+              "p": -1.0
+            }
+          ]
+        }
+      ]
+    },
+    "Darren Raddysh": {
+      "name": "Darren Raddysh",
+      "pos": "D",
+      "proTeam": "Toronto Maple Leafs",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 62.6,
+      "avg_points": 2.32,
+      "avg_7d": 4.9,
+      "avg_15d": 3.47,
+      "avg_30d": 2.65,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 0.4,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": 8.6,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 5.7,
+          "stats": []
+        },
+        {
+          "day": 24,
+          "date": "2026-10-23",
+          "points": 0.4,
+          "stats": [
+            {
+              "s": "SOG",
+              "v": 2,
+              "p": 0.4
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2026-10-04",
+          "points": 2.9,
+          "stats": [
+            {
+              "s": "A",
+              "v": 1,
+              "p": 2.0
+            },
+            {
+              "s": "PPA",
+              "v": 1,
+              "p": 0.5
+            },
+            {
+              "s": "SOG",
+              "v": 2,
+              "p": 0.4
+            }
+          ]
+        }
+      ]
+    },
     "Vincent Trocheck": {
       "name": "Vincent Trocheck",
       "pos": "C",
@@ -36847,6 +35094,537 @@
           "day": 54,
           "date": "2026-11-22",
           "points": 6.0,
+          "stats": []
+        }
+      ]
+    },
+    "Zach Benson": {
+      "name": "Zach Benson",
+      "pos": "LW",
+      "proTeam": "Buffalo Sabres",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "OUT",
+      "total_points": 83.8,
+      "avg_points": 3.35,
+      "avg_7d": 7.7,
+      "avg_15d": 4.23,
+      "avg_30d": 4.12,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 7.4,
+          "stats": []
+        },
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": 10.5,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 5.2,
+          "stats": []
+        },
+        {
+          "day": 41,
+          "date": "2026-11-09",
+          "points": -0.9,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": -2,
+              "p": -2.0
+            },
+            {
+              "s": "SOG",
+              "v": 3,
+              "p": 0.6
+            },
+            {
+              "s": "BLK",
+              "v": 1,
+              "p": 0.5
+            }
+          ]
+        },
+        {
+          "day": 39,
+          "date": "2026-11-07",
+          "points": 4.5,
+          "stats": [
+            {
+              "s": "A",
+              "v": 1,
+              "p": 2.0
+            },
+            {
+              "s": "+/-",
+              "v": 2,
+              "p": 2.0
+            },
+            {
+              "s": "SOG",
+              "v": 3,
+              "p": 0.6
+            },
+            {
+              "s": "HIT",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "BLK",
+              "v": 1,
+              "p": 0.5
+            },
+            {
+              "s": "PIM",
+              "v": 2,
+              "p": -1.0
+            }
+          ]
+        }
+      ]
+    },
+    "MacKenzie Weegar": {
+      "name": "MacKenzie Weegar",
+      "pos": "D",
+      "proTeam": "Utah Hockey Club",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 65.8,
+      "avg_points": 2.44,
+      "avg_7d": 3.75,
+      "avg_15d": 3.09,
+      "avg_30d": 2.24,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 9.9,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 2.0,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": 1.5,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 1.6,
+          "stats": []
+        },
+        {
+          "day": 21,
+          "date": "2026-10-20",
+          "points": 2.5,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": 1,
+              "p": 1.0
+            },
+            {
+              "s": "SOG",
+              "v": 3,
+              "p": 0.6
+            },
+            {
+              "s": "HIT",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "BLK",
+              "v": 1,
+              "p": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    "Tyler Bertuzzi": {
+      "name": "Tyler Bertuzzi",
+      "pos": "LW",
+      "proTeam": "Chicago Blackhawks",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "OUT",
+      "total_points": 35.5,
+      "avg_points": 1.48,
+      "avg_7d": 6.85,
+      "avg_15d": 4.93,
+      "avg_30d": 2.36,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": 10.5,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 3.2,
+          "stats": []
+        }
+      ]
+    },
+    "Dylan Holloway": {
+      "name": "Dylan Holloway",
+      "pos": "LW",
+      "proTeam": "St. Louis Blues",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 84.6,
+      "avg_points": 3.25,
+      "avg_7d": 5.08,
+      "avg_15d": 4.31,
+      "avg_30d": 3.56,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 11.9,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 5.7,
+          "stats": []
+        },
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": -0.8,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 3.5,
+          "stats": []
+        },
+        {
+          "day": 29,
+          "date": "2026-10-28",
+          "points": 1.5,
+          "stats": [
+            {
+              "s": "SOG",
+              "v": 5,
+              "p": 1.0
+            },
+            {
+              "s": "BLK",
+              "v": 1,
+              "p": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    "Gabriel Vilardi": {
+      "name": "Gabriel Vilardi",
+      "pos": "RW",
+      "proTeam": "Winnipeg Jets",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 76.2,
+      "avg_points": 2.82,
+      "avg_7d": 7.33,
+      "avg_15d": 6.47,
+      "avg_30d": 4.08,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 7.7,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 1.0,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": 17.6,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 3.0,
+          "stats": []
+        }
+      ]
+    },
+    "Artemi Panarin": {
+      "name": "Artemi Panarin",
+      "pos": "LW",
+      "proTeam": "Los Angeles Kings",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 57.0,
+      "avg_points": 3.0,
+      "avg_7d": 2.8,
+      "avg_15d": 2.37,
+      "avg_30d": 3.08,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 2.4,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": 3.2,
+          "stats": []
+        },
+        {
+          "day": 33,
+          "date": "2026-11-01",
+          "points": 0.6,
+          "stats": [
+            {
+              "s": "SOG",
+              "v": 3,
+              "p": 0.6
+            }
+          ]
+        },
+        {
+          "day": 31,
+          "date": "2026-10-30",
+          "points": 6.9,
+          "stats": [
+            {
+              "s": "G",
+              "v": 1,
+              "p": 3.0
+            },
+            {
+              "s": "A",
+              "v": 1,
+              "p": 2.0
+            },
+            {
+              "s": "PPG",
+              "v": 1,
+              "p": 0.5
+            },
+            {
+              "s": "SOG",
+              "v": 7,
+              "p": 1.4
+            }
+          ]
+        },
+        {
+          "day": 29,
+          "date": "2026-10-28",
+          "points": -1.5,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": -1,
+              "p": -1.0
+            },
+            {
+              "s": "BLK",
+              "v": 1,
+              "p": 0.5
+            },
+            {
+              "s": "PIM",
+              "v": 2,
+              "p": -1.0
+            }
+          ]
+        }
+      ]
+    },
+    "Alex Nedeljkovic": {
+      "name": "Alex Nedeljkovic",
+      "pos": "G",
+      "proTeam": "San Jose Sharks",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 7.0,
+      "avg_points": 0.7,
+      "avg_7d": -3.0,
+      "avg_15d": 0.2,
+      "avg_30d": -0.8,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": -9.4,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 3.4,
+          "stats": []
+        }
+      ]
+    },
+    "Jakob Chychrun": {
+      "name": "Jakob Chychrun",
+      "pos": "D",
+      "proTeam": "Washington Capitals",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 57.0,
+      "avg_points": 2.48,
+      "avg_7d": 2.67,
+      "avg_15d": 1.13,
+      "avg_30d": 2.55,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": -1.7,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 4.4,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 5.3,
+          "stats": []
+        },
+        {
+          "day": 45,
+          "date": "2026-11-13",
+          "points": 1.4,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": -1,
+              "p": -1.0
+            },
+            {
+              "s": "SOG",
+              "v": 4,
+              "p": 0.8
+            },
+            {
+              "s": "HIT",
+              "v": 3,
+              "p": 0.6
+            },
+            {
+              "s": "BLK",
+              "v": 2,
+              "p": 1.0
+            }
+          ]
+        },
+        {
+          "day": 43,
+          "date": "2026-11-11",
+          "points": 4.3,
+          "stats": [
+            {
+              "s": "A",
+              "v": 1,
+              "p": 2.0
+            },
+            {
+              "s": "+/-",
+              "v": 1,
+              "p": 1.0
+            },
+            {
+              "s": "SOG",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "HIT",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "BLK",
+              "v": 3,
+              "p": 1.5
+            },
+            {
+              "s": "PIM",
+              "v": 2,
+              "p": -1.0
+            }
+          ]
+        }
+      ]
+    },
+    "Connor Brown": {
+      "name": "Connor Brown",
+      "pos": "RW",
+      "proTeam": "New Jersey Devils",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 66.2,
+      "avg_points": 3.68,
+      "avg_7d": 5.57,
+      "avg_15d": 5.61,
+      "avg_30d": 4.34,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 9.3,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 1.6,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": 8.8,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 2.6,
           "stats": []
         }
       ]
@@ -36909,6 +35687,1228 @@
               "p": 0.5
             }
           ]
+        }
+      ]
+    },
+    "Dennis Hildeby": {
+      "name": "Dennis Hildeby",
+      "pos": "G",
+      "proTeam": "Tampa Bay Lightning",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": -0.4,
+      "avg_points": -0.06,
+      "avg_7d": -7.3,
+      "avg_15d": -2.33,
+      "avg_30d": -1.3,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": -9.0,
+          "stats": []
+        },
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": -5.6,
+          "stats": []
+        },
+        {
+          "day": 26,
+          "date": "2026-10-25",
+          "points": -4.4,
+          "stats": [
+            {
+              "s": "OTL",
+              "v": 1,
+              "p": 1.0
+            },
+            {
+              "s": "SV",
+              "v": 23,
+              "p": 4.6
+            },
+            {
+              "s": "GA",
+              "v": 5,
+              "p": -10.0
+            }
+          ]
+        }
+      ]
+    },
+    "Adrian Kempe": {
+      "name": "Adrian Kempe",
+      "pos": "RW",
+      "proTeam": "Los Angeles Kings",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 53.0,
+      "avg_points": 2.41,
+      "avg_7d": 1.13,
+      "avg_15d": 0.56,
+      "avg_30d": 2.02,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 5.5,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": -0.9,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": -1.2,
+          "stats": []
+        },
+        {
+          "day": 43,
+          "date": "2026-11-11",
+          "points": -1.6,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": -2,
+              "p": -2.0
+            },
+            {
+              "s": "SOG",
+              "v": 3,
+              "p": 0.6
+            },
+            {
+              "s": "FOL",
+              "v": 1,
+              "p": -0.2
+            }
+          ]
+        },
+        {
+          "day": 29,
+          "date": "2026-10-28",
+          "points": -0.1,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": -1,
+              "p": -1.0
+            },
+            {
+              "s": "SOG",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "HIT",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "BLK",
+              "v": 1,
+              "p": 0.5
+            },
+            {
+              "s": "FOW",
+              "v": 3,
+              "p": 0.6
+            },
+            {
+              "s": "FOL",
+              "v": 3,
+              "p": -0.6
+            }
+          ]
+        }
+      ]
+    },
+    "Jake Neighbours": {
+      "name": "Jake Neighbours",
+      "pos": "LW",
+      "proTeam": "St. Louis Blues",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 81.2,
+      "avg_points": 3.12,
+      "avg_7d": 6.4,
+      "avg_15d": 5.36,
+      "avg_30d": 3.86,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 9.6,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 1.6,
+          "stats": []
+        },
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": 1.2,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 13.2,
+          "stats": []
+        }
+      ]
+    },
+    "Sebastian Cossa": {
+      "name": "Sebastian Cossa",
+      "pos": "G",
+      "proTeam": "Utah Hockey Club",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 9.2,
+      "avg_points": 0.84,
+      "avg_7d": 1.0,
+      "avg_15d": 3.33,
+      "avg_30d": 1.57,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": -3.8,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 5.8,
+          "stats": []
+        }
+      ]
+    },
+    "Karel Vejmelka": {
+      "name": "Karel Vejmelka",
+      "pos": "G",
+      "proTeam": "Utah Hockey Club",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 3.8,
+      "avg_points": 0.21,
+      "avg_7d": -0.2,
+      "avg_15d": 0.48,
+      "avg_30d": -1.03,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": -2.8,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 2.4,
+          "stats": []
+        },
+        {
+          "day": 24,
+          "date": "2026-10-23",
+          "points": -4.0,
+          "stats": [
+            {
+              "s": "SV",
+              "v": 20,
+              "p": 4.0
+            },
+            {
+              "s": "GA",
+              "v": 4,
+              "p": -8.0
+            }
+          ]
+        },
+        {
+          "day": 19,
+          "date": "2026-10-18",
+          "points": -7.6,
+          "stats": [
+            {
+              "s": "SV",
+              "v": 12,
+              "p": 2.4
+            },
+            {
+              "s": "GA",
+              "v": 5,
+              "p": -10.0
+            }
+          ]
+        },
+        {
+          "day": 17,
+          "date": "2026-10-16",
+          "points": 4.4,
+          "stats": [
+            {
+              "s": "W",
+              "v": 1,
+              "p": 4.0
+            },
+            {
+              "s": "SV",
+              "v": 22,
+              "p": 4.4
+            },
+            {
+              "s": "GA",
+              "v": 2,
+              "p": -4.0
+            }
+          ]
+        }
+      ]
+    },
+    "Brayden Point": {
+      "name": "Brayden Point",
+      "pos": "C",
+      "proTeam": "Tampa Bay Lightning",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 58.8,
+      "avg_points": 2.67,
+      "avg_7d": -1.87,
+      "avg_15d": 0.34,
+      "avg_30d": 2.81,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": -2.0,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 0.4,
+          "stats": []
+        },
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": -4.0,
+          "stats": []
+        },
+        {
+          "day": 41,
+          "date": "2026-11-09",
+          "points": 0.6,
+          "stats": [
+            {
+              "s": "SOG",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "FOW",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "FOL",
+              "v": 1,
+              "p": -0.2
+            }
+          ]
+        },
+        {
+          "day": 38,
+          "date": "2026-11-06",
+          "points": 3.0,
+          "stats": [
+            {
+              "s": "A",
+              "v": 1,
+              "p": 2.0
+            },
+            {
+              "s": "FOW",
+              "v": 12,
+              "p": 2.4
+            },
+            {
+              "s": "FOL",
+              "v": 7,
+              "p": -1.4
+            }
+          ]
+        }
+      ]
+    },
+    "Trevor Connelly": {
+      "name": "Trevor Connelly",
+      "pos": "LW",
+      "proTeam": "Vegas Golden Knights",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 69.8,
+      "avg_points": 2.59,
+      "avg_7d": 3.93,
+      "avg_15d": 3.37,
+      "avg_30d": 2.93,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": -1.0,
+          "stats": []
+        },
+        {
+          "day": 57,
+          "date": "2026-11-25",
+          "points": 11.2,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 1.6,
+          "stats": []
+        }
+      ]
+    },
+    "Nico Hischier": {
+      "name": "Nico Hischier",
+      "pos": "C",
+      "proTeam": "New Jersey Devils",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 86.9,
+      "avg_points": 3.34,
+      "avg_7d": 2.45,
+      "avg_15d": 2.6,
+      "avg_30d": 2.32,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 4.6,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 5.7,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": -0.4,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": -0.1,
+          "stats": []
+        },
+        {
+          "day": 51,
+          "date": "2026-11-19",
+          "points": 1.6,
+          "stats": [
+            {
+              "s": "A",
+              "v": 1,
+              "p": 2.0
+            },
+            {
+              "s": "+/-",
+              "v": 1,
+              "p": 1.0
+            },
+            {
+              "s": "SOG",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "HIT",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "FOW",
+              "v": 5,
+              "p": 1.0
+            },
+            {
+              "s": "FOL",
+              "v": 15,
+              "p": -3.0
+            }
+          ]
+        }
+      ]
+    },
+    "Jeremy Lauzon": {
+      "name": "Jeremy Lauzon",
+      "pos": "D",
+      "proTeam": "Vegas Golden Knights",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 32.4,
+      "avg_points": 1.2,
+      "avg_7d": 1.77,
+      "avg_15d": 1.16,
+      "avg_30d": 1.19,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": -0.2,
+          "stats": []
+        },
+        {
+          "day": 57,
+          "date": "2026-11-25",
+          "points": 4.7,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 0.8,
+          "stats": []
+        }
+      ]
+    },
+    "Dylan Guenther": {
+      "name": "Dylan Guenther",
+      "pos": "RW",
+      "proTeam": "Utah Hockey Club",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 44.1,
+      "avg_points": 2.1,
+      "avg_7d": 2.9,
+      "avg_15d": 2.9,
+      "avg_30d": 1.07,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 3.8,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 7.3,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": -2.4,
+          "stats": []
+        },
+        {
+          "day": 24,
+          "date": "2026-10-23",
+          "points": -0.1,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": -1,
+              "p": -1.0
+            },
+            {
+              "s": "SOG",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "BLK",
+              "v": 1,
+              "p": 0.5
+            }
+          ]
+        },
+        {
+          "day": 21,
+          "date": "2026-10-20",
+          "points": 0.4,
+          "stats": [
+            {
+              "s": "SOG",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "BLK",
+              "v": 2,
+              "p": 1.0
+            },
+            {
+              "s": "PIM",
+              "v": 2,
+              "p": -1.0
+            }
+          ]
+        }
+      ]
+    },
+    "Arber Xhekaj": {
+      "name": "Arber Xhekaj",
+      "pos": "D",
+      "proTeam": "Montréal Canadiens",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 11.3,
+      "avg_points": 0.45,
+      "avg_7d": -1.5,
+      "avg_15d": 0.64,
+      "avg_30d": 0.92,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": -7.5,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": -0.6,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 3.6,
+          "stats": []
+        }
+      ]
+    },
+    "Michael Amadio": {
+      "name": "Michael Amadio",
+      "pos": "RW",
+      "proTeam": "Ottawa Senators",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 73.7,
+      "avg_points": 2.73,
+      "avg_7d": 5.02,
+      "avg_15d": 3.95,
+      "avg_30d": 3.91,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 12.6,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 2.2,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": 5.1,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 0.2,
+          "stats": []
+        }
+      ]
+    },
+    "Wyatt Kaiser": {
+      "name": "Wyatt Kaiser",
+      "pos": "D",
+      "proTeam": "Chicago Blackhawks",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "SUSPENSION",
+      "total_points": 9.3,
+      "avg_points": 0.4,
+      "avg_7d": -8.1,
+      "avg_15d": -0.52,
+      "avg_30d": -0.22,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": -8.1,
+          "stats": []
+        }
+      ]
+    },
+    "William Nylander": {
+      "name": "William Nylander",
+      "pos": "RW",
+      "proTeam": "Toronto Maple Leafs",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 75.4,
+      "avg_points": 2.79,
+      "avg_7d": 2.23,
+      "avg_15d": 1.6,
+      "avg_30d": 1.35,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 1.4,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": 2.2,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 3.1,
+          "stats": []
+        },
+        {
+          "day": 52,
+          "date": "2026-11-20",
+          "points": 4.7,
+          "stats": [
+            {
+              "s": "A",
+              "v": 2,
+              "p": 4.0
+            },
+            {
+              "s": "PPA",
+              "v": 1,
+              "p": 0.5
+            },
+            {
+              "s": "SOG",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "HIT",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "FOL",
+              "v": 1,
+              "p": -0.2
+            }
+          ]
+        },
+        {
+          "day": 50,
+          "date": "2026-11-18",
+          "points": -0.8,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": -1,
+              "p": -1.0
+            },
+            {
+              "s": "SOG",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "FOL",
+              "v": 1,
+              "p": -0.2
+            }
+          ]
+        }
+      ]
+    },
+    "Drake Batherson": {
+      "name": "Drake Batherson",
+      "pos": "RW",
+      "proTeam": "Ottawa Senators",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 88.6,
+      "avg_points": 3.28,
+      "avg_7d": 0.43,
+      "avg_15d": 2.58,
+      "avg_30d": 2.69,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 1.0,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": -1.5,
+          "stats": []
+        },
+        {
+          "day": 56,
+          "date": "2026-11-24",
+          "points": 2.2,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 0.0,
+          "stats": []
+        },
+        {
+          "day": 43,
+          "date": "2026-11-11",
+          "points": -0.4,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": -1,
+              "p": -1.0
+            },
+            {
+              "s": "SOG",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "HIT",
+              "v": 2,
+              "p": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    "Roman Kantserov": {
+      "name": "Roman Kantserov",
+      "pos": "RW",
+      "proTeam": "Chicago Blackhawks",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 68.0,
+      "avg_points": 2.62,
+      "avg_7d": 9.48,
+      "avg_15d": 5.29,
+      "avg_30d": 4.0,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 1.5,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 9.9,
+          "stats": []
+        },
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": 18.3,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 8.2,
+          "stats": []
+        }
+      ]
+    },
+    "Charlie McAvoy": {
+      "name": "Charlie McAvoy",
+      "pos": "D",
+      "proTeam": "Boston Bruins",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 33.4,
+      "avg_points": 1.76,
+      "avg_7d": 0.33,
+      "avg_15d": -0.87,
+      "avg_30d": 0.71,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": -3.8,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": -2.8,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 7.6,
+          "stats": []
+        },
+        {
+          "day": 45,
+          "date": "2026-11-13",
+          "points": -1.8,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": -2,
+              "p": -2.0
+            },
+            {
+              "s": "HIT",
+              "v": 1,
+              "p": 0.2
+            }
+          ]
+        },
+        {
+          "day": 41,
+          "date": "2026-11-09",
+          "points": 3.0,
+          "stats": [
+            {
+              "s": "A",
+              "v": 1,
+              "p": 2.0
+            },
+            {
+              "s": "+/-",
+              "v": 1,
+              "p": 1.0
+            },
+            {
+              "s": "SOG",
+              "v": 3,
+              "p": 0.6
+            },
+            {
+              "s": "HIT",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "PIM",
+              "v": 2,
+              "p": -1.0
+            }
+          ]
+        }
+      ]
+    },
+    "Tomas Hertl": {
+      "name": "Tomas Hertl",
+      "pos": "C",
+      "proTeam": "Vegas Golden Knights",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 98.2,
+      "avg_points": 3.64,
+      "avg_7d": 3.3,
+      "avg_15d": 2.53,
+      "avg_30d": 4.11,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 3.2,
+          "stats": []
+        },
+        {
+          "day": 57,
+          "date": "2026-11-25",
+          "points": -1.2,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 7.9,
+          "stats": []
+        },
+        {
+          "day": 48,
+          "date": "2026-11-16",
+          "points": 1.5,
+          "stats": [
+            {
+              "s": "A",
+              "v": 1,
+              "p": 2.0
+            },
+            {
+              "s": "+/-",
+              "v": -3,
+              "p": -3.0
+            },
+            {
+              "s": "PPA",
+              "v": 1,
+              "p": 0.5
+            },
+            {
+              "s": "SOG",
+              "v": 3,
+              "p": 0.6
+            },
+            {
+              "s": "HIT",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "FOW",
+              "v": 12,
+              "p": 2.4
+            },
+            {
+              "s": "FOL",
+              "v": 6,
+              "p": -1.2
+            }
+          ]
+        },
+        {
+          "day": 46,
+          "date": "2026-11-14",
+          "points": 2.4,
+          "stats": [
+            {
+              "s": "A",
+              "v": 1,
+              "p": 2.0
+            },
+            {
+              "s": "SOG",
+              "v": 3,
+              "p": 0.6
+            },
+            {
+              "s": "HIT",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "FOW",
+              "v": 7,
+              "p": 1.4
+            },
+            {
+              "s": "FOL",
+              "v": 4,
+              "p": -0.8
+            },
+            {
+              "s": "PIM",
+              "v": 2,
+              "p": -1.0
+            }
+          ]
+        }
+      ]
+    },
+    "Colton Dach": {
+      "name": "Colton Dach",
+      "pos": "C",
+      "proTeam": "Edmonton Oilers",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 32.8,
+      "avg_points": 1.49,
+      "avg_7d": 2.12,
+      "avg_15d": 1.41,
+      "avg_30d": 1.79,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 0.2,
+          "stats": []
+        },
+        {
+          "day": 57,
+          "date": "2026-11-25",
+          "points": 5.0,
+          "stats": []
+        },
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": 4.6,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": -1.3,
+          "stats": []
+        }
+      ]
+    },
+    "Emmitt Finnie": {
+      "name": "Emmitt Finnie",
+      "pos": "LW",
+      "proTeam": "Detroit Red Wings",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 68.7,
+      "avg_points": 2.75,
+      "avg_7d": 5.53,
+      "avg_15d": 2.62,
+      "avg_30d": 2.37,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 60,
+          "date": "2026-11-28",
+          "points": 1.0,
+          "stats": []
+        },
+        {
+          "day": 58,
+          "date": "2026-11-26",
+          "points": 12.9,
+          "stats": []
+        },
+        {
+          "day": 54,
+          "date": "2026-11-22",
+          "points": 2.7,
+          "stats": []
+        },
+        {
+          "day": 36,
+          "date": "2026-11-04",
+          "points": 0.1,
+          "stats": [
+            {
+              "s": "+/-",
+              "v": -1,
+              "p": -1.0
+            },
+            {
+              "s": "HIT",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "BLK",
+              "v": 1,
+              "p": 0.5
+            },
+            {
+              "s": "FOW",
+              "v": 8,
+              "p": 1.6
+            },
+            {
+              "s": "FOL",
+              "v": 6,
+              "p": -1.2
+            }
+          ]
+        },
+        {
+          "day": 35,
+          "date": "2026-11-03",
+          "points": 5.4,
+          "stats": [
+            {
+              "s": "G",
+              "v": 1,
+              "p": 3.0
+            },
+            {
+              "s": "+/-",
+              "v": 2,
+              "p": 2.0
+            },
+            {
+              "s": "SOG",
+              "v": 2,
+              "p": 0.4
+            },
+            {
+              "s": "HIT",
+              "v": 1,
+              "p": 0.2
+            },
+            {
+              "s": "FOW",
+              "v": 5,
+              "p": 1.0
+            },
+            {
+              "s": "FOL",
+              "v": 6,
+              "p": -1.2
+            }
+          ]
+        }
+      ]
+    },
+    "Nikita Tolopilo": {
+      "name": "Nikita Tolopilo",
+      "pos": "G",
+      "proTeam": "Vancouver Canucks",
+      "owner": "Vapaa agentti",
+      "injuryStatus": "ACTIVE",
+      "total_points": 0.4,
+      "avg_points": 0.2,
+      "avg_7d": -6.6,
+      "avg_15d": 0.2,
+      "avg_30d": 0.2,
+      "season_stats": [],
+      "last_games": [
+        {
+          "day": 55,
+          "date": "2026-11-23",
+          "points": -6.6,
+          "stats": []
         }
       ]
     }
